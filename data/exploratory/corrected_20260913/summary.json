@@ -1,0 +1,163 @@
+{
+  "method": "Retest E2BIG rows only; preserve all other original verdicts. Training scores are retrospective only.",
+  "timeout_seconds": 8,
+  "python": "3.11.14 (main, Feb 24 2026, 19:44:43) [GCC 14.2.0]",
+  "unique_candidates_retested": 364,
+  "canonical_controls": 15,
+  "dataset_sha256": {
+    "heplus_rows_0.json": "d48237eb488921781c4d7f29b22233a680346762c4515552663588ed2ae5d8d0",
+    "heplus_rows_100.json": "a0502110e836dd47655a384c835f15c1732a76b65dc048fbe69adca16e3e3a03"
+  },
+  "files": [
+    {
+      "run": "27",
+      "file": "eval_base_holdout_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 36,
+      "original_passed": 148,
+      "corrected_passed": 180,
+      "corrected_joint_pass_clean": 128,
+      "source_sha256": "382d9f59b46c520d70b8e7b10492c3cf1f6fd4e7603374edf3d0fd80b34633e1"
+    },
+    {
+      "run": "27",
+      "file": "eval_base_train_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 172,
+      "corrected_passed": 196,
+      "corrected_joint_pass_clean": 90,
+      "source_sha256": "ba6ac77b6a91096aed0f52b12d1d2e750f22133b58ef01e55f9893606d0f8bc7"
+    },
+    {
+      "run": "27",
+      "file": "eval_lora_holdout_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 36,
+      "original_passed": 150,
+      "corrected_passed": 183,
+      "corrected_joint_pass_clean": 139,
+      "source_sha256": "af76c2c51b2acc720de01aa248bd2615348b8ed3696e306a8b8a541dcd330c17"
+    },
+    {
+      "run": "27",
+      "file": "eval_lora_train_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 172,
+      "corrected_passed": 196,
+      "corrected_joint_pass_clean": 108,
+      "source_sha256": "8edce5476a86c18b1191edf9669f51d61d52d807ee6a4a2a9ed73126c2fa033c"
+    },
+    {
+      "run": "27",
+      "file": "samples.csv",
+      "rows": 2000,
+      "retested_e2big": 236,
+      "original_passed": 1711,
+      "corrected_passed": 1945,
+      "corrected_joint_pass_clean": 1013,
+      "source_sha256": "569cfc46543be593150dee153d18e7e43697cce08c4727390bd37703b8ccc7fc"
+    },
+    {
+      "run": "28",
+      "file": "eval_base_holdout_tasks_1.csv",
+      "rows": 200,
+      "retested_e2big": 36,
+      "original_passed": 150,
+      "corrected_passed": 183,
+      "corrected_joint_pass_clean": 136,
+      "source_sha256": "445b4bdbc7372f2e01e75ce779893cf2e5446118cca606359bd935281a835e1a"
+    },
+    {
+      "run": "28",
+      "file": "eval_base_train_tasks_1.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 170,
+      "corrected_passed": 194,
+      "corrected_joint_pass_clean": 90,
+      "source_sha256": "6f0940674a4593415829f2b69088ed5815dc9df31aa14d42d5b677d628461f76"
+    },
+    {
+      "run": "28",
+      "file": "eval_lora_holdout_tasks_1.csv",
+      "rows": 200,
+      "retested_e2big": 36,
+      "original_passed": 143,
+      "corrected_passed": 176,
+      "corrected_joint_pass_clean": 163,
+      "source_sha256": "4708e8cb84a3fd029443789f0b75642440576fe3f039339281cf68ee5659e160"
+    },
+    {
+      "run": "28",
+      "file": "eval_lora_train_tasks_1.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 172,
+      "corrected_passed": 192,
+      "corrected_joint_pass_clean": 152,
+      "source_sha256": "aa51081cefe94f2a79d7ee7fb8d0c1521520caaa3f60230b196fa36ba0bc59ff"
+    },
+    {
+      "run": "28",
+      "file": "samples_1.csv",
+      "rows": 2000,
+      "retested_e2big": 240,
+      "original_passed": 1707,
+      "corrected_passed": 1922,
+      "corrected_joint_pass_clean": 1449,
+      "source_sha256": "1fb21e4d3ab1f70fd8441d2bce2f5c2988e48753db685959fd925f54c7a94f21"
+    },
+    {
+      "run": "29",
+      "file": "eval_base_holdout_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 36,
+      "original_passed": 150,
+      "corrected_passed": 182,
+      "corrected_joint_pass_clean": 124,
+      "source_sha256": "9b432bb414600681105dc5f2b1813bc1366198d8efd14ce50e314560958b1855"
+    },
+    {
+      "run": "29",
+      "file": "eval_base_train_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 171,
+      "corrected_passed": 195,
+      "corrected_joint_pass_clean": 92,
+      "source_sha256": "4102bd79d3e0b68057081148ab389d34db8393f8358b3a9dff4d7decf6dfb440"
+    },
+    {
+      "run": "29",
+      "file": "eval_lora_holdout_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 35,
+      "original_passed": 150,
+      "corrected_passed": 181,
+      "corrected_joint_pass_clean": 111,
+      "source_sha256": "8b34ef944ea4d7703525c668dfa66f831deca309784e4e8ebc098e6b8a90d661"
+    },
+    {
+      "run": "29",
+      "file": "eval_lora_train_tasks.csv",
+      "rows": 200,
+      "retested_e2big": 24,
+      "original_passed": 172,
+      "corrected_passed": 196,
+      "corrected_joint_pass_clean": 71,
+      "source_sha256": "8c95a64f4d29973ee8f0395edc0efa8ba9e6cb1b0fa26ef8752827f9c0c762b7"
+    },
+    {
+      "run": "29",
+      "file": "samples.csv",
+      "rows": 2000,
+      "retested_e2big": 238,
+      "original_passed": 1707,
+      "corrected_passed": 1934,
+      "corrected_joint_pass_clean": 835,
+      "source_sha256": "270781ad24bf9e66e23fe2ab9085eae3b0220150379867440d2102d6ed7f4c7f"
+    }
+  ]
+}

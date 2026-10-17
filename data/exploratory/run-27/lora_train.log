@@ -1,0 +1,292 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_lora
+MODEL_NAME=unsloth/Qwen3.6-27B
+RUN_ROOT=<PRIVATE_PATH>
+RUN_ID=baseline_lora_train
+RUN_NAME=baseline
+REPEAT_INDEX=1
+REPEAT_TOTAL=1
+LOG_DIR=<PRIVATE_PATH>
+OUTPUT_DIR=<PRIVATE_PATH>
+LORA_OUTPUT_DIR=<PRIVATE_PATH>
+LORA_PATH=<PRIVATE_PATH>
+AUTO_RESUME=0
+RESUME_FROM_CHECKPOINT=none
+Create fresh LoRA adapter for training: False
+Before/after CSV: enabled=True, path=<PRIVATE_PATH>, split=current, num_tasks=10, num_generations=1, do_sample=False
+Model loading: max_seq_length=2048, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, dropout=0.0, target_modules=all-linear, seed=3407
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=4, eval_num_generations=4, per_device_train_batch_size=4, gradient_accumulation_steps=1, max_prompt_length=1024, max_completion_length=384, max_steps=500, tiny_max_steps=200, save_steps_train=250, save_steps_tiny=50, save_strategy=steps, save_total_limit=2, logging_steps=1, optim=adamw_8bit, report_to=none
+Reward weights: format=0.1, syntax=0.1, compile=0.3, style=0.0, tests=4.5, performance=1.0, ai_judge=1.0, profile=baseline
+AI judge: enabled=False, mock=False, model=qwen3-coder:30b, require_test_pass=True, prompt_version=taxonomy_readability_maintainability_v3, prompt_hash=50d083c5e7100d2e
+Path layout: run_root=<PRIVATE_PATH>, log_dir=<PRIVATE_PATH>, output_dir=<PRIVATE_PATH>, lora_output_dir=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 2. Max memory: 23.558 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<05:33,  3.54it/s]Loading weights:   0%|          | 2/1184 [00:00<05:34,  3.53it/s]Loading weights:   1%|          | 13/1184 [00:00<00:42, 27.63it/s]Loading weights:   2%|▏         | 27/1184 [00:00<00:21, 54.07it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:15, 74.46it/s]Loading weights:   4%|▍         | 51/1184 [00:00<00:14, 78.42it/s]Loading weights:   6%|▌         | 67/1184 [00:01<00:11, 98.20it/s]Loading weights:   7%|▋         | 82/1184 [00:01<00:10, 106.64it/s]Loading weights:   8%|▊         | 99/1184 [00:01<00:09, 117.45it/s]Loading weights:  10%|▉         | 116/1184 [00:01<00:08, 130.85it/s]Loading weights:  11%|█         | 132/1184 [00:01<00:07, 136.47it/s]Loading weights:  12%|█▏        | 147/1184 [00:01<00:08, 129.51it/s]Loading weights:  14%|█▎        | 161/1184 [00:01<00:08, 117.04it/s]Loading weights:  15%|█▍        | 174/1184 [00:01<00:08, 117.78it/s]Loading weights:  16%|█▌        | 188/1184 [00:02<00:08, 120.82it/s]Loading weights:  17%|█▋        | 202/1184 [00:02<00:07, 123.24it/s]Loading weights:  18%|█▊        | 215/1184 [00:02<00:07, 123.59it/s]Loading weights:  19%|█▉        | 228/1184 [00:02<00:07, 122.66it/s]Loading weights:  20%|██        | 241/1184 [00:02<00:07, 121.61it/s]Loading weights:  22%|██▏       | 255/1184 [00:02<00:07, 123.88it/s]Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 124.31it/s]Loading weights:  24%|██▎       | 281/1184 [00:02<00:07, 123.15it/s]Loading weights:  26%|██▌       | 302/1184 [00:02<00:06, 142.68it/s]Loading weights:  27%|██▋       | 317/1184 [00:03<00:06, 123.88it/s]Loading weights:  28%|██▊       | 333/1184 [00:03<00:06, 126.39it/s]Loading weights:  30%|██▉       | 355/1184 [00:03<00:05, 145.90it/s]Loading weights:  31%|███▏      | 370/1184 [00:03<00:06, 126.87it/s]Loading weights:  33%|███▎      | 386/1184 [00:03<00:06, 128.21it/s]Loading weights:  34%|███▍      | 408/1184 [00:03<00:05, 146.53it/s]Loading weights:  36%|███▌      | 424/1184 [00:03<00:05, 130.02it/s]Loading weights:  37%|███▋      | 439/1184 [00:03<00:05, 128.49it/s]Loading weights:  39%|███▉      | 461/1184 [00:04<00:04, 147.00it/s]Loading weights:  40%|████      | 477/1184 [00:04<00:05, 130.57it/s]Loading weights:  42%|████▏     | 492/1184 [00:04<00:05, 130.48it/s]Loading weights:  43%|████▎     | 514/1184 [00:04<00:04, 148.14it/s]Loading weights:  45%|████▍     | 530/1184 [00:04<00:04, 130.92it/s]Loading weights:  46%|████▌     | 545/1184 [00:04<00:04, 130.61it/s]Loading weights:  48%|████▊     | 567/1184 [00:04<00:04, 148.35it/s]Loading weights:  49%|████▉     | 583/1184 [00:05<00:04, 131.16it/s]Loading weights:  51%|█████     | 598/1184 [00:05<00:04, 130.84it/s]Loading weights:  52%|█████▏    | 620/1184 [00:05<00:03, 148.51it/s]Loading weights:  54%|█████▎    | 636/1184 [00:05<00:04, 131.16it/s]Loading weights:  55%|█████▍    | 651/1184 [00:05<00:04, 130.51it/s]Loading weights:  57%|█████▋    | 673/1184 [00:05<00:03, 148.14it/s]Loading weights:  58%|█████▊    | 689/1184 [00:05<00:03, 131.16it/s]Loading weights:  59%|█████▉    | 704/1184 [00:05<00:03, 130.10it/s]Loading weights:  61%|██████    | 718/1184 [00:06<00:03, 131.83it/s]Loading weights:  62%|██████▏   | 735/1184 [00:06<00:03, 134.16it/s]Loading weights:  64%|██████▎   | 754/1184 [00:06<00:02, 146.85it/s]Loading weights:  65%|██████▍   | 769/1184 [00:06<00:02, 139.70it/s]Loading weights:  66%|██████▌   | 784/1184 [00:06<00:02, 135.11it/s]Loading weights:  67%|██████▋   | 798/1184 [00:06<00:02, 130.44it/s]Loading weights:  69%|██████▉   | 818/1184 [00:06<00:02, 144.18it/s]Loading weights:  70%|███████   | 833/1184 [00:06<00:02, 142.76it/s]Loading weights:  72%|███████▏  | 848/1184 [00:06<00:02, 126.12it/s]Loading weights:  86%|████████▌ | 1021/1184 [00:07<00:00, 532.58it/s]Loading weights: 100%|██████████| 1184/1184 [00:07<00:00, 165.07it/s]
+Using dataset: evalplus/humanevalplus [test]
+
+============================================================
+DEBUG - raw prompt the model will receive:
+============================================================
+<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """ Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+
+============================================================
+
+Loading LoRA from: <PRIVATE_PATH>
+
+============================================================
+Starting evaluation: lora_train_tasks_0_49
+============================================================
+[lora_train_tasks_0_49] task=HumanEval/0 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/0 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/0 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/0 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/1 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/1 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/1 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/1 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/2 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/2 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/2 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/2 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/3 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/3 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/3 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/3 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/4 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/4 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/4 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/4 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/5 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/5 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/5 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/5 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/6 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/6 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/6 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/6 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/7 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/7 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/7 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/7 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/8 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/8 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/8 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/8 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/9 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/9 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/9 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/9 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/10 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/10 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/10 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/10 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/11 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/11 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/11 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/11 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/12 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/12 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/12 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/12 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/13 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/13 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/13 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/13 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/14 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/14 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/14 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/14 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/15 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/15 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/15 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/15 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/16 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/16 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/16 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/16 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/17 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/17 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/17 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/17 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/18 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/18 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/18 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/18 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/19 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/19 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/19 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/19 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/20 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/20 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/20 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/20 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/21 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/21 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/21 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/21 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/22 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/22 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/22 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/22 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/23 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/23 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/23 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/23 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/24 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/24 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/24 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/24 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/25 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/25 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/25 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=6 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/25 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/26 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/26 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/26 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/26 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/27 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/27 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/27 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/27 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/28 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/28 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/28 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/28 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/29 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/29 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/29 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/29 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/30 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/30 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/30 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/30 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/31 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/31 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/31 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/31 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/32 gen=0 reward=0.4 format=missing_closing_tag syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/32 gen=1 reward=0.4 format=missing_closing_tag syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/32 gen=2 reward=0.4 format=missing_closing_tag syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/32 gen=3 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 ai_judge=disabled ai_judge_score=0.000 reason=syntax_error
+[lora_train_tasks_0_49] task=HumanEval/33 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=6 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/33 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/33 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/33 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/34 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/34 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/34 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/34 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/35 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/35 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/35 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/35 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/36 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/36 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/36 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/36 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/37 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/37 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/37 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/37 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/38 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/38 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/38 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/38 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/39 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/39 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/39 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/39 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/40 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/40 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/40 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/40 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/41 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/41 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/41 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/41 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/42 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/42 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/42 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/42 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/43 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/43 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/43 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/43 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/44 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/44 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/44 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/44 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/45 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/45 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/45 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/45 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/46 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/46 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/46 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/46 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/47 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/47 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/47 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/47 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/48 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/48 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/48 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/48 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/49 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/49 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/49 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_train_tasks_0_49] task=HumanEval/49 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+
+============================================================
+Evaluation summary: lora_train_tasks_0_49
+============================================================
+Rows: 200
+Avg reward: 4.366
+Avg style score: 0.938
+Avg AI judge score (judged solutions): 0.000
+Avg performance score (correct solutions): 0.000
+Format OK rate: 98.00%
+Syntax OK rate: 99.50%
+Style OK rate: 54.00%
+Test pass rate: 86.00%
+Pass + style clean rate: 50.00%
+Avg completion length: 115.7
+Saved to: <PRIVATE_PATH>

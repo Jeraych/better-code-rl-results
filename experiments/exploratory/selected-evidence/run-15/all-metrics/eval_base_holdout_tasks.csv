@@ -1,0 +1,2441 @@
+label,task_id,item_idx,generation_idx,raw_completion,extracted_code,format_status,compile_status,runtime_status,failure_reason,error_message,stderr_preview,test_status,test_error_message,test_stderr_preview,syntax_status,style_status,style_score,style_penalty,style_violation_count,style_codes,style_messages,performance_status,performance_score,performance_runtime_score,performance_memory_score,performance_elapsed_ms,performance_reference_ms,performance_peak_kb,performance_reference_peak_kb,performance_error,ai_judge_status,ai_judge_score,ai_judge_findings_count,ai_judge_findings_json,ai_judge_error,ai_judge_model,ai_judge_prompt_version,ai_judge_prompt_hash,reward_format,reward_syntax,reward_style,reward_compile,reward_tests,reward_performance,reward_ai_judge,reward_total,completion_token_length
+base_holdout_tasks_50_99,HumanEval/50,0,0,"def encode_shift(s: str):
+    """"""
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """"""
+    return """".join([chr(((ord(ch) + 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+
+
+def decode_shift(s: str):
+    """"""
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """"""
+    return """".join([chr(((ord(ch) - 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+</code>","def encode_shift(s: str):
+    """"""
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """"""
+    return """".join([chr(((ord(ch) + 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+
+
+def decode_shift(s: str):
+    """"""
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """"""
+    return """".join([chr(((ord(ch) - 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,6.61787,6.6183,470.34765625,470.3056640625,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 12, ""evidence"": ""return ''.join([chr(((ord(ch) + 5 - ord('a')) % 26) + ord('a')) for ch in s])"", ""reason"": ""The encoding and decoding logic is nearly identical except for the shift direction. This duplication can be reduced by creating a single function that accepts the shift value as a parameter.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,131
+base_holdout_tasks_50_99,HumanEval/50,0,1,"def encode_shift(s: str):
+    """"""
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """"""
+    return """".join([chr(((ord(ch) + 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+
+
+def decode_shift(s: str):
+    """"""
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """"""
+    return """".join([chr(((ord(ch) - 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+</code>","def encode_shift(s: str):
+    """"""
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """"""
+    return """".join([chr(((ord(ch) + 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])
+
+
+def decode_shift(s: str):
+    """"""
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """"""
+    return """".join([chr(((ord(ch) - 5 - ord(""a"")) % 26) + ord(""a"")) for ch in s])",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,6.60467,6.6183,470.4091796875,470.3056640625,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 12, ""evidence"": ""return ''.join([chr(((ord(ch) + 5 - ord('a')) % 26) + ord('a')) for ch in s])"", ""reason"": ""The encoding and decoding logic is nearly identical except for the shift direction. This duplication can be reduced by creating a single function that accepts the shift value as a parameter.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,131
+base_holdout_tasks_50_99,HumanEval/51,1,0,"def remove_vowels(text):
+    """"""
+    remove_vowels is a function that takes string and returns string without vowels.
+    >>> remove_vowels('')
+    ''
+    >>> remove_vowels(""abcdef\nghijklm"")
+    'bcdf\nghjklm'
+    >>> remove_vowels('abcdef')
+    'bcdf'
+    >>> remove_vowels('aaaaa')
+    ''
+    >>> remove_vowels('aaBAA')
+    'B'
+    >>> remove_vowels('zbcd')
+    'zbcd'
+    """"""
+    vowels = set('aeiouAEIOU')
+    return ''.join(char for char in text if char not in vowels)
+</code>","def remove_vowels(text):
+    """"""
+    remove_vowels is a function that takes string and returns string without vowels.
+    >>> remove_vowels('')
+    ''
+    >>> remove_vowels(""abcdef\nghijklm"")
+    'bcdf\nghjklm'
+    >>> remove_vowels('abcdef')
+    'bcdf'
+    >>> remove_vowels('aaaaa')
+    ''
+    >>> remove_vowels('aaBAA')
+    'B'
+    >>> remove_vowels('zbcd')
+    'zbcd'
+    """"""
+    vowels = set('aeiouAEIOU')
+    return ''.join(char for char in text if char not in vowels)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.7328928076932623,0.8322246405689587,0.3355654761904762,0.032621,0.02468,1.3125,0.400390625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 17, ""line_end"": 18, ""evidence"": ""'vowels = set('aeiouAEIOU')\\nreturn ''.join(char for char in text if char not in vowels)'"", ""reason"": ""The use of a set for vowels and a generator expression can be simplified to a more readable list comprehension similar to the reference solution.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.7328928076932623,0.85,7.582892807693262,164
+base_holdout_tasks_50_99,HumanEval/51,1,1,"def remove_vowels(text):
+    vowels = 'aeiouAEIOU'
+    return ''.join(char for char in text if char not in vowels)
+</code>","def remove_vowels(text):
+    vowels = 'aeiouAEIOU'
+    return ''.join(char for char in text if char not in vowels)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9464285714285715,1.0,0.7321428571428572,0.020211,0.02468,0.6015625,0.400390625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 3, ""line_end"": 3, ""evidence"": ""''.join(char for char in text if char not in vowels)"", ""reason"": ""The use of a generator expression within the join method can be considered sub-readable due to its dense nature. A list comprehension might be easier to read.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9464285714285715,0.85,7.796428571428571,38
+base_holdout_tasks_50_99,HumanEval/52,2,0,"def below_threshold(l: list, t: int):
+    """"""Return True if all numbers in the list l are below threshold t.
+    >>> below_threshold([1, 2, 4, 10], 100)
+    True
+    >>> below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""
+    return all(x < t for x in l)
+</code>","def below_threshold(l: list, t: int):
+    """"""Return True if all numbers in the list l are below threshold t.
+    >>> below_threshold([1, 2, 4, 10], 100)
+    True
+    >>> below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""
+    return all(x < t for x in l)",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.42202696396162825,0.4870073891625616,0.16210526315789475,0.01624,0.00719,0.7421875,0.109375,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 8, ""evidence"": ""return all(x < t for x in l)"", ""reason"": ""The use of a generator expression within the all() function, while concise, may be less readable to some developers compared to a more explicit loop structure.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def below_threshold(l: list, t: int):"", ""reason"": ""The variable names 'l' and 't' are not descriptive and could be misleading. More descriptive names like 'numbers' and 'threshold' would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.42202696396162825,0.7,7.022026963961629,98
+base_holdout_tasks_50_99,HumanEval/52,2,1,"def below_threshold(l: list, t: int):
+    """"""Return True if all numbers in the list l are below threshold t.
+    >>> below_threshold([1, 2, 4, 10], 100)
+    True
+    >>> below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""
+    return all(x < t for x in l)
+</code>","def below_threshold(l: list, t: int):
+    """"""Return True if all numbers in the list l are below threshold t.
+    >>> below_threshold([1, 2, 4, 10], 100)
+    True
+    >>> below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""
+    return all(x < t for x in l)",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.42224299829111944,0.4872774320744256,0.16210526315789475,0.016231,0.00719,0.7421875,0.109375,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 8, ""evidence"": ""return all(x < t for x in l)"", ""reason"": ""The use of a generator expression within the all() function, while concise, may be less readable to some developers compared to a more explicit loop structure.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def below_threshold(l: list, t: int):"", ""reason"": ""The variable names 'l' and 't' are not descriptive and could be misleading. More descriptive names like 'numbers' and 'threshold' would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.42224299829111944,0.7,7.02224299829112,98
+base_holdout_tasks_50_99,HumanEval/53,3,0,"def add(x: int, y: int):
+    """"""Add two numbers x and y
+    >>> add(2, 3)
+    5
+    >>> add(5, 7)
+    12
+    """"""
+    return x + y
+</code>","def add(x: int, y: int):
+    """"""Add two numbers x and y
+    >>> add(2, 3)
+    5
+    >>> add(5, 7)
+    12
+    """"""
+    return x + y",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,2.398149,2.41404,308.96484375,308.96484375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,61
+base_holdout_tasks_50_99,HumanEval/53,3,1,"def add(x: int, y: int) -> int:
+    """"""Add two numbers x and y
+    >>> add(2, 3)
+    5
+    >>> add(5, 7)
+    12
+    """"""
+    return x + y
+</code>","def add(x: int, y: int) -> int:
+    """"""Add two numbers x and y
+    >>> add(2, 3)
+    5
+    >>> add(5, 7)
+    12
+    """"""
+    return x + y",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,2.407629,2.41404,308.96484375,308.96484375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,64
+base_holdout_tasks_50_99,HumanEval/54,4,0,"def same_chars(s0: str, s1: str):
+    """"""
+    Check if two words have the same characters.
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>> same_chars('abcd', 'dddddddabc')
+    True
+    >>> same_chars('dddddddabc', 'abcd')
+    True
+    >>> same_chars('eabcd', 'dddddddabc')
+    False
+    >>> same_chars('abcd', 'dddddddabce')
+    False
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""
+    return set(s0) == set(s1)
+</code>","def same_chars(s0: str, s1: str):
+    """"""
+    Check if two words have the same characters.
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>> same_chars('abcd', 'dddddddabc')
+    True
+    >>> same_chars('dddddddabc', 'abcd')
+    True
+    >>> same_chars('eabcd', 'dddddddabc')
+    False
+    >>> same_chars('abcd', 'dddddddabce')
+    False
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""
+    return set(s0) == set(s1)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01323,0.01284,1.5,1.5,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,159
+base_holdout_tasks_50_99,HumanEval/54,4,1,"def same_chars(s0: str, s1: str):
+    """"""
+    Check if two words have the same characters.
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>> same_chars('abcd', 'dddddddabc')
+    True
+    >>> same_chars('dddddddabc', 'abcd')
+    True
+    >>> same_chars('eabcd', 'dddddddabc')
+    False
+    >>> same_chars('abcd', 'dddddddabce')
+    False
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""
+    return set(s0) == set(s1)
+</code>","def same_chars(s0: str, s1: str):
+    """"""
+    Check if two words have the same characters.
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>> same_chars('abcd', 'dddddddabc')
+    True
+    >>> same_chars('dddddddabc', 'abcd')
+    True
+    >>> same_chars('eabcd', 'dddddddabc')
+    False
+    >>> same_chars('abcd', 'dddddddabce')
+    False
+    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""
+    return set(s0) == set(s1)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01312,0.01284,1.5,1.5,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,159
+base_holdout_tasks_50_99,HumanEval/55,5,0,"def fib(n: int):
+    """"""Return n-th Fibonacci number.
+    >>> fib(10)
+    55
+    >>> fib(1)
+    1
+    >>> fib(8)
+    21
+    """"""
+    if n <= 0:
+        raise ValueError(""n must be a positive integer"")
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    
+    a, b = 1, 1
+    for _ in range(2, n):
+        a, b = b, a + b
+    return b
+</code>","def fib(n: int):
+    """"""Return n-th Fibonacci number.
+    >>> fib(10)
+    55
+    >>> fib(1)
+    1
+    >>> fib(8)
+    21
+    """"""
+    if n <= 0:
+        raise ValueError(""n must be a positive integer"")
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    
+    a, b = 1, 1
+    for _ in range(2, n):
+        a, b = b, a + b
+    return b",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,0.9581250000000001,1.0,0.790625,0.00894,0.041521,0.125,0.08984375,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 12, ""line_end"": 15, ""evidence"": ""if n == 1:\n    return 1\nif n == 2:\n    return 1"", ""reason"": ""The return value for n == 1 and n == 2 is the same (1), which can be combined to avoid duplication.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.9581250000000001,0.85,7.758125,141
+base_holdout_tasks_50_99,HumanEval/55,5,1,"def fib(n: int):
+    """"""Return n-th Fibonacci number.
+    >>> fib(10)
+    55
+    >>> fib(1)
+    1
+    >>> fib(8)
+    21
+    """"""
+    if n <= 0:
+        raise ValueError(""n must be a positive integer"")
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    a, b = 1, 1
+    for _ in range(2, n):
+        a, b = b, a + b
+    return b
+</code>","def fib(n: int):
+    """"""Return n-th Fibonacci number.
+    >>> fib(10)
+    55
+    >>> fib(1)
+    1
+    >>> fib(8)
+    21
+    """"""
+    if n <= 0:
+        raise ValueError(""n must be a positive integer"")
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    a, b = 1, 1
+    for _ in range(2, n):
+        a, b = b, a + b
+    return b",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9581250000000001,1.0,0.790625,0.0095,0.041521,0.125,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9581250000000001,1.0,7.958125,141
+base_holdout_tasks_50_99,HumanEval/56,6,0,"def correct_bracketing(brackets: str):
+    count = 0
+    for char in brackets:
+        if char == '<':
+            count += 1
+        elif char == '>':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
+</code>","def correct_bracketing(brackets: str):
+    count = 0
+    for char in brackets:
+        if char == '<':
+            count += 1
+        elif char == '>':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01122,0.01107,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 8, ""evidence"": ""if char == '<': ... elif char == '>': ..."", ""reason"": ""The use of 'elif' in this context is unnecessary and makes the code slightly harder to read compared to using separate 'if' statements.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,72
+base_holdout_tasks_50_99,HumanEval/56,6,1,"def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '<':
+            count += 1
+        elif bracket == '>':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
+</code>","def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '<':
+            count += 1
+        elif bracket == '>':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01098,0.01107,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 7, ""evidence"": ""if bracket == '<':\n    count += 1\nelif bracket == '>':\n    count -= 1"", ""reason"": ""The use of an if-elif structure here is unnecessarily verbose. A simpler approach using a dictionary to map brackets to their respective values could improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,72
+base_holdout_tasks_50_99,HumanEval/57,7,0,"def monotonic(l: list):
+    """"""Return True is list elements are monotonically increasing or decreasing.
+    >>> monotonic([1, 2, 4, 20])
+    True
+    >>> monotonic([1, 20, 4, 10])
+    False
+    >>> monotonic([4, 1, 0, -10])
+    True
+    """"""
+    if len(l) <= 1:
+        return True
+    
+    increasing = True
+    decreasing = True
+    
+    for i in range(1, len(l)):
+        if l[i] > l[i-1]:
+            decreasing = False
+        if l[i] < l[i-1]:
+            increasing = False
+            
+    return increasing or decreasing
+</code>","def monotonic(l: list):
+    """"""Return True is list elements are monotonically increasing or decreasing.
+    >>> monotonic([1, 2, 4, 20])
+    True
+    >>> monotonic([1, 20, 4, 10])
+    False
+    >>> monotonic([4, 1, 0, -10])
+    True
+    """"""
+    if len(l) <= 1:
+        return True
+    
+    increasing = True
+    decreasing = True
+    
+    for i in range(1, len(l)):
+        if l[i] > l[i-1]:
+            decreasing = False
+        if l[i] < l[i-1]:
+            increasing = False
+            
+    return increasing or decreasing",ok,ok,ok,,,,passed,,,ok,violations,0.75,2.5,4,"E741,W293,W293,W293",E741: Ambiguous variable name: `l` | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.9893018492861876,0.9866273116077344,1.0,0.016601,0.01489,0.171875,0.1953125,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 16, ""line_end"": 21, ""evidence"": ""for i in range(1, len(l)): ..."", ""reason"": ""The use of a for loop with index-based access (l[i], l[i-1]) makes the code less readable compared to using pairwise iteration.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 11, ""evidence"": ""if len(l) <= 1: return True"", ""reason"": ""The conditional block can be simplified by directly checking the length condition within the return statement.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.75,1.0,1.0,0.9893018492861876,0.7,7.4393018492861875,170
+base_holdout_tasks_50_99,HumanEval/57,7,1,"def monotonic(l: list):
+    """"""Return True is list elements are monotonically increasing or decreasing.
+    >>> monotonic([1, 2, 4, 20])
+    True
+    >>> monotonic([1, 20, 4, 10])
+    False
+    >>> monotonic([4, 1, 0, -10])
+    True
+    """"""
+    if len(l) <= 1:
+        return True
+    
+    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))
+    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))
+    
+    return increasing or decreasing
+</code>","def monotonic(l: list):
+    """"""Return True is list elements are monotonically increasing or decreasing.
+    >>> monotonic([1, 2, 4, 20])
+    True
+    >>> monotonic([1, 20, 4, 10])
+    False
+    >>> monotonic([4, 1, 0, -10])
+    True
+    """"""
+    if len(l) <= 1:
+        return True
+    
+    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))
+    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))
+    
+    return increasing or decreasing",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,3,"E741,W293,W293",E741: Ambiguous variable name: `l` | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.3301903837823862,0.34466867279728963,0.2722772277227723,0.047521,0.01489,0.7890625,0.1953125,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,0.3301903837823862,0.0,6.130190383782386,167
+base_holdout_tasks_50_99,HumanEval/58,8,0,"def common(l1: list, l2: list):
+    """"""Return sorted unique common elements for two lists.
+    >>> common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121])
+    [1, 5, 653]
+    >>> common([5, 3, 2, 8], [3, 2])
+    [2, 3]
+
+    """"""
+    return sorted(list(set(l1) & set(l2)))
+</code>","def common(l1: list, l2: list):
+    """"""Return sorted unique common elements for two lists.
+    >>> common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121])
+    [1, 5, 653]
+    >>> common([5, 3, 2, 8], [3, 2])
+    [2, 3]
+
+    """"""
+    return sorted(list(set(l1) & set(l2)))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8739737991266376,1.0,0.36986899563318776,0.01975,0.025301,1.7890625,0.6015625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 9, ""line_end"": 9, ""evidence"": ""return sorted(list(set(l1) & set(l2)))"", ""reason"": ""The use of nested function calls (sorted, list, set) and set intersection operator (&) makes the code less readable compared to a more verbose but clearer approach.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def common(l1: list, l2: list):"", ""reason"": ""Variable names 'l1' and 'l2' are not descriptive and could be more clearly named to reflect their purpose or content.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8739737991266376,0.7,7.573973799126638,141
+base_holdout_tasks_50_99,HumanEval/58,8,1,"def common(l1: list, l2: list):
+    return sorted(list(set(l1) & set(l2)))
+</code>","def common(l1: list, l2: list):
+    return sorted(list(set(l1) & set(l2)))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8739737991266376,1.0,0.36986899563318776,0.01936,0.025301,1.7890625,0.6015625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sorted(list(set(l1) & set(l2)))"", ""reason"": ""The use of nested function calls (sorted, list, set) and set intersection operator (&) makes the code less readable compared to a more explicit approach.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def common(l1: list, l2: list):"", ""reason"": ""Variable names 'l1' and 'l2' are not descriptive and could be more meaningful to improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8739737991266376,0.7,7.573973799126638,30
+base_holdout_tasks_50_99,HumanEval/59,9,0,"def largest_prime_factor(n: int):
+    """"""Return the largest prime factor of n. Assume n > 1 and is not a prime.
+    >>> largest_prime_factor(13195)
+    29
+    >>> largest_prime_factor(2048)
+    2
+    """"""
+    largest = -1
+    # Remove all factors of 2
+    while n % 2 == 0:
+        largest = 2
+        n //= 2
+    
+    # n must be odd at this point, so we can skip even numbers
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            largest = i
+            n //= i
+        i += 2
+    
+    # If n is a prime number greater than 2
+    if n > 2:
+        largest = n
+    
+    return largest
+</code>","def largest_prime_factor(n: int):
+    """"""Return the largest prime factor of n. Assume n > 1 and is not a prime.
+    >>> largest_prime_factor(13195)
+    29
+    >>> largest_prime_factor(2048)
+    2
+    """"""
+    largest = -1
+    # Remove all factors of 2
+    while n % 2 == 0:
+        largest = 2
+        n //= 2
+    
+    # n must be odd at this point, so we can skip even numbers
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            largest = i
+            n //= i
+        i += 2
+    
+    # If n is a prime number greater than 2
+    if n > 2:
+        largest = n
+    
+    return largest",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.00915,5.332276,0.09375,0.4140625,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,1.0,0.0,6.85,197
+base_holdout_tasks_50_99,HumanEval/59,9,1,"def largest_prime_factor(n: int):
+    """"""Return the largest prime factor of n. Assume n > 1 and is not a prime.
+    >>> largest_prime_factor(13195)
+    29
+    >>> largest_prime_factor(2048)
+    2
+    """"""
+    max_prime = -1
+    
+    # Divide by 2 to remove all even factors
+    while n % 2 == 0:
+        max_prime = 2
+        n //= 2
+    
+    # n must be odd at this point, so we can skip even numbers
+    for i in range(3, int(n**0.5) + 1, 2):
+        while n % i == 0:
+            max_prime = i
+            n //= i
+    
+    # If n is a prime number greater than 2
+    if n > 2:
+        max_prime = n
+    
+    return max_prime
+</code>","def largest_prime_factor(n: int):
+    """"""Return the largest prime factor of n. Assume n > 1 and is not a prime.
+    >>> largest_prime_factor(13195)
+    29
+    >>> largest_prime_factor(2048)
+    2
+    """"""
+    max_prime = -1
+    
+    # Divide by 2 to remove all even factors
+    while n % 2 == 0:
+        max_prime = 2
+        n //= 2
+    
+    # n must be odd at this point, so we can skip even numbers
+    for i in range(3, int(n**0.5) + 1, 2):
+        while n % i == 0:
+            max_prime = i
+            n //= i
+    
+    # If n is a prime number greater than 2
+    if n > 2:
+        max_prime = n
+    
+    return max_prime",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"W293,W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.023801,5.332276,0.140625,0.4140625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 8, ""evidence"": ""max_prime = -1"", ""reason"": ""Initializing `max_prime` to -1 is confusing since prime factors cannot be negative. A more intuitive initialization like `None` or a comment explaining the purpose would improve readability.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 21, ""line_end"": 23, ""evidence"": ""if n > 2:\n    max_prime = n"", ""reason"": ""The conditional block can be simplified to directly assign `max_prime` to `n` if `n` is greater than 2, as the previous logic ensures that `n` will only be a prime number at this point.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,1.0,0.7,7.5,207
+base_holdout_tasks_50_99,HumanEval/60,10,0,"def sum_to_n(n: int):
+    """"""sum_to_n is a function that sums numbers from 1 to n.
+    >>> sum_to_n(30)
+    465
+    >>> sum_to_n(100)
+    5050
+    >>> sum_to_n(5)
+    15
+    >>> sum_to_n(10)
+    55
+    >>> sum_to_n(1)
+    1
+    """"""
+    return n * (n + 1) // 2
+</code>","def sum_to_n(n: int):
+    """"""sum_to_n is a function that sums numbers from 1 to n.
+    >>> sum_to_n(30)
+    465
+    >>> sum_to_n(100)
+    5050
+    >>> sum_to_n(5)
+    15
+    >>> sum_to_n(10)
+    55
+    >>> sum_to_n(1)
+    1
+    """"""
+    return n * (n + 1) // 2",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00468,0.00778,0.09375,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,123
+base_holdout_tasks_50_99,HumanEval/60,10,1,"def sum_to_n(n: int):
+    """"""sum_to_n is a function that sums numbers from 1 to n.
+    >>> sum_to_n(30)
+    465
+    >>> sum_to_n(100)
+    5050
+    >>> sum_to_n(5)
+    15
+    >>> sum_to_n(10)
+    55
+    >>> sum_to_n(1)
+    1
+    """"""
+    return n * (n + 1) // 2
+</code>","def sum_to_n(n: int):
+    """"""sum_to_n is a function that sums numbers from 1 to n.
+    >>> sum_to_n(30)
+    465
+    >>> sum_to_n(100)
+    5050
+    >>> sum_to_n(5)
+    15
+    >>> sum_to_n(10)
+    55
+    >>> sum_to_n(1)
+    1
+    """"""
+    return n * (n + 1) // 2",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00478,0.00778,0.09375,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,123
+base_holdout_tasks_50_99,HumanEval/61,11,0,"def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '(':
+            count += 1
+        else:
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
+</code>","def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '(':
+            count += 1
+        else:
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01091,0.01125,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 7, ""evidence"": ""if bracket == '(': count += 1 else: count -= 1"", ""reason"": ""The use of an else block after incrementing/decrementing the counter can be simplified into a single line using a ternary operator or a dictionary lookup, which would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,69
+base_holdout_tasks_50_99,HumanEval/61,11,1,"def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '(':
+            count += 1
+        elif bracket == ')':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
+</code>","def correct_bracketing(brackets: str):
+    count = 0
+    for bracket in brackets:
+        if bracket == '(':
+            count += 1
+        elif bracket == ')':
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01077,0.01125,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 7, ""evidence"": ""if bracket == '(':\n    count += 1\nelif bracket == ')':\n    count -= 1"", ""reason"": ""The use of 'elif' here makes the code slightly harder to read than using two separate 'if' statements, which would make each condition clearer.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,72
+base_holdout_tasks_50_99,HumanEval/62,12,0,"def derivative(xs: list):
+    if not xs or len(xs) == 1:
+        return [0]
+    return [xs[i] * i for i in range(1, len(xs))]
+</code>","def derivative(xs: list):
+    if not xs or len(xs) == 1:
+        return [0]
+    return [xs[i] * i for i in range(1, len(xs))]",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 28, in <module>
+  File ""<string>"", line 24, in check
+AssertionError
+",ok,ok,1.0,0.0,0,,,not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.5,48
+base_holdout_tasks_50_99,HumanEval/62,12,1,"def derivative(xs: list):
+    if not xs:
+        return []
+    result = []
+    for i in range(1, len(xs)):
+        result.append(xs[i] * i)
+    return result
+</code>","def derivative(xs: list):
+    if not xs:
+        return []
+    result = []
+    for i in range(1, len(xs)):
+        result.append(xs[i] * i)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01389,0.016741,0.171875,0.421875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""for i in range(1, len(xs)):\n    result.append(xs[i] * i)"", ""reason"": ""Using a list comprehension instead of a for loop and append method would make the code more readable and concise.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,51
+base_holdout_tasks_50_99,HumanEval/63,13,0,"def fibfib(n: int):
+    if n == 0 or n == 1:
+        return 0
+    if n == 2:
+        return 1
+    
+    a, b, c = 0, 0, 1
+    for _ in range(3, n + 1):
+        a, b, c = b, c, a + b + c
+    return c
+</code>","def fibfib(n: int):
+    if n == 0 or n == 1:
+        return 0
+    if n == 2:
+        return 1
+    
+    a, b, c = 0, 0, 1
+    for _ in range(3, n + 1):
+        a, b, c = b, c, a + b + c
+    return c",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,0.9353846153846155,1.0,0.676923076923077,0.014031,0.212093,0.203125,0.125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 5, ""evidence"": ""if n == 0 or n == 1:\n    return 0\nif n == 2:\n    return 1"", ""reason"": ""The conditional checks can be simplified to reduce nesting and improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.9353846153846155,0.85,7.735384615384615,93
+base_holdout_tasks_50_99,HumanEval/63,13,1,"def fibfib(n: int):
+    if n == 0 or n == 1:
+        return 0
+    if n == 2:
+        return 1
+    
+    a, b, c = 0, 0, 1
+    for _ in range(3, n + 1):
+        a, b, c = b, c, a + b + c
+    return c
+</code>","def fibfib(n: int):
+    if n == 0 or n == 1:
+        return 0
+    if n == 2:
+        return 1
+    
+    a, b, c = 0, 0, 1
+    for _ in range(3, n + 1):
+        a, b, c = b, c, a + b + c
+    return c",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,0.9353846153846155,1.0,0.676923076923077,0.01328,0.212093,0.203125,0.125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 5, ""evidence"": ""if n == 0 or n == 1:\n    return 0\nif n == 2:\n    return 1"", ""reason"": ""The conditional checks can be simplified to reduce nesting and improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.9353846153846155,0.85,7.735384615384615,93
+base_holdout_tasks_50_99,HumanEval/64,14,0,"def vowels_count(s):
+    vowels = set('aeiouAEIOU')
+    count = 0
+    s_lower = s.lower()
+    for i, char in enumerate(s):
+        if char.lower() in vowels:
+            count += 1
+        elif char.lower() == 'y' and i == len(s) - 1:
+            count += 1
+    return count
+
+</code>","def vowels_count(s):
+    vowels = set('aeiouAEIOU')
+    count = 0
+    s_lower = s.lower()
+    for i, char in enumerate(s):
+        if char.lower() in vowels:
+            count += 1
+        elif char.lower() == 'y' and i == len(s) - 1:
+            count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.5264992687778542,0.5217419721511795,0.545528455284553,0.03519,0.016691,0.9609375,0.4765625,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 9, ""evidence"": ""for i, char in enumerate(s): ... if char.lower() in vowels: ... elif char.lower() == 'y' and i == len(s) - 1:"", ""reason"": ""The use of `enumerate` and checking each character's lowercase version twice (lines 6 and 8) makes the code harder to read than necessary. A simpler approach would be to convert the entire string to lowercase once and then check for vowels.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.5264992687778542,0.65,7.176499268777855,90
+base_holdout_tasks_50_99,HumanEval/64,14,1,"def vowels_count(s):
+    """"""Write a function vowels_count which takes a string representing
+    a word as input and returns the number of vowels in the string.
+    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a
+    vowel, but only when it is at the end of the given word.
+
+    Example:
+    >>> vowels_count(""abcde"")
+    2
+    >>> vowels_count(""ACEDY"")
+    3
+    """"""
+    s = s.lower()
+    count = sum(1 for c in s[:-1] if c in 'aeiou')
+    if s and s[-1] in 'aeiouy':
+        count += 1
+    return count
+</code>","def vowels_count(s):
+    """"""Write a function vowels_count which takes a string representing
+    a word as input and returns the number of vowels in the string.
+    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a
+    vowel, but only when it is at the end of the given word.
+
+    Example:
+    >>> vowels_count(""abcde"")
+    2
+    >>> vowels_count(""ACEDY"")
+    3
+    """"""
+    s = s.lower()
+    count = sum(1 for c in s[:-1] if c in 'aeiou')
+    if s and s[-1] in 'aeiouy':
+        count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9962705667276052,1.0,0.9813528336380257,0.01567,0.016691,0.5341796875,0.4765625,,ok,0.5,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 14, ""line_end"": 16, ""evidence"": ""count = sum(1 for c in s[:-1] if c in 'aeiou')\nif s and s[-1] in 'aeiouy':\n    count += 1"", ""reason"": ""The code uses a generator expression within a sum function and then separately checks the last character. This can be simplified into a single loop or a more readable approach.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 15, ""line_end"": 16, ""evidence"": ""if s and s[-1] in 'aeiouy':\n    count += 1"", ""reason"": ""The conditional block can be simplified by checking the last character in the same loop or expression used to count other vowels.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9962705667276052,0.5,7.496270566727605,174
+base_holdout_tasks_50_99,HumanEval/65,15,0,"def circular_shift(x, shift):
+    """"""Circular shift the digits of the integer x, shift the digits right by shift
+    and return the result as a string.
+    If shift > number of digits, return digits reversed.
+    >>> circular_shift(12, 1)
+    ""21""
+    >>> circular_shift(12, 2)
+    ""12""
+    """"""
+    s = str(x)
+    n = len(s)
+    if shift > n:
+        return s[::-1]
+    shift = shift % n
+    if shift == 0:
+        return s
+    return s[-shift:] + s[:-shift]
+</code>","def circular_shift(x, shift):
+    """"""Circular shift the digits of the integer x, shift the digits right by shift
+    and return the result as a string.
+    If shift > number of digits, return digits reversed.
+    >>> circular_shift(12, 1)
+    ""21""
+    >>> circular_shift(12, 2)
+    ""12""
+    """"""
+    s = str(x)
+    n = len(s)
+    if shift > n:
+        return s[::-1]
+    shift = shift % n
+    if shift == 0:
+        return s
+    return s[-shift:] + s[:-shift]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01014,0.01029,0.1826171875,0.1826171875,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""medium"", ""line_start"": 15, ""line_end"": 16, ""evidence"": ""if shift == 0:\n    return s"", ""reason"": ""The conditional block can be simplified without changing behavior. The return value when shift == 0 can be included in the final return statement.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,150
+base_holdout_tasks_50_99,HumanEval/65,15,1,"def circular_shift(x, shift):
+    s = str(x)
+    n = len(s)
+    if shift > n:
+        return s[::-1]
+    shift = shift % n
+    if shift == 0:
+        return s
+    return s[-shift:] + s[:-shift]
+</code>","def circular_shift(x, shift):
+    s = str(x)
+    n = len(s)
+    if shift > n:
+        return s[::-1]
+    shift = shift % n
+    if shift == 0:
+        return s
+    return s[-shift:] + s[:-shift]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00994,0.01029,0.1826171875,0.1826171875,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""medium"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""if shift == 0:\n    return s"", ""reason"": ""The conditional block can be simplified without changing behavior. The return statement inside the if block can be moved outside the if block since the same logic applies.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,70
+base_holdout_tasks_50_99,HumanEval/66,16,0,"def digitSum(s):
+    return sum(ord(c) for c in s if c.isupper())
+</code>","def digitSum(s):
+    return sum(ord(c) for c in s if c.isupper())",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01396,0.01486,0.4375,0.4375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sum(ord(c) for c in s if c.isupper())"", ""reason"": ""The use of a generator expression with a filter condition (if c.isupper()) can be considered sub-readable due to its dense nature. A more verbose approach might be easier to follow.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,25
+base_holdout_tasks_50_99,HumanEval/66,16,1,"def digitSum(s):
+    return sum(ord(c) for c in s if c.isupper())
+</code>","def digitSum(s):
+    return sum(ord(c) for c in s if c.isupper())",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.014221,0.01486,0.4375,0.4375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sum(ord(c) for c in s if c.isupper())"", ""reason"": ""The use of a generator expression with a filter condition (if c.isupper()) can be considered sub-readable due to its dense nature. A more verbose approach might be easier to follow.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,25
+base_holdout_tasks_50_99,HumanEval/67,17,0,"def fruit_distribution(s, n):
+    """"""
+    In this task, you will be given a string that represents a number of apples and oranges 
+    that are distributed in a basket of fruit this basket contains 
+    apples, oranges, and mango fruits. Given the string that represents the total number of 
+    the oranges and apples and an integer that represent the total number of the fruits 
+    in the basket return the number of the mango fruits in the basket.
+    for examble:
+    fruit_distribution(""5 apples and 6 oranges"", 19) ->19 - 5 - 6 = 8
+    fruit_distribution(""0 apples and 1 oranges"",3) -> 3 - 0 - 1 = 2
+    fruit_distribution(""2 apples and 3 oranges"", 100) -> 100 - 2 - 3 = 95
+    fruit_distribution(""100 apples and 1 oranges"",120) -> 120 - 100 - 1 = 19
+    """"""
+    import re
+    numbers = re.findall(r'\d+', s)
+    apples = int(numbers[0])
+    oranges = int(numbers[1])
+    return n - apples - oranges
+</code>","def fruit_distribution(s, n):
+    """"""
+    In this task, you will be given a string that represents a number of apples and oranges 
+    that are distributed in a basket of fruit this basket contains 
+    apples, oranges, and mango fruits. Given the string that represents the total number of 
+    the oranges and apples and an integer that represent the total number of the fruits 
+    in the basket return the number of the mango fruits in the basket.
+    for examble:
+    fruit_distribution(""5 apples and 6 oranges"", 19) ->19 - 5 - 6 = 8
+    fruit_distribution(""0 apples and 1 oranges"",3) -> 3 - 0 - 1 = 2
+    fruit_distribution(""2 apples and 3 oranges"", 100) -> 100 - 2 - 3 = 95
+    fruit_distribution(""100 apples and 1 oranges"",120) -> 120 - 100 - 1 = 19
+    """"""
+    import re
+    numbers = re.findall(r'\d+', s)
+    apples = int(numbers[0])
+    oranges = int(numbers[1])
+    return n - apples - oranges",ok,ok,ok,,,,passed,,,ok,violations,0.7,3.0,6,"E501,W291,W291,E501,W291,W291",E501: Line too long (92 > 88) | W291: Trailing whitespace | W291: Trailing whitespace | E501: Line too long (92 > 88) | W291: Trailing whitespace | W291: Trailing whitespace,ok,0.33003477064217795,0.28142072574616134,0.5244909502262444,0.139112,0.03559,1.7265625,0.8232421875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 15, ""line_end"": 17, ""evidence"": ""numbers = re.findall(r'\\d+', s)\napples = int(numbers[0])\noranges = int(numbers[1])"", ""reason"": ""The use of regex to extract numbers and then converting them individually can be simplified by directly calculating the result from the extracted numbers.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.7,1.0,1.0,0.33003477064217795,0.85,6.880034770642178,271
+base_holdout_tasks_50_99,HumanEval/67,17,1,"def fruit_distribution(s, n):
+    """"""
+    In this task, you will be given a string that represents a number of apples and oranges 
+    that are distributed in a basket of fruit this basket contains 
+    apples, oranges, and mango fruits. Given the string that represents the total number of 
+    the oranges and apples and an integer that represent the total number of the fruits 
+    in the basket return the number of the mango fruits in the basket.
+    for examble:
+    fruit_distribution(""5 apples and 6 oranges"", 19) ->19 - 5 - 6 = 8
+    fruit_distribution(""0 apples and 1 oranges"",3) -> 3 - 0 - 1 = 2
+    fruit_distribution(""2 apples and 3 oranges"", 100) -> 100 - 2 - 3 = 95
+    fruit_distribution(""100 apples and 1 oranges"",120) -> 120 - 100 - 1 = 19
+    """"""
+    import re
+    numbers = re.findall(r'\d+', s)
+    apples = int(numbers[0])
+    oranges = int(numbers[1])
+    return n - apples - oranges
+</code>","def fruit_distribution(s, n):
+    """"""
+    In this task, you will be given a string that represents a number of apples and oranges 
+    that are distributed in a basket of fruit this basket contains 
+    apples, oranges, and mango fruits. Given the string that represents the total number of 
+    the oranges and apples and an integer that represent the total number of the fruits 
+    in the basket return the number of the mango fruits in the basket.
+    for examble:
+    fruit_distribution(""5 apples and 6 oranges"", 19) ->19 - 5 - 6 = 8
+    fruit_distribution(""0 apples and 1 oranges"",3) -> 3 - 0 - 1 = 2
+    fruit_distribution(""2 apples and 3 oranges"", 100) -> 100 - 2 - 3 = 95
+    fruit_distribution(""100 apples and 1 oranges"",120) -> 120 - 100 - 1 = 19
+    """"""
+    import re
+    numbers = re.findall(r'\d+', s)
+    apples = int(numbers[0])
+    oranges = int(numbers[1])
+    return n - apples - oranges",ok,ok,ok,,,,passed,,,ok,violations,0.7,3.0,6,"E501,W291,W291,E501,W291,W291",E501: Line too long (92 > 88) | W291: Trailing whitespace | W291: Trailing whitespace | E501: Line too long (92 > 88) | W291: Trailing whitespace | W291: Trailing whitespace,ok,0.3399532027289372,0.29381876585461036,0.5244909502262444,0.133242,0.03559,1.7265625,0.8232421875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 15, ""line_end"": 17, ""evidence"": ""numbers = re.findall(r'\\d+', s)\napples = int(numbers[0])\noranges = int(numbers[1])"", ""reason"": ""The use of regex to extract numbers and then converting them individually can be simplified by directly calculating the result from the extracted numbers.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.7,1.0,1.0,0.3399532027289372,0.85,6.889953202728937,271
+base_holdout_tasks_50_99,HumanEval/68,18,0,"def pluck(arr):
+    min_even = None
+    min_index = None
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            if min_even is None or val < min_even:
+                min_even = val
+                min_index = i
+    if min_even is None:
+        return []
+    return [min_even, min_index]
+</code>","def pluck(arr):
+    min_even = None
+    min_index = None
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            if min_even is None or val < min_even:
+                min_even = val
+                min_index = i
+    if min_even is None:
+        return []
+    return [min_even, min_index]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02293,0.037141,0.2265625,0.75,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 8, ""evidence"": ""if val % 2 == 0:\n    if min_even is None or val < min_even:\n        min_even = val\n        min_index = i"", ""reason"": ""The nested if statements can be simplified to improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,89
+base_holdout_tasks_50_99,HumanEval/68,18,1,"def pluck(arr):
+    min_even = float('inf')
+    min_index = -1
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            if val < min_even or (val == min_even and (min_index == -1 or i < min_index)):
+                min_even = val
+                min_index = i
+    if min_index == -1:
+        return []
+    return [min_even, min_index]
+</code>","def pluck(arr):
+    min_even = float('inf')
+    min_index = -1
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            if val < min_even or (val == min_even and (min_index == -1 or i < min_index)):
+                min_even = val
+                min_index = i
+    if min_index == -1:
+        return []
+    return [min_even, min_index]",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,E501,E501: Line too long (90 > 88),ok,1.0,1.0,1.0,0.02329,0.037141,0.2265625,0.75,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 6, ""line_end"": 8, ""evidence"": ""if val < min_even or (val == min_even and (min_index == -1 or i < min_index)): min_even = val min_index = i"", ""reason"": ""The logic inside the if statement is complex and can be simplified to improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,1.0,0.65,7.6000000000000005,107
+base_holdout_tasks_50_99,HumanEval/69,19,0,"def search(lst):
+    from collections import Counter
+    counts = Counter(lst)
+    result = -1
+    for num, freq in counts.items():
+        if num > 0 and freq >= num:
+            if num > result:
+                result = num
+    return result
+</code>","def search(lst):
+    from collections import Counter
+    counts = Counter(lst)
+    result = -1
+    for num, freq in counts.items():
+        if num > 0 and freq >= num:
+            if num > result:
+                result = num
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.46304926000358737,0.537602242109315,0.16483733158067698,0.166272,0.081262,2.9716796875,0.4453125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""if num > result:\n    result = num"", ""reason"": ""The nested if statement can be simplified to a single assignment within the existing if block, making the code easier to follow.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.46304926000358737,0.85,7.313049260003587,65
+base_holdout_tasks_50_99,HumanEval/69,19,1,"def search(lst):
+    from collections import Counter
+    counts = Counter(lst)
+    result = -1
+    for num, freq in counts.items():
+        if num > 0 and freq >= num:
+            if num > result:
+                result = num
+    return result
+</code>","def search(lst):
+    from collections import Counter
+    counts = Counter(lst)
+    result = -1
+    for num, freq in counts.items():
+        if num > 0 and freq >= num:
+            if num > result:
+                result = num
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.48313560919036513,0.5627101785927872,0.16483733158067698,0.158853,0.081262,2.9716796875,0.4453125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""if num > result:\n    result = num"", ""reason"": ""The nested if statement can be simplified to a single assignment within the existing if block, making the code easier to follow.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.48313560919036513,0.85,7.333135609190364,65
+base_holdout_tasks_50_99,HumanEval/70,20,0,"def strange_sort_list(lst):
+    if not lst:
+        return []
+    
+    sorted_lst = sorted(lst)
+    result = []
+    left = 0
+    right = len(sorted_lst) - 1
+    pick_min = True
+    
+    while left <= right:
+        if pick_min:
+            result.append(sorted_lst[left])
+            left += 1
+        else:
+            result.append(sorted_lst[right])
+            right -= 1
+        pick_min = not pick_min
+        
+    return result
+</code>","def strange_sort_list(lst):
+    if not lst:
+        return []
+    
+    sorted_lst = sorted(lst)
+    result = []
+    left = 0
+    right = len(sorted_lst) - 1
+    pick_min = True
+    
+    while left <= right:
+        if pick_min:
+            result.append(sorted_lst[left])
+            left += 1
+        else:
+            result.append(sorted_lst[right])
+            right -= 1
+        pick_min = not pick_min
+        
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.997241379310345,1.0,0.9862068965517242,0.026501,0.040021,0.2265625,0.203125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 11, ""line_end"": 18, ""evidence"": ""while left <= right:\n    if pick_min:\n        result.append(sorted_lst[left])\n        left += 1\n    else:\n        result.append(sorted_lst[right])\n        right -= 1\n    pick_min = not pick_min"", ""reason"": ""The 'else' block after the 'if pick_min' can be removed and the logic can be simplified without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,0.997241379310345,0.85,7.697241379310344,114
+base_holdout_tasks_50_99,HumanEval/70,20,1,"def strange_sort_list(lst):
+    if not lst:
+        return []
+    
+    sorted_lst = sorted(lst)
+    result = []
+    left, right = 0, len(sorted_lst) - 1
+    pick_min = True
+    
+    while left <= right:
+        if pick_min:
+            result.append(sorted_lst[left])
+            left += 1
+        else:
+            result.append(sorted_lst[right])
+            right -= 1
+        pick_min = not pick_min
+        
+    return result
+</code>","def strange_sort_list(lst):
+    if not lst:
+        return []
+    
+    sorted_lst = sorted(lst)
+    result = []
+    left, right = 0, len(sorted_lst) - 1
+    pick_min = True
+    
+    while left <= right:
+        if pick_min:
+            result.append(sorted_lst[left])
+            left += 1
+        else:
+            result.append(sorted_lst[right])
+            right -= 1
+        pick_min = not pick_min
+        
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.997241379310345,1.0,0.9862068965517242,0.02616,0.040021,0.2265625,0.203125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 17, ""evidence"": ""while left <= right:\n    if pick_min:\n        result.append(sorted_lst[left])\n        left += 1\n    else:\n        result.append(sorted_lst[right])\n        right -= 1\n    pick_min = not pick_min"", ""reason"": ""The use of a while loop with multiple conditions and manual index management makes the code harder to follow compared to a simpler approach.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,0.997241379310345,0.85,7.697241379310344,113
+base_holdout_tasks_50_99,HumanEval/71,21,0,"import math
+
+def triangle_area(a, b, c):
+    # Check if the sides form a valid triangle
+    if a + b > c and a + c > b and b + c > a:
+        # Calculate the semi-perimeter
+        s = (a + b + c) / 2
+        # Calculate the area using Heron's formula
+        area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+        return round(area, 2)
+    else:
+        return -1
+</code>","import math
+
+def triangle_area(a, b, c):
+    # Check if the sides form a valid triangle
+    if a + b > c and a + c > b and b + c > a:
+        # Calculate the semi-perimeter
+        s = (a + b + c) / 2
+        # Calculate the area using Heron's formula
+        area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+        return round(area, 2)
+    else:
+        return -1",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.016431,0.025031,0.1015625,0.1015625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 11, ""line_end"": 12, ""evidence"": ""else:\n    return -1"", ""reason"": ""The else block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,124
+base_holdout_tasks_50_99,HumanEval/71,21,1,"def triangle_area(a, b, c):
+    if a + b > c and a + c > b and b + c > a:
+        s = (a + b + c) / 2
+        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+        return round(area, 2)
+    else:
+        return -1
+</code>","def triangle_area(a, b, c):
+    if a + b > c and a + c > b and b + c > a:
+        s = (a + b + c) / 2
+        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+        return round(area, 2)
+    else:
+        return -1",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02378,0.025031,0.1015625,0.1015625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 7, ""evidence"": ""else:\n    return -1"", ""reason"": ""The else block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,95
+base_holdout_tasks_50_99,HumanEval/72,22,0,"def will_it_fly(q, w):
+    return q == q[::-1] and sum(q) <= w
+</code>","def will_it_fly(q, w):
+    return q == q[::-1] and sum(q) <= w",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.009541,0.00897,0.109375,0.109375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return q == q[::-1] and sum(q) <= w"", ""reason"": ""The use of chained conditions and slicing (q[::-1]) makes the code harder to read compared to a more explicit approach.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,28
+base_holdout_tasks_50_99,HumanEval/72,22,1,"def will_it_fly(q, w):
+    is_balanced = q == q[::-1]
+    total_weight = sum(q)
+    return is_balanced and total_weight <= w
+</code>","def will_it_fly(q, w):
+    is_balanced = q == q[::-1]
+    total_weight = sum(q)
+    return is_balanced and total_weight <= w",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9715374841168998,0.9644218551461246,1.0,0.010231,0.00897,0.109375,0.109375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 3, ""evidence"": ""is_balanced = q == q[::-1]\ntotal_weight = sum(q)"", ""reason"": ""The use of slicing and summing in separate lines can be considered sub-readable as it breaks down the logic into multiple steps instead of a more cohesive single-line check.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9715374841168998,0.85,7.8215374841169,44
+base_holdout_tasks_50_99,HumanEval/73,23,0,"def smallest_change(arr):
+    changes = 0
+    left = 0
+    right = len(arr) - 1
+    while left < right:
+        if arr[left] != arr[right]:
+            changes += 1
+        left += 1
+        right -= 1
+    return changes
+</code>","def smallest_change(arr):
+    changes = 0
+    left = 0
+    right = len(arr) - 1
+    while left < right:
+        if arr[left] != arr[right]:
+            changes += 1
+        left += 1
+        right -= 1
+    return changes",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01073,0.01536,0.09375,0.1875,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 9, ""evidence"": ""while left < right:\n    if arr[left] != arr[right]:\n        changes += 1\n    left += 1\n    right -= 1"", ""reason"": ""The candidate uses a while loop with separate increment and decrement operations for left and right indices, whereas the reference solution uses a for loop which is more concise and avoids explicit index manipulation.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,70
+base_holdout_tasks_50_99,HumanEval/73,23,1,"def smallest_change(arr):
+    n = len(arr)
+    changes = 0
+    for i in range(n // 2):
+        if arr[i] != arr[n - 1 - i]:
+            changes += 1
+    return changes
+</code>","def smallest_change(arr):
+    n = len(arr)
+    changes = 0
+    for i in range(n // 2):
+        if arr[i] != arr[n - 1 - i]:
+            changes += 1
+    return changes",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01563,0.01536,0.1875,0.1875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""if arr[i] != arr[n - 1 - i]:\n    changes += 1"", ""reason"": ""The code can be made slightly more readable by using a direct increment within the if statement.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,58
+base_holdout_tasks_50_99,HumanEval/74,24,0,"def total_match(lst1, lst2):
+    def total_chars(lst):
+        total = 0
+        for s in lst:
+            total += len(s)
+        return total
+    
+    chars1 = total_chars(lst1)
+    chars2 = total_chars(lst2)
+    
+    if chars1 <= chars2:
+        return lst1
+    else:
+        return lst2
+</code>","def total_match(lst1, lst2):
+    def total_chars(lst):
+        total = 0
+        for s in lst:
+            total += len(s)
+        return total
+    
+    chars1 = total_chars(lst1)
+    chars2 = total_chars(lst2)
+    
+    if chars1 <= chars2:
+        return lst1
+    else:
+        return lst2",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.8854811576417653,0.9769903359410954,0.5194444444444445,0.02173,0.0193,0.28125,0.1328125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 14, ""evidence"": ""else:\n    return lst2"", ""reason"": ""The else block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.8854811576417653,0.85,7.635481157641765,88
+base_holdout_tasks_50_99,HumanEval/74,24,1,"def total_match(lst1, lst2):
+    def total_chars(lst):
+        total = 0
+        for s in lst:
+            total += len(s)
+        return total
+
+    chars1 = total_chars(lst1)
+    chars2 = total_chars(lst2)
+
+    if chars2 < chars1:
+        return lst2
+    else:
+        return lst1
+</code>","def total_match(lst1, lst2):
+    def total_chars(lst):
+        total = 0
+        for s in lst:
+            total += len(s)
+        return total
+
+    chars1 = total_chars(lst1)
+    chars2 = total_chars(lst2)
+
+    if chars2 < chars1:
+        return lst2
+    else:
+        return lst1",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8790600436127595,0.9689639434048382,0.5194444444444445,0.02191,0.0193,0.28125,0.1328125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 14, ""evidence"": ""else:\n        return lst1"", ""reason"": ""The else block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8790600436127595,0.85,7.729060043612759,87
+base_holdout_tasks_50_99,HumanEval/75,25,0,"def is_multiply_prime(a):
+    primes = []
+    for i in range(2, 100):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            primes.append(i)
+    for i in primes:
+        for j in primes:
+            for k in primes:
+                if i * j * k == a:
+                    return True
+    return False
+</code>","def is_multiply_prime(a):
+    primes = []
+    for i in range(2, 100):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            primes.append(i)
+    for i in primes:
+        for j in primes:
+            for k in primes:
+                if i * j * k == a:
+                    return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9880645161290323,1.0,0.9403225806451614,61.595268,287.353425,0.484375,0.4140625,,ok,0.30000000000000004,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 3, ""line_end"": 8, ""evidence"": ""for i in range(2, 100):\n    for j in range(2, i):\n        if i % j == 0:\n            break\n    else:\n        primes.append(i)"", ""reason"": ""The nested loop and use of 'else' after 'for' is unnecessarily complex and harder to follow than a simpler approach like using a separate function to check primality.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 9, ""line_end"": 12, ""evidence"": ""for i in primes:\n    for j in primes:\n        for k in primes:\n            if i * j * k == a:"", ""reason"": ""The three nested loops over 'primes' are repetitive and could be refactored into a single function to improve maintainability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9880645161290323,0.30000000000000004,7.288064516129032,103
+base_holdout_tasks_50_99,HumanEval/75,25,1,"def is_multiply_prime(a):
+    """"""Write a function that returns true if the given number is the multiplication of 3 prime numbers
+    and false otherwise.
+    Knowing that (a) is less then 100. 
+    Example:
+    is_multiply_prime(30) == True
+    30 = 2 * 3 * 5
+    """"""
+    def is_prime(n):
+        if n < 2:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+    
+    primes = [i for i in range(2, a) if is_prime(i)]
+    
+    for i in primes:
+        for j in primes:
+            for k in primes:
+                if i * j * k == a:
+                    return True
+    return False
+</code>","def is_multiply_prime(a):
+    """"""Write a function that returns true if the given number is the multiplication of 3 prime numbers
+    and false otherwise.
+    Knowing that (a) is less then 100. 
+    Example:
+    is_multiply_prime(30) == True
+    30 = 2 * 3 * 5
+    """"""
+    def is_prime(n):
+        if n < 2:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+    
+    primes = [i for i in range(2, a) if is_prime(i)]
+    
+    for i in primes:
+        for j in primes:
+            for k in primes:
+                if i * j * k == a:
+                    return True
+    return False",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"E501,W291,W293,W293",E501: Line too long (102 > 88) | W291: Trailing whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,timeout,0.0,0.0,0.0,2000.0,0.0,0.0,0.0,timeout,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 19, ""line_end"": 24, ""evidence"": ""for i in primes:\n    for j in primes:\n        for k in primes:\n            if i * j * k == a:\n                return True\nreturn False"", ""reason"": ""The nested loops and the check within them can be simplified to improve readability. The use of three nested loops iterating over the same list is dense and harder to follow than necessary.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,0.0,0.65,6.45,202
+base_holdout_tasks_50_99,HumanEval/76,26,0,"def is_simple_power(x, n):
+    if n == 1:
+        return x == 1
+    if n == 0:
+        return x == 0 or x == 1
+    import math
+    try:
+        exponent = math.log(x) / math.log(n)
+    except ValueError:
+        return False
+    if exponent < 0:
+        return False
+    int_exponent = int(round(exponent))
+    return n ** int_exponent == x
+</code>","def is_simple_power(x, n):
+    if n == 1:
+        return x == 1
+    if n == 0:
+        return x == 0 or x == 1
+    import math
+    try:
+        exponent = math.log(x) / math.log(n)
+    except ValueError:
+        return False
+    if exponent < 0:
+        return False
+    int_exponent = int(round(exponent))
+    return n ** int_exponent == x",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.4299551569506727,0.28744394618834085,1.0,0.02453,0.00641,0.1015625,0.09375,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 6, ""line_end"": 14, ""evidence"": ""import math\ntry:\n    exponent = math.log(x) / math.log(n)\nexcept ValueError:\n    return False\nif exponent < 0:\n    return False\nint_exponent = int(round(exponent))\nreturn n ** int_exponent == x"", ""reason"": ""The use of logarithms and exception handling makes the code unnecessarily complex and harder to follow compared to a simpler iterative approach.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.4299551569506727,0.65,7.079955156950673,110
+base_holdout_tasks_50_99,HumanEval/76,26,1,"def is_simple_power(x, n):
+    """"""Your task is to write a function that returns true if a number x is a simple
+    power of n and false in other cases.
+    x is a simple power of n if n**int=x
+    For example:
+    is_simple_power(1, 4) => true
+    is_simple_power(2, 2) => true
+    is_simple_power(8, 2) => true
+    is_simple_power(3, 2) => false
+    is_simple_power(3, 1) => false
+    is_simple_power(5, 3) => false
+    """"""
+    if n == 0:
+        return x == 0 or x == 1
+    if n == 1:
+        return x == 1
+    if n == -1:
+        return x == 1 or x == -1
+    
+    # For negative bases, we need to handle even/odd powers
+    # But typically ""simple power"" implies integer exponent >= 0
+    # Let's check if x can be represented as n**k for some integer k >= 0
+    
+    if x == 1:
+        return True  # n**0 = 1 for any n != 0
+    
+    if x == 0:
+        return False  # n**k = 0 only if n=0, but we already handled n=0
+    
+    # For positive x and positive n
+    if x > 0 and n > 0:
+        import math
+        try:
+            k = round(math.log(x) / math.log(n))
+            return n ** k == x
+        except (ValueError, ZeroDivisionError):
+            return False
+    
+    # For negative x
+    if x < ","def is_simple_power(x, n):
+    """"""Your task is to write a function that returns true if a number x is a simple
+    power of n and false in other cases.
+    x is a simple power of n if n**int=x
+    For example:
+    is_simple_power(1, 4) => true
+    is_simple_power(2, 2) => true
+    is_simple_power(8, 2) => true
+    is_simple_power(3, 2) => false
+    is_simple_power(3, 1) => false
+    is_simple_power(5, 3) => false
+    """"""
+    if n == 0:
+        return x == 0 or x == 1
+    if n == 1:
+        return x == 1
+    if n == -1:
+        return x == 1 or x == -1
+    
+    # For negative bases, we need to handle even/odd powers
+    # But typically ""simple power"" implies integer exponent >= 0
+    # Let's check if x can be represented as n**k for some integer k >= 0
+    
+    if x == 1:
+        return True  # n**0 = 1 for any n != 0
+    
+    if x == 0:
+        return False  # n**k = 0 only if n=0, but we already handled n=0
+    
+    # For positive x and positive n
+    if x > 0 and n > 0:
+        import math
+        try:
+            k = round(math.log(x) / math.log(n))
+            return n ** k == x
+        except (ValueError, ZeroDivisionError):
+            return False
+    
+    # For negative x
+    if x <",missing_closing_tag,syntax_error,not_run,syntax_error,"invalid syntax (<unknown>, line 40)",,not_run,,,syntax_error,not_checked,0.0,0.0,0,,,not_run,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,384
+base_holdout_tasks_50_99,HumanEval/77,27,0,"def iscube(a):
+    if a >= 0:
+        root = round(a ** (1/3))
+        return root ** 3 == a
+    else:
+        root = round((-a) ** (1/3))
+        return (-root) ** 3 == a
+</code>","def iscube(a):
+    if a >= 0:
+        root = round(a ** (1/3))
+        return root ** 3 == a
+    else:
+        root = round((-a) ** (1/3))
+        return (-root) ** 3 == a",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9900146012905657,0.9875182516132072,1.0,0.021231,0.01906,0.1015625,0.1015625,,ok,0.5,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""if a >= 0: ... else: ..."", ""reason"": ""The code block for handling positive and negative values of 'a' is nearly identical, leading to duplication. This could be refactored into a single block to improve maintainability.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 3, ""line_end"": 3, ""evidence"": ""root = round(a ** (1/3))"", ""reason"": ""The use of exponentiation and rounding in a single line can be less readable. It might be clearer to separate the calculation of the cube root and the rounding operation.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9900146012905657,0.5,7.490014601290566,67
+base_holdout_tasks_50_99,HumanEval/77,27,1,"def iscube(a):
+    if a >= 0:
+        root = int(a ** (1/3))
+        # Check root and root+1 due to floating point precision
+        for r in [root - 1, root, root + 1]:
+            if r >= 0 and r**3 == a:
+                return True
+        return False
+    else:
+        root = int((-a) ** (1/3))
+        # Check root and root+1 due to floating point precision
+        for r in [root - 1, root, root + 1]:
+            if r >= 0 and (-r)**3 == a:
+                return True
+        return False
+</code>","def iscube(a):
+    if a >= 0:
+        root = int(a ** (1/3))
+        # Check root and root+1 due to floating point precision
+        for r in [root - 1, root, root + 1]:
+            if r >= 0 and r**3 == a:
+                return True
+        return False
+    else:
+        root = int((-a) ** (1/3))
+        # Check root and root+1 due to floating point precision
+        for r in [root - 1, root, root + 1]:
+            if r >= 0 and (-r)**3 == a:
+                return True
+        return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9379146502419711,0.9223933128024638,1.0,0.02273,0.01906,0.109375,0.1015625,,ok,0.30000000000000004,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 2, ""line_end"": 8, ""evidence"": ""if a >= 0: ... return False"", ""reason"": ""The logic for checking positive and negative values is nearly identical but duplicated. This duplication makes the code harder to maintain as any change needs to be made in two places.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 9, ""line_end"": 15, ""evidence"": ""else: ... return False"", ""reason"": ""The logic for checking positive and negative values is nearly identical but duplicated. This duplication makes the code harder to maintain as any change needs to be made in two places.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9379146502419711,0.30000000000000004,7.237914650241971,156
+base_holdout_tasks_50_99,HumanEval/78,28,0,"def hex_key(num):
+    prime_digits = {'2', '3', '5', '7', 'B', 'D'}
+    return sum(1 for digit in num if digit in prime_digits)
+</code>","def hex_key(num):
+    prime_digits = {'2', '3', '5', '7', 'B', 'D'}
+    return sum(1 for digit in num if digit in prime_digits)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.5924843991350017,0.7039388322520854,0.14666666666666667,0.02158,0.01381,0.9375,0.125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 3, ""line_end"": 3, ""evidence"": ""sum(1 for digit in num if digit in prime_digits)"", ""reason"": ""The use of a generator expression within the sum function can be considered sub-readable as it may be less intuitive for some readers compared to a more explicit loop.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.5924843991350017,0.85,7.442484399135001,48
+base_holdout_tasks_50_99,HumanEval/78,28,1,"def hex_key(num):
+    prime_digits = {'2', '3', '5', '7', 'B', 'D'}
+    count = 0
+    for digit in num:
+        if digit in prime_digits:
+            count += 1
+    return count
+</code>","def hex_key(num):
+    prime_digits = {'2', '3', '5', '7', 'B', 'D'}
+    count = 0
+    for digit in num:
+        if digit in prime_digits:
+            count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8510144927536233,1.0,0.255072463768116,0.010941,0.01381,0.5390625,0.125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 6, ""evidence"": ""for digit in num:\n    if digit in prime_digits:\n        count += 1"", ""reason"": ""The use of a for loop followed by an if statement can be simplified using a generator expression within the sum function.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8510144927536233,0.85,7.701014492753623,63
+base_holdout_tasks_50_99,HumanEval/79,29,0,"def decimal_to_binary(decimal):
+    """"""You will be given a number in decimal form and your task is to convert it to
+    binary format. The function should return a string, with each character representing a binary
+    number. Each character in the string will be '0' or '1'.
+
+    There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+    The extra characters are there to help with the format.
+
+    Examples:
+    decimal_to_binary(15)   # returns ""db1111db""
+    decimal_to_binary(32)   # returns ""db100000db""
+    """"""
+    binary = bin(decimal)[2:]
+    return f""db{binary}db""
+</code>","def decimal_to_binary(decimal):
+    """"""You will be given a number in decimal form and your task is to convert it to
+    binary format. The function should return a string, with each character representing a binary
+    number. Each character in the string will be '0' or '1'.
+
+    There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+    The extra characters are there to help with the format.
+
+    Examples:
+    decimal_to_binary(15)   # returns ""db1111db""
+    decimal_to_binary(32)   # returns ""db100000db""
+    """"""
+    binary = bin(decimal)[2:]
+    return f""db{binary}db""",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"E501,E501",E501: Line too long (97 > 88) | E501: Line too long (99 > 88),ok,1.0,1.0,1.0,0.00695,0.00787,0.14453125,0.146484375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 14, ""evidence"": ""binary = bin(decimal)[2:]\nreturn f\""db{binary}db\"""", ""reason"": ""The use of an intermediate variable `binary` and then formatting it into a string is less readable than directly concatenating the strings as done in the reference solution.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,172
+base_holdout_tasks_50_99,HumanEval/79,29,1,"def decimal_to_binary(decimal):
+    """"""You will be given a number in decimal form and your task is to convert it to
+    binary format. The function should return a string, with each character representing a binary
+    number. Each character in the string will be '0' or '1'.
+
+    There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+    The extra characters are there to help with the format.
+
+    Examples:
+    decimal_to_binary(15)   # returns ""db1111db""
+    decimal_to_binary(32)   # returns ""db100000db""
+    """"""
+    if decimal == 0:
+        return ""db0db""
+    binary = bin(decimal)[2:]
+    return ""db"" + binary + ""db""
+</code>","def decimal_to_binary(decimal):
+    """"""You will be given a number in decimal form and your task is to convert it to
+    binary format. The function should return a string, with each character representing a binary
+    number. Each character in the string will be '0' or '1'.
+
+    There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+    The extra characters are there to help with the format.
+
+    Examples:
+    decimal_to_binary(15)   # returns ""db1111db""
+    decimal_to_binary(32)   # returns ""db100000db""
+    """"""
+    if decimal == 0:
+        return ""db0db""
+    binary = bin(decimal)[2:]
+    return ""db"" + binary + ""db""",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"E501,E501",E501: Line too long (97 > 88) | E501: Line too long (99 > 88),ok,0.9601941747572816,1.0,0.8009708737864077,0.00786,0.00787,0.201171875,0.146484375,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 16, ""evidence"": ""if decimal == 0:\n        return \""db0db\""\n    binary = bin(decimal)[2:]\n    return \""db\"" + binary + \""db\"""", ""reason"": ""The code contains a special case for when the input is 0, but the general case handles this correctly. This leads to unnecessary duplication.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.9601941747572816,0.85,7.710194174757282,189
+base_holdout_tasks_50_99,HumanEval/80,30,0,"def is_happy(s):
+    if len(s) < 3:
+        return False
+    for i in range(len(s) - 2):
+        if s[i] == s[i+1] or s[i+1] == s[i+2] or s[i] == s[i+2]:
+            return False
+    return True
+</code>","def is_happy(s):
+    if len(s) < 3:
+        return False
+    for i in range(len(s) - 2):
+        if s[i] == s[i+1] or s[i+1] == s[i+2] or s[i] == s[i+2]:
+            return False
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01253,0.01254,0.125,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,79
+base_holdout_tasks_50_99,HumanEval/80,30,1,"def is_happy(s):
+    if len(s) < 3:
+        return False
+    for i in range(len(s) - 2):
+        if s[i] == s[i+1] or s[i] == s[i+2] or s[i+1] == s[i+2]:
+            return False
+    return True
+</code>","def is_happy(s):
+    if len(s) < 3:
+        return False
+    for i in range(len(s) - 2):
+        if s[i] == s[i+1] or s[i] == s[i+2] or s[i+1] == s[i+2]:
+            return False
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01231,0.01254,0.125,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,79
+base_holdout_tasks_50_99,HumanEval/81,31,0,"def numerical_letter_grade(grades):
+    result = []
+    for gpa in grades:
+        if gpa == 4.0:
+            result.append('A+')
+        elif gpa > 3.7:
+            result.append('A')
+        elif gpa > 3.3:
+            result.append('A-')
+        elif gpa > 3.0:
+            result.append('B+')
+        elif gpa > 2.7:
+            result.append('B')
+        elif gpa > 2.3:
+            result.append('B-')
+        elif gpa > 2.0:
+            result.append('C+')
+        elif gpa > 1.7:
+            result.append('C')
+        elif gpa > 1.3:
+            result.append('C-')
+        elif gpa > 1.0:
+            result.append('D+')
+        elif gpa > 0.7:
+            result.append('D')
+        elif gpa > 0.0:
+            result.append('D-')
+        else:
+            result.append('E')
+    return result
+</code>","def numerical_letter_grade(grades):
+    result = []
+    for gpa in grades:
+        if gpa == 4.0:
+            result.append('A+')
+        elif gpa > 3.7:
+            result.append('A')
+        elif gpa > 3.3:
+            result.append('A-')
+        elif gpa > 3.0:
+            result.append('B+')
+        elif gpa > 2.7:
+            result.append('B')
+        elif gpa > 2.3:
+            result.append('B-')
+        elif gpa > 2.0:
+            result.append('C+')
+        elif gpa > 1.7:
+            result.append('C')
+        elif gpa > 1.3:
+            result.append('C-')
+        elif gpa > 1.0:
+            result.append('D+')
+        elif gpa > 0.7:
+            result.append('D')
+        elif gpa > 0.0:
+            result.append('D-')
+        else:
+            result.append('E')
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01774,0.017581,0.1875,0.1875,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 28, ""line_end"": 29, ""evidence"": ""else:\n    result.append('E')"", ""reason"": ""The else block after a series of conditional appends is unnecessary since the function will append 'E' only if none of the previous conditions are met.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,259
+base_holdout_tasks_50_99,HumanEval/81,31,1,"def numerical_letter_grade(grades):
+    result = []
+    for gpa in grades:
+        if gpa == 4.0:
+            result.append('A+')
+        elif gpa > 3.7:
+            result.append('A')
+        elif gpa > 3.3:
+            result.append('A-')
+        elif gpa > 3.0:
+            result.append('B+')
+        elif gpa > 2.7:
+            result.append('B')
+        elif gpa > 2.3:
+            result.append('B-')
+        elif gpa > 2.0:
+            result.append('C+')
+        elif gpa > 1.7:
+            result.append('C')
+        elif gpa > 1.3:
+            result.append('C-')
+        elif gpa > 1.0:
+            result.append('D+')
+        elif gpa > 0.7:
+            result.append('D')
+        elif gpa > 0.0:
+            result.append('D-')
+        else:
+            result.append('E')
+    return result
+</code>","def numerical_letter_grade(grades):
+    result = []
+    for gpa in grades:
+        if gpa == 4.0:
+            result.append('A+')
+        elif gpa > 3.7:
+            result.append('A')
+        elif gpa > 3.3:
+            result.append('A-')
+        elif gpa > 3.0:
+            result.append('B+')
+        elif gpa > 2.7:
+            result.append('B')
+        elif gpa > 2.3:
+            result.append('B-')
+        elif gpa > 2.0:
+            result.append('C+')
+        elif gpa > 1.7:
+            result.append('C')
+        elif gpa > 1.3:
+            result.append('C-')
+        elif gpa > 1.0:
+            result.append('D+')
+        elif gpa > 0.7:
+            result.append('D')
+        elif gpa > 0.0:
+            result.append('D-')
+        else:
+            result.append('E')
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01768,0.017581,0.1875,0.1875,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 28, ""line_end"": 29, ""evidence"": ""else:\n    result.append('E')"", ""reason"": ""The else block after a series of conditional appends is unnecessary since the function will append 'E' only if none of the previous conditions are met.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,259
+base_holdout_tasks_50_99,HumanEval/82,32,0,"def prime_length(string):
+    n = len(string)
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+</code>","def prime_length(string):
+    n = len(string)
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.6655524079320113,0.5819405099150141,1.0,0.02824,0.01494,0.125,0.125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 7, ""evidence"": ""if n % i == 0:\n    return False"", ""reason"": ""The return False statement is duplicated in lines 4 and 7. This can be refactored to avoid duplication.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.6655524079320113,0.85,7.515552407932011,67
+base_holdout_tasks_50_99,HumanEval/82,32,1,"def prime_length(string):
+    length = len(string)
+    if length < 2:
+        return False
+    for i in range(2, int(length ** 0.5) + 1):
+        if length % i == 0:
+            return False
+    return True
+</code>","def prime_length(string):
+    length = len(string)
+    if length < 2:
+        return False
+    for i in range(2, int(length ** 0.5) + 1):
+        if length % i == 0:
+            return False
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.6613052631578947,0.5766315789473684,1.0,0.0285,0.01494,0.125,0.125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 7, ""evidence"": ""if length % i == 0:\n    return False"", ""reason"": ""The logic for returning False when the length is not a prime number is duplicated in lines 4 and 7.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.6613052631578947,0.85,7.511305263157895,67
+base_holdout_tasks_50_99,HumanEval/83,33,0,"def starts_one_ends(n):
+    """"""
+    Given a positive integer n, return the count of the numbers of n-digit
+    positive integers that start or end with 1.
+    """"""
+    if n == 1:
+        return 1
+    
+    # Count numbers that start with 1
+    # For n-digit numbers starting with 1: 1 followed by (n-1) digits
+    # Each of the (n-1) digits can be 0-9, so 10^(n-1) numbers
+    starts_with_1 = 10 ** (n - 1)
+    
+    # Count numbers that end with 1
+    # For n-digit numbers ending with 1: first digit 1-9, last digit 1, middle (n-2) digits 0-9
+    # First digit has 9 options (1-9), middle (n-2) digits have 10 options each
+    ends_with_1 = 9 * (10 ** (n - 2))
+    
+    # Count numbers that both start and end with 1
+    # First digit 1, last digit 1, middle (n-2) digits 0-9
+    both = 10 ** (n - 2)
+    
+    # Using inclusion-exclusion principle
+    return starts_with_1 + ends_with_1 - both
+</code>","def starts_one_ends(n):
+    """"""
+    Given a positive integer n, return the count of the numbers of n-digit
+    positive integers that start or end with 1.
+    """"""
+    if n == 1:
+        return 1
+    
+    # Count numbers that start with 1
+    # For n-digit numbers starting with 1: 1 followed by (n-1) digits
+    # Each of the (n-1) digits can be 0-9, so 10^(n-1) numbers
+    starts_with_1 = 10 ** (n - 1)
+    
+    # Count numbers that end with 1
+    # For n-digit numbers ending with 1: first digit 1-9, last digit 1, middle (n-2) digits 0-9
+    # First digit has 9 options (1-9), middle (n-2) digits have 10 options each
+    ends_with_1 = 9 * (10 ** (n - 2))
+    
+    # Count numbers that both start and end with 1
+    # First digit 1, last digit 1, middle (n-2) digits 0-9
+    both = 10 ** (n - 2)
+    
+    # Using inclusion-exclusion principle
+    return starts_with_1 + ends_with_1 - both",ok,ok,ok,,,,passed,,,ok,violations,0.75,2.5,5,"W293,W293,E501,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | E501: Line too long (95 > 88) | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.595263157894737,0.6065789473684212,0.55,0.00836,0.00461,0.1875,0.09375,,ok,0.5,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 12, ""line_end"": 21, ""evidence"": ""starts_with_1 = 10 ** (n - 1)\nends_with_1 = 9 * (10 ** (n - 2))\nboth = 10 ** (n - 2)"", ""reason"": ""The calculation of powers of 10 is duplicated across multiple lines, which can be refactored into a single function or variable to avoid redundancy.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 24, ""line_end"": 24, ""evidence"": ""return starts_with_1 + ends_with_1 - both"", ""reason"": ""The expression chain is somewhat dense and could be broken down into intermediate steps for better clarity.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.75,1.0,1.0,0.595263157894737,0.5,6.845263157894737,304
+base_holdout_tasks_50_99,HumanEval/83,33,1,"def starts_one_ends(n):
+    """"""
+    Given a positive integer n, return the count of the numbers of n-digit
+    positive integers that start or end with 1.
+    """"""
+    if n == 1:
+        return 1  # Only the number 1
+    
+    # Count of n-digit numbers starting with 1: 10^(n-1)
+    start_with_1 = 10 ** (n - 1)
+    
+    # Count of n-digit numbers ending with 1: 9 * 10^(n-2)
+    # First digit can be 1-9 (9 choices), last digit is 1 (1 choice), middle n-2 digits can be 0-9 (10 choices each)
+    end_with_1 = 9 * (10 ** (n - 2))
+    
+    # Count of n-digit numbers that both start and end with 1: 10^(n-2)
+    # First digit is 1 (1 choice), last digit is 1 (1 choice), middle n-2 digits can be 0-9 (10 choices each)
+    both = 10 ** (n - 2)
+    
+    # Inclusion-exclusion principle
+    return start_with_1 + end_with_1 - both
+</code>","def starts_one_ends(n):
+    """"""
+    Given a positive integer n, return the count of the numbers of n-digit
+    positive integers that start or end with 1.
+    """"""
+    if n == 1:
+        return 1  # Only the number 1
+    
+    # Count of n-digit numbers starting with 1: 10^(n-1)
+    start_with_1 = 10 ** (n - 1)
+    
+    # Count of n-digit numbers ending with 1: 9 * 10^(n-2)
+    # First digit can be 1-9 (9 choices), last digit is 1 (1 choice), middle n-2 digits can be 0-9 (10 choices each)
+    end_with_1 = 9 * (10 ** (n - 2))
+    
+    # Count of n-digit numbers that both start and end with 1: 10^(n-2)
+    # First digit is 1 (1 choice), last digit is 1 (1 choice), middle n-2 digits can be 0-9 (10 choices each)
+    both = 10 ** (n - 2)
+    
+    # Inclusion-exclusion principle
+    return start_with_1 + end_with_1 - both",ok,ok,ok,,,,passed,,,ok,violations,0.7,3.0,6,"W293,W293,E501,W293,E501,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | E501: Line too long (116 > 88) | W293: Blank line contains whitespace | E501: Line too long (109 > 88) | W293: Blank line contains whitespace,ok,0.5964268585131896,0.6080335731414869,0.55,0.00834,0.00461,0.1875,0.09375,,ok,0.5,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 10, ""line_end"": 18, ""evidence"": ""start_with_1 = 10 ** (n - 1)\nend_with_1 = 9 * (10 ** (n - 2))\nboth = 10 ** (n - 2)"", ""reason"": ""The calculation of powers of 10 is duplicated across multiple lines. This could be refactored to avoid repetition.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 21, ""line_end"": 21, ""evidence"": ""return start_with_1 + end_with_1 - both"", ""reason"": ""The inclusion-exclusion formula is not immediately clear without comments. The current comments explain the logic but could be integrated into the code for better readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.7,1.0,1.0,0.5964268585131896,0.5,6.79642685851319,290
+base_holdout_tasks_50_99,HumanEval/84,34,0,"def solve(N):
+    digit_sum = sum(int(d) for d in str(N))
+    return bin(digit_sum)[2:]
+</code>","def solve(N):
+    digit_sum = sum(int(d) for d in str(N))
+    return bin(digit_sum)[2:]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02515,0.02597,0.5166015625,0.5166015625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,33
+base_holdout_tasks_50_99,HumanEval/84,34,1,"def solve(N):
+    digit_sum = sum(int(d) for d in str(N))
+    return bin(digit_sum)[2:]
+</code>","def solve(N):
+    digit_sum = sum(int(d) for d in str(N))
+    return bin(digit_sum)[2:]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02731,0.02597,0.5166015625,0.5166015625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,33
+base_holdout_tasks_50_99,HumanEval/85,35,0,"def add(lst):
+    return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)
+</code>","def add(lst):
+    return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9510447761194031,1.0,0.755223880597015,0.016,0.01601,0.5234375,0.359375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)"", ""reason"": ""The use of a generator expression within the sum function can be considered sub-readable due to its dense nature. A list comprehension might be easier to read.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9510447761194031,0.85,7.801044776119403,39
+base_holdout_tasks_50_99,HumanEval/85,35,1,"def add(lst):
+    return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)
+</code>","def add(lst):
+    return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9510447761194031,1.0,0.755223880597015,0.01455,0.01601,0.5234375,0.359375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)"", ""reason"": ""The use of a generator expression within the sum function can be considered sub-readable due to its dense nature. A list comprehension might be easier to read.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9510447761194031,0.85,7.801044776119403,39
+base_holdout_tasks_50_99,HumanEval/86,36,0,"def anti_shuffle(s):
+    words = s.split(' ')
+    sorted_words = []
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        sorted_words.append(sorted_word)
+    return ' '.join(sorted_words)
+</code>","def anti_shuffle(s):
+    words = s.split(' ')
+    sorted_words = []
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        sorted_words.append(sorted_word)
+    return ' '.join(sorted_words)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.037031,0.042841,1.263671875,2.2646484375,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""'sorted_word = ''.join(sorted(word))' and 'sorted_words.append(sorted_word)'"", ""reason"": ""The candidate code uses a separate loop and append operation to build the list of sorted words, while the reference solution achieves the same result in a single list comprehension. This duplication can be avoided.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,57
+base_holdout_tasks_50_99,HumanEval/86,36,1,"def anti_shuffle(s):
+    words = s.split(' ')
+    result = []
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        result.append(sorted_word)
+    return ' '.join(result)
+</code>","def anti_shuffle(s):
+    words = s.split(' ')
+    result = []
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        result.append(sorted_word)
+    return ' '.join(result)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.03627,0.042841,1.263671875,2.2646484375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""'sorted_word = ''.join(sorted(word))' and 'result.append(sorted_word)'"", ""reason"": ""The code can be made more readable by using a list comprehension instead of a for-loop and append method.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,54
+base_holdout_tasks_50_99,HumanEval/87,37,0,"def get_row(lst, x):
+    result = []
+    for row_idx, row in enumerate(lst):
+        col_indices = [col_idx for col_idx, val in enumerate(row) if val == x]
+        col_indices.sort(reverse=True)
+        for col_idx in col_indices:
+            result.append((row_idx, col_idx))
+    return result
+</code>","def get_row(lst, x):
+    result = []
+    for row_idx, row in enumerate(lst):
+        col_indices = [col_idx for col_idx, val in enumerate(row) if val == x]
+        col_indices.sort(reverse=True)
+        for col_idx in col_indices:
+            result.append((row_idx, col_idx))
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.074922,0.069901,1.0234375,1.0234375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 6, ""evidence"": ""col_indices = [col_idx for col_idx, val in enumerate(row) if val == x]"", ""reason"": ""The use of a list comprehension followed by sorting and another loop can be simplified into a single loop that appends to the result list directly, reducing nesting and improving readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,81
+base_holdout_tasks_50_99,HumanEval/87,37,1,"def get_row(lst, x):
+    result = []
+    for i, row in enumerate(lst):
+        # Find all columns in this row where value equals x
+        cols = [j for j, val in enumerate(row) if val == x]
+        # Sort columns in descending order
+        cols.sort(reverse=True)
+        for j in cols:
+            result.append((i, j))
+    return result
+</code>","def get_row(lst, x):
+    result = []
+    for i, row in enumerate(lst):
+        # Find all columns in this row where value equals x
+        cols = [j for j, val in enumerate(row) if val == x]
+        # Sort columns in descending order
+        cols.sort(reverse=True)
+        for j in cols:
+            result.append((i, j))
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9500564558412898,0.9375705698016122,1.0,0.082011,0.069901,1.0234375,1.0234375,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 7, ""evidence"": ""cols = [j for j, val in enumerate(row) if val == x]\n# Sort columns in descending order\ncols.sort(reverse=True)"", ""reason"": ""The use of a list comprehension followed by sorting can be combined into a single step using a sorted generator expression, making the code more readable.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9500564558412898,0.65,7.60005645584129,93
+base_holdout_tasks_50_99,HumanEval/88,38,0,"def sort_array(array):
+    if not array:
+        return []
+    
+    first = array[0]
+    last = array[-1]
+    total = first + last
+    
+    sorted_array = sorted(array)
+    
+    if total % 2 == 1:
+        return sorted_array
+    else:
+        return sorted_array[::-1]
+</code>","def sort_array(array):
+    if not array:
+        return []
+    
+    first = array[0]
+    last = array[-1]
+    total = first + last
+    
+    sorted_array = sorted(array)
+    
+    if total % 2 == 1:
+        return sorted_array
+    else:
+        return sorted_array[::-1]",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.9025660017988466,0.8782075022485581,1.0,0.018901,0.01509,0.2265625,0.2265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 14, ""evidence"": ""else:\n        return sorted_array[::-1]"", ""reason"": ""The else block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,0.9025660017988466,0.85,7.602566001798846,80
+base_holdout_tasks_50_99,HumanEval/88,38,1,"def sort_array(array):
+    if len(array) <= 1:
+        return array[:]
+    
+    if (array[0] + array[-1]) % 2 == 1:
+        return sorted(array)
+    else:
+        return sorted(array, reverse=True)
+</code>","def sort_array(array):
+    if len(array) <= 1:
+        return array[:]
+    
+    if (array[0] + array[-1]) % 2 == 1:
+        return sorted(array)
+    else:
+        return sorted(array, reverse=True)",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,0.9213036393264531,0.9016295491580663,1.0,0.01841,0.01509,0.2265625,0.2265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""else:\n        return sorted(array, reverse=True)"", ""reason"": ""The 'else' block after a return statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.9213036393264531,0.85,7.721303639326453,64
+base_holdout_tasks_50_99,HumanEval/89,39,0,"def encrypt(s):
+    result = []
+    for char in s:
+        if char.isalpha():
+            base = ord('a') if char.islower() else ord('A')
+            shifted = (ord(char) - base + 4) % 26 + base
+            result.append(chr(shifted))
+        else:
+            result.append(char)
+    return ''.join(result)
+</code>","def encrypt(s):
+    result = []
+    for char in s:
+        if char.isalpha():
+            base = ord('a') if char.islower() else ord('A')
+            shifted = (ord(char) - base + 4) % 26 + base
+            result.append(chr(shifted))
+        else:
+            result.append(char)
+    return ''.join(result)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8750922509225093,1.0,0.3754612546125462,0.02918,0.040261,0.529296875,0.1806640625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 6, ""evidence"": ""shifted = (ord(char) - base + 4) % 26 + base"", ""reason"": ""The expression chain is dense and could be broken into multiple lines for clarity.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 9, ""evidence"": ""else:\n            result.append(char)"", ""reason"": ""The else block can be removed by appending the character outside the if statement, simplifying the structure.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8750922509225093,0.7,7.575092250922509,90
+base_holdout_tasks_50_99,HumanEval/89,39,1,"def encrypt(s):
+    result = []
+    for char in s:
+        if char.isalpha():
+            base = ord('a') if char.islower() else ord('A')
+            shifted = (ord(char) - base + 4) % 26 + base
+            result.append(chr(shifted))
+        else:
+            result.append(char)
+    return ''.join(result)
+</code>","def encrypt(s):
+    result = []
+    for char in s:
+        if char.isalpha():
+            base = ord('a') if char.islower() else ord('A')
+            shifted = (ord(char) - base + 4) % 26 + base
+            result.append(chr(shifted))
+        else:
+            result.append(char)
+    return ''.join(result)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8750922509225093,1.0,0.3754612546125462,0.02884,0.040261,0.529296875,0.1806640625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 6, ""evidence"": ""shifted = (ord(char) - base + 4) % 26 + base"", ""reason"": ""The expression chain is dense and could be broken into multiple lines for clarity.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 9, ""evidence"": ""else:\n            result.append(char)"", ""reason"": ""The else block can be removed by appending the character outside the if statement, simplifying the structure.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8750922509225093,0.7,7.575092250922509,90
+base_holdout_tasks_50_99,HumanEval/90,40,0,"def next_smallest(lst):
+    unique_sorted = sorted(set(lst))
+    if len(unique_sorted) < 2:
+        return None
+    return unique_sorted[1]
+</code>","def next_smallest(lst):
+    unique_sorted = sorted(set(lst))
+    if len(unique_sorted) < 2:
+        return None
+    return unique_sorted[1]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.016611,0.01647,0.90625,0.90625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 3, ""line_end"": 5, ""evidence"": ""if len(unique_sorted) < 2:\n    return None\nreturn unique_sorted[1]"", ""reason"": ""The conditional structure can be simplified into a single line using a conditional expression, which would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,42
+base_holdout_tasks_50_99,HumanEval/90,40,1,"def next_smallest(lst):
+    """"""
+    You are given a list of integers.
+    Write a function next_smallest() that returns the 2nd smallest element of the list.
+    Return None if there is no such element.
+    
+    next_smallest([1, 2, 3, 4, 5]) == 2
+    next_smallest([5, 1, 4, 3, 2]) == 2
+    next_smallest([]) == None
+    next_smallest([1, 1]) == None
+    """"""
+    unique_sorted = sorted(set(lst))
+    if len(unique_sorted) < 2:
+        return None
+    return unique_sorted[1]
+</code>","def next_smallest(lst):
+    """"""
+    You are given a list of integers.
+    Write a function next_smallest() that returns the 2nd smallest element of the list.
+    Return None if there is no such element.
+    
+    next_smallest([1, 2, 3, 4, 5]) == 2
+    next_smallest([5, 1, 4, 3, 2]) == 2
+    next_smallest([]) == None
+    next_smallest([1, 1]) == None
+    """"""
+    unique_sorted = sorted(set(lst))
+    if len(unique_sorted) < 2:
+        return None
+    return unique_sorted[1]",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.01753,0.01647,0.90625,0.90625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 12, ""line_end"": 15, ""evidence"": ""unique_sorted = sorted(set(lst))\nif len(unique_sorted) < 2:\n    return None\nreturn unique_sorted[1]"", ""reason"": ""The code can be simplified into a single return statement with a conditional expression, reducing unnecessary nesting.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,1.0,0.85,7.8,159
+base_holdout_tasks_50_99,HumanEval/91,41,0,"def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]', S)
+    count = 0
+    for sentence in sentences:
+        stripped = sentence.strip()
+        if stripped.startswith(""I""):
+            # Make sure it's the start of the sentence, not just starts with ""I"" as part of another word
+            # But since we stripped, and the sentence starts with ""I"", we need to check if it's a whole word or just starts with I
+            # The problem says ""starts with the word 'I'"", so ""I love"" is valid, but ""Ill"" might not be?
+            # Let's check if the first word is exactly ""I""
+            words = stripped.split()
+            if words and words[0] == ""I"":
+                count += 1
+    return count
+</code>","def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]', S)
+    count = 0
+    for sentence in sentences:
+        stripped = sentence.strip()
+        if stripped.startswith(""I""):
+            # Make sure it's the start of the sentence, not just starts with ""I"" as part of another word
+            # But since we stripped, and the sentence starts with ""I"", we need to check if it's a whole word or just starts with I
+            # The problem says ""starts with the word 'I'"", so ""I love"" is valid, but ""Ill"" might not be?
+            # Let's check if the first word is exactly ""I""
+            words = stripped.split()
+            if words and words[0] == ""I"":
+                count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"E501,E501,E501",E501: Line too long (104 > 88) | E501: Line too long (130 > 88) | E501: Line too long (104 > 88),ok,1.0,1.0,1.0,0.175953,0.192543,2.1513671875,2.2529296875,,ok,0.5,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 6, ""line_end"": 14, ""evidence"": ""stripped = sentence.strip() ... if words and words[0] == 'I':"", ""reason"": ""The code uses multiple steps (strip, split, check) to determine if a sentence starts with the word 'I', which can be simplified.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 14, ""evidence"": ""if stripped.startswith('I'): ... if words and words[0] == 'I':"", ""reason"": ""There is duplication in checking if the sentence starts with 'I'. This can be refactored into a single function or check.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,1.0,0.5,7.35,186
+base_holdout_tasks_50_99,HumanEval/91,41,1,"def is_bored(S):
+    """"""
+    You'll be given a string of words, and your task is to count the number
+    of boredoms. A boredom is a sentence that starts with the word ""I"".
+    Sentences are delimited by '.', '?' or '!'.
+   
+    For example:
+    >>> is_bored(""Hello world"")
+    0
+    >>> is_bored(""The sky is blue. The sun is shining. I love this weather"")
+    1
+    """"""
+    import re
+    
+    # Split the string into sentences using '.', '?' or '!' as delimiters
+    sentences = re.split(r'[.?!]', S)
+    
+    boredom_count = 0
+    for sentence in sentences:
+        # Strip leading whitespace and check if the sentence starts with ""I""
+        stripped = sentence.strip()
+        if stripped:  # Ensure the sentence is not empty
+            words = stripped.split()
+            if words and words[0] == ""I"":
+                boredom_count += 1
+                
+    return boredom_count
+</code>","def is_bored(S):
+    """"""
+    You'll be given a string of words, and your task is to count the number
+    of boredoms. A boredom is a sentence that starts with the word ""I"".
+    Sentences are delimited by '.', '?' or '!'.
+   
+    For example:
+    >>> is_bored(""Hello world"")
+    0
+    >>> is_bored(""The sky is blue. The sun is shining. I love this weather"")
+    1
+    """"""
+    import re
+    
+    # Split the string into sentences using '.', '?' or '!' as delimiters
+    sentences = re.split(r'[.?!]', S)
+    
+    boredom_count = 0
+    for sentence in sentences:
+        # Strip leading whitespace and check if the sentence starts with ""I""
+        stripped = sentence.strip()
+        if stripped:  # Ensure the sentence is not empty
+            words = stripped.split()
+            if words and words[0] == ""I"":
+                boredom_count += 1
+                
+    return boredom_count",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"W293,W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.172293,0.192543,2.1513671875,2.2529296875,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 21, ""line_end"": 25, ""evidence"": ""stripped = sentence.strip()\nif stripped:\n    words = stripped.split()\n    if words and words[0] == \""I\"":\n        boredom_count += 1"", ""reason"": ""The code can be simplified by directly checking if the first two characters of each non-empty sentence are 'I '. This reduces unnecessary splitting and improves readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,1.0,0.65,7.45,229
+base_holdout_tasks_50_99,HumanEval/92,42,0,"def any_int(x, y, z):
+    if not all(isinstance(i, int) for i in (x, y, z)):
+        return False
+    return x + y == z or x + z == y or y + z == x
+</code>","def any_int(x, y, z):
+    if not all(isinstance(i, int) for i in (x, y, z)):
+        return False
+    return x + y == z or x + z == y or y + z == x",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.32658845278725834,0.37229806598407295,0.14375000000000002,0.01758,0.00595,0.6875,0.08984375,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""if not all(isinstance(i, int) for i in (x, y, z))"", ""reason"": ""The use of a generator expression within the all() function is less readable than using explicit checks for each variable.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 3, ""evidence"": ""if not all(isinstance(i, int) for i in (x, y, z)): return False"", ""reason"": ""The conditional block can be simplified by directly returning the result of the check, avoiding the need for an explicit else block.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.32658845278725834,0.7,7.026588452787259,57
+base_holdout_tasks_50_99,HumanEval/92,42,1,"def any_int(x, y, z):
+    if not (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)):
+        return False
+    return x == y + z or y == x + z or z == x + y
+</code>","def any_int(x, y, z):
+    if not (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)):
+        return False
+    return x == y + z or y == x + z or z == x + y",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00575,0.00595,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 3, ""evidence"": ""if not (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)): return False"", ""reason"": ""The use of a negated condition followed by a return statement makes the code slightly harder to read compared to a positive condition leading directly to the main logic.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,60
+base_holdout_tasks_50_99,HumanEval/93,43,0,"def encode(message):
+    vowels = 'aeiouAEIOU'
+    vowel_map = {
+        'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w',
+        'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'
+    }
+    result = []
+    for char in message:
+        if char in vowel_map:
+            result.append(vowel_map[char])
+        else:
+            result.append(char.swapcase())
+    return ''.join(result)
+</code>","def encode(message):
+    vowels = 'aeiouAEIOU'
+    vowel_map = {
+        'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w',
+        'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'
+    }
+    result = []
+    for char in message:
+        if char in vowel_map:
+            result.append(vowel_map[char])
+        else:
+            result.append(char.swapcase())
+    return ''.join(result)",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 36, in <module>
+  File ""<string>"", line 26, in check
+AssertionError: This prints if this assert fails 1 (good for debugging!)
+",ok,ok,1.0,0.0,0,,,not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.5,140
+base_holdout_tasks_50_99,HumanEval/93,43,1,"def encode(message):
+    vowels = 'aeiouAEIOU'
+    vowel_map = {
+        'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w',
+        'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'
+    }
+    result = []
+    for char in message:
+        if char in vowel_map:
+            result.append(vowel_map[char])
+        elif char.islower():
+            result.append(char.upper())
+        elif char.isupper():
+            result.append(char.lower())
+        else:
+            result.append(char)
+    return ''.join(result)
+</code>","def encode(message):
+    vowels = 'aeiouAEIOU'
+    vowel_map = {
+        'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w',
+        'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'
+    }
+    result = []
+    for char in message:
+        if char in vowel_map:
+            result.append(vowel_map[char])
+        elif char.islower():
+            result.append(char.upper())
+        elif char.isupper():
+            result.append(char.lower())
+        else:
+            result.append(char)
+    return ''.join(result)",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 40, in <module>
+  File ""<string>"", line 30, in check
+AssertionError: This prints if this assert fails 1 (good for debugging!)
+",ok,ok,1.0,0.0,0,,,not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.5,166
+base_holdout_tasks_50_99,HumanEval/94,44,0,"def skjkasdkd(lst):
+    def is_prime(n):
+        if n < 2:
+            return False
+        if n == 2:
+            return True
+        if n % 2 == 0:
+            return False
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
+        return True
+
+    primes = [x for x in lst if is_prime(x)]
+    if not primes:
+        return 0
+    largest_prime = max(primes)
+    return sum(int(digit) for digit in str(largest_prime))
+</code>","def skjkasdkd(lst):
+    def is_prime(n):
+        if n < 2:
+            return False
+        if n == 2:
+            return True
+        if n % 2 == 0:
+            return False
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
+        return True
+
+    primes = [x for x in lst if is_prime(x)]
+    if not primes:
+        return 0
+    largest_prime = max(primes)
+    return sum(int(digit) for digit in str(largest_prime))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9161032081877417,0.9152461977346771,0.91953125,0.118482,0.098582,1.0,0.8359375,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9161032081877417,0.0,6.916103208187741,150
+base_holdout_tasks_50_99,HumanEval/94,44,1,"def skjkasdkd(lst):
+    def is_prime(n):
+        if n < 2:
+            return False
+        if n == 2:
+            return True
+        if n % 2 == 0:
+            return False
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
+        return True
+
+    primes = [x for x in lst if is_prime(x)]
+    if not primes:
+        return 0
+    largest_prime = max(primes)
+    return sum(int(digit) for digit in str(largest_prime))
+</code>","def skjkasdkd(lst):
+    def is_prime(n):
+        if n < 2:
+            return False
+        if n == 2:
+            return True
+        if n % 2 == 0:
+            return False
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
+        return True
+
+    primes = [x for x in lst if is_prime(x)]
+    if not primes:
+        return 0
+    largest_prime = max(primes)
+    return sum(int(digit) for digit in str(largest_prime))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9372770989648467,0.9417135612060582,0.91953125,0.115152,0.098582,1.0,0.8359375,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9372770989648467,0.0,6.937277098964847,150
+base_holdout_tasks_50_99,HumanEval/95,45,0,"def check_dict_case(dict):
+    if not dict:
+        return False
+    
+    keys = list(dict.keys())
+    
+    # Check if all keys are strings
+    if not all(isinstance(k, str) for k in keys):
+        return False
+    
+    # Check if all keys are lowercase or all keys are uppercase
+    all_lower = all(k.islower() for k in keys)
+    all_upper = all(k.isupper() for k in keys)
+    
+    return all_lower or all_upper
+</code>","def check_dict_case(dict):
+    if not dict:
+        return False
+    
+    keys = list(dict.keys())
+    
+    # Check if all keys are strings
+    if not all(isinstance(k, str) for k in keys):
+        return False
+    
+    # Check if all keys are lowercase or all keys are uppercase
+    all_lower = all(k.islower() for k in keys)
+    all_upper = all(k.isupper() for k in keys)
+    
+    return all_lower or all_upper",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"W293,W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.4600957139618998,0.47545521292217335,0.3986577181208054,0.04086,0.017661,1.1640625,0.421875,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""medium"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def check_dict_case(dict):"", ""reason"": ""The parameter name 'dict' shadows the built-in type name 'dict', which can lead to confusion.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,0.4600957139618998,0.65,6.9100957139619,110
+base_holdout_tasks_50_99,HumanEval/95,45,1,"def check_dict_case(dict):
+    if not dict:
+        return False
+    
+    keys = list(dict.keys())
+    
+    # Check if all keys are strings
+    if not all(isinstance(key, str) for key in keys):
+        return False
+    
+    # Check if all keys are lowercase or all keys are uppercase
+    all_lower = all(key.islower() for key in keys)
+    all_upper = all(key.isupper() for key in keys)
+    
+    return all_lower or all_upper
+</code>","def check_dict_case(dict):
+    if not dict:
+        return False
+    
+    keys = list(dict.keys())
+    
+    # Check if all keys are strings
+    if not all(isinstance(key, str) for key in keys):
+        return False
+    
+    # Check if all keys are lowercase or all keys are uppercase
+    all_lower = all(key.islower() for key in keys)
+    all_upper = all(key.isupper() for key in keys)
+    
+    return all_lower or all_upper",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"W293,W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.4564995436241611,0.47096000000000005,0.3986577181208054,0.04125,0.017661,1.1640625,0.421875,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,0.4564995436241611,0.0,6.256499543624161,110
+base_holdout_tasks_50_99,HumanEval/96,46,0,"def count_up_to(n):
+    """"""Implement a function that takes an non-negative integer and returns an array of the first n
+    integers that are prime numbers and less than n.
+    for example:
+    count_up_to(5) => [2,3]
+    count_up_to(11) => [2,3,5,7]
+    count_up_to(0) => []
+    count_up_to(20) => [2,3,5,7,11,13,17,19]
+    count_up_to(1) => []
+    count_up_to(18) => [2,3,5,7,11,13,17]
+    """"""
+    if n <= 2:
+        return []
+    
+    def is_prime(num):
+        if num < 2:
+            return False
+        if num == 2:
+            return True
+        if num % 2 == 0:
+            return False
+        for i in range(3, int(num**0.5) + 1, 2):
+            if num % i == 0:
+                return False
+        return True
+    
+    primes = []
+    for i in range(2, n):
+        if is_prime(i):
+            primes.append(i)
+    
+    return primes
+</code>","def count_up_to(n):
+    """"""Implement a function that takes an non-negative integer and returns an array of the first n
+    integers that are prime numbers and less than n.
+    for example:
+    count_up_to(5) => [2,3]
+    count_up_to(11) => [2,3,5,7]
+    count_up_to(0) => []
+    count_up_to(20) => [2,3,5,7,11,13,17,19]
+    count_up_to(1) => []
+    count_up_to(18) => [2,3,5,7,11,13,17]
+    """"""
+    if n <= 2:
+        return []
+    
+    def is_prime(num):
+        if num < 2:
+            return False
+        if num == 2:
+            return True
+        if num % 2 == 0:
+            return False
+        for i in range(3, int(num**0.5) + 1, 2):
+            if num % i == 0:
+                return False
+        return True
+    
+    primes = []
+    for i in range(2, n):
+        if is_prime(i):
+            primes.append(i)
+    
+    return primes",ok,ok,ok,,,,passed,,,ok,violations,0.8,2.0,4,"E501,W293,W293,W293",E501: Line too long (98 > 88) | W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.9868493150684932,1.0,0.9342465753424658,0.124292,0.157202,0.5703125,0.484375,,ok,0.5,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""medium"", ""line_start"": 15, ""line_end"": 25, ""evidence"": ""def is_prime(num): ... return True"", ""reason"": ""The function 'is_prime' is defined within 'count_up_to', which could be moved outside to avoid redefinition each time 'count_up_to' is called.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 22, ""line_end"": 24, ""evidence"": ""for i in range(3, int(num**0.5) + 1, 2): ... return False"", ""reason"": ""The use of 'int(num**0.5) + 1' and 'range(3, ..., 2)' can be made clearer by using a more explicit variable name or comment explaining the square root optimization.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.8,1.0,1.0,0.9868493150684932,0.5,7.286849315068493,296
+base_holdout_tasks_50_99,HumanEval/96,46,1,"def count_up_to(n):
+    if n <= 2:
+        return []
+    
+    primes = []
+    for num in range(2, n):
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    
+    return primes
+</code>","def count_up_to(n):
+    if n <= 2:
+        return []
+    
+    primes = []
+    for num in range(2, n):
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    
+    return primes",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,0.8969402447441472,0.8711753059301841,1.0,0.198493,0.157202,0.484375,0.484375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 11, ""evidence"": ""for i in range(2, int(num ** 0.5) + 1): ... if num % i == 0: ... is_prime = False ... break"", ""reason"": ""The use of a nested loop and breaking out of it can be simplified by using any() with a generator expression.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.8969402447441472,0.85,7.6469402447441475,102
+base_holdout_tasks_50_99,HumanEval/97,47,0,"def multiply(a, b):
+    return (abs(a) % 10) * (abs(b) % 10)
+</code>","def multiply(a, b):
+    return (abs(a) % 10) * (abs(b) % 10)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00448,0.00449,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return (abs(a) % 10) * (abs(b) % 10)"", ""reason"": ""The use of abs before the modulo operation is unnecessary and makes the code slightly harder to read compared to applying abs after the modulo operation.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,32
+base_holdout_tasks_50_99,HumanEval/97,47,1,"def multiply(a, b):
+    return (abs(a) % 10) * (abs(b) % 10)
+</code>","def multiply(a, b):
+    return (abs(a) % 10) * (abs(b) % 10)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00455,0.00449,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return (abs(a) % 10) * (abs(b) % 10)"", ""reason"": ""The use of abs before the modulo operation is unnecessary and makes the code slightly harder to read compared to applying abs after the modulo operation.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,32
+base_holdout_tasks_50_99,HumanEval/98,48,0,"def count_upper(s):
+    """"""
+    Given a string s, count the number of uppercase vowels in even indices.
+    
+    For example:
+    count_upper('aBCdEf') returns 1
+    count_upper('abcdefg') returns 0
+    count_upper('dBBE') returns 0
+    """"""
+    uppercase_vowels = set('AEIOU')
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i] in uppercase_vowels:
+            count += 1
+    return count
+</code>","def count_upper(s):
+    """"""
+    Given a string s, count the number of uppercase vowels in even indices.
+    
+    For example:
+    count_upper('aBCdEf') returns 1
+    count_upper('abcdefg') returns 0
+    count_upper('dBBE') returns 0
+    """"""
+    uppercase_vowels = set('AEIOU')
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i] in uppercase_vowels:
+            count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,ok,0.5793042850657699,0.6830088610051096,0.16448598130841122,0.015461,0.0096,0.8359375,0.125,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 10, ""evidence"": ""uppercase_vowels = set('AEIOU')"", ""reason"": ""The set 'uppercase_vowels' is defined explicitly while the reference solution uses a string literal 'AEIOU'. This introduces unnecessary duplication since both serve the same purpose.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.5793042850657699,0.85,7.3793042850657695,130
+base_holdout_tasks_50_99,HumanEval/98,48,1,"def count_upper(s):
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i].isupper() and s[i] in 'AEIOU':
+            count += 1
+    return count
+</code>","def count_upper(s):
+    count = 0
+    for i in range(0, len(s), 2):
+        if s[i].isupper() and s[i] in 'AEIOU':
+            count += 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01049,0.0096,0.125,0.125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 4, ""evidence"": ""if s[i].isupper() and s[i] in 'AEIOU':"", ""reason"": ""The check for uppercase vowels can be simplified by removing the redundant .isupper() check since the reference solution correctly identifies uppercase vowels without it.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,59
+base_holdout_tasks_50_99,HumanEval/99,49,0,"def closest_integer(value):
+    num = float(value)
+    if num >= 0:
+        return int(num + 0.5)
+    else:
+        return int(num - 0.5)
+</code>","def closest_integer(value):
+    num = float(value)
+    if num >= 0:
+        return int(num + 0.5)
+    else:
+        return int(num - 0.5)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00639,0.027321,0.08984375,0.265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""else:\n        return int(num - 0.5)"", ""reason"": ""The else block after a return statement is unnecessary because the function will exit after the first return.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,50
+base_holdout_tasks_50_99,HumanEval/99,49,1,"def closest_integer(value):
+    num = float(value)
+    if num >= 0:
+        return int(num + 0.5)
+    else:
+        return int(num - 0.5)
+</code>","def closest_integer(value):
+    num = float(value)
+    if num >= 0:
+        return int(num + 0.5)
+    else:
+        return int(num - 0.5)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00592,0.027321,0.08984375,0.265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 6, ""evidence"": ""else:\n        return int(num - 0.5)"", ""reason"": ""The else block after a return statement is unnecessary because the function will exit after the first return.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,50

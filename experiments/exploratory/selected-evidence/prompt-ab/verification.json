@@ -1,0 +1,30 @@
+{
+  "request_previews": 160,
+  "authorization_headers_in_previews": false,
+  "all_task_ids_humaneval": true,
+  "candidate_code_executed": false,
+  "configured_endpoint_origin_matches_historical_run15": true,
+  "secret_leak_files": [],
+  "protected_files_unchanged": true,
+  "network_failure": {
+    "class": "PermissionError",
+    "errno": 13,
+    "winerror": 10013
+  },
+  "approval_review": "Initial rejection resolved by explicit user confirmation of endpoint ownership and data-transfer authorization; retry and Phase B were approved and executed",
+  "initial_approval_review": "Rejected: destination ownership and authorization for sensitive egress not established; no unsandboxed retry executed",
+  "verified_utc": "2026-10-10T02:55:12.591787+00:00",
+  "protected_file_count": 20,
+  "exact_frozen_request_payloads_preserved": true,
+  "paired_candidates": 80,
+  "effective_reviews": 160,
+  "complete_four_candidate_groups": 20,
+  "csv_rows": 160,
+  "distinct_review_cases": 10,
+  "prompt_hashes_match": true,
+  "standalone_frozen_file_sha256": "5ca568fb1cbe0d0b371a5e2b17b98c8ca5fbed89ff63aace6959aeb29e1aafff",
+  "prompt_hash_encoding": "UTF-8 request text with LF newlines; frozen Windows text-file bytes have a separate hash",
+  "saved_candidate_and_task_source_hashes_match": true,
+  "failure_scores_unavailable": true,
+  "valid_reviews": 160
+}

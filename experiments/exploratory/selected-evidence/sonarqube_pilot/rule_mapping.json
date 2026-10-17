@@ -1,0 +1,35 @@
+{
+  "mapping_policy": "Map only active rules whose documented intent directly matches a labelled family; never map by outcome alone.",
+  "families": {
+    "exception_handling": {
+      "rule_keys": ["python:S5754"],
+      "status": "direct",
+      "rationale": "Requires an exception class in a bare except clause."
+    },
+    "complexity": {
+      "rule_keys": ["python:S3776"],
+      "status": "direct_thresholded",
+      "rationale": "Reports cognitive complexity only above its configured threshold of 15."
+    },
+    "dead_code": {
+      "rule_keys": ["python:S1144", "python:S5603"],
+      "status": "partial_scope",
+      "rationale": "Covers private methods and scope-limited definitions, not arbitrary unused public top-level functions."
+    },
+    "string_concat": {
+      "rule_keys": [],
+      "status": "unsupported",
+      "rationale": "No active rule directly targets repeated string accumulation in loops."
+    },
+    "resource_loop": {
+      "rule_keys": [],
+      "status": "unsupported",
+      "rationale": "No active generic rule targets blocking calls, repeated file opening, or collection growth in ordinary loops."
+    },
+    "data_structure": {
+      "rule_keys": [],
+      "status": "unsupported",
+      "rationale": "No active rule directly represents the pilot's nesting or oversized-record concept."
+    }
+  }
+}

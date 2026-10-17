@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "run": 30,
+      "timeout_rows": 5,
+      "unique_timeout_task_raw_completion_pairs": 5,
+      "timeout_tasks": {
+        "HumanEval/25": 3,
+        "HumanEval/39": 2
+      },
+      "timeout_groups": 4,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 26
+    },
+    {
+      "run": 31,
+      "timeout_rows": 4,
+      "unique_timeout_task_raw_completion_pairs": 4,
+      "timeout_tasks": {
+        "HumanEval/25": 3,
+        "HumanEval/39": 1
+      },
+      "timeout_groups": 4,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 24
+    },
+    {
+      "run": 32,
+      "timeout_rows": 3,
+      "unique_timeout_task_raw_completion_pairs": 3,
+      "timeout_tasks": {
+        "HumanEval/39": 2,
+        "HumanEval/25": 1
+      },
+      "timeout_groups": 3,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 20
+    },
+    {
+      "run": 33,
+      "timeout_rows": 2,
+      "unique_timeout_task_raw_completion_pairs": 2,
+      "timeout_tasks": {
+        "HumanEval/39": 1,
+        "HumanEval/25": 1
+      },
+      "timeout_groups": 2,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 49
+    },
+    {
+      "run": 34,
+      "timeout_rows": 2,
+      "unique_timeout_task_raw_completion_pairs": 2,
+      "timeout_tasks": {
+        "HumanEval/25": 1,
+        "HumanEval/39": 1
+      },
+      "timeout_groups": 2,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 59
+    },
+    {
+      "run": 35,
+      "timeout_rows": 70,
+      "unique_timeout_task_raw_completion_pairs": 27,
+      "timeout_tasks": {
+        "HumanEval/39": 29,
+        "HumanEval/15": 40,
+        "HumanEval/25": 1
+      },
+      "timeout_groups": 21,
+      "measured_eligible_varying_groups": 0,
+      "effective_judge_varying_groups": 0,
+      "total_reward_varying_groups": 67
+    },
+    {
+      "run": 36,
+      "timeout_rows": 8,
+      "unique_timeout_task_raw_completion_pairs": 4,
+      "timeout_tasks": {
+        "HumanEval/25": 5,
+        "HumanEval/39": 3
+      },
+      "timeout_groups": 7,
+      "measured_eligible_varying_groups": 143,
+      "effective_judge_varying_groups": 145,
+      "total_reward_varying_groups": 154,
+      "service_statuses": {
+        "attempt": 888,
+        "ok": 888,
+        "evaluation": 885
+      }
+    },
+    {
+      "run": 37,
+      "timeout_rows": 5,
+      "unique_timeout_task_raw_completion_pairs": 2,
+      "timeout_tasks": {
+        "HumanEval/39": 1,
+        "HumanEval/25": 4
+      },
+      "timeout_groups": 4,
+      "measured_eligible_varying_groups": 114,
+      "effective_judge_varying_groups": 121,
+      "total_reward_varying_groups": 129,
+      "service_statuses": {
+        "attempt": 904,
+        "ok": 904,
+        "evaluation": 901
+      }
+    },
+    {
+      "run": 38,
+      "timeout_rows": 2,
+      "unique_timeout_task_raw_completion_pairs": 1,
+      "timeout_tasks": {
+        "HumanEval/25": 2
+      },
+      "timeout_groups": 2,
+      "measured_eligible_varying_groups": 133,
+      "effective_judge_varying_groups": 136,
+      "total_reward_varying_groups": 143,
+      "service_statuses": {
+        "attempt": 903,
+        "ok": 903,
+        "evaluation": 900
+      }
+    },
+    {
+      "run": 39,
+      "timeout_rows": 1,
+      "unique_timeout_task_raw_completion_pairs": 1,
+      "timeout_tasks": {
+        "HumanEval/39": 1
+      },
+      "timeout_groups": 1,
+      "measured_eligible_varying_groups": 88,
+      "effective_judge_varying_groups": 90,
+      "total_reward_varying_groups": 111,
+      "service_statuses": {
+        "attempt": 772,
+        "ok": 772,
+        "evaluation": 769
+      }
+    },
+    {
+      "run": 40,
+      "timeout_rows": 2,
+      "unique_timeout_task_raw_completion_pairs": 2,
+      "timeout_tasks": {
+        "HumanEval/25": 2
+      },
+      "timeout_groups": 2,
+      "measured_eligible_varying_groups": 121,
+      "effective_judge_varying_groups": 126,
+      "total_reward_varying_groups": 149,
+      "service_statuses": {
+        "attempt": 874,
+        "ok": 874,
+        "evaluation": 871
+      }
+    },
+    {
+      "run": 41,
+      "timeout_rows": 2,
+      "unique_timeout_task_raw_completion_pairs": 2,
+      "timeout_tasks": {
+        "HumanEval/25": 2
+      },
+      "timeout_groups": 2,
+      "measured_eligible_varying_groups": 86,
+      "effective_judge_varying_groups": 88,
+      "total_reward_varying_groups": 110,
+      "service_statuses": {
+        "attempt": 779,
+        "ok": 779,
+        "evaluation": 776
+      }
+    }
+  ],
+  "services": {
+    "J": {
+      "attempt": 2695,
+      "ok": 2695,
+      "evaluation": 2686
+    },
+    "SJ": {
+      "attempt": 2425,
+      "ok": 2425,
+      "evaluation": 2416
+    }
+  },
+  "limits": [
+    "Cached timeout reuse follows the preserved DIAGNOSTIC_CACHE implementation; the original host/deadline cause is unresolved.",
+    "27 distinct task/completion keys are 70 recorded reward-affecting rows, not 70 independent failures.",
+    "Service success and schema validity do not validate Judge findings.",
+    "Complete transport JSONL is not available for all runs; summaries remain source records."
+  ]
+}

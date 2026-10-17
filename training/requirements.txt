@@ -1,0 +1,11 @@
+# Reconstructed GPU environment: install CUDA-compatible torch first; see RESEARCH_RECORD.md, "Recorded environment and reconstruction limits".
+unsloth==2026.5.10
+unsloth_zoo==2026.6.1
+trl==0.24.0
+transformers==5.5.0
+datasets==4.3.0
+peft==0.19.1
+accelerate==1.13.0
+bitsandbytes==0.49.2
+ruff==0.15.16
+# No GPU packages are needed for analysis or --dry-run.

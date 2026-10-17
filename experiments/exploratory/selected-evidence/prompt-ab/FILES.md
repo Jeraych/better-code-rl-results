@@ -1,0 +1,37 @@
+# Exact file inventory
+
+All listed files are new calibration-only additions. No pre-existing working-tree file was modified.
+
+Synthetic checks live in contract-diagnostics. Archived pending review previews are distinct from the completed ten-case manual_review artifacts.
+
+- analyze_results.py (historical private source link; see source manifest)
+- check_contracts.py (historical private source link; see source manifest)
+- contract-diagnostics/raw_diagnostics.jsonl (historical private source link; see source manifest)
+- contract-diagnostics/standalone_prompt.txt (historical private source link; see source manifest)
+- evaluate.py (historical private source link; see source manifest)
+- run-20261010/candidates.json (historical private source link; see source manifest)
+- run-20261010/COMMANDS.md (historical private source link; see source manifest)
+- run-20261010/FILES.md (historical private source link; see source manifest)
+- run-20261010/historical_functions.py (historical private source link; see source manifest)
+- run-20261010/historical_prompt.json (historical private source link; see source manifest)
+- run-20261010/manifest.json (historical private source link; see source manifest)
+- run-20261010/manual_review.html (historical private source link; see source manifest)
+- run-20261010/manual_review.md (historical private source link; see source manifest)
+- run-20261010/manual_review_pending.html (historical private source link; see source manifest)
+- run-20261010/manual_review_pending.md (historical private source link; see source manifest)
+- run-20261010/per_candidate.csv (historical private source link; see source manifest)
+- run-20261010/PROTOCOL.md (historical private source link; see source manifest)
+- run-20261010/raw_diagnostics.jsonl (historical private source link; see source manifest)
+- run-20261010/recommendation.md (historical private source link; see source manifest)
+- run-20261010/REPORT.md (historical private source link; see source manifest)
+- run-20261010/request_preview.jsonl (historical private source link; see source manifest)
+- run-20261010/review_selection.json (historical private source link; see source manifest)
+- run-20261010/spot_check_notes.md (historical private source link; see source manifest)
+- run-20261010/standalone_constants.json (historical private source link; see source manifest)
+- run-20261010/standalone_functions.py (historical private source link; see source manifest)
+- run-20261010/standalone_prompt.txt (historical private source link; see source manifest)
+- run-20261010/summary.json (historical private source link; see source manifest)
+- run-20261010/supplementary_analysis.json (historical private source link; see source manifest)
+- run-20261010/verification.json (historical private source link; see source manifest)
+- verify_artifacts.py (historical private source link; see source manifest)
+- write_report.py (historical private source link; see source manifest)

@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "saved_data_analysis_dependencies": "stdlib only",
+  "training_environment_verified": false,
+  "figures": "3 regenerated PNG/SVG/PDF; all three PNGs visually inspected, no clipping observed"
+}

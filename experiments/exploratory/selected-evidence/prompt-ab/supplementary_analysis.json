@@ -1,0 +1,40 @@
+{
+  "effective_reviews": 160,
+  "total_attempts_including_initial_sandbox_failures": 170,
+  "phase_attempt_counts": {
+    "phase-a": 10,
+    "phase-a-retry": 10,
+    "phase-b": 150
+  },
+  "attempt_status_counts": {
+    "transport_error": 10,
+    "ok": 160
+  },
+  "instruments": {
+    "HISTORICAL_PROMPT": {
+      "finish_reasons": {
+        "stop": 80
+      },
+      "strict_json_count": 80,
+      "complete_token_usage_count": 80,
+      "request_latency_sum_seconds": 1213.0376397999826,
+      "repeated_exact_payload_sets": 13,
+      "repeated_exact_payload_sets_with_different_scores": 0,
+      "repeat_conflict_rate": 0.0,
+      "repeat_note": "Identical request JSON includes code, context, sampling and seed. Score differences are response variability, not code discrimination. Repeats are incidental saved candidates, not a separately sampled repeatability study."
+    },
+    "STANDALONE_PROMPT": {
+      "finish_reasons": {
+        "stop": 80
+      },
+      "strict_json_count": 80,
+      "complete_token_usage_count": 80,
+      "request_latency_sum_seconds": 1295.161747700011,
+      "repeated_exact_payload_sets": 13,
+      "repeated_exact_payload_sets_with_different_scores": 0,
+      "repeat_conflict_rate": 0.0,
+      "repeat_note": "Identical request JSON includes code, context, sampling and seed. Score differences are response variability, not code discrimination. Repeats are incidental saved candidates, not a separately sampled repeatability study."
+    }
+  },
+  "identical_payload_score_conflicts": []
+}

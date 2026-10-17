@@ -1,0 +1,42 @@
+[
+  {
+    "candidate_id": "run30-step-386-candidate-2",
+    "selection_reason": "largest score disagreement"
+  },
+  {
+    "candidate_id": "run30-step-197-candidate-1",
+    "selection_reason": "largest score disagreement"
+  },
+  {
+    "candidate_id": "run30-step-464-candidate-0",
+    "selection_reason": "largest score disagreement"
+  },
+  {
+    "candidate_id": "run30-step-464-candidate-2",
+    "selection_reason": "largest score disagreement"
+  },
+  {
+    "candidate_id": "run30-step-30-candidate-0",
+    "selection_reason": "clean versus findings"
+  },
+  {
+    "candidate_id": "run30-step-73-candidate-2",
+    "selection_reason": "clean versus findings"
+  },
+  {
+    "candidate_id": "run30-step-73-candidate-0",
+    "selection_reason": "representative agreement"
+  },
+  {
+    "candidate_id": "run30-step-143-candidate-3",
+    "selection_reason": "representative agreement"
+  },
+  {
+    "candidate_id": "run30-step-149-candidate-2",
+    "selection_reason": "additional disagreement/coverage"
+  },
+  {
+    "candidate_id": "run30-step-262-candidate-0",
+    "selection_reason": "additional disagreement/coverage"
+  }
+]

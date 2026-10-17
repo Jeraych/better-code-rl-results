@@ -1,0 +1,9 @@
+{
+  "statuses": {
+    "attempt": 779,
+    "ok": 779,
+    "evaluation": 776
+  },
+  "errors_by_kind": {},
+  "infrastructure_failure_rewards": "Forbidden: failure raises before reward return"
+}

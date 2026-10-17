@@ -1,0 +1,14 @@
+unsloth
+trl
+datasets
+peft
+accelerate
+bitsandbytes
+mergekit
+llm-blender
+weave
+plotly
+pandas
+ruff
+safetensors
+transformers>=5.2.0,<=5.5.0

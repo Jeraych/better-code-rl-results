@@ -1,0 +1,609 @@
+{
+  "source_repository": "Jeraych/better-code-rl",
+  "source_commit": "c8390ecc495c1a50814db0c7737facbe3034baa2",
+  "purpose": "Experiments/results-only privacy derivative; originals remain in the pre-existing private archive. No credential was tested online.",
+  "author_instruction": "Both authors agree; scoped MIT project code; omit all final reports, logos, token-like strings and private environment material before new private upload.",
+  "transformations": [
+    {
+      "path": "data/exploratory/run-3/samples-source-179995cd.csv",
+      "source_snapshot_sha256": "932bf3cd899d78bae6fa52fb4c8d0355900e166509631e02d81d2ab9fa30710c",
+      "distributed_sha256": "4be930109935e8f900d737128b47cff150f664320373ec21f8ad5610ba1efa7e",
+      "changes": [
+        {
+          "csv_record": 14,
+          "step": "6",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "path_like_pilot_literal": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/exploratory/run-3/samples.csv",
+      "source_snapshot_sha256": "5f5de1eaf6c151469601f365b2e09661c58e5d691060eac30b7e1d86badc9bd2",
+      "distributed_sha256": "4a06665596d9ec7071ae64bd98ef59c075d9fa61451c8b05d693bb04d15509f9",
+      "changes": [
+        {
+          "csv_record": 14,
+          "step": "6",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "path_like_pilot_literal": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/exploratory/run-5/samples.csv",
+      "source_snapshot_sha256": "2076cbbd3301dc03dcbd77abe16952f7c94a1a08117e2657522567b778309f52",
+      "distributed_sha256": "d8980663c909feec3d8a4c5ec5e12cab2397381cca9954a57bc861165e0daffd",
+      "changes": [
+        {
+          "csv_record": 194,
+          "step": "96",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 2
+          }
+        },
+        {
+          "csv_record": 370,
+          "step": "184",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "path_like_pilot_literal": 1
+          }
+        },
+        {
+          "csv_record": 995,
+          "step": "497",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 1
+          }
+        },
+        {
+          "csv_record": 117,
+          "step": "58",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "incidental_home_literal": 1
+          }
+        },
+        {
+          "csv_record": 292,
+          "step": "145",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "incidental_home_literal": 1
+          }
+        },
+        {
+          "csv_record": 643,
+          "step": "321",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "credential_url": 2
+          }
+        },
+        {
+          "csv_record": 861,
+          "step": "430",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "incidental_home_literal": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/exploratory/run-6/samples.csv",
+      "source_snapshot_sha256": "52f31cba24d7a2a63ba3c65f001902e0b7239562737a99d30725b0464c247c29",
+      "distributed_sha256": "627af296933e9207f29cc00d869bb1e55761ccbeb13a297468229be3681634ad",
+      "changes": [
+        {
+          "csv_record": 216,
+          "step": "53",
+          "completion_index": "3",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 2
+          }
+        },
+        {
+          "csv_record": 636,
+          "step": "158",
+          "completion_index": "3",
+          "field": "raw_completion",
+          "redactions": {
+            "named_absolute_path": 1
+          }
+        },
+        {
+          "csv_record": 852,
+          "step": "212",
+          "completion_index": "3",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 1
+          }
+        },
+        {
+          "csv_record": 1482,
+          "step": "370",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "path_like_pilot_literal": 1
+          }
+        },
+        {
+          "csv_record": 1322,
+          "step": "330",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "incidental_home_literal": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/exploratory/run-7/samples.csv",
+      "source_snapshot_sha256": "815ff9e864792c7f9a90218855b23f8f91014001bc55fb94b15accd129cc9c02",
+      "distributed_sha256": "6ce60219963557c95e4f956dc999473c6d9551052c52e05ee9037b75f6b61112",
+      "changes": [
+        {
+          "csv_record": 624,
+          "step": "155",
+          "completion_index": "3",
+          "field": "raw_completion",
+          "redactions": {
+            "named_absolute_path": 1
+          }
+        },
+        {
+          "csv_record": 1079,
+          "step": "269",
+          "completion_index": "2",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 2
+          }
+        },
+        {
+          "csv_record": 1111,
+          "step": "277",
+          "completion_index": "2",
+          "field": "raw_completion",
+          "redactions": {
+            "named_absolute_path": 1
+          }
+        },
+        {
+          "csv_record": 1316,
+          "step": "328",
+          "completion_index": "3",
+          "field": "raw_completion",
+          "redactions": {
+            "quoted_sensitive_literal": 1
+          }
+        },
+        {
+          "csv_record": 1329,
+          "step": "332",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "named_absolute_path": 1
+          }
+        },
+        {
+          "csv_record": 1167,
+          "step": "291",
+          "completion_index": "2",
+          "field": "raw_completion",
+          "redactions": {
+            "network_address": 2
+          }
+        },
+        {
+          "csv_record": 158,
+          "step": "39",
+          "completion_index": "1",
+          "field": "raw_completion",
+          "redactions": {
+            "credential_hash_literal": 1
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/formal/J/run-36/gpu.txt",
+      "source_snapshot_sha256": "34f1bc353a3b60daded367291735081bf10c3e5783f9fbdc08d870cd29b9b4c2",
+      "distributed_sha256": "027976b5302d1ea5cb8619865d12b08469480036ecbef373603492d2aba2ea3b",
+      "changes": [
+        "removed clock-time header, PCI device identifiers and process/PID section; retained GPU/driver/CUDA and memory evidence"
+      ]
+    },
+    {
+      "path": "data/formal/SJ/run-39/gpu.txt",
+      "source_snapshot_sha256": "5afc906e5acb51fca4f0d2aef915620c945817cdfcfd1c4bb566c864a3ca5259",
+      "distributed_sha256": "a131a7bdf7dde4574fb2f9eb85ba14e339c0d94e6492e80b3ec47170f8a48e36",
+      "changes": [
+        "removed clock-time header, PCI device identifiers and process/PID section; retained GPU/driver/CUDA and memory evidence"
+      ]
+    },
+    {
+      "path": "data/formal/SJ/run-40/gpu.txt",
+      "source_snapshot_sha256": "572e43022c4492ebc9b9eea41ab0b0fc9c206857e62defba341a76df7c76ec21",
+      "distributed_sha256": "4c03cbabc6fe95dae4f951fa5ac6af0b280f27bf140fbdda1836ae70c5b261b4",
+      "changes": [
+        "removed clock-time header, PCI device identifiers and process/PID section; retained GPU/driver/CUDA and memory evidence"
+      ]
+    },
+    {
+      "path": "data/formal/SJ/run-41/gpu.txt",
+      "source_snapshot_sha256": "a9dc2fdb6fadf3e6089ab0e6331688e4fd0d2fb5e9d5c1d2629270556cc6c3b4",
+      "distributed_sha256": "3c5f0e1303a0836fc9c8982076bf90ee7afd846919696ce2d634107d7c1d37f0",
+      "changes": [
+        "removed clock-time header, PCI device identifiers and process/PID section; retained GPU/driver/CUDA and memory evidence"
+      ]
+    },
+    {
+      "path": "data/human-validation/source/provenance-v2.json",
+      "source_snapshot_sha256": "fe21efeff3ab9bc8627563fd76ea587ba040d6f6bc5292506f6331e54f3ced00",
+      "distributed_sha256": "0344f0d1fc72b05fd0f5743cdee59216df148a1050674227f276dde24d8d30f2",
+      "changes": [
+        {
+          "removed_training_timestamp_fields": [
+            ".evidence[9].metadata.start",
+            ".evidence[9].metadata.end",
+            ".evidence[9].metadata.stage_results[0].start",
+            ".evidence[9].metadata.stage_results[0].end",
+            ".evidence[9].metadata.stage_results[1].start",
+            ".evidence[9].metadata.stage_results[1].end",
+            ".evidence[9].metadata.stage_results[2].start",
+            ".evidence[9].metadata.stage_results[2].end",
+            ".evidence[10].metadata.start",
+            ".evidence[10].metadata.end",
+            ".evidence[10].metadata.stage_results[0].start",
+            ".evidence[10].metadata.stage_results[0].end",
+            ".evidence[10].metadata.stage_results[1].start",
+            ".evidence[10].metadata.stage_results[1].end",
+            ".evidence[10].metadata.stage_results[2].start",
+            ".evidence[10].metadata.stage_results[2].end",
+            ".evidence[11].metadata.start",
+            ".evidence[11].metadata.end",
+            ".evidence[11].metadata.stage_results[0].start",
+            ".evidence[11].metadata.stage_results[0].end",
+            ".evidence[11].metadata.stage_results[1].start",
+            ".evidence[11].metadata.stage_results[1].end",
+            ".evidence[11].metadata.stage_results[2].start",
+            ".evidence[11].metadata.stage_results[2].end",
+            ".evidence[12].metadata.start",
+            ".evidence[12].metadata.end",
+            ".evidence[12].metadata.stage_results[0].start",
+            ".evidence[12].metadata.stage_results[0].end",
+            ".evidence[12].metadata.stage_results[1].start",
+            ".evidence[12].metadata.stage_results[1].end",
+            ".evidence[12].metadata.stage_results[2].start",
+            ".evidence[12].metadata.stage_results[2].end",
+            ".evidence[13].metadata.start",
+            ".evidence[13].metadata.end",
+            ".evidence[13].metadata.stage_results[0].start",
+            ".evidence[13].metadata.stage_results[0].end",
+            ".evidence[13].metadata.stage_results[1].start",
+            ".evidence[13].metadata.stage_results[1].end",
+            ".evidence[13].metadata.stage_results[2].start",
+            ".evidence[13].metadata.stage_results[2].end",
+            ".evidence[14].metadata.start",
+            ".evidence[14].metadata.end",
+            ".evidence[14].metadata.stage_results[0].start",
+            ".evidence[14].metadata.stage_results[0].end",
+            ".evidence[14].metadata.stage_results[1].start",
+            ".evidence[14].metadata.stage_results[1].end",
+            ".evidence[14].metadata.stage_results[2].start",
+            ".evidence[14].metadata.stage_results[2].end"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/human-validation/formal-anonymized.json",
+      "source_snapshot_sha256": "2d0630c73186d1a8ff5f66df5a27c8ee7b9faff0076e6ca0147f2fcef4742bc7",
+      "distributed_sha256": "955283b56f8ad7b20b8de7ec40d62dc46d03bcb99343c6482c2fd2ee432c57a9",
+      "changes": [
+        "updated privacy/author-approval annotation only; all assignments, responses and recorded code unchanged"
+      ]
+    },
+    {
+      "path": "analysis/reproduce_human.py",
+      "source_snapshot_sha256": "5d78b662413b6b8e148086e6cf1dbe7977fb941b5c93c5cc63106a457e3d3e12",
+      "distributed_sha256": "2d7afb1f443eebc1c8368a2bfa6d4f626ccd318d3bf441ad9c70a9413d04b91e",
+      "changes": [
+        "updated derived-result privacy annotation only; calculations unchanged"
+      ]
+    },
+    {
+      "path": "verification/human.json",
+      "source_snapshot_sha256": "497a5a2e77d51807e5a59819d5e245e9f0d9e5a42801f529ba4dcace4ef37632",
+      "distributed_sha256": "e68de639737bce30df0dc0110ab5878c4b56669738186fb5c92b47bf87b23729",
+      "changes": [
+        "updated permission/scope annotations only; all numeric results unchanged"
+      ]
+    },
+    {
+      "path": "verification/verification-report.json",
+      "source_snapshot_sha256": "01b27fbee84b6070589d1d87d9a29fa2f1a0783ab09b93125ef1f580f1ff6589",
+      "distributed_sha256": "ffc4c9e5024df1c372fcf37115f66f530d6cf5c969bd4921f98d37f2960a0858",
+      "changes": [
+        "updated permission/scope annotations only; all numeric results unchanged",
+        {
+          "metadata": "Fresh offline verification aggregate for the results-only snapshot; current manifest count; unchanged numerical results."
+        }
+      ]
+    },
+    {
+      "path": "analysis/verify_all.py",
+      "source_snapshot_sha256": "26560e84388fab1bfdbcf1799552b19930d63bebd17d4512c5f73de5a9f7bf14",
+      "distributed_sha256": "d8d2c53554bdee9e816325e071822197413fe68b9164c5c6afafaeba2dd73480",
+      "changes": [
+        "verification scope now reflects authors-approved experiments/results snapshot; no report/Canvas or unresolved licence assertion"
+      ]
+    },
+    {
+      "path": "figures/figure1_study_workflow.pdf",
+      "source_snapshot_sha256": "19077c7b29ce53849f828cc09e94db2c4097706b2683be6f7cb520ca937dbc4a",
+      "distributed_sha256": "686a70241d085a8334e812d00bc0df92a3d7f51bb199c370880752727b43e003",
+      "changes": [
+        "removed plot build clock-time metadata; preserved graphical content and measurements"
+      ]
+    },
+    {
+      "path": "figures/figure2_automatic_outcomes.pdf",
+      "source_snapshot_sha256": "ba4a8cf0fc1f455965e73bb676a527c08697cd2d810690f5124ce6968314e7f3",
+      "distributed_sha256": "616296a870a392026616c652c8b1f823e64e953755d08d469a7a0554e34b1ee1",
+      "changes": [
+        "removed plot build clock-time metadata; preserved graphical content and measurements"
+      ]
+    },
+    {
+      "path": "figures/figure3_human_preferences.pdf",
+      "source_snapshot_sha256": "82da4a8b7c8c058c60ad57c2a921d055676856dae0db6f036744a53c5f1487c3",
+      "distributed_sha256": "3552ac08d710abbbc1be406793eb286dfdc2f923e40786e14e6431da7a9c08c4",
+      "changes": [
+        "removed plot build clock-time metadata; preserved graphical content and measurements"
+      ]
+    },
+    {
+      "path": "figures/figure1_study_workflow.svg",
+      "source_snapshot_sha256": "5df315022b535e0f3f9a1bf4621f817cf286cd3c157250788e16c645f30378f5",
+      "distributed_sha256": "b0b4f9bdae5d6b9ccc55ffc2642f6c06f9783f71ab965861ca6fc43b4d32e5f9",
+      "changes": [
+        "removed plot build clock-time metadata only"
+      ]
+    },
+    {
+      "path": "figures/figure2_automatic_outcomes.svg",
+      "source_snapshot_sha256": "3985a256ed2a4341331af839094272a6fe6691f65cbf502b15f7101767e1a33e",
+      "distributed_sha256": "f0d250a0eb684ef7f1c38bb333f08d797440ebc886b6221a79cb5e7eab9a1119",
+      "changes": [
+        "removed plot build clock-time metadata only"
+      ]
+    },
+    {
+      "path": "figures/figure3_human_preferences.svg",
+      "source_snapshot_sha256": "dfb9b1d936cf5f8e3230dd836553ae66102d1474a1e7fba5452e3bef7beb93d8",
+      "distributed_sha256": "d6279b8a9648d84b503f224b7fb6fc4ebdd1e38839b75ded752daf44f0500137",
+      "changes": [
+        "removed plot build clock-time metadata only"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "source_snapshot_sha256": "36438c0a5ccae1e28b634ca62ff5bfb03606ebb96aaa83d6b2522be437f411d7",
+      "distributed_sha256": "0ef4e05e11f3d68c47b3293fc9f85b214ad2d0e8c12ad08926f97d81db06273b",
+      "changes": [
+        "exclude credentials, environment files, caches and separate report folders"
+      ]
+    },
+    {
+      "path": "data/exploratory/run-4/samples.csv",
+      "source_snapshot_sha256": "9dcd9e10bebce374a41225bbd807c849cd24444a444cf2b5070d076fd3649bd4",
+      "changes": [
+        {
+          "csv_record": 41,
+          "step": "20",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "incidental_home_literal": 2
+          }
+        },
+        {
+          "csv_record": 343,
+          "step": "171",
+          "completion_index": "0",
+          "field": "raw_completion",
+          "redactions": {
+            "network_address": 1
+          }
+        }
+      ],
+      "distributed_sha256": "b176fa739aae584eb2178b4acb147dad32f608439da284f764146ba228cf6ea7"
+    },
+    {
+      "path": "experiments/exploratory/selected-evidence/remote_run_bundle/tests/test_bundle.py",
+      "source_snapshot_sha256": "2647e5a17c44a931242667fcbc8a7ea0c6040eaa417668b6cc5b50e20b17b559",
+      "distributed_sha256": "3cd0ad1d1781e6ed33484b33a952333a743a4db8f8ca7beb5d484fdff22d9f89",
+      "changes": [
+        {
+          "source_line": 31,
+          "transformation": "Marked one credential-detector test literal as an explicitly synthetic fixture; assertion and detector behavior unchanged."
+        }
+      ]
+    },
+    {
+      "path": "experiments/exploratory/selected-evidence/remote_run_bundle/run_sonarqube_remote.py",
+      "source_snapshot_sha256": "1074bdbfc573e9b194b496d062433720de1784198ee35889f4f303867dc4f7b3",
+      "distributed_sha256": "3fd8f8224daedd6bc478e28590ad430768a51019b71c83b1dbf4025444d47817",
+      "changes": [
+        {
+          "source_line": 42,
+          "transformation": "Removed embedded service-password default; supply credentials explicitly when using this historical pilot utility. No recorded result or scoring calculation changed."
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "path": "paper/README.md",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/SOFTENG700_Jacky_Zhang_reviewed.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/build.sh",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/build_report.py",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/build_windows.bat",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure1_study_workflow.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure1_study_workflow.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure1_study_workflow.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure2_automatic_outcomes.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure2_automatic_outcomes.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure2_automatic_outcomes.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure3_human_preferences.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure3_human_preferences.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure3_human_preferences.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_human_study_design.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_human_study_design.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_human_study_design.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_quality_measures.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_quality_measures.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_quality_measures.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_reward_design.pdf",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_reward_design.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/figure_reward_design.svg",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/figures/uoa-logo.png",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/main.tex",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/make_explainer_figures.py",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/make_result_figures.py",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/references.bib",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/sections/abstract.tex",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/sections/appendices.tex",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/sections/body.tex",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/source/appendices.md",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "paper/source/body.md",
+      "reason": "manuscript, report source or report-only asset excluded by author instruction"
+    },
+    {
+      "path": "experiments/exploratory/selected-evidence/remote_run_bundle/settings.example",
+      "source_snapshot_sha256": "0b8bcce921b22760156578471c851d2135927532b02dea6b7849420be2798fab",
+      "reason": "four-line credential/service settings example, historically named remote.env.example; omitted with environment material"
+    }
+  ],
+  "research_invariants": "All formal/base CSV bytes, formal response fields, code mappings and numeric verification results are preserved; only privacy/scope annotations change in the human JSON outputs."
+}

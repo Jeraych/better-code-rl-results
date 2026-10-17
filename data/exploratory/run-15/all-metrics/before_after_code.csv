@@ -1,0 +1,759 @@
+run_id,run_name,test_mode,comparison_label,model_name,lora_path,task_id,item_idx,generation_idx,entry_point,prompt,before_raw_completion,before_extracted_code,before_format_status,before_compile_status,before_runtime_status,before_failure_reason,before_error_message,before_stderr_preview,before_test_status,before_test_error_message,before_test_stderr_preview,before_syntax_status,before_style_status,before_style_score,before_style_penalty,before_style_violation_count,before_style_codes,before_style_messages,before_reward_format,before_reward_syntax,before_reward_style,before_reward_compile,before_reward_tests,before_reward_total,before_completion_token_length,after_raw_completion,after_extracted_code,after_format_status,after_compile_status,after_runtime_status,after_failure_reason,after_error_message,after_stderr_preview,after_test_status,after_test_error_message,after_test_stderr_preview,after_syntax_status,after_style_status,after_style_score,after_style_penalty,after_style_violation_count,after_style_codes,after_style_messages,after_reward_format,after_reward_syntax,after_reward_style,after_reward_compile,after_reward_tests,after_reward_total,after_completion_token_length,reward_delta,test_status_changed
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/0,0,0,has_close_elements,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False
+</code>","from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,175,"def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False
+</code>","def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,69,0.0,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/1,1,0,separate_paren_groups,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """""" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    # Remove all spaces from the input string
+    cleaned = paren_string.replace("" "", """")
+    
+    groups = []
+    current_group = []
+    balance = 0
+    
+    for char in cleaned:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                groups.append("""".join(current_group))
+                current_group = []
+    
+    return groups
+</code>","from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    # Remove all spaces from the input string
+    cleaned = paren_string.replace("" "", """")
+    
+    groups = []
+    current_group = []
+    balance = 0
+    
+    for char in cleaned:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                groups.append("""".join(current_group))
+                current_group = []
+    
+    return groups",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,1.0,1.0,0.85,1.0,1.0,6.699999999999999,137,"def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result
+</code>","def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,6.85,122,0.15000000000000036,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/2,2,0,truncate_number,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+
+
+def truncate_number(number: float) -> float:
+    """""" Given a positive floating point number, it can be decomposed into
+    and integer part (largest integer smaller than given number) and decimals
+    (leftover part always smaller than 1).
+
+    Return the decimal part of the number.
+    >>> truncate_number(3.5)
+    0.5
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","def truncate_number(number: float) -> float:
+    return number - int(number)
+</code>","def truncate_number(number: float) -> float:
+    return number - int(number)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,22,"def truncate_number(number: float) -> float:
+    return number - int(number)
+</code>","def truncate_number(number: float) -> float:
+    return number - int(number)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,22,0.0,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/3,3,0,below_zero,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False
+</code>","from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,55,"def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False
+</code>","def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,50,0.0,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/4,4,0,mean_absolute_deviation,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""
+    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+</code>","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""
+    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,W293,W293: Blank line contains whitespace,1.0,1.0,0.95,1.0,1.0,6.8,167,"from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+</code>","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,69,0.20000000000000018,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/5,5,0,intersperse,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    """""" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'
+    >>> intersperse([], 4)
+    []
+    >>> intersperse([1, 2, 3], 4)
+    [1, 4, 2, 4, 3]
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    """""" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'
+    >>> intersperse([], 4)
+    []
+    >>> intersperse([1, 2, 3], 4)
+    [1, 4, 2, 4, 3]
+    """"""
+    if not numbers:
+        return []
+    
+    result = []
+    for i, num in enumerate(numbers):
+        result.append(num)
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    
+    return result
+</code>","from typing import List
+
+
+def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    """""" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'
+    >>> intersperse([], 4)
+    []
+    >>> intersperse([1, 2, 3], 4)
+    [1, 4, 2, 4, 3]
+    """"""
+    if not numbers:
+        return []
+    
+    result = []
+    for i, num in enumerate(numbers):
+        result.append(num)
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"E501,W293,W293",E501: Line too long (98 > 88) | W293: Blank line contains whitespace | W293: Blank line contains whitespace,1.0,1.0,0.85,1.0,1.0,6.699999999999999,152,"def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i in range(len(numbers)):
+        result.append(numbers[i])
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result
+</code>","def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i in range(len(numbers)):
+        result.append(numbers[i])
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,6.85,75,0.15000000000000036,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/6,6,0,parse_nested_parens,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """""" Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result
+</code>","from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,6.85,120,"def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result
+</code>","def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,6.85,115,0.0,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/7,7,0,filter_by_substring,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """""" Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """""" Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""
+    return [s for s in strings if substring in s]
+</code>","from typing import List
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """""" Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""
+    return [s for s in strings if substring in s]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,6.85,110,"def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]
+</code>","def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,36,0.15000000000000036,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/8,8,0,sum_product,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    """""" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.
+    Empty sum should be equal to 0 and empty product should be equal to 1.
+    >>> sum_product([])
+    (0, 1)
+    >>> sum_product([1, 2, 3, 4])
+    (10, 24)
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    """""" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.
+    Empty sum should be equal to 0 and empty product should be equal to 1.
+    >>> sum_product([])
+    (0, 1)
+    >>> sum_product([1, 2, 3, 4])
+    (10, 24)
+    """"""
+    total_sum = 0
+    total_product = 1
+    
+    for num in numbers:
+        total_sum += num
+        total_product *= num
+        
+    return (total_sum, total_product)
+</code>","from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    """""" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.
+    Empty sum should be equal to 0 and empty product should be equal to 1.
+    >>> sum_product([])
+    (0, 1)
+    >>> sum_product([1, 2, 3, 4])
+    (10, 24)
+    """"""
+    total_sum = 0
+    total_product = 1
+    
+    for num in numbers:
+        total_sum += num
+        total_product *= num
+        
+    return (total_sum, total_product)",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"E501,W293,W293",E501: Line too long (117 > 88) | W293: Blank line contains whitespace | W293: Blank line contains whitespace,1.0,1.0,0.85,1.0,1.0,6.85,161,"from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)
+</code>","from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,1.0,1.0,1.0,1.0,1.0,7.0,68,0.15000000000000036,False
+all-metrics_train,all-metrics,train,current_train,unsloth/Qwen3.6-27B,<PRIVATE_PATH>,HumanEval/9,9,0,rolling_max,"<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """""" From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """"""
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+","from typing import List
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result
+</code>","from typing import List
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,1.0,1.0,0.9,1.0,1.0,6.75,79,"def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result
+</code>","def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,1.0,1.0,0.9,1.0,1.0,6.9,74,0.15000000000000036,False

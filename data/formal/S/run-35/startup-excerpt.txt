@@ -1,0 +1,100 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=train
+MODEL_NAME=unsloth/Qwen3.6-27B
+RUN_ROOT=<PRIVATE_PATH>
+RUN_ID=style_train
+RUN_NAME=style
+REPEAT_INDEX=1
+REPEAT_TOTAL=1
+LOG_DIR=<PRIVATE_PATH>
+OUTPUT_DIR=<PRIVATE_PATH>
+LORA_OUTPUT_DIR=<PRIVATE_PATH>
+LORA_PATH=<PRIVATE_PATH>
+AUTO_RESUME=0
+RESUME_FROM_CHECKPOINT=none
+Create fresh LoRA adapter for training: True
+Before/after CSV: enabled=True, path=<PRIVATE_PATH>, split=current, num_tasks=10, num_generations=1, do_sample=False
+Model loading: max_seq_length=2048, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, dropout=0.0, target_modules=all-linear, seed=3409
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=4, eval_num_generations=4, per_device_train_batch_size=4, gradient_accumulation_steps=1, max_prompt_length=1024, max_completion_length=384, max_steps=500, tiny_max_steps=200, save_steps_train=250, save_steps_tiny=50, save_strategy=steps, save_total_limit=2, logging_steps=1, optim=adamw_8bit, report_to=none
+Reward weights: format=0.1, syntax=0.1, compile=0.3, style=1.0, tests=4.5, performance=1.0, ai_judge=1.0, profile=baseline
+AI judge: enabled=False, mock=False, model=qwen3-coder:30b, require_test_pass=True, prompt_version=taxonomy_readability_maintainability_v3, prompt_hash=50d083c5e7100d2e
+Path layout: run_root=<PRIVATE_PATH>, log_dir=<PRIVATE_PATH>, output_dir=<PRIVATE_PATH>, lora_output_dir=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+Cleaned <PRIVATE_PATH>
+Cleaned <PRIVATE_PATH>
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 2. Max memory: 23.558 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1184 [00:00<19:07,  1.03it/s]
+Loading weights:   0%|          | 2/1184 [00:01<18:33,  1.06it/s]
+Loading weights:   1%|          | 9/1184 [00:02<02:58,  6.57it/s]
+Loading weights:   1%|          | 13/1184 [00:02<01:58,  9.87it/s]
+Loading weights:   1%|▏         | 16/1184 [00:02<01:37, 11.92it/s]
+Loading weights:   2%|▏         | 27/1184 [00:02<00:47, 24.32it/s]
+Loading weights:   3%|▎         | 32/1184 [00:02<00:42, 27.19it/s]
+Loading weights:   3%|▎         | 41/1184 [00:02<00:32, 35.13it/s]
+Loading weights:   4%|▍         | 46/1184 [00:02<00:35, 32.39it/s]
+Loading weights:   4%|▍         | 50/1184 [00:03<00:34, 32.47it/s]
+Loading weights:   5%|▌         | 62/1184 [00:03<00:23, 48.01it/s]
+Loading weights:   6%|▌         | 68/1184 [00:03<00:27, 40.54it/s]
+Loading weights:   7%|▋         | 80/1184 [00:03<00:20, 53.31it/s]
+Loading weights:   7%|▋         | 87/1184 [00:03<00:19, 54.89it/s]
+Loading weights:   8%|▊         | 94/1184 [00:03<00:20, 53.45it/s]
+Loading weights:   8%|▊         | 100/1184 [00:03<00:26, 41.41it/s]
+Loading weights:   9%|▉         | 107/1184 [00:04<00:24, 44.13it/s]
+Loading weights:  10%|█         | 119/1184 [00:04<00:19, 55.13it/s]
+Loading weights:  11%|█         | 125/1184 [00:04<00:19, 55.47it/s]
+Loading weights:  11%|█         | 133/1184 [00:04<00:18, 57.68it/s]
+Loading weights:  12%|█▏        | 140/1184 [00:04<00:17, 59.31it/s]
+Loading weights:  12%|█▏        | 147/1184 [00:04<00:18, 56.42it/s]
+Loading weights:  13%|█▎        | 153/1184 [00:04<00:23, 44.47it/s]
+Loading weights:  14%|█▎        | 160/1184 [00:05<00:21, 47.10it/s]
+Loading weights:  15%|█▍        | 172/1184 [00:05<00:17, 56.59it/s]
+Loading weights:  15%|█▌        | 178/1184 [00:05<00:18, 55.41it/s]
+Loading weights:  16%|█▌        | 186/1184 [00:05<00:17, 57.09it/s]
+Loading weights:  16%|█▌        | 192/1184 [00:05<00:17, 55.65it/s]
+Loading weights:  17%|█▋        | 200/1184 [00:05<00:18, 54.38it/s]
+Loading weights:  17%|█▋        | 206/1184 [00:05<00:22, 42.67it/s]
+Loading weights:  18%|█▊        | 213/1184 [00:06<00:21, 44.82it/s]
+Loading weights:  19%|█▉        | 225/1184 [00:06<00:17, 53.87it/s]
+Loading weights:  20%|█▉        | 231/1184 [00:06<00:18, 52.66it/s]
+Loading weights:  20%|██        | 239/1184 [00:06<00:17, 52.87it/s]
+Loading weights:  21%|██        | 245/1184 [00:06<00:18, 50.82it/s]
+Loading weights:  21%|██▏       | 253/1184 [00:06<00:18, 51.17it/s]
+Loading weights:  22%|██▏       | 259/1184 [00:07<00:23, 39.71it/s]
+Loading weights:  22%|██▏       | 266/1184 [00:07<00:21, 42.77it/s]
+Loading weights:  23%|██▎       | 278/1184 [00:07<00:17, 52.88it/s]
+Loading weights:  24%|██▍       | 284/1184 [00:07<00:17, 51.94it/s]
+Loading weights:  25%|██▍       | 292/1184 [00:07<00:17, 52.23it/s]
+Loading weights:  25%|██▌       | 298/1184 [00:07<00:17, 51.03it/s]
+Loading weights:  26%|██▌       | 306/1184 [00:07<00:16, 52.22it/s]
+Loading weights:  26%|██▋       | 312/1184 [00:08<00:22, 39.12it/s]
+Loading weights:  27%|██▋       | 319/1184 [00:08<00:20, 42.05it/s]
+Loading weights:  28%|██▊       | 331/1184 [00:08<00:16, 51.32it/s]
+Loading weights:  28%|██▊       | 337/1184 [00:08<00:16, 50.57it/s]
+Loading weights:  29%|██▉       | 345/1184 [00:08<00:16, 50.63it/s]
+Loading weights:  30%|██▉       | 351/1184 [00:08<00:16, 49.55it/s]
+Loading weights:  30%|███       | 359/1184 [00:09<00:16, 49.92it/s]
+Loading weights:  31%|███       | 365/1184 [00:09<00:21, 38.54it/s]
+Loading weights:  31%|███▏      | 372/1184 [00:09<00:19, 41.58it/s]
+Loading weights:  32%|███▏      | 384/1184 [00:09<00:15, 52.00it/s]
+Loading weights:  33%|███▎      | 390/1184 [00:09<00:15, 51.02it/s]
+Loading weights:  34%|███▎      | 398/1184 [00:09<00:14, 53.13it/s]
+Loading weights:  34%|███▍      | 404/1184 [00:09<00:14, 52.63it/s]
+Loading weights:  35%|███▍      | 412/1184 [00:10<00:13, 55.76it/s]
+Loading weights:  35%|███▌      | 418/1184 [00:10<00:17, 43.97it/s]
+Loading weights:  36%|███▌      | 425/1184 [00:10<00:16, 47.34it/s]
+Loading weights:  37%|███▋      | 437/1184 [00:10<00:12, 58.97it/s]
+Loading weights:  38%|███▊      | 444/1184 [00:10<00:12, 61.15it/s]
+Loading weights:  38%|███▊      | 451/1184 [00:10<00:12, 59.38it/s]
+Loading weights:  39%|███▊      | 458/1184 [00:10<00:12, 60.24it/s]

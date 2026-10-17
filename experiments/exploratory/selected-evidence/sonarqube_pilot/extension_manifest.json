@@ -1,0 +1,105 @@
+{
+  "pairs": [
+    {
+      "path": "extension/pairs/string_concatenation__clean.py",
+      "pair_id": "string_concatenation",
+      "target": "performance",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/string_concatenation__degraded.py",
+      "pair_id": "string_concatenation",
+      "target": "performance",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/file_open_in_loop__clean.py",
+      "pair_id": "file_open_in_loop",
+      "target": "performance",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/file_open_in_loop__degraded.py",
+      "pair_id": "file_open_in_loop",
+      "target": "performance",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/broad_silent_exception__clean.py",
+      "pair_id": "broad_silent_exception",
+      "target": "reliability",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/broad_silent_exception__degraded.py",
+      "pair_id": "broad_silent_exception",
+      "target": "reliability",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/branch_complexity__clean.py",
+      "pair_id": "branch_complexity",
+      "target": "maintainability",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/branch_complexity__degraded.py",
+      "pair_id": "branch_complexity",
+      "target": "maintainability",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/shell_injection__clean.py",
+      "pair_id": "shell_injection",
+      "target": "security",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/shell_injection__degraded.py",
+      "pair_id": "shell_injection",
+      "target": "security",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/unused_dead_code__clean.py",
+      "pair_id": "unused_dead_code",
+      "target": "maintainability",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/unused_dead_code__degraded.py",
+      "pair_id": "unused_dead_code",
+      "target": "maintainability",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/nested_allocation__clean.py",
+      "pair_id": "nested_allocation",
+      "target": "performance",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/nested_allocation__degraded.py",
+      "pair_id": "nested_allocation",
+      "target": "performance",
+      "condition": "degraded"
+    },
+    {
+      "path": "extension/pairs/blocking_call_in_loop__clean.py",
+      "pair_id": "blocking_call_in_loop",
+      "target": "performance",
+      "condition": "clean"
+    },
+    {
+      "path": "extension/pairs/blocking_call_in_loop__degraded.py",
+      "pair_id": "blocking_call_in_loop",
+      "target": "performance",
+      "condition": "degraded"
+    }
+  ],
+  "script": {
+    "path": "extension/script_under_test/train.py",
+    "source": "train.py",
+    "sha256": "82a2349a37666b721481cd586cdedb31fbf95560f70b4fbe826266eba9ce6016"
+  }
+}

@@ -1,0 +1,11 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_base
+MODEL_NAME=Qwen/Qwen3.6-35B-A3B
+RUN_ROOT=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+WORLD_SIZE=1
+PER_DEVICE_TRAIN_BATCH_SIZE=1
+GRADIENT_ACCUMULATION_STEPS=2
+GLOBAL_TRAIN_BATCH=2
+NUM_GENERATIONS=4

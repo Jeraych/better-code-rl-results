@@ -1,0 +1,636 @@
+[
+  {
+    "source": "UnSloth-RL-heplus-fix/results/1/training_dashboard.html",
+    "sha256": "c18b846bc394241af0e44925a2d6cab8bd56d2d61d2a90c3068d24759e391817",
+    "bytes": 13109,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/10/style_dashboard.html",
+    "sha256": "01fc73889f054ae93723139c413ea9408d7b93dc3f7b13ecc927e58dcbf4338d",
+    "bytes": 178659,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/11/combined_dashboard.html",
+    "sha256": "95ea1a6339d6a8139e0d199cf1ec30cbb4825db82fdf8f0046380e30af074ea6",
+    "bytes": 53125,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/11/combined_plotly_dashboard.html",
+    "sha256": "a5a86da6851d0771a9e15fc1a9e05edac939963ad19381319fbd5fe8f1e0b200",
+    "bytes": 270982,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/12/run12_comparison_dashboard.html",
+    "sha256": "9445b1bba0408b15089eb4b112a4f002d56a0a03ac63000d5fbe6a72be6ce35c",
+    "bytes": 12754,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/12/run12_comparison_dashboard.xlsx",
+    "sha256": "26294beeb58b9012ce27036c11ec237e4d06a8dc38a0e305dc5712f73fe7eaf9",
+    "bytes": 23495,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/12/run12_comparison_dashboard.xlsx.inspect.ndjson",
+    "sha256": "ee3162377ae5778db959466555e4667d38e7ddd6bf401e55701b53bd2f93e9fc",
+    "bytes": 476901,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/12/run12_comparison_dashboard_preview.png",
+    "sha256": "9477671be6d418fdcd3cbe7c281a92121409ee1021d9d8428b3313c2965d4c4d",
+    "bytes": 165370,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/13/ai_judge_dashboard.html",
+    "sha256": "d7faae7635567368c3a40d84837bc042e5e9860ba36f1f724b03144b1c84383e",
+    "bytes": 85320,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/14/baseline/samples.jsonl",
+    "sha256": "de4d4c1b09f8bf90170b1c434773c54e79217091c88004c0831b1dce7bcfa221",
+    "bytes": 51690187,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/ai_judge_dashboard.html",
+    "sha256": "c1036f831c78324b12f7f3f48e12a0eeb87a73654de5dfd94b1a6d9b49cd4161",
+    "bytes": 85469,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/combined_dashboard.html",
+    "sha256": "5981183de3b2de05c7b86ac834b36398a241bacc56af70a008558af059f94b53",
+    "bytes": 324750,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/samples.jsonl",
+    "sha256": "35a80e09f4a5fecb1cf14a4eb4dfda6ae220348f51558cb548285b390a6ff16b",
+    "bytes": 3022157,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/grpo_rl_effectiveness_dashboard.html",
+    "sha256": "60f7d9545a28a92f4d901275ea26e2c21b02899e371a53224acb24f66e637e18",
+    "bytes": 5042485,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/ai_judge_dashboard.html",
+    "sha256": "0e7ea94ce4f609ead6939846996ceaf9780b87bd43bacfe640df1b6c015aea06",
+    "bytes": 85680,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/combined_dashboard.html",
+    "sha256": "750b55898e53c15957ce43074abfd895b714989793ad92d13caaf06f6d751202",
+    "bytes": 331297,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/samples.jsonl",
+    "sha256": "ab0e9885503d23c723495b6b8baf13c28e0f817ef277f8b14f603531c6cebbf3",
+    "bytes": 6155439,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/ai_judge_dashboard.html",
+    "sha256": "aaeeff861368dfda3ab4522af0beab5bbc9fa007608328c2ac70595f9b5b74da",
+    "bytes": 85548,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/combined_dashboard.html",
+    "sha256": "c980712e1f7632a291f564625026ac4ee133534f486f6ccfeec7d43a60f317ae",
+    "bytes": 335252,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/samples.jsonl",
+    "sha256": "87647528cfa0c82596b4e3ca40e60e92cacb1b3587728d78ac64658db0827bc6",
+    "bytes": 6005813,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/18/double-style/ai_judge_dashboard.html",
+    "sha256": "d960bb8a480062a6094ee3549589d15019019e816acf4725ac993d988d29b754",
+    "bytes": 85400,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/18/double-style/combined_dashboard.html",
+    "sha256": "65c63246e621591b3b0d5184c45a34107c3e5964f497d076fe6d54f8cc6a9ed0",
+    "bytes": 330100,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/18/double-style/samples.jsonl",
+    "sha256": "40fa91d335c4eba5f4f94c7453526dfc4715f4dc01830f10f5de964135389307",
+    "bytes": 6072886,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/ai_judge_dashboard.html",
+    "sha256": "6949ed6425146142a46b95803ac77583571266daac6cf59a63e8522ed792aa87",
+    "bytes": 85439,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/combined_dashboard.html",
+    "sha256": "359b089b1ceeeff315cc48f5a8e0b16aa821ea6cd31488433a6d38e753f66fbc",
+    "bytes": 334055,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/samples.jsonl",
+    "sha256": "0c312f8298aa24e6c3d09e7883300da892ea575001c81a310bd1dec8a687a436",
+    "bytes": 6104377,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/2/training_dashboard.html",
+    "sha256": "3c7c1b04a2473e61ef826cb29914f8dff4a34d1f7875b1a8dd2cac2611ff9875",
+    "bytes": 13588,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/22/style/ai_judge_dashboard.html",
+    "sha256": "02c3125ca930803630a2974a48afef649fd490950d75df344d5a516160368d6e",
+    "bytes": 82728,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/22/style/combined_dashboard.html",
+    "sha256": "fa273e75ae89a498c426b7f291ec923e76d1e4bc2b5bb19f1c07a807bcd4b54b",
+    "bytes": 297217,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/22/style/samples.jsonl",
+    "sha256": "089cdde59194016b869a541887b6cb7b2b192ff595167f37b3c44f0f657e706e",
+    "bytes": 5329471,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/27/samples.jsonl",
+    "sha256": "8084cb6680c4a0feaee01dc81b77e8e7d470c69e1da5d3685bcc3b8da7d401b6",
+    "bytes": 5985188,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/28/samples_1.jsonl",
+    "sha256": "3863521f283c8a51c41cc37f9acf51232fc15e6f0aa538a9e24f69a629dceedc",
+    "bytes": 5214732,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/29/samples.jsonl",
+    "sha256": "db6fa7d69a2d3ab04bb85c4e15331b4a29f2cf9693ab75cf29aca736da0a75ba",
+    "bytes": 6283188,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/3/training_dashboard.html",
+    "sha256": "c17bfc38dce36d3c515deb87e04ccb3090ebfda35618c99224ed4ae5f9305f1e",
+    "bytes": 13594,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/4/training_dashboard.html",
+    "sha256": "684f2e8bce077c063402df7dec207677fcdfee4e55013f4295c40ba0aa7b6d6a",
+    "bytes": 76991,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/5/samples.jsonl",
+    "sha256": "e24d7ac2c0826f0e42829d6b12db7720ec6e4434651e934f438505db052e6bd2",
+    "bytes": 2815236,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/5/training_dashboard.html",
+    "sha256": "4336862c014cc102d160042c1ee4a68f1bf683bc956b302ec7d0adc86b2abad4",
+    "bytes": 116739,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/6/training_dashboard.html",
+    "sha256": "7a12035b268633db02de30fc6fe7974f93f0464f01cbd5e38591d4cd58d52903",
+    "bytes": 123679,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/6/training_dashboard_2.html",
+    "sha256": "32550bd5c6f1d45b6c793217f027aa157755fcefbde27c396f8480f09335fc3a",
+    "bytes": 149564,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/6/training_dashboard_3.html",
+    "sha256": "d537001f2c3705cc96665e98806f6f67266767ef6f27c7ff1efc59da19f5897b",
+    "bytes": 175443,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/7/conrad_training_dashboard.html",
+    "sha256": "adb7c51e3cb38aa1ce6052af689c2715aba34626ff941debace1751eb5740502",
+    "bytes": 226333,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/7/conrad_training_dashboard_complete.html",
+    "sha256": "b649df93c7dd211cc93627d7b06458ce52c3bc2f8a44edf1830612331595cb30",
+    "bytes": 239418,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/7/training_dashboard.html",
+    "sha256": "d537001f2c3705cc96665e98806f6f67266767ef6f27c7ff1efc59da19f5897b",
+    "bytes": 175443,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.jsonl",
+    "sha256": "5c282c5bd3fa50f20273a5a05c3b7f41a25df86d89223372cc7b69501dc26281",
+    "bytes": 5437,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip",
+    "sha256": "f415e18e3edc3003bff8790832bb938592aec4f45892d00b0401414bc0a3a893",
+    "bytes": 150595,
+    "reason": "Nested ZIP retained restricted; research text/data members inspected and deduplicated against expanded records",
+    "members_inspected": 120,
+    "research_members": 74
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/9/conrad_training_dashboard.html",
+    "sha256": "5ef789d6d1ddc3541c4f2cf3ab52a9f289b0a2379f8da4c431222f53b0c274b3",
+    "bytes": 211774,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/corrected_20260913/dashboard-desktop.png",
+    "sha256": "98b8ce9800a25fa3c5ef8f794a6cc81545f4388001d45684b61bf757452cfff1",
+    "bytes": 222658,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/corrected_20260913/dashboard-mobile.png",
+    "sha256": "55326eec5b95b3cfcc51737e4bd375c1770d1c7530ea7454409741ccac1d5d1a",
+    "bytes": 224336,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/corrected_20260913/pilot_recovery_dashboard.html",
+    "sha256": "55b4828499a089332e1a493fecb278ed9aef1e5b907dd8514a414fb596e5f3dc",
+    "bytes": 11369,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/corrected_20260913/pilot_recovery_simple.html",
+    "sha256": "eac2dbe56ded2419ae815250089536e029b7534373832c57773fc19f8fa9b562",
+    "bytes": 19630,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/corrected_20260913/simple-preview.png",
+    "sha256": "5f9828c3dd8011371b941929499ad4421739c8ac009e53d16322ea250b219f1b",
+    "bytes": 192870,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL/results/1/training_dashboard.html",
+    "sha256": "acf109a5a8fdbc3627319c4bfb53ccb67d67b63f1273fc23136a7a25cece40e8",
+    "bytes": 13103,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/10/style_dashboard.html",
+    "sha256": "01fc73889f054ae93723139c413ea9408d7b93dc3f7b13ecc927e58dcbf4338d",
+    "bytes": 178659,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/11/combined_dashboard.html",
+    "sha256": "95ea1a6339d6a8139e0d199cf1ec30cbb4825db82fdf8f0046380e30af074ea6",
+    "bytes": 53125,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/11/combined_plotly_dashboard.html",
+    "sha256": "a5a86da6851d0771a9e15fc1a9e05edac939963ad19381319fbd5fe8f1e0b200",
+    "bytes": 270982,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/12/run12_comparison_dashboard.html",
+    "sha256": "9445b1bba0408b15089eb4b112a4f002d56a0a03ac63000d5fbe6a72be6ce35c",
+    "bytes": 12754,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/12/run12_comparison_dashboard.xlsx",
+    "sha256": "26294beeb58b9012ce27036c11ec237e4d06a8dc38a0e305dc5712f73fe7eaf9",
+    "bytes": 23495,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL/results/12/run12_comparison_dashboard.xlsx.inspect.ndjson",
+    "sha256": "ee3162377ae5778db959466555e4667d38e7ddd6bf401e55701b53bd2f93e9fc",
+    "bytes": 476901,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL/results/12/run12_comparison_dashboard_preview.png",
+    "sha256": "9477671be6d418fdcd3cbe7c281a92121409ee1021d9d8428b3313c2965d4c4d",
+    "bytes": 165370,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL/results/13/ai_judge_dashboard.html",
+    "sha256": "d7faae7635567368c3a40d84837bc042e5e9860ba36f1f724b03144b1c84383e",
+    "bytes": 85320,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/14/baseline/samples.jsonl",
+    "sha256": "de4d4c1b09f8bf90170b1c434773c54e79217091c88004c0831b1dce7bcfa221",
+    "bytes": 51690187,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/ai_judge_dashboard.html",
+    "sha256": "c1036f831c78324b12f7f3f48e12a0eeb87a73654de5dfd94b1a6d9b49cd4161",
+    "bytes": 85469,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/combined_dashboard.html",
+    "sha256": "5981183de3b2de05c7b86ac834b36398a241bacc56af70a008558af059f94b53",
+    "bytes": 324750,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/samples.jsonl",
+    "sha256": "35a80e09f4a5fecb1cf14a4eb4dfda6ae220348f51558cb548285b390a6ff16b",
+    "bytes": 3022157,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/15/grpo_rl_effectiveness_dashboard.html",
+    "sha256": "60f7d9545a28a92f4d901275ea26e2c21b02899e371a53224acb24f66e637e18",
+    "bytes": 5042485,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/ai_judge_dashboard.html",
+    "sha256": "0e7ea94ce4f609ead6939846996ceaf9780b87bd43bacfe640df1b6c015aea06",
+    "bytes": 85680,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/combined_dashboard.html",
+    "sha256": "750b55898e53c15957ce43074abfd895b714989793ad92d13caaf06f6d751202",
+    "bytes": 331297,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/samples.jsonl",
+    "sha256": "ab0e9885503d23c723495b6b8baf13c28e0f817ef277f8b14f603531c6cebbf3",
+    "bytes": 6155439,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/ai_judge_dashboard.html",
+    "sha256": "aaeeff861368dfda3ab4522af0beab5bbc9fa007608328c2ac70595f9b5b74da",
+    "bytes": 85548,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/combined_dashboard.html",
+    "sha256": "c980712e1f7632a291f564625026ac4ee133534f486f6ccfeec7d43a60f317ae",
+    "bytes": 335252,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/samples.jsonl",
+    "sha256": "87647528cfa0c82596b4e3ca40e60e92cacb1b3587728d78ac64658db0827bc6",
+    "bytes": 6005813,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/ai_judge_dashboard.html",
+    "sha256": "d960bb8a480062a6094ee3549589d15019019e816acf4725ac993d988d29b754",
+    "bytes": 85400,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/combined_dashboard.html",
+    "sha256": "65c63246e621591b3b0d5184c45a34107c3e5964f497d076fe6d54f8cc6a9ed0",
+    "bytes": 330100,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/samples.jsonl",
+    "sha256": "40fa91d335c4eba5f4f94c7453526dfc4715f4dc01830f10f5de964135389307",
+    "bytes": 6072886,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/ai_judge_dashboard.html",
+    "sha256": "6949ed6425146142a46b95803ac77583571266daac6cf59a63e8522ed792aa87",
+    "bytes": 85439,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": false
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/combined_dashboard.html",
+    "sha256": "359b089b1ceeeff315cc48f5a8e0b16aa821ea6cd31488433a6d38e753f66fbc",
+    "bytes": 334055,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/samples.jsonl",
+    "sha256": "0c312f8298aa24e6c3d09e7883300da892ea575001c81a310bd1dec8a687a436",
+    "bytes": 6104377,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/2/training_dashboard.html",
+    "sha256": "94a9f2f397bed5835f0e4d777bf5e243b763bae2e00ef1bbfdb1341c55671290",
+    "bytes": 13582,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/23/run23-oom-diagnostics.tar.gz",
+    "sha256": "8a44e65d59b403429015bf6af7d4197eec1694b596bc45596bd694273e3665eb",
+    "bytes": 115801,
+    "reason": "Non-research presentation/binary or cache; not required for row-based reproduction"
+  },
+  {
+    "source": "UnSloth-RL/results/27/samples.jsonl",
+    "sha256": "8084cb6680c4a0feaee01dc81b77e8e7d470c69e1da5d3685bcc3b8da7d401b6",
+    "bytes": 5985188,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/28/samples_1.jsonl",
+    "sha256": "3863521f283c8a51c41cc37f9acf51232fc15e6f0aa538a9e24f69a629dceedc",
+    "bytes": 5214732,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/29/samples.jsonl",
+    "sha256": "db6fa7d69a2d3ab04bb85c4e15331b4a29f2cf9693ab75cf29aca736da0a75ba",
+    "bytes": 6283188,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/3/training_dashboard.html",
+    "sha256": "2de05ff6e70231b42e4d3e5cab9c34eeb1d8da67247a6d657061a8fac33d99b8",
+    "bytes": 13588,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/4/training_dashboard.html",
+    "sha256": "684f2e8bce077c063402df7dec207677fcdfee4e55013f4295c40ba0aa7b6d6a",
+    "bytes": 76991,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/5/samples.jsonl",
+    "sha256": "e24d7ac2c0826f0e42829d6b12db7720ec6e4434651e934f438505db052e6bd2",
+    "bytes": 2815236,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/5/training_dashboard.html",
+    "sha256": "4336862c014cc102d160042c1ee4a68f1bf683bc956b302ec7d0adc86b2abad4",
+    "bytes": 116739,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/6/training_dashboard.html",
+    "sha256": "7a12035b268633db02de30fc6fe7974f93f0464f01cbd5e38591d4cd58d52903",
+    "bytes": 123679,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/6/training_dashboard_2.html",
+    "sha256": "32550bd5c6f1d45b6c793217f027aa157755fcefbde27c396f8480f09335fc3a",
+    "bytes": 149564,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/6/training_dashboard_3.html",
+    "sha256": "d537001f2c3705cc96665e98806f6f67266767ef6f27c7ff1efc59da19f5897b",
+    "bytes": 175443,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/7/conrad_training_dashboard.html",
+    "sha256": "adb7c51e3cb38aa1ce6052af689c2715aba34626ff941debace1751eb5740502",
+    "bytes": 226333,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/7/conrad_training_dashboard_complete.html",
+    "sha256": "b649df93c7dd211cc93627d7b06458ce52c3bc2f8a44edf1830612331595cb30",
+    "bytes": 239418,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/7/training_dashboard.html",
+    "sha256": "d537001f2c3705cc96665e98806f6f67266767ef6f27c7ff1efc59da19f5897b",
+    "bytes": 175443,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.jsonl",
+    "sha256": "5c282c5bd3fa50f20273a5a05c3b7f41a25df86d89223372cc7b69501dc26281",
+    "bytes": 5437,
+    "reason": "JSONL keys/values/row order fully represented by sibling CSV; exact JSONL retained Canvas-only"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip",
+    "sha256": "f415e18e3edc3003bff8790832bb938592aec4f45892d00b0401414bc0a3a893",
+    "bytes": 150595,
+    "reason": "Nested ZIP retained restricted; research text/data members inspected and deduplicated against expanded records",
+    "members_inspected": 120,
+    "research_members": 74
+  },
+  {
+    "source": "UnSloth-RL/results/9/conrad_training_dashboard.html",
+    "sha256": "5ef789d6d1ddc3541c4f2cf3ab52a9f289b0a2379f8da4c431222f53b0c274b3",
+    "bytes": 211774,
+    "reason": "Rendered dashboard retained Canvas-only; saved source data retained public candidate; no deletion of unique content",
+    "plotly_detected": true
+  }
+]

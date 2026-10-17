@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "tests": 29,
+  "coverage": [
+    "historical Judge prompt/scoring/correctness gate",
+    "fail-closed schema and bounded retries",
+    "large/unicode/timeout temporary-script execution",
+    "12 frozen new launcher configurations, dry-run and output isolation"
+  ],
+  "command": "python -m unittest discover -s tests -v",
+  "environment_note": "This host sandbox required TEMP/TMP to point to a writable task temp folder. No source-repository or GPU changes."
+}

@@ -1,0 +1,113 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_lora_holdout
+MODEL_NAME=codellama/CodeLlama-7b-Python-hf
+RUN_ROOT=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+WORLD_SIZE=1
+PER_DEVICE_TRAIN_BATCH_SIZE=1
+GRADIENT_ACCUMULATION_STEPS=2
+GLOBAL_TRAIN_BATCH=2
+NUM_GENERATIONS=4
+==((====))==  Unsloth 2026.4.8: Fast Llama patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 2. Max memory: 23.557 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+codellama/CodeLlama-7b-Python-hf does not have a padding token! Will use pad_token = <unk>.
+Dataset split:
+  Train:   tasks 0-130 (131 tasks)
+  Holdout: tasks 131-163 (33 tasks)
+  Tiny:    tasks 0-4 (5 tasks)
+
+============================================================
+DEBUG — raw prompt the model will receive:
+============================================================
+You are a Python coding assistant.
+Return ONLY valid Python code followed immediately by </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.
+
+Example:
+
+<code>
+def add(a, b):
+    return a + b
+</code>
+
+### Instruction:
+
+def digits(n):
+    """Given a positive integer n, return the product of the odd digits.
+    Return 0 if all digits are even.
+    For example:
+    digits(1)  == 1
+    digits(4)  == 0
+    digits(235) == 15
+    """
+
+
+### Response:
+<code>
+
+============================================================
+
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 4
+Loading LoRA from: <PRIVATE_PATH>
+
+============================================================
+Starting evaluation: lora_holdout_tasks_131_163
+============================================================
+[lora_holdout_tasks_131_163] task=HumanEval/131 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/132 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/133 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/134 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/135 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/136 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/137 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/138 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/139 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/140 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/141 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/142 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/143 gen=0 reward=5.8 format=extra_text_after_code compile=ok runtime=ok test=passed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/144 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/145 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/146 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/147 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/148 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/149 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/150 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/151 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/152 gen=0 reward=5.8 format=extra_text_after_code compile=ok runtime=ok test=passed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/153 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/154 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/155 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/156 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/157 gen=0 reward=5.8 format=extra_text_after_code compile=ok runtime=ok test=passed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/158 gen=0 reward=0.0 format=missing_closing_tag compile=not_checked runtime=not_run test=not_run reason=no_code_extracted
+[lora_holdout_tasks_131_163] task=HumanEval/159 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/160 gen=0 reward=0.0 format=extra_text_after_code compile=blocked runtime=not_run test=not_run reason=blocked_pattern
+[lora_holdout_tasks_131_163] task=HumanEval/161 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/162 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+[lora_holdout_tasks_131_163] task=HumanEval/163 gen=0 reward=0.8 format=extra_text_after_code compile=ok runtime=ok test=failed reason=none
+
+============================================================
+Evaluation summary: lora_holdout_tasks_131_163
+============================================================
+label: lora_holdout_tasks_131_163
+rows: 33
+tasks: 33
+avg_reward: 0.9878787878787881
+test_pass_rate_generation_level: 0.09090909090909091
+pass_at_any_generation_task_level: 0.09090909090909091
+format_ok_rate: 0.0
+compile_ok_rate: 0.6666666666666666
+avg_completion_length: 256.0
+output_csv: <PRIVATE_PATH>
+Saved to: <PRIVATE_PATH>
+Saved summary to: <PRIVATE_PATH>

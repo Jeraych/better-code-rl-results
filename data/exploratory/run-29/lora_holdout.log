@@ -1,0 +1,294 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_lora_holdout
+MODEL_NAME=unsloth/Qwen3.6-27B
+RUN_ROOT=<PRIVATE_PATH>
+RUN_ID=baseline_lora_holdout
+RUN_NAME=baseline
+REPEAT_INDEX=1
+REPEAT_TOTAL=1
+LOG_DIR=<PRIVATE_PATH>
+OUTPUT_DIR=<PRIVATE_PATH>
+LORA_OUTPUT_DIR=<PRIVATE_PATH>
+LORA_PATH=<PRIVATE_PATH>
+AUTO_RESUME=0
+RESUME_FROM_CHECKPOINT=none
+Create fresh LoRA adapter for training: False
+Before/after CSV: enabled=True, path=<PRIVATE_PATH>, split=current, num_tasks=10, num_generations=1, do_sample=False
+Model loading: max_seq_length=2048, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, dropout=0.0, target_modules=all-linear, seed=3409
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=4, eval_num_generations=4, per_device_train_batch_size=4, gradient_accumulation_steps=1, max_prompt_length=1024, max_completion_length=384, max_steps=500, tiny_max_steps=200, save_steps_train=250, save_steps_tiny=50, save_strategy=steps, save_total_limit=2, logging_steps=1, optim=adamw_8bit, report_to=none
+Reward weights: format=0.1, syntax=0.1, compile=0.3, style=0.0, tests=4.5, performance=1.0, ai_judge=1.0, profile=baseline
+AI judge: enabled=False, mock=False, model=qwen3-coder:30b, require_test_pass=True, prompt_version=taxonomy_readability_maintainability_v3, prompt_hash=50d083c5e7100d2e
+Path layout: run_root=<PRIVATE_PATH>, log_dir=<PRIVATE_PATH>, output_dir=<PRIVATE_PATH>, lora_output_dir=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 2. Max memory: 23.558 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<05:34,  3.54it/s]Loading weights:   0%|          | 2/1184 [00:00<05:33,  3.55it/s]Loading weights:   1%|          | 13/1184 [00:00<00:42, 27.71it/s]Loading weights:   2%|▏         | 27/1184 [00:00<00:21, 54.27it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:15, 74.70it/s]Loading weights:   4%|▍         | 51/1184 [00:00<00:14, 78.55it/s]Loading weights:   6%|▌         | 67/1184 [00:01<00:11, 98.15it/s]Loading weights:   7%|▋         | 82/1184 [00:01<00:10, 106.62it/s]Loading weights:   8%|▊         | 99/1184 [00:01<00:09, 117.60it/s]Loading weights:  10%|▉         | 116/1184 [00:01<00:08, 131.18it/s]Loading weights:  11%|█         | 132/1184 [00:01<00:07, 137.05it/s]Loading weights:  12%|█▏        | 147/1184 [00:01<00:07, 130.09it/s]Loading weights:  14%|█▎        | 161/1184 [00:01<00:08, 117.63it/s]Loading weights:  15%|█▍        | 174/1184 [00:01<00:08, 118.30it/s]Loading weights:  16%|█▌        | 188/1184 [00:02<00:08, 121.42it/s]Loading weights:  17%|█▋        | 202/1184 [00:02<00:07, 123.71it/s]Loading weights:  18%|█▊        | 215/1184 [00:02<00:07, 124.19it/s]Loading weights:  19%|█▉        | 228/1184 [00:02<00:07, 123.21it/s]Loading weights:  20%|██        | 241/1184 [00:02<00:07, 122.47it/s]Loading weights:  22%|██▏       | 255/1184 [00:02<00:07, 124.64it/s]Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 124.93it/s]Loading weights:  24%|██▎       | 281/1184 [00:02<00:07, 123.75it/s]Loading weights:  26%|██▌       | 302/1184 [00:02<00:06, 143.00it/s]Loading weights:  27%|██▋       | 317/1184 [00:03<00:07, 123.83it/s]Loading weights:  28%|██▊       | 333/1184 [00:03<00:06, 126.20it/s]Loading weights:  30%|██▉       | 355/1184 [00:03<00:05, 145.68it/s]Loading weights:  31%|███▏      | 370/1184 [00:03<00:06, 126.86it/s]Loading weights:  33%|███▎      | 386/1184 [00:03<00:06, 128.37it/s]Loading weights:  34%|███▍      | 408/1184 [00:03<00:05, 146.70it/s]Loading weights:  36%|███▌      | 424/1184 [00:03<00:05, 130.15it/s]Loading weights:  37%|███▋      | 439/1184 [00:03<00:05, 128.34it/s]Loading weights:  39%|███▉      | 461/1184 [00:04<00:04, 146.60it/s]Loading weights:  40%|████      | 477/1184 [00:04<00:05, 130.26it/s]Loading weights:  42%|████▏     | 492/1184 [00:04<00:05, 130.31it/s]Loading weights:  43%|████▎     | 514/1184 [00:04<00:04, 148.26it/s]Loading weights:  45%|████▍     | 530/1184 [00:04<00:04, 131.51it/s]Loading weights:  46%|████▌     | 545/1184 [00:04<00:04, 131.33it/s]Loading weights:  48%|████▊     | 567/1184 [00:04<00:04, 149.06it/s]Loading weights:  49%|████▉     | 583/1184 [00:05<00:04, 131.45it/s]Loading weights:  51%|█████     | 598/1184 [00:05<00:04, 131.07it/s]Loading weights:  52%|█████▏    | 620/1184 [00:05<00:03, 148.81it/s]Loading weights:  54%|█████▎    | 636/1184 [00:05<00:04, 131.64it/s]Loading weights:  55%|█████▍    | 651/1184 [00:05<00:04, 131.33it/s]Loading weights:  57%|█████▋    | 673/1184 [00:05<00:03, 149.18it/s]Loading weights:  58%|█████▊    | 689/1184 [00:05<00:03, 132.06it/s]Loading weights:  59%|█████▉    | 704/1184 [00:05<00:03, 131.53it/s]Loading weights:  61%|██████▏   | 726/1184 [00:06<00:03, 148.86it/s]Loading weights:  63%|██████▎   | 742/1184 [00:06<00:03, 131.64it/s]Loading weights:  64%|██████▍   | 757/1184 [00:06<00:03, 131.36it/s]Loading weights:  66%|██████▌   | 779/1184 [00:06<00:02, 149.00it/s]Loading weights:  67%|██████▋   | 795/1184 [00:06<00:02, 131.65it/s]Loading weights:  68%|██████▊   | 810/1184 [00:06<00:02, 131.51it/s]Loading weights:  70%|███████   | 831/1184 [00:06<00:02, 151.04it/s]Loading weights:  72%|███████▏  | 847/1184 [00:06<00:02, 128.17it/s]Loading weights:  86%|████████▌ | 1015/1184 [00:07<00:00, 498.39it/s]Loading weights: 100%|█████████▉| 1181/1184 [00:07<00:00, 793.65it/s]Loading weights: 100%|██████████| 1184/1184 [00:07<00:00, 165.53it/s]
+Using dataset: evalplus/humanevalplus [test]
+
+============================================================
+DEBUG - raw prompt the model will receive:
+============================================================
+<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+
+
+def encode_shift(s: str):
+    """
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """
+    return "".join([chr(((ord(ch) + 5 - ord("a")) % 26) + ord("a")) for ch in s])
+
+
+def decode_shift(s: str):
+    """
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+
+============================================================
+
+Loading LoRA from: <PRIVATE_PATH>
+
+============================================================
+Starting evaluation: lora_holdout_tasks_50_99
+============================================================
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 ai_judge=disabled ai_judge_score=0.000 reason=syntax_error
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=1 reward=0.4 format=missing_closing_tag syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=3 reward=0.4 format=missing_closing_tag syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=6 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=7 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=1 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=6 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=5 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=6 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=3 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=2 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=3 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 ai_judge=disabled ai_judge_score=0.000 reason=syntax_error
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=2 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=0 reward=0.5 format=ok syntax=ok style=violations violations=4 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=1 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=3 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=3 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=0 reward=0.5 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=1 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=2 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=3 reward=0.5 format=ok syntax=ok style=violations violations=1 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=0 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=2 reward=5.0 format=ok syntax=ok style=ok violations=0 ai_judge=disabled ai_judge_score=0.000 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=3 reward=5.0 format=ok syntax=ok style=violations violations=2 ai_judge=disabled ai_judge_score=0.000 reason=none
+
+============================================================
+Evaluation summary: lora_holdout_tasks_50_99
+============================================================
+Rows: 200
+Avg reward: 3.869
+Avg style score: 0.935
+Avg AI judge score (judged solutions): 0.000
+Avg performance score (correct solutions): 0.000
+Format OK rate: 98.00%
+Syntax OK rate: 99.00%
+Style OK rate: 60.00%
+Test pass rate: 75.00%
+Pass + style clean rate: 44.50%
+Avg completion length: 131.7
+Saved to: <PRIVATE_PATH>

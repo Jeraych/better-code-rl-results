@@ -1,0 +1,14 @@
+{
+  "command": "python -m pytest -q",
+  "analyzer_commit": "518360297f59ad7b6569233eb4b934e6b00c083b",
+  "compatibility_patch_applied": true,
+  "pilot_dependency_profile": "requirements-pilot.txt",
+  "passed": 29,
+  "failed": 16,
+  "skipped": 2,
+  "known_failure_groups": [
+    "Tests reference python/sample_project, but fixtures are under python/examples/sample_project.",
+    "The score test expects an older linear formula instead of the current nonlinear formula.",
+    "Mypy, Safety, and Xenon were not installed in the deliberately minimal quick-path environment."
+  ]
+}

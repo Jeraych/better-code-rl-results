@@ -1,0 +1,177 @@
+<PRIVATE_PATH> UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_base_holdout
+MODEL_NAME=unsloth/Qwen3.6-27B
+Create fresh LoRA adapter for training: False
+Model loading: max_seq_length=1024, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, target_modules=all-linear
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=2, eval_num_generations=2, per_device_train_batch_size=2, gradient_accumulation_steps=1, max_prompt_length=512, max_completion_length=192, max_steps=300, tiny_max_steps=1
+Logging completions to grpo_mvp_logs/20260603_191837/samples.jsonl and grpo_mvp_logs/20260603_191837/samples.csv
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.559 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<05:37,  3.50it/s]Loading weights:   0%|          | 2/1184 [00:00<05:38,  3.49it/s]Loading weights:   1%|          | 13/1184 [00:00<00:42, 27.28it/s]Loading weights:   2%|▏         | 27/1184 [00:00<00:21, 53.36it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:15, 73.77it/s]Loading weights:   4%|▍         | 51/1184 [00:01<00:14, 77.76it/s]Loading weights:   6%|▌         | 67/1184 [00:01<00:11, 97.07it/s]Loading weights:   7%|▋         | 82/1184 [00:01<00:10, 105.26it/s]Loading weights:   8%|▊         | 96/1184 [00:01<00:09, 114.45it/s]Loading weights:   9%|▉         | 109/1184 [00:01<00:09, 118.04it/s]Loading weights:  11%|█         | 129/1184 [00:01<00:07, 136.32it/s]Loading weights:  12%|█▏        | 144/1184 [00:01<00:07, 135.56it/s]Loading weights:  13%|█▎        | 158/1184 [00:01<00:08, 118.29it/s]Loading weights:  15%|█▍        | 173/1184 [00:01<00:08, 123.94it/s]Loading weights:  16%|█▌        | 187/1184 [00:02<00:07, 126.15it/s]Loading weights:  17%|█▋        | 201/1184 [00:02<00:07, 127.70it/s]Loading weights:  18%|█▊        | 215/1184 [00:02<00:07, 122.55it/s]Loading weights:  19%|█▉        | 228/1184 [00:02<00:07, 121.44it/s]Loading weights:  20%|██        | 241/1184 [00:02<00:07, 121.56it/s]Loading weights:  22%|██▏       | 255/1184 [00:02<00:07, 124.35it/s]Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 122.76it/s]Loading weights:  24%|██▎       | 281/1184 [00:02<00:07, 121.10it/s]Loading weights:  25%|██▍       | 294/1184 [00:02<00:07, 122.91it/s]Loading weights:  26%|██▌       | 308/1184 [00:03<00:06, 127.35it/s]Loading weights:  27%|██▋       | 321/1184 [00:03<00:06, 127.15it/s]Loading weights:  29%|██▊       | 339/1184 [00:03<00:05, 142.42it/s]Loading weights:  30%|██▉       | 355/1184 [00:03<00:05, 142.95it/s]Loading weights:  31%|███▏      | 370/1184 [00:03<00:06, 123.89it/s]Loading weights:  33%|███▎      | 385/1184 [00:03<00:06, 129.54it/s]Loading weights:  34%|███▍      | 400/1184 [00:03<00:06, 128.14it/s]Loading weights:  35%|███▌      | 417/1184 [00:03<00:05, 131.78it/s]Loading weights:  37%|███▋      | 434/1184 [00:03<00:05, 141.61it/s]Loading weights:  38%|███▊      | 450/1184 [00:04<00:05, 143.78it/s]Loading weights:  39%|███▉      | 465/1184 [00:04<00:05, 137.15it/s]Loading weights:  40%|████      | 479/1184 [00:04<00:05, 125.39it/s]Loading weights:  42%|████▏     | 500/1184 [00:04<00:04, 143.35it/s]Loading weights:  43%|████▎     | 515/1184 [00:04<00:04, 142.01it/s]Loading weights:  45%|████▍     | 530/1184 [00:04<00:05, 126.51it/s]Loading weights:  46%|████▌     | 545/1184 [00:04<00:05, 126.56it/s]Loading weights:  48%|████▊     | 567/1184 [00:04<00:04, 146.03it/s]Loading weights:  49%|████▉     | 582/1184 [00:05<00:04, 127.49it/s]Loading weights:  51%|█████     | 598/1184 [00:05<00:04, 130.69it/s]Loading weights:  52%|█████▏    | 614/1184 [00:05<00:04, 138.09it/s]Loading weights:  53%|█████▎    | 629/1184 [00:05<00:04, 133.72it/s]Loading weights:  55%|█████▍    | 648/1184 [00:05<00:03, 147.31it/s]Loading weights:  56%|█████▌    | 664/1184 [00:05<00:03, 134.65it/s]Loading weights:  57%|█████▋    | 679/1184 [00:05<00:03, 131.37it/s]Loading weights:  59%|█████▉    | 698/1184 [00:05<00:03, 142.07it/s]Loading weights:  60%|██████    | 713/1184 [00:05<00:03, 140.80it/s]Loading weights:  62%|██████▏   | 729/1184 [00:06<00:03, 143.01it/s]Loading weights:  63%|██████▎   | 744/1184 [00:06<00:03, 123.27it/s]Loading weights:  65%|██████▍   | 765/1184 [00:06<00:02, 140.61it/s]Loading weights:  66%|██████▌   | 780/1184 [00:06<00:02, 140.56it/s]Loading weights:  67%|██████▋   | 795/1184 [00:06<00:03, 125.72it/s]Loading weights:  68%|██████▊   | 810/1184 [00:06<00:02, 125.99it/s]Loading weights:  70%|██████▉   | 824/1184 [00:06<00:02, 128.70it/s]Loading weights:  71%|███████   | 841/1184 [00:06<00:02, 132.47it/s]Loading weights:  76%|███████▋  | 905/1184 [00:07<00:01, 266.14it/s]Loading weights:  94%|█████████▎| 1109/1184 [00:07<00:00, 749.79it/s]Loading weights: 100%|██████████| 1184/1184 [00:07<00:00, 164.01it/s]
+
+============================================================
+DEBUG - raw prompt the model will receive:
+============================================================
+<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+
+
+def encode_shift(s: str):
+    """
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """
+    return "".join([chr(((ord(ch) + 5 - ord("a")) % 26) + ord("a")) for ch in s])
+
+
+def decode_shift(s: str):
+    """
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+
+============================================================
+
+
+============================================================
+Starting evaluation: base_holdout_tasks_50_99
+============================================================
+[base_holdout_tasks_50_99] task=HumanEval/50 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/50 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/51 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/51 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/52 gen=0 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/52 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/53 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/53 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/54 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/54 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/55 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/55 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/56 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/56 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/57 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=3 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/57 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/58 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/58 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/59 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[base_holdout_tasks_50_99] task=HumanEval/59 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/60 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/60 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/61 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/61 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/62 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/62 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/63 gen=0 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/63 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/64 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/64 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/65 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/65 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/66 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/66 gen=1 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/67 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/67 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/68 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/68 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/69 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/69 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/70 gen=0 reward=5.25 format=ok syntax=ok style=violations violations=3 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/70 gen=1 reward=5.25 format=ok syntax=ok style=violations violations=3 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/71 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/71 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/72 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/72 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/73 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/73 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/74 gen=0 reward=5.5 format=ok syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/74 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/75 gen=0 reward=5.25 format=missing_closing_tag syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/75 gen=1 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/76 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/76 gen=1 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[base_holdout_tasks_50_99] task=HumanEval/77 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/77 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/78 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/78 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/79 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/79 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/80 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/80 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/81 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[base_holdout_tasks_50_99] task=HumanEval/81 gen=1 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[base_holdout_tasks_50_99] task=HumanEval/82 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/82 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/83 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/83 gen=1 reward=4.5 format=missing_closing_tag syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/84 gen=0 reward=5.5 format=ok syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/84 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/85 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/85 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/86 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/86 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/87 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/87 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/88 gen=0 reward=5.25 format=ok syntax=ok style=violations violations=3 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/88 gen=1 reward=5.25 format=ok syntax=ok style=violations violations=3 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/89 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/89 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/90 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/90 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/91 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[base_holdout_tasks_50_99] task=HumanEval/91 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/92 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/92 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/93 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/93 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/94 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/94 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/95 gen=0 reward=5.0 format=ok syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/95 gen=1 reward=5.0 format=ok syntax=ok style=violations violations=4 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/96 gen=0 reward=5.0 format=missing_closing_tag syntax=ok style=violations violations=2 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/96 gen=1 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/97 gen=0 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/97 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/98 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/98 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/99 gen=0 reward=5.5 format=missing_closing_tag syntax=ok style=ok violations=0 reason=none
+[base_holdout_tasks_50_99] task=HumanEval/99 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+
+============================================================
+Evaluation summary: base_holdout_tasks_50_99
+============================================================
+Rows: 100
+Avg reward: 5.520
+Avg style score: 0.918
+Format OK rate: 91.00%
+Syntax OK rate: 95.00%
+Style OK rate: 69.00%
+Avg completion length: 102.4
+Saved to: grpo_mvp_logs/20260603_191837/eval_base_holdout_tasks.csv

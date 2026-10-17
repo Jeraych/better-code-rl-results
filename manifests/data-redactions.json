@@ -1,0 +1,28 @@
+[
+  {
+    "run": 32,
+    "original_sha256": "ee6b1d8db5ad28397e85c6e7a6589fcbbb8ffb4166bfb2ec8694097ff67bcef9",
+    "candidate_sha256": "dae3256dd680f1b83415bf774278d326c7903c5582ce5f64eb0ea6e1b28f3ad2",
+    "changes": [
+      {
+        "row": 1754,
+        "step": "438",
+        "completion_index": "0",
+        "field": "test_stderr_preview"
+      }
+    ]
+  },
+  {
+    "run": 35,
+    "original_sha256": "83059285ae5b6ef1bceee9888638b8123610c10511557501aeb0276ced2890ee",
+    "candidate_sha256": "c08379adda6feaa80c9faf4f581c5345f5a327a68c7fde4c373a719e75d6f1d4",
+    "changes": [
+      {
+        "row": 1010,
+        "step": "252",
+        "completion_index": "0",
+        "field": "test_stderr_preview"
+      }
+    ]
+  }
+]

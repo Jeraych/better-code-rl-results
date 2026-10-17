@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "run12": {
+    "rows": 1000,
+    "eligible": 960,
+    "mean_eligible_score": 0.9754375106617365,
+    "eligible_at_max": 779,
+    "groups": 500,
+    "zero_total_reward_variation_groups": 408
+  },
+  "prompt_calibration": {
+    "STANDALONE_PROMPT": {
+      "reviews": 80,
+      "groups": 20,
+      "equal_score_groups": 18,
+      "mean_within_group_population_sd": 0.012990381056766582,
+      "mean_score": 0.8125
+    },
+    "HISTORICAL_PROMPT": {
+      "reviews": 80,
+      "groups": 20,
+      "equal_score_groups": 11,
+      "mean_within_group_population_sd": 0.039264466949589,
+      "mean_score": 0.818125
+    }
+  },
+  "limits": "Saved exploratory records only; prepared 144-call plan is not classified as completed. No API calls, candidate execution or training."
+}

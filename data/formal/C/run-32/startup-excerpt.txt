@@ -1,0 +1,100 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=train
+MODEL_NAME=unsloth/Qwen3.6-27B
+RUN_ROOT=<PRIVATE_PATH>
+RUN_ID=baseline_train
+RUN_NAME=baseline
+REPEAT_INDEX=1
+REPEAT_TOTAL=1
+LOG_DIR=<PRIVATE_PATH>
+OUTPUT_DIR=<PRIVATE_PATH>
+LORA_OUTPUT_DIR=<PRIVATE_PATH>
+LORA_PATH=<PRIVATE_PATH>
+AUTO_RESUME=0
+RESUME_FROM_CHECKPOINT=none
+Create fresh LoRA adapter for training: True
+Before/after CSV: enabled=True, path=<PRIVATE_PATH>, split=current, num_tasks=10, num_generations=1, do_sample=False
+Model loading: max_seq_length=2048, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, dropout=0.0, target_modules=all-linear, seed=3409
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=4, eval_num_generations=4, per_device_train_batch_size=4, gradient_accumulation_steps=1, max_prompt_length=1024, max_completion_length=384, max_steps=500, tiny_max_steps=200, save_steps_train=250, save_steps_tiny=50, save_strategy=steps, save_total_limit=2, logging_steps=1, optim=adamw_8bit, report_to=none
+Reward weights: format=0.1, syntax=0.1, compile=0.3, style=0.0, tests=4.5, performance=1.0, ai_judge=1.0, profile=baseline
+AI judge: enabled=False, mock=False, model=qwen3-coder:30b, require_test_pass=True, prompt_version=taxonomy_readability_maintainability_v3, prompt_hash=50d083c5e7100d2e
+Path layout: run_root=<PRIVATE_PATH>, log_dir=<PRIVATE_PATH>, output_dir=<PRIVATE_PATH>, lora_output_dir=<PRIVATE_PATH>
+Logging completions to <PRIVATE_PATH> and <PRIVATE_PATH>
+Cleaned <PRIVATE_PATH>
+Cleaned <PRIVATE_PATH>
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 2. Max memory: 23.558 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1184 [00:00<05:39,  3.48it/s]
+Loading weights:   0%|          | 2/1184 [00:00<05:40,  3.48it/s]
+Loading weights:   1%|          | 13/1184 [00:00<00:43, 27.18it/s]
+Loading weights:   2%|▏         | 27/1184 [00:00<00:21, 53.18it/s]
+Loading weights:   3%|▎         | 41/1184 [00:00<00:15, 73.25it/s]
+Loading weights:   4%|▍         | 51/1184 [00:01<00:14, 77.15it/s]
+Loading weights:   6%|▌         | 67/1184 [00:01<00:11, 96.62it/s]
+Loading weights:   7%|▋         | 82/1184 [00:01<00:10, 105.01it/s]
+Loading weights:   8%|▊         | 99/1184 [00:01<00:09, 115.78it/s]
+Loading weights:  10%|▉         | 116/1184 [00:01<00:08, 129.10it/s]
+Loading weights:  11%|█         | 132/1184 [00:01<00:07, 134.76it/s]
+Loading weights:  12%|█▏        | 146/1184 [00:01<00:07, 132.91it/s]
+Loading weights:  14%|█▎        | 160/1184 [00:01<00:09, 112.77it/s]
+Loading weights:  15%|█▍        | 174/1184 [00:01<00:08, 116.16it/s]
+Loading weights:  16%|█▌        | 188/1184 [00:02<00:08, 119.37it/s]
+Loading weights:  17%|█▋        | 202/1184 [00:02<00:08, 121.84it/s]
+Loading weights:  18%|█▊        | 215/1184 [00:02<00:07, 122.52it/s]
+Loading weights:  19%|█▉        | 228/1184 [00:02<00:07, 121.57it/s]
+Loading weights:  20%|██        | 241/1184 [00:02<00:07, 120.94it/s]
+Loading weights:  22%|██▏       | 255/1184 [00:02<00:07, 122.98it/s]
+Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 123.22it/s]
+Loading weights:  24%|██▎       | 281/1184 [00:02<00:07, 121.76it/s]
+Loading weights:  25%|██▌       | 300/1184 [00:02<00:06, 140.88it/s]
+Loading weights:  27%|██▋       | 315/1184 [00:03<00:07, 120.65it/s]
+Loading weights:  28%|██▊       | 332/1184 [00:03<00:06, 129.63it/s]
+Loading weights:  29%|██▉       | 347/1184 [00:03<00:06, 127.73it/s]
+Loading weights:  31%|███       | 364/1184 [00:03<00:06, 131.32it/s]
+Loading weights:  32%|███▏      | 381/1184 [00:03<00:05, 139.92it/s]
+Loading weights:  34%|███▎      | 397/1184 [00:03<00:05, 142.24it/s]
+Loading weights:  35%|███▍      | 412/1184 [00:03<00:05, 136.03it/s]
+Loading weights:  36%|███▌      | 426/1184 [00:03<00:06, 121.59it/s]
+Loading weights:  38%|███▊      | 447/1184 [00:04<00:05, 139.29it/s]
+Loading weights:  39%|███▉      | 462/1184 [00:04<00:05, 139.52it/s]
+Loading weights:  40%|████      | 477/1184 [00:04<00:05, 124.48it/s]
+Loading weights:  42%|████▏     | 492/1184 [00:04<00:05, 125.42it/s]
+Loading weights:  43%|████▎     | 512/1184 [00:04<00:04, 144.43it/s]
+Loading weights:  45%|████▍     | 527/1184 [00:04<00:05, 124.14it/s]
+Loading weights:  46%|████▌     | 544/1184 [00:04<00:04, 133.70it/s]
+Loading weights:  47%|████▋     | 559/1184 [00:04<00:04, 130.68it/s]
+Loading weights:  49%|████▊     | 576/1184 [00:05<00:04, 133.29it/s]
+Loading weights:  50%|█████     | 595/1184 [00:05<00:04, 146.11it/s]
+Loading weights:  52%|█████▏    | 611/1184 [00:05<00:04, 134.10it/s]
+Loading weights:  53%|█████▎    | 626/1184 [00:05<00:04, 131.21it/s]
+Loading weights:  54%|█████▍    | 645/1184 [00:05<00:03, 142.75it/s]
+Loading weights:  56%|█████▌    | 660/1184 [00:05<00:03, 141.78it/s]
+Loading weights:  57%|█████▋    | 676/1184 [00:05<00:03, 143.86it/s]
+Loading weights:  58%|█████▊    | 691/1184 [00:05<00:04, 122.99it/s]
+Loading weights:  59%|█████▉    | 704/1184 [00:06<00:03, 124.46it/s]
+Loading weights:  61%|██████    | 722/1184 [00:06<00:03, 138.96it/s]
+Loading weights:  62%|██████▏   | 737/1184 [00:06<00:03, 120.44it/s]
+Loading weights:  64%|██████▍   | 756/1184 [00:06<00:03, 136.13it/s]
+Loading weights:  65%|██████▌   | 771/1184 [00:06<00:03, 132.52it/s]
+Loading weights:  67%|██████▋   | 788/1184 [00:06<00:02, 134.56it/s]
+Loading weights:  68%|██████▊   | 807/1184 [00:06<00:02, 146.08it/s]
+Loading weights:  69%|██████▉   | 822/1184 [00:06<00:02, 137.37it/s]
+Loading weights:  71%|███████   | 837/1184 [00:06<00:02, 132.56it/s]
+Loading weights:  72%|███████▏  | 851/1184 [00:07<00:02, 128.28it/s]
+Loading weights:  89%|████████▉ | 1053/1184 [00:07<00:00, 624.69it/s]
+Loading weights: 100%|██████████| 1184/1184 [00:07<00:00, 162.91it/s]
+[unsloth_zoo.log|WARNING]Unsloth: Failed to register input-embedding hook for `model.base_model.model.model.visual`: `get_input_embeddings` not auto‑handled for Qwen3_5VisionModel; please override in the subclass.. Falling back to pre-forward hook.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248046, 'bos_token_id': None}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 50 | Num Epochs = 10 | Total steps = 500

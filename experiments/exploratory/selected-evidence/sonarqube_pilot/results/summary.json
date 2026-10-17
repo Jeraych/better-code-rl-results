@@ -1,0 +1,88 @@
+{
+  "environment": {
+    "sonarqube_version": "26.7.0.124771",
+    "docker_image_digest": "sha256:d4899d380ad9d7b63ebaa751e047f5a4f064f8902cdf7c1a3c3c96f7d71600ed",
+    "scanner": "pysonar 1.3.0.4086",
+    "quality_profile": "Sonar way",
+    "active_python_rules": 362
+  },
+  "frozen_dataset": {
+    "fixture_count": 23,
+    "run13_sample_count": 50,
+    "total_issues": 1,
+    "run13_issues": 0,
+    "mapped_fixture_metrics": {
+      "tp": 1,
+      "tn": 4,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "mapped_fixture_count": 8,
+    "direct_or_partial_family_count": 3,
+    "repeatable": true,
+    "scan_1_signatures": [
+      [
+        "python:S5754",
+        "dataset/fixtures/exception_bare_positive.py",
+        4,
+        "Specify an exception class to catch or reraise the exception"
+      ]
+    ],
+    "scan_2_signatures": [
+      [
+        "python:S5754",
+        "dataset/fixtures/exception_bare_positive.py",
+        4,
+        "Specify an exception class to catch or reraise the exception"
+      ]
+    ]
+  },
+  "exploratory_extension": {
+    "pair_count": 8,
+    "directionally_correct_pairs": 1,
+    "tied_pairs": 7,
+    "reversed_pairs": 0,
+    "train_py_sha256": "82a2349a37666b721481cd586cdedb31fbf95560f70b4fbe826266eba9ce6016",
+    "train_py_issue_count": 12,
+    "train_py_rules": {
+      "python:S3776": 4,
+      "python:S1192": 4,
+      "python:S5713": 2,
+      "python:S6353": 1,
+      "python:S3358": 1
+    },
+    "total_issues": 14
+  },
+  "timings": {
+    "one_time_setup": {
+      "docker_image_pull_completed_seconds": 68.1,
+      "server_startup_seconds": 36.6,
+      "included_in_scan_latency": false
+    },
+    "frozen_scan_1": {
+      "files": 73,
+      "python_sensor_ms": 2237,
+      "scanner_engine_ms": 19502,
+      "end_to_end_ms": 24231,
+      "quality_gate": "PASSED"
+    },
+    "frozen_scan_2": {
+      "files": 73,
+      "python_sensor_ms": 2533,
+      "scanner_engine_ms": 12184,
+      "end_to_end_ms": 15895,
+      "quality_gate": "PASSED"
+    },
+    "exploratory_extension": {
+      "files": 90,
+      "python_sensor_ms": 4990,
+      "end_to_end_ms": 20254,
+      "quality_gate": "FAILED"
+    }
+  },
+  "candidate_code_executed": false
+}

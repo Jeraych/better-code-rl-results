@@ -1,0 +1,293 @@
+{
+  "HISTORICAL_PROMPT": {
+    "requests": 80,
+    "http_successes": 80,
+    "valid_reviews": 80,
+    "successful_request_rate": 1.0,
+    "valid_review_rate": 1.0,
+    "score_mean": 0.818125,
+    "score_std_population": 0.13969693760065036,
+    "score_min": 0.5,
+    "score_max": 1.0,
+    "clean_score_rate": 0.25,
+    "complete_valid_groups": 20,
+    "equal_score_group_rate": 0.55,
+    "mean_within_group_std_population": 0.039264466949589,
+    "median_latency_seconds": 13.772738350000509,
+    "p95_latency_seconds": 29.099822630000926,
+    "categories": {
+      "Readability": 59,
+      "Maintainability": 22
+    },
+    "subcategories": {
+      "Sub-readable Code Exists": 59,
+      "Code Duplication": 10,
+      "Unnecessary Conditional Block": 9,
+      "Unnecessary Else": 3
+    },
+    "severities": {
+      "low": 69,
+      "medium": 12
+    },
+    "statuses": {
+      "ok": 80
+    },
+    "malformed_count": 0,
+    "timeout_count": 0,
+    "other_error_count": 0,
+    "input_tokens": 89892,
+    "output_tokens": 10987,
+    "returned_models": [
+      "qwen-32b"
+    ],
+    "discarded_findings": 9
+  },
+  "STANDALONE_PROMPT": {
+    "requests": 80,
+    "http_successes": 80,
+    "valid_reviews": 80,
+    "successful_request_rate": 1.0,
+    "valid_review_rate": 1.0,
+    "score_mean": 0.8125,
+    "score_std_population": 0.1331117951197414,
+    "score_min": 0.7,
+    "score_max": 1.0,
+    "clean_score_rate": 0.3,
+    "complete_valid_groups": 20,
+    "equal_score_group_rate": 0.9,
+    "mean_within_group_std_population": 0.012990381056766582,
+    "median_latency_seconds": 18.436103149999326,
+    "p95_latency_seconds": 32.059877580000645,
+    "categories": {
+      "Readability": 66,
+      "Maintainability": 34
+    },
+    "subcategories": {
+      "Confusing Variable Naming": 56,
+      "Unnecessary Conditional Block": 29,
+      "Sub-readable Code Exists": 10,
+      "Code Duplication": 2,
+      "Unnecessary Else": 3
+    },
+    "severities": {
+      "low": 100
+    },
+    "statuses": {
+      "ok": 80
+    },
+    "malformed_count": 0,
+    "timeout_count": 0,
+    "other_error_count": 0,
+    "input_tokens": 51616,
+    "output_tokens": 11751,
+    "returned_models": [
+      "qwen-32b"
+    ],
+    "discarded_findings": 0
+  },
+  "phase_a": {
+    "HISTORICAL_PROMPT": {
+      "requests": 5,
+      "http_successes": 5,
+      "valid_reviews": 5,
+      "successful_request_rate": 1.0,
+      "valid_review_rate": 1.0,
+      "score_mean": 0.91,
+      "score_std_population": 0.07348469228349536,
+      "score_min": 0.85,
+      "score_max": 1.0,
+      "clean_score_rate": 0.4,
+      "complete_valid_groups": 0,
+      "equal_score_group_rate": null,
+      "mean_within_group_std_population": null,
+      "median_latency_seconds": 12.309870799999771,
+      "p95_latency_seconds": 25.56735558,
+      "categories": {
+        "Readability": 3
+      },
+      "subcategories": {
+        "Sub-readable Code Exists": 3
+      },
+      "severities": {
+        "low": 3
+      },
+      "statuses": {
+        "ok": 5
+      },
+      "malformed_count": 0,
+      "timeout_count": 0,
+      "other_error_count": 0,
+      "input_tokens": 5511,
+      "output_tokens": 642,
+      "returned_models": [
+        "qwen-32b"
+      ],
+      "discarded_findings": 2
+    },
+    "STANDALONE_PROMPT": {
+      "requests": 5,
+      "http_successes": 5,
+      "valid_reviews": 5,
+      "successful_request_rate": 1.0,
+      "valid_review_rate": 1.0,
+      "score_mean": 0.7899999999999999,
+      "score_std_population": 0.12000000000000002,
+      "score_min": 0.7,
+      "score_max": 1.0,
+      "clean_score_rate": 0.2,
+      "complete_valid_groups": 0,
+      "equal_score_group_rate": null,
+      "mean_within_group_std_population": null,
+      "median_latency_seconds": 24.602143899999646,
+      "p95_latency_seconds": 26.005655940001454,
+      "categories": {
+        "Readability": 5,
+        "Maintainability": 2
+      },
+      "subcategories": {
+        "Confusing Variable Naming": 4,
+        "Unnecessary Conditional Block": 2,
+        "Sub-readable Code Exists": 1
+      },
+      "severities": {
+        "low": 7
+      },
+      "statuses": {
+        "ok": 5
+      },
+      "malformed_count": 0,
+      "timeout_count": 0,
+      "other_error_count": 0,
+      "input_tokens": 3176,
+      "output_tokens": 832,
+      "returned_models": [
+        "qwen-32b"
+      ],
+      "discarded_findings": 0
+    }
+  },
+  "historical_saved_runs": {
+    "16": {
+      "groups": 500,
+      "equal_rate": 0.606,
+      "mean_within_group_std_population": 0.04899434561665454,
+      "note": "Historical reward includes zero for errors and ineligible outputs; different policies/candidates/backend not proven identical"
+    },
+    "17": {
+      "groups": 500,
+      "equal_rate": 0.64,
+      "mean_within_group_std_population": 0.051710196566953553,
+      "note": "Historical reward includes zero for errors and ineligible outputs; different policies/candidates/backend not proven identical"
+    },
+    "18": {
+      "groups": 500,
+      "equal_rate": 0.7,
+      "mean_within_group_std_population": 0.038261648024493396,
+      "note": "Historical reward includes zero for errors and ineligible outputs; different policies/candidates/backend not proven identical"
+    },
+    "19": {
+      "groups": 500,
+      "equal_rate": 0.682,
+      "mean_within_group_std_population": 0.04227921697351958,
+      "note": "Historical reward includes zero for errors and ineligible outputs; different policies/candidates/backend not proven identical"
+    }
+  },
+  "all_attempts": {
+    "HISTORICAL_PROMPT": {
+      "requests": 85,
+      "http_successes": 80,
+      "valid_reviews": 80,
+      "successful_request_rate": 0.9411764705882353,
+      "valid_review_rate": 0.9411764705882353,
+      "score_mean": 0.818125,
+      "score_std_population": 0.13969693760065036,
+      "score_min": 0.5,
+      "score_max": 1.0,
+      "clean_score_rate": 0.25,
+      "complete_valid_groups": 15,
+      "equal_score_group_rate": 0.5333333333333333,
+      "mean_within_group_std_population": 0.04369236856160762,
+      "median_latency_seconds": 13.515684500001953,
+      "p95_latency_seconds": 29.011385260001404,
+      "categories": {
+        "Readability": 59,
+        "Maintainability": 22
+      },
+      "subcategories": {
+        "Sub-readable Code Exists": 59,
+        "Code Duplication": 10,
+        "Unnecessary Conditional Block": 9,
+        "Unnecessary Else": 3
+      },
+      "severities": {
+        "low": 69,
+        "medium": 12
+      },
+      "statuses": {
+        "transport_error": 5,
+        "ok": 80
+      },
+      "malformed_count": 0,
+      "timeout_count": 0,
+      "other_error_count": 5,
+      "input_tokens": 89892,
+      "output_tokens": 10987,
+      "returned_models": [
+        "None",
+        "qwen-32b"
+      ],
+      "discarded_findings": 9
+    },
+    "STANDALONE_PROMPT": {
+      "requests": 85,
+      "http_successes": 80,
+      "valid_reviews": 80,
+      "successful_request_rate": 0.9411764705882353,
+      "valid_review_rate": 0.9411764705882353,
+      "score_mean": 0.8125,
+      "score_std_population": 0.1331117951197414,
+      "score_min": 0.7,
+      "score_max": 1.0,
+      "clean_score_rate": 0.3,
+      "complete_valid_groups": 15,
+      "equal_score_group_rate": 0.9333333333333333,
+      "mean_within_group_std_population": 0.008660254037844388,
+      "median_latency_seconds": 18.372159599999577,
+      "p95_latency_seconds": 31.49078546000091,
+      "categories": {
+        "Readability": 66,
+        "Maintainability": 34
+      },
+      "subcategories": {
+        "Confusing Variable Naming": 56,
+        "Sub-readable Code Exists": 10,
+        "Unnecessary Conditional Block": 29,
+        "Code Duplication": 2,
+        "Unnecessary Else": 3
+      },
+      "severities": {
+        "low": 100
+      },
+      "statuses": {
+        "transport_error": 5,
+        "ok": 80
+      },
+      "malformed_count": 0,
+      "timeout_count": 0,
+      "other_error_count": 5,
+      "input_tokens": 51616,
+      "output_tokens": 11751,
+      "returned_models": [
+        "None",
+        "qwen-32b"
+      ],
+      "discarded_findings": 0
+    }
+  },
+  "attempts_total": 170,
+  "paired": {
+    "valid_candidate_pairs": 80,
+    "mean_absolute_score_difference": 0.099375,
+    "clean_disagreements": 26
+  }
+}

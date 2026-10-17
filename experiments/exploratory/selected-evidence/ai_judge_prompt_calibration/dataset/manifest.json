@@ -1,0 +1,18 @@
+{
+  "dataset_version": "synthetic_pairs_v1",
+  "dataset_sha256": "6995ed389ac05e0d4ee58c74bc3514782422b3b9c4ad84f8d233c0de71739cb4",
+  "pair_count": 18,
+  "case_count": 36,
+  "clean_controls": 18,
+  "seeded_cases": 18,
+  "seeded_cases_by_subcategory": {
+    "Code Duplication": 3,
+    "Comment Duplication": 3,
+    "Confusing Variable Naming": 3,
+    "Sub-readable Code Exists": 3,
+    "Unnecessary Conditional Block": 3,
+    "Unnecessary Else": 3
+  },
+  "candidate_code_executed": false,
+  "label_scope": "controlled synthetic interventions; not human ground truth"
+}

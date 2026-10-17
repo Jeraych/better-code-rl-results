@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "responses": 150,
+  "unique_pairs": 140,
+  "task_identities": 47,
+  "missing_task_identities": [
+    "HumanEval/76",
+    "HumanEval/91",
+    "HumanEval/93"
+  ],
+  "contrasts": {
+    "B-C": {
+      "categories": [
+        "B",
+        "Equal",
+        "C"
+      ],
+      "counts": [
+        14,
+        10,
+        14
+      ],
+      "phases": {
+        "joint": [
+          3,
+          3,
+          6
+        ],
+        "reviewer_1": [
+          7,
+          4,
+          2
+        ],
+        "reviewer_2": [
+          4,
+          3,
+          6
+        ]
+      }
+    },
+    "C-S": {
+      "categories": [
+        "C",
+        "Equal",
+        "S"
+      ],
+      "counts": [
+        16,
+        5,
+        17
+      ],
+      "phases": {
+        "joint": [
+          5,
+          2,
+          5
+        ],
+        "reviewer_1": [
+          6,
+          1,
+          6
+        ],
+        "reviewer_2": [
+          5,
+          2,
+          6
+        ]
+      }
+    },
+    "C-J": {
+      "categories": [
+        "C",
+        "Equal",
+        "J"
+      ],
+      "counts": [
+        20,
+        3,
+        14
+      ],
+      "phases": {
+        "joint": [
+          6,
+          2,
+          5
+        ],
+        "reviewer_2": [
+          7,
+          1,
+          4
+        ],
+        "reviewer_1": [
+          7,
+          0,
+          5
+        ]
+      }
+    },
+    "S-SJ": {
+      "categories": [
+        "S",
+        "Equal",
+        "SJ"
+      ],
+      "counts": [
+        9,
+        16,
+        12
+      ],
+      "phases": {
+        "joint": [
+          4,
+          3,
+          6
+        ],
+        "reviewer_1": [
+          3,
+          6,
+          3
+        ],
+        "reviewer_2": [
+          2,
+          7,
+          3
+        ]
+      }
+    }
+  },
+  "distinct_pairs_per_contrast": {
+    "B-C": 35,
+    "C-S": 35,
+    "C-J": 35,
+    "S-SJ": 35
+  },
+  "equal_pair_weight_sensitivity": {
+    "B-C": {
+      "categories": [
+        "B",
+        "Equal",
+        "C"
+      ],
+      "counts": [
+        13.5,
+        9.5,
+        12.0
+      ]
+    },
+    "C-S": {
+      "categories": [
+        "C",
+        "Equal",
+        "S"
+      ],
+      "counts": [
+        15.5,
+        4.0,
+        15.5
+      ]
+    },
+    "C-J": {
+      "categories": [
+        "C",
+        "Equal",
+        "J"
+      ],
+      "counts": [
+        19.0,
+        3.0,
+        13.0
+      ]
+    },
+    "S-SJ": {
+      "categories": [
+        "S",
+        "Equal",
+        "SJ"
+      ],
+      "counts": [
+        9.0,
+        14.0,
+        12.0
+      ]
+    }
+  },
+  "overlap": {
+    "n": 10,
+    "agreement": 0.5,
+    "matrix": [
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ]
+    ],
+    "kappa": 0.2537313432835821,
+    "per_contrast": {
+      "B-C": {
+        "n": 3,
+        "agree": 1
+      },
+      "C-J": {
+        "n": 2,
+        "agree": 0
+      },
+      "S-SJ": {
+        "n": 2,
+        "agree": 2
+      },
+      "C-S": {
+        "n": 3,
+        "agree": 2
+      }
+    }
+  },
+  "ruff_score_ties": 108,
+  "directional_preferences_with_tied_ruff": 77,
+  "limits": "Two project authors, 50 joint responses and 100 independent responses. Conditional on both-correct, non-identical outputs. Pseudonymous records remain linkable; the user confirmed both authors agree to this private results snapshot on 17 October 2026."
+}

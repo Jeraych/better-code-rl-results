@@ -1,0 +1,29 @@
+{
+  "bundle": "remote_experiment_preparation",
+  "status": "READY_NOT_RUN",
+  "codequal_upstream_commit": "518360297f59ad7b6569233eb4b934e6b00c083b",
+  "sonarqube_image": "sonarqube@sha256:d4899d380ad9d7b63ebaa751e047f5a4f064f8902cdf7c1a3c3c96f7d71600ed",
+  "ai_judge_preparation_manifest_sha256": "9a49ce238b31189a93c1f46af7f6b176f737dd2887605756659782eb57046ee9",
+  "frozen_source_evidence": {
+    "experiments/codequal_analyzer_pilot/FINAL_TEST_PROTOCOL.md": "a7b873a0281e4e775a111e61281bcfd12c1ab89f9857adc1441edfdd4a91044e",
+    "experiments/codequal_analyzer_pilot/results/decision_test_summary.json": "6cd1f2a4b24ac56069fa09ce822254328378cd211c2a57a1787724b4abfc456b",
+    "experiments/sonarqube_pilot/PROTOCOL.md": "93d47c6dd189b9630d364dae453ff2ab0db732b1ff5ba1e6427ac12d79c76e13",
+    "experiments/sonarqube_pilot/results/summary.json": "827e78eb94d49f69c3bf94f6f42fbdb1811ecb6277f9c80bbd2e2568ec62289a",
+    "experiments/ai_judge_prompt_calibration/PREPARATION_MANIFEST.json": "9a49ce238b31189a93c1f46af7f6b176f737dd2887605756659782eb57046ee9"
+  },
+  "assets": {
+    "common.py": "225658e429f7fa36c67477db115e64d35cf6360e3855abfe1f45a61077546a0c",
+    "init_run.py": "b199facc7579776157cb7531f795e0a4f5c7f93a989798a73fd47d277198fde4",
+    "preflight_remote.py": "f82778b419331aa3cf8fd54183115b49c1207241a70553e0dba97371c42b5824",
+    "README.md": "7dedf10a79acd1d67480708de41d2bec7ad154c72ef2d95893e90b4add29a149",
+    "remote.env.example": "0b8bcce921b22760156578471c851d2135927532b02dea6b7849420be2798fab",
+    "REMOTE_RUNBOOK.md": "337f6a89a60891904b5bd4719d1e1a54c407a578288de971f44a80d8a2e4ccd9",
+    "run_ai_judge_remote.py": "6c2fbb7a7856ce11478058db508fcbe19d8c143b873f69d163ad18b34dcdfe2a",
+    "run_codequal_remote.py": "e2043fb65b14a138ca7df02f0ade153390ef9cbb1b00d140e869176f04cefeb4",
+    "run_sonarqube_remote.py": "1074bdbfc573e9b194b496d062433720de1784198ee35889f4f303867dc4f7b3",
+    "tests/test_bundle.py": "2647e5a17c44a931242667fcbc8a7ea0c6040eaa417668b6cc5b50e20b17b559",
+    "validate_preparation.py": "fcab285c968e368c0c0c7059aea9f29981647f0c8dbabe8592610f664030592e",
+    "validate_run_bundle.py": "0346c11d3af21924d7b517cb0994f16ce8608576783f8ea15ebe6db4181038d1"
+  },
+  "external_experiment_calls_made": false
+}

@@ -1,0 +1,2350 @@
+[
+  {
+    "source": "UnSloth-RL-heplus-fix/results/12/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "acfaf87dc67b1e7e38ce29b9b7d8880427477ad1d61fe4558632d11f5f64521a",
+    "retained_at": "experiments/exploratory/selected-evidence/run-12/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/13/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "f3a53e6505897e598571493fd71db19ab44c3791e85d99e7d3280acaf63f42a0",
+    "retained_at": "experiments/exploratory/selected-evidence/run-13/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_base_holdout_tasks.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "0a75784c93dc51161901f0b9959ebb03aa3454352b2d36decc60cc35ab7c01e3",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_base_train_tasks.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "034af2afd5bcb0308957fcaa5d290207e812409442ed908cdfddf6fa9a720d88",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_lora_holdout_tasks.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "482e2258dc506196d3f5f95adbec181465b33abfbc758f6ac976706d25c2fdb5",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_lora_train_tasks.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "53244dff7b3f709998dbdf64d0b1774748fd0de7072a7752e02e122f23e19ddf",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/2/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "ae0d35e8542a35a5bcf4ded25f4055f448c821bd28935134c9474963be112029",
+    "retained_at": "data/exploratory/run-1/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stdout.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "6b4f9a54f088d25397b61197329dc3a6fd547d80450e2f207f41480c9dd2cc00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "6b4f9a54f088d25397b61197329dc3a6fd547d80450e2f207f41480c9dd2cc00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "afe153684ea79666c31fe4d2c1744aa9fccc8b5c4f284256453c3516b93788d5",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "c8a6075bd43b0cd3d72ce1a8b827a33b0dc4628f4f67fcbfffa7a54fc3b6c31b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "3b89bb54d017a77e0d50a7b93a7d2b5c90e8e657594132ae2e75b11da6d205c1",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "41def484f789b3d42ca116f128f80d6d445113579b99f947727ffbef6fa710e3",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "ce0a752ac2b2e930ec9a039656a6b926c3e14e3f588285a53a96b4f020a23d51",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stdout.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "cb1ac8895829c90ef1751f11bc6a2bd7ff28b16fc211b4cf2aab96b338d6d137",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "44a4759cf93c5c5bd31603b0be839cb8b3b54543257bc29ecde29ea8b9255797",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "89fe7ed7b439f5d7307921331758cc14a72aafc3c70df09a91896a170d24c5ba",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "c824ecff42ff64983b361f425b60e8f4c76d3811e60a7a4bab5629540b62e4ec",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "cb6bbb1a01c76c8c38c2d2f84822fafac9f5fb5a49739c8c446b93c293a93f8b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "b732336bc68a359200e72cf1bbcce7c2e04a50b9006182b08151394d84bdfa86",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "ce0a752ac2b2e930ec9a039656a6b926c3e14e3f588285a53a96b4f020a23d51",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "477623685951d966a27c3f56527b9a414c8ad3b6916150896f3cd18db64c12a6",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/samples.csv",
+    "commit": "1b3ac9be80848bb025a403246ece7d94e601b041",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/10/base_holdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "721291b7ee4f0629760702e937a7881d19352d6d987f0c1f9882ef03deb1df64",
+    "retained_at": "data/exploratory/run-10/base_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/10/base_train.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "588267d5d8fec3270e51302667f42e72b726a5455fab257c6cb0206d20c25fbc",
+    "retained_at": "data/exploratory/run-10/base_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/10/before_after_code.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cc7fae682e2ea1efdd99c36d0840d1f4a9c80855613ff2c783c0428ed5d0ff28",
+    "retained_at": "data/exploratory/run-10/before_after_code.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/10/lora_holdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "5b5ecaae6090548fe2ade276c49ce52be8a39f4b0cbfc6bf8669082ea3c692a9",
+    "retained_at": "data/exploratory/run-10/lora_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/10/lora_train.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6f082c442b62f7d1550be3134a392b38f1fa737f48edd5468a66dbb45b74d1ff",
+    "retained_at": "data/exploratory/run-10/lora_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/12/run12_comparison_data.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "64a48afb92dd5ee22fae533ddb9ef3fc2c38e8273487dca80628449efb1c07db",
+    "retained_at": "data/exploratory/run-12/run12_comparison_data.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/12/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "acfaf87dc67b1e7e38ce29b9b7d8880427477ad1d61fe4558632d11f5f64521a",
+    "retained_at": "experiments/exploratory/selected-evidence/run-12/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/12/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cde2235f6ce99516d45f6800f2ee0474a00c7fe2ef2d91629339ddb471c86a71",
+    "retained_at": "data/exploratory/run-12/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/13/AI_JUDGE_RUN13_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "98441916509b01ea7e8affa90bed23cf8b111eeb2b3a623afa760980dd58e6c6",
+    "retained_at": "data/exploratory/run-13/AI_JUDGE_RUN13_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/13/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6c7edb857c4b20adcbf06da55a9064a4c4564f3c5a0d85ebc35ae6f078f63eaf",
+    "retained_at": "data/exploratory/run-13/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/13/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f3a53e6505897e598571493fd71db19ab44c3791e85d99e7d3280acaf63f42a0",
+    "retained_at": "experiments/exploratory/selected-evidence/run-13/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/13/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ba5014c0f37741775fd9aae1167b1c894999bb87bfa7b86d3886e72d66a58b38",
+    "retained_at": "data/exploratory/run-13/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/14/baseline/before_after_code.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4d29ff4b1d29c256bd68738a67eff516b904ca81e614015249c763111748de21",
+    "retained_at": "data/exploratory/run-14/baseline/before_after_code.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/14/baseline/Note.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "47583d800b0d361a5cceb7758f1400e96862a25bde60fce155c8c53ac5f4b525",
+    "retained_at": "data/exploratory/run-14/baseline/Note.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/14/baseline/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "5777b79bbf1a7d1997de3e3db62083e782f7355d4db43df94922b814f0627d8c",
+    "retained_at": "data/exploratory/run-14/baseline/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "a1b77ca0f63d2a93abc83a1957a88644034129105c7f662d3b93143e697cb59d",
+    "retained_at": "data/exploratory/run-15/all-metrics/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/before_after_code.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "14d1835b8b820343d9d43fb2f9ec2dce634caf5c8830c53d058c066281839bd6",
+    "retained_at": "data/exploratory/run-15/all-metrics/before_after_code.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0a75784c93dc51161901f0b9959ebb03aa3454352b2d36decc60cc35ab7c01e3",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "034af2afd5bcb0308957fcaa5d290207e812409442ed908cdfddf6fa9a720d88",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "482e2258dc506196d3f5f95adbec181465b33abfbc758f6ac976706d25c2fdb5",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "53244dff7b3f709998dbdf64d0b1774748fd0de7072a7752e02e122f23e19ddf",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/all-metrics/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d111b74189b3bad0005c56ca35b089308cebb6f8ffcb7fa99fb37cf83f02f468",
+    "retained_at": "data/exploratory/run-15/all-metrics/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all-metrics/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "af8ef8f1b0e5f46f204bb2e6f713148371015f74aa346adbc1fe01401679899b",
+    "retained_at": "data/exploratory/run-15/all-metrics/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/all_metrics_resume.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f1e4a18691a7b139d3df5239b010057fa35593b45133fdb346291ebc2a097200",
+    "retained_at": "data/exploratory/run-15/all_metrics_resume.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/15/grpo_analysis_summary.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "8c665cd42690c541acb1843eb2e86fa5986c59a61f6ce714393db74a22cb10c4",
+    "retained_at": "data/exploratory/run-15/grpo_analysis_summary.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "20db1a81b5449571baf7f049fc92311ca498bedb9a872633d01a98eb77224f20",
+    "retained_at": "data/exploratory/run-16/all-metrics/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1f4fe821867dbecdd4c9bfebc1223108e302fd2ed0519ac27c159492d14756cf",
+    "retained_at": "data/exploratory/run-16/all-metrics/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "924415e1e28863b8b106853c97ef55fe508ee80561f3dedb9d917b954ca47f7a",
+    "retained_at": "data/exploratory/run-16/all-metrics/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "118d9c3321262fd06eefcbb38ffaed985365a541bb8a06eec9a5c72b32ebd068",
+    "retained_at": "data/exploratory/run-16/all-metrics/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "57eea73a14ef07dc64bcd6ab06f236645f8ab14597adfbaa9642f2305ca22369",
+    "retained_at": "data/exploratory/run-16/all-metrics/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e34835e99e1d6c81d49e5b4a2bd8c5ec23b3976d03bb81d9507f337eb59998c5",
+    "retained_at": "data/exploratory/run-16/all-metrics/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/16/all-metrics/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b73efa826f5f81bc2bf11d5e06e9ab0c17d524a78ee1415509bcfc1e651606ca",
+    "retained_at": "data/exploratory/run-16/all-metrics/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d03f3d1f27ffc03f041e8fddfc4de3b857f1aeaed18910794d740ac14554d76d",
+    "retained_at": "data/exploratory/run-17/double-correctness/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "2774344e7e67ff907d4f7adec5d6348ffb77fbf3610a583523517d0a9f47261d",
+    "retained_at": "data/exploratory/run-17/double-correctness/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0d3ff94ebee99e04f7e15f6a8b5a754f91c0d037ed3aa07745109e833e7cbc74",
+    "retained_at": "data/exploratory/run-17/double-correctness/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c52ba3cd2dbdb7f1a09dc0e5d5faa4bd39a2502ecafe59895e6b378aaf1e5ffe",
+    "retained_at": "data/exploratory/run-17/double-correctness/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1eba69cb2b7d83ce11ccbd4e8a769d06015c8036c5d467ee71289addaea04c6b",
+    "retained_at": "data/exploratory/run-17/double-correctness/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c72f4239d3913c0e8da8ba3611f6cf27759b17942e3d154014c77a3bc860fec9",
+    "retained_at": "data/exploratory/run-17/double-correctness/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/17/double-correctness/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cb72425517112a2bdd7aad060c9bbb415c14dc9b4374e9f3a64d93961c700395",
+    "retained_at": "data/exploratory/run-17/double-correctness/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "de3c75c84181de2c31757c1706481985b90a046f3049705a3ff597ab21b1edf4",
+    "retained_at": "data/exploratory/run-18/double-style/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "49c8fa81e66359e7430d0076b32e79d85f16b52a8e1fc5e3f904e182399c332d",
+    "retained_at": "data/exploratory/run-18/double-style/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "caa1b719f452cd1bc0bd6b8df209904db0341378b677c30af5903be9d08545e7",
+    "retained_at": "data/exploratory/run-18/double-style/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "50e5c60ad8dc75dcddf7769c0e05d781ec7bb84afb913459d526ad87b9aafb3e",
+    "retained_at": "data/exploratory/run-18/double-style/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1a6a5aabfe5ff77372aee1f4c1faf24551580bc9bb845faa8a93109a5a2ca4bf",
+    "retained_at": "data/exploratory/run-18/double-style/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "864e12b1e70f2a5f83271ab74e2c6bece18cc6d35b8a07743fdbff2132f0b57a",
+    "retained_at": "data/exploratory/run-18/double-style/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/18/double-style/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ea992904466a5c533029113fddc6a243349e74bb0dcc382e662c2467d897952a",
+    "retained_at": "data/exploratory/run-18/double-style/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/AI_JUDGE_SUMMARY.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "8065175c33cdd7553b07c711d1fe9c3fb43ed8f54dd19876589354a67c9da324",
+    "retained_at": "data/exploratory/run-19/double-best-performance/AI_JUDGE_SUMMARY.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0ebe6eb63eea50c3220484ffa30d8d3a55d11f4a4cd264dcc65d22f543180800",
+    "retained_at": "data/exploratory/run-19/double-best-performance/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d4e26ade97c3d26f3adbbc5e1da9dbe40c0013df5e3594311fabd781b6f0cb69",
+    "retained_at": "data/exploratory/run-19/double-best-performance/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4199976f7592c98021f28614144bc29d1ef430ab6f5417614eff55ef6bb5cb01",
+    "retained_at": "data/exploratory/run-19/double-best-performance/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "bc78a0870d9326703988ae2aa128a1f0659cbe12692a30a31ae5805500931078",
+    "retained_at": "data/exploratory/run-19/double-best-performance/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6622f81e340751631e5511e1f2e755be0846992dae6bd57947bba2efcca4451d",
+    "retained_at": "data/exploratory/run-19/double-best-performance/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/19/double-best-performance/trainer_state.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "9788e853e1d5e5924fca4791312462c60c39bf73d447bec98011a183d6ca6d63",
+    "retained_at": "data/exploratory/run-19/double-best-performance/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/2/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b72993f734219b4534a534dc7f4546d787d72300c5a5e8a45fe94ca6b425b85e",
+    "retained_at": "data/exploratory/run-1/samples-source-b72993f7.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/base_holdout.log",
+    "commit": "",
+    "sha256": "6662c2d06b226ad11d8f34817bf5a0b5f03c1c1a9117700a3d5a0b7a1fda5dc2",
+    "retained_at": "data/exploratory/run-27/base_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/base_train.log",
+    "commit": "",
+    "sha256": "539ada97cdaeba5cfa28835a602dfbe281a406828cc564d204d0ab377166fe2e",
+    "retained_at": "data/exploratory/run-27/base_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/eval_base_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "382d9f59b46c520d70b8e7b10492c3cf1f6fd4e7603374edf3d0fd80b34633e1",
+    "retained_at": "data/exploratory/run-27/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/eval_base_train_tasks.csv",
+    "commit": "",
+    "sha256": "ba6ac77b6a91096aed0f52b12d1d2e750f22133b58ef01e55f9893606d0f8bc7",
+    "retained_at": "data/exploratory/run-27/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/eval_lora_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "af76c2c51b2acc720de01aa248bd2615348b8ed3696e306a8b8a541dcd330c17",
+    "retained_at": "data/exploratory/run-27/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/eval_lora_train_tasks.csv",
+    "commit": "",
+    "sha256": "8edce5476a86c18b1191edf9669f51d61d52d807ee6a4a2a9ed73126c2fa033c",
+    "retained_at": "data/exploratory/run-27/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/lora_holdout.log",
+    "commit": "",
+    "sha256": "af1285b54cad8a79be36e93c7975c136571b9b773b49310e0b60e52bdd951f02",
+    "retained_at": "data/exploratory/run-27/lora_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/lora_train.log",
+    "commit": "",
+    "sha256": "dfe4b3d33413daaafd281cbd77bec644f05d555a30d716ba8334970b9aa4940e",
+    "retained_at": "data/exploratory/run-27/lora_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/samples.csv",
+    "commit": "",
+    "sha256": "569cfc46543be593150dee153d18e7e43697cce08c4727390bd37703b8ccc7fc",
+    "retained_at": "data/exploratory/run-27/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/train.log",
+    "commit": "",
+    "sha256": "4b7b24d2941f38df9ce58af226d7be9ef8200fe0654fc2e295999268144d6e81",
+    "retained_at": "data/exploratory/run-27/train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/27/trainer_state.json",
+    "commit": "",
+    "sha256": "09a10b6ed1262880bdc9af25ca3bb8196ee3184612e857f3438cfb05308de39e",
+    "retained_at": "data/exploratory/run-27/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/base_holdout_1.log",
+    "commit": "",
+    "sha256": "5907a498ddc4d13912c6932ed1916c1fd638917b412de86a2ec7749e1cd76be2",
+    "retained_at": "data/exploratory/run-28/base_holdout_1.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/base_train_1.log",
+    "commit": "",
+    "sha256": "b4bfb5c76d30c0bc3fe32c42825a62021bb2e1ebc7524a002c7fdea59d0561d6",
+    "retained_at": "data/exploratory/run-28/base_train_1.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/eval_base_holdout_tasks_1.csv",
+    "commit": "",
+    "sha256": "445b4bdbc7372f2e01e75ce779893cf2e5446118cca606359bd935281a835e1a",
+    "retained_at": "data/exploratory/run-28/eval_base_holdout_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/eval_base_train_tasks_1.csv",
+    "commit": "",
+    "sha256": "6f0940674a4593415829f2b69088ed5815dc9df31aa14d42d5b677d628461f76",
+    "retained_at": "data/exploratory/run-28/eval_base_train_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/eval_lora_holdout_tasks_1.csv",
+    "commit": "",
+    "sha256": "4708e8cb84a3fd029443789f0b75642440576fe3f039339281cf68ee5659e160",
+    "retained_at": "data/exploratory/run-28/eval_lora_holdout_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/eval_lora_train_tasks_1.csv",
+    "commit": "",
+    "sha256": "aa51081cefe94f2a79d7ee7fb8d0c1521520caaa3f60230b196fa36ba0bc59ff",
+    "retained_at": "data/exploratory/run-28/eval_lora_train_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/lora_holdout_1.log",
+    "commit": "",
+    "sha256": "ea0174d64b091d0c5a9f31f5b71ba6f2a446a23f0fc400fb11160399871e8108",
+    "retained_at": "data/exploratory/run-28/lora_holdout_1.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/lora_train_1.log",
+    "commit": "",
+    "sha256": "d7ba61c5bbab5153cdc9bb4f3a8c8ba23ecf93f22a5ede1f5147cad5367c0c48",
+    "retained_at": "data/exploratory/run-28/lora_train_1.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/samples_1.csv",
+    "commit": "",
+    "sha256": "1fb21e4d3ab1f70fd8441d2bce2f5c2988e48753db685959fd925f54c7a94f21",
+    "retained_at": "data/exploratory/run-28/samples_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/train_1.log",
+    "commit": "",
+    "sha256": "132ef220bacb34941cef88fe97db3467da02061f5590298d4ff5cf9a83404e16",
+    "retained_at": "data/exploratory/run-28/train_1.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/28/trainer_state_1.json",
+    "commit": "",
+    "sha256": "768751df23100d7d28843f361da84e98b5f727e39c9a94fb7ed4bc2c149f89f4",
+    "retained_at": "data/exploratory/run-28/trainer_state_1.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/base_holdout.log",
+    "commit": "",
+    "sha256": "507b6e5755b64b128eadead0976354a98f9f172a22026b142ea9f9e18841676e",
+    "retained_at": "data/exploratory/run-29/base_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/base_train.log",
+    "commit": "",
+    "sha256": "90a8e4368785c01798d2dc79c4ed6998c47976f4c66fa308205efc61bbd820a8",
+    "retained_at": "data/exploratory/run-29/base_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/eval_base_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "9b432bb414600681105dc5f2b1813bc1366198d8efd14ce50e314560958b1855",
+    "retained_at": "data/exploratory/run-29/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/eval_base_train_tasks.csv",
+    "commit": "",
+    "sha256": "4102bd79d3e0b68057081148ab389d34db8393f8358b3a9dff4d7decf6dfb440",
+    "retained_at": "data/exploratory/run-29/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/eval_lora_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "8b34ef944ea4d7703525c668dfa66f831deca309784e4e8ebc098e6b8a90d661",
+    "retained_at": "data/exploratory/run-29/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/eval_lora_train_tasks.csv",
+    "commit": "",
+    "sha256": "8c95a64f4d29973ee8f0395edc0efa8ba9e6cb1b0fa26ef8752827f9c0c762b7",
+    "retained_at": "data/exploratory/run-29/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/lora_holdout.log",
+    "commit": "",
+    "sha256": "e25e167f40bbe943e1b4fe1bb82c7b43316cb562801c0de62e5655253e7f512a",
+    "retained_at": "data/exploratory/run-29/lora_holdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/lora_train.log",
+    "commit": "",
+    "sha256": "edff20cb880d60de6093d665828ad5d6d7d45a5e15e5b8cb424134052b877f80",
+    "retained_at": "data/exploratory/run-29/lora_train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/samples.csv",
+    "commit": "",
+    "sha256": "270781ad24bf9e66e23fe2ab9085eae3b0220150379867440d2102d6ed7f4c7f",
+    "retained_at": "data/exploratory/run-29/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/train.log",
+    "commit": "",
+    "sha256": "3fb58b4f6f0514d4003e57c4440b1bb0786fab7fb63526fdf4641e63a3d96788",
+    "retained_at": "data/exploratory/run-29/train.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/29/trainer_state.json",
+    "commit": "",
+    "sha256": "ef44fc1b896d6c60008d5d70fe1576db5d3dc55ab3997b05c886c8b1aa276e17",
+    "retained_at": "data/exploratory/run-29/trainer_state.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/4/notes.md",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6b641ae69c0a92f8acb539d823923f0f4ac09559d323b9e2cd1bee8b6823b905",
+    "retained_at": "data/exploratory/run-4/notes.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/4/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e1a719da0ad1623621e2ee08edd67c422bc143940a20fd13b3a94841709ab0fb",
+    "retained_at": "data/exploratory/run-4/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/5/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "bc6e831e44ffed770215e10d757cf1324e118de1e257c3a8f226b52f9253b4a4",
+    "retained_at": "data/exploratory/run-5/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/6/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "780101fd3fb8845e11b4e4b267c8f4791fbb5f82b828467ff3213a78a46a90f3",
+    "retained_at": "data/exploratory/run-6/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/7/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e3547c05cfe8baf089bb390326ec9d6b87e477bb7e35d42268bd3611cf143354",
+    "retained_at": "data/exploratory/run-7/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/7/terminal_train_conrad.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1e4169ceb2d7882bcd8f3aeb7fbcf1c31d881fe9c25ffc6bb8098bfa4eecd474",
+    "retained_at": "data/exploratory/run-7/terminal_train_conrad.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "de24e26890cdb5bf7ac38a6e8958111ec5d964b0da7a60932bfa2480b88b693a",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ac7ce9b514560e835e397e7e6bc280112eeeee766c1eae391f7344cafc73d84f",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "9ea5aecffae3bacd51ea1a000445ccb2364c3cde408382d6b4da6fd04d55542f",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cb1ac8895829c90ef1751f11bc6a2bd7ff28b16fc211b4cf2aab96b338d6d137",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "18bb6d41ef2ef20434133c657b60607bd21bf75812a7943e89c7b031ac88163d",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ed81c9b5662b1045b7febb8d28aab3d99d157900f5efd2be83232b5cdc150163",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d7d8ab1b499157ff3bf0bea1b26393719bd3b2a49b6079a5cb9f05c80586a73c",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "36c1051e8e2398e281bad0fe4d1fb1bc8babb0bc91b71d19e70317e510f08e3a",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "44a4759cf93c5c5bd31603b0be839cb8b3b54543257bc29ecde29ea8b9255797",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0d1256a0942f83c5a34e5b6a12e782ca94d000a72f6d37c3853018b3040c7089",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d5b0ebca8c27dbf0b03c235d909608f9702b0c10ed2c4088646794744f2cf32f",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e04e5a0b97fc519789f4bda1af6a808c00fac4ed9badca710b01fd06f3e87262",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "10cb7803fc4b05b6695d0e57a20ca615d1b30338a750f54d57c4dfce534d2c20",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cb6bbb1a01c76c8c38c2d2f84822fafac9f5fb5a49739c8c446b93c293a93f8b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "a6569fa4665523f19c3442ecb0664c2f233a143057206585c077faf2e2a68bc3",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e2115dc90e2f8a1b84121e585c82d1ccf06b06f8cc3ce3b8d2ae136fc3778ae6",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "2338ca79cefe603eb1c339a6d33f19f45906b26807802e89a8964bdaf076a3fb",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1d29dbb8f8c9a32a3e5effe4f0f6e2073464f574890feeb8a32461c4a24bbd5b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "89fe7ed7b439f5d7307921331758cc14a72aafc3c70df09a91896a170d24c5ba",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "87538d85498daa544b105522779224a9644c8f4e7b5980052843ff619008bbd6",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "a32b8fadeb140bdece6d1bc3025fe1ae0ed98f55a1dffc25a9a996072ebf954c",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "31580d4b09f845461c77bf42cec7b03082a8cd95ca0c55b13b2b2e3c35fca3e0",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e935437ffe265e6b9d0207f26d41392d77b0ee7d3505cfa77408db27418ec93f",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c824ecff42ff64983b361f425b60e8f4c76d3811e60a7a4bab5629540b62e4ec",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "560504634708e025bc58b38573f28d9c0d93de1872f307e9267edb6a28c3bfca",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0bed226956e52237f71a8161c312624500834da801a6b1344f13b84da834bac0",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f2df6f2c674d244073e1bdd995dcf3168fe6da1f9b5a82c50630b1315266d893",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c576b2ec9fa3bfe0a2ebd2033014991bb37ebf88c21b09b3746174a57790a187",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b732336bc68a359200e72cf1bbcce7c2e04a50b9006182b08151394d84bdfa86",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0bd6efa42a42869b2df2f3e97fbe1ad14c67ea02c8a345b06976ad3ffbb50a9e",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4a69b4f34eb23133fb29e96958710b331bc40ef9f3b243f4664dff28c9958815",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "8ff89cac9c33bac9fca7f0b956fce89e151a542284fe857d6f44dd5bcf5506af",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "686e594f64768f2aabfab3f23798029a6a71f264616db799d204148bf3c497bb",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "477623685951d966a27c3f56527b9a414c8ad3b6916150896f3cd18db64c12a6",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "dea79496f518d55dc974dcc35ac284764e8f04e044b1aa534bebd55fb5980dc8",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1be327addafa2a5dd118ea1201674643d8b0a401f57c808df10f16b4eaba94be",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7e5ca1ce3a471d779ba0123e39a60906e0a0057dac6f2f995a946d29e87ecbcd",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c8a6075bd43b0cd3d72ce1a8b827a33b0dc4628f4f67fcbfffa7a54fc3b6c31b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "91533d9a6d16b868f096ef225a81ae7ed85ed168ef85a3dcce932cf2892d0bee",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "84f93b0e7b1a829619b2ce3b69c0539102a1ec54e2e67ddc37284b00f9b3f6bc",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "41def484f789b3d42ca116f128f80d6d445113579b99f947727ffbef6fa710e3",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b8304f87ed3edf1b8677c077adf831edce5756171bb9c0c4a5c22db68bf96640",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e25649424eb0348966dc8d527fbe634104e7ff2ff3e2ff64ea54565495bed600",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "3b89bb54d017a77e0d50a7b93a7d2b5c90e8e657594132ae2e75b11da6d205c1",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4c60e9fcb0295af2f493886584e9603385f5178933beaf6483b0bf987f1c9ca3",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "5013dad7cffdd59d3a7c3ea31b293831f1ad931ae22f9458ef48ea6974638bf0",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "afe153684ea79666c31fe4d2c1744aa9fccc8b5c4f284256453c3516b93788d5",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "00f8a964f89a0e08b84ac057540f9cdd4822f01936b1c68924e6d058d02f6dc8",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4803f0cf5c78a73ab866ab5c9b3f0f1c9aa0c339817cadfefd668b4d2daac56b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6b4f9a54f088d25397b61197329dc3a6fd547d80450e2f207f41480c9dd2cc00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "2175709638b8aeb39e7238a9c441c8b1adca26faa51e34bab909b66efa6ae0a5",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e8b508f94950483b1631b8fb04cc2312c115ad873766fc0f0c51dfb3958020dd",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6b4f9a54f088d25397b61197329dc3a6fd547d80450e2f207f41480c9dd2cc00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "273d4ae1d724c326f1fd6c60d45dcb8003681de18957a4ddb8cd20ba2ef2c2e4",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f60b6a36749454fc9f9a523d90a4c54b97bcfb2d4b82d3cdd9629361e1719c18",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "6b4f9a54f088d25397b61197329dc3a6fd547d80450e2f207f41480c9dd2cc00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b2954f6fd158e9cd839b21a394813b8c00f66a3731b68d0ef86b294f1c5c400a",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/master_queue.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ae935953636628179ea14837c54a49730744cc27eed3e40b24916f6be37eae5d",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/master_queue.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiment_queue_20260514_144234/status.tsv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "26f8fbefd0de62a6f78d55ca14bf35a49e4c5e1ca8f7e3843f6bce878d2b51df",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/status.tsv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/master_queue.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "8a9d18c9cc323d5b1404aae590f48a0d3486b0bb43dc2b80c2b84ac40dd58dc4",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/master_queue.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ce0a752ac2b2e930ec9a039656a6b926c3e14e3f588285a53a96b4f020a23d51",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f80e799614201b8230f85f40ae0909df4a436041b09262e3e02e090e625a99bd",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d8346177906ffb85d3a326127cd1ced9dc2e78c73930ff6a8c1ac374c87fa80e",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "afe153684ea79666c31fe4d2c1744aa9fccc8b5c4f284256453c3516b93788d5",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7c0cbcd7bd69abbf55bac0bfbe8865b2a93cabbc0d3ca428308d48444f6bb41e",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4995671c9612a47c0df777d19b2ca73adb7c6f8af262baa8fd37b79d12cfd879",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c8a6075bd43b0cd3d72ce1a8b827a33b0dc4628f4f67fcbfffa7a54fc3b6c31b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "a3405d77bf91dd700be393320bf20ae8c0bd6fdde59a4b2f17b6c9fa194a6077",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.jsonl",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "01bb59553d780991cde3edf56963c0eab976298fb89be66043e68bd1ffa7c19d",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.jsonl",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7aaf5a24a66458f85dac95bd74a412c837e6c6df469686cc86772a79e11a5af2",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "1b34844e6c93eb9782cc00f559ec743d3d637a3947c70eeba66b72d6ccf66e2c",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "3b89bb54d017a77e0d50a7b93a7d2b5c90e8e657594132ae2e75b11da6d205c1",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c36f0c99efdc7376876ac701d6fe9fdc18ffeeab69ab8cfd06d529d90e201a55",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c44cf38132097d68a6da581499f4d5d292de68fe742d93bfb881ca0629cc58d1",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "41def484f789b3d42ca116f128f80d6d445113579b99f947727ffbef6fa710e3",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ca2f5a7b8369326f0f7504cbf3857ebbb34bbc534e23702a3c2ca51b3dde9677",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "36089a3d98875e689c9051427905235b36c07dd3862e19607dbd9755a5034a0e",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "d07a74f18c36ed941fa73ddc4b78465fc430277688522d66714cda93a7ae3c76",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ce0a752ac2b2e930ec9a039656a6b926c3e14e3f588285a53a96b4f020a23d51",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c22f85a02f83f23574e9e2e7a24e6a0028b9cdddc55faba0fdafbf731077a015",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "a1506ce0ff6495d1f922c8a7a0b24b34a035263c64f4d7216c816fbd2e77b79a",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "32a9b6181077b6d00d30dd0385c29f1d48038bd3e68210c9b418b0ebcd815abb",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/D3_all_eval_dashboard_latest/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/D1_codelama_training_dashboard/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cb1ac8895829c90ef1751f11bc6a2bd7ff28b16fc211b4cf2aab96b338d6d137",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "651ec8bcaa196f5e68d54f04902ac377a0cd093130c3ae50aaff50f1ce1bd76d",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c463c3540859cdd86c6c237900fb0d5d22a68d1522531df764fb48bd64389e18",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "44a4759cf93c5c5bd31603b0be839cb8b3b54543257bc29ecde29ea8b9255797",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "3d2ac2e6b68e7eb35b976f539a719d2c4ad174c20ac6493808e0056490bd8ece",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b44d5656c31f958f4fc085fdc5cb48f6ca1a35185641ccad4807925112e606d9",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "f4b10851f8a1745ba8d258e7495b9ac0cbcd67f00ca123992ce8b9dba6fda896",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "2fd8da85c275433abed83fe8def125f0ca9ca3e21c6a309adaa0a9076e164d59",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "89fe7ed7b439f5d7307921331758cc14a72aafc3c70df09a91896a170d24c5ba",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "5e88fb796a8b7eee2e326161e9490af29d6b22b95cd87b8ff3b1c1583a0f9c70",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "601a970cb2dc5216b2c50fe6b096e627d1d2a2dbd528d6fac6d4897b1f3fbe20",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "8959d38527a71498a32c87d1756474ae409a3084bc2f53aadeeaeaf7006a4df9",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c17b8b39e9a3cfdb4e3da2cdd2542792052279d8b1b3bd2d3903e70c47a41e6f",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "c824ecff42ff64983b361f425b60e8f4c76d3811e60a7a4bab5629540b62e4ec",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "27e1590dee7889e57606fc00666b15f114ffc070a6aba91d80c08267dc3f91c7",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ac7c32e7ac68e395003a75109cf06818fc7cadbce4f2522962929978833a85de",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "bc9b34cc098510e07ce734818959131bd5b1f6679a975d1093091facee12f1ca",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "38ea00087a8a6d3f2e6c6f1ba4460ef579e17b17845542465d595a7f7dfd04db",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "cb6bbb1a01c76c8c38c2d2f84822fafac9f5fb5a49739c8c446b93c293a93f8b",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ad6ea7847ebd04a28d75fedecea2b3ac934bae3fa1bdade4a08be28eb8c8db33",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ed850d2c310d699ff64be8809767aca70e7f17e5ff430692ddc05f2644ffa884",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b3893877ec881747035b8dcab2fe7867cecc7c3c92cbe5f033e660729cc8b6f5",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "9162e12c3b2b8e6e09bd250035096afdd19f62248dec49c5a4cceb71d46c59f7",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "b732336bc68a359200e72cf1bbcce7c2e04a50b9006182b08151394d84bdfa86",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "3820c3049015b6331d725dacb3be828eb962dfc7192cadea48578d39696989b7",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "37a586d23e511b14ab80d1c98f7f72fa11c4ed973865a78914e620caac41a09a",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "0efaf0f007d496b9749e70fce7b3e28b053c3b0cc834f3af9f3a9ea153d80678",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "665a8d0b8db30d8e89ac355df2500323b6146830fb614fd2857ac8d5d4cdac82",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "ce0a752ac2b2e930ec9a039656a6b926c3e14e3f588285a53a96b4f020a23d51",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "bf25d6e6b22b9a467afdbb3477bad7285852fcc4efb5f282939e3b48b19f035d",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "fa3ae6be0cf6d1b5e575c8d6d71fc20cbe6e91115e0a11c97ad249c131bab959",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "477623685951d966a27c3f56527b9a414c8ad3b6916150896f3cd18db64c12a6",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stderr.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stdout.log",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "49f4cab4daff95128887d0229d76faa008a6a6b0b0582689bc9dc02e52fe246c",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/stdout.log",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "4232472b58867208e918f7173b050533316f4dd80b2a3d50b5ffca07babc83f5",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.summary.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "07153a2b4f26eb931d85e1b90522451afcadb8c23f2e2cde14fb9e0e42eb6db8",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/samples.csv",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+    "retained_at": "data/exploratory/run-8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/8/grpo_experiments.zip::grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/run_config.json",
+    "commit": "7f9d0ab0aaaac23a031c3b5068b1de9746e60476",
+    "sha256": "3b2ee2603299dc74c1233eed988498bd390bb51a374b6ea892d4c8e256cdbf81",
+    "retained_at": "data/exploratory/run-8/archived-queue/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/run_config.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/27/eval_base_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "2e4cee5c6761e0d2dc6a500afba0ed4ace32dc28cd8f77e42293c6b3983bfe42",
+    "retained_at": "data/exploratory/corrected_20260913/27/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/27/eval_base_train_tasks.csv",
+    "commit": "",
+    "sha256": "f9cb8544c9950d97076f2cb1da582c9225712c3144316cbc23ec28bd2823f8c3",
+    "retained_at": "data/exploratory/corrected_20260913/27/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/27/eval_lora_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "6da9c1a33c707750f741836815353e64a56b7d469b1aec9b938bdb2f491d0153",
+    "retained_at": "data/exploratory/corrected_20260913/27/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/27/eval_lora_train_tasks.csv",
+    "commit": "",
+    "sha256": "1e6e59d9c118a8264abe49de281f13f4af68d42210690ea25284893ea2dc2726",
+    "retained_at": "data/exploratory/corrected_20260913/27/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/27/samples.csv",
+    "commit": "",
+    "sha256": "fabc7eafc4e193649f86d48176813353f9cdd88c03d64df5aee7417d77c4057f",
+    "retained_at": "data/exploratory/corrected_20260913/27/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/28/eval_base_holdout_tasks_1.csv",
+    "commit": "",
+    "sha256": "c3d034f6357db14c6bb023934977df96178fc6eb9de06892b352079df23f9b90",
+    "retained_at": "data/exploratory/corrected_20260913/28/eval_base_holdout_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/28/eval_base_train_tasks_1.csv",
+    "commit": "",
+    "sha256": "fc0823d40b6ffa067977a72aecd06f3d27c2dc73e8efffea91b72b52615dc169",
+    "retained_at": "data/exploratory/corrected_20260913/28/eval_base_train_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/28/eval_lora_holdout_tasks_1.csv",
+    "commit": "",
+    "sha256": "ad520e279727ffe06a3857b31e63a6a31796c327c15aa7951b0b2a4cc5549ac2",
+    "retained_at": "data/exploratory/corrected_20260913/28/eval_lora_holdout_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/28/eval_lora_train_tasks_1.csv",
+    "commit": "",
+    "sha256": "75b11b0750eb3e701575c161e884c32df86d57aed1e57655a5acd8fc35e4f861",
+    "retained_at": "data/exploratory/corrected_20260913/28/eval_lora_train_tasks_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/28/samples_1.csv",
+    "commit": "",
+    "sha256": "92e36885c4d62ab47242c7335bff9e25a10e616050d87236af7d54e5615f16a2",
+    "retained_at": "data/exploratory/corrected_20260913/28/samples_1.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/29/eval_base_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "74e2eb1392747b7204fb5157d0c0004fa0a1e6e410608d74f95a71bbbc51fe7d",
+    "retained_at": "data/exploratory/corrected_20260913/29/eval_base_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/29/eval_base_train_tasks.csv",
+    "commit": "",
+    "sha256": "92a47e4aa3bd911d192c9ef3ed3ff036310270647cec537f0eabc766261e9662",
+    "retained_at": "data/exploratory/corrected_20260913/29/eval_base_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/29/eval_lora_holdout_tasks.csv",
+    "commit": "",
+    "sha256": "49231d543cbcd675d647a3e7b8d7d925967a1a336bab5eec2f04ed7cbb72d7ba",
+    "retained_at": "data/exploratory/corrected_20260913/29/eval_lora_holdout_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/29/eval_lora_train_tasks.csv",
+    "commit": "",
+    "sha256": "757caa120024978b3c85f0a33afcefafef9c993c996af4c1f060759494255fbe",
+    "retained_at": "data/exploratory/corrected_20260913/29/eval_lora_train_tasks.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/29/samples.csv",
+    "commit": "",
+    "sha256": "5e7b5c64e50908591ebf50c257356f3d43b8d207853ea7ef0f2066272a812bc8",
+    "retained_at": "data/exploratory/corrected_20260913/29/samples.csv",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/README.md",
+    "commit": "",
+    "sha256": "87fec7d2a070e2263edfa508d8695ac01f4ddfa03d7961818d87896fdd7b4494",
+    "retained_at": "data/exploratory/corrected_20260913/README.md",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "UnSloth-RL/results/corrected_20260913/summary.json",
+    "commit": "",
+    "sha256": "e6bb3f247c342b9db4004cd23748fdfe8cd6fa800fc4fd05712464106dfb64fd",
+    "retained_at": "data/exploratory/corrected_20260913/summary.json",
+    "reason": "Exact duplicate bytes; raw original also retained restricted"
+  },
+  {
+    "source": "data/exploratory/run-13/AI_JUDGE_RUN13_SUMMARY.md",
+    "sha256": "98441916509b01ea7e8affa90bed23cf8b111eeb2b3a623afa760980dd58e6c6",
+    "retained_at": "experiments/exploratory/selected-evidence/run-13/AI_JUDGE_RUN13_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-13/AI_JUDGE_SUMMARY.md",
+    "sha256": "6c7edb857c4b20adcbf06da55a9064a4c4564f3c5a0d85ebc35ae6f078f63eaf",
+    "retained_at": "experiments/exploratory/selected-evidence/run-13/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-15/grpo_analysis_summary.md",
+    "sha256": "8c665cd42690c541acb1843eb2e86fa5986c59a61f6ce714393db74a22cb10c4",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/grpo_analysis_summary.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-27/README.md",
+    "sha256": "d5db14d8bcb064bc71503904ff960d3d4141e0fa8a07135803f404fda2f61f8c",
+    "retained_at": "experiments/exploratory/selected-evidence/run-27/README.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-28/README.md",
+    "sha256": "9e3defbf0329ac3eba6a4287612fa96e734e9daa5ef0df7d7ca2ba3bd7941f84",
+    "retained_at": "experiments/exploratory/selected-evidence/run-28/README.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-29/README.md",
+    "sha256": "6d2f904a32c1af73ffdc05085db929b9a73f21072262d9f87043ccfb8e1b5151",
+    "retained_at": "experiments/exploratory/selected-evidence/run-29/README.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-4/notes.md",
+    "sha256": "6b641ae69c0a92f8acb539d823923f0f4ac09559d323b9e2cd1bee8b6823b905",
+    "retained_at": "experiments/exploratory/selected-evidence/run-4/notes.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-14/baseline/Note.md",
+    "sha256": "47583d800b0d361a5cceb7758f1400e96862a25bde60fce155c8c53ac5f4b525",
+    "retained_at": "experiments/exploratory/selected-evidence/run-14/Note.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "experiments/exploratory/selected-evidence/run-15/all-metrics/AI_JUDGE_SUMMARY.md",
+    "sha256": "a1b77ca0f63d2a93abc83a1957a88644034129105c7f662d3b93143e697cb59d",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-15/all-metrics/AI_JUDGE_SUMMARY.md",
+    "sha256": "a1b77ca0f63d2a93abc83a1957a88644034129105c7f662d3b93143e697cb59d",
+    "retained_at": "experiments/exploratory/selected-evidence/run-15/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-16/all-metrics/AI_JUDGE_SUMMARY.md",
+    "sha256": "20db1a81b5449571baf7f049fc92311ca498bedb9a872633d01a98eb77224f20",
+    "retained_at": "experiments/exploratory/selected-evidence/run-16/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-17/double-correctness/AI_JUDGE_SUMMARY.md",
+    "sha256": "d03f3d1f27ffc03f041e8fddfc4de3b857f1aeaed18910794d740ac14554d76d",
+    "retained_at": "experiments/exploratory/selected-evidence/run-17/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-18/double-style/AI_JUDGE_SUMMARY.md",
+    "sha256": "de3c75c84181de2c31757c1706481985b90a046f3049705a3ff597ab21b1edf4",
+    "retained_at": "experiments/exploratory/selected-evidence/run-18/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-19/double-best-performance/AI_JUDGE_SUMMARY.md",
+    "sha256": "8065175c33cdd7553b07c711d1fe9c3fb43ed8f54dd19876589354a67c9da324",
+    "retained_at": "experiments/exploratory/selected-evidence/run-19/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "data/exploratory/run-22/style/AI_JUDGE_SUMMARY.md",
+    "sha256": "659576905005bb7c1afd9a314715133fef379553f48708f92a6b5dfb7c53ea79",
+    "retained_at": "experiments/exploratory/selected-evidence/run-22/AI_JUDGE_SUMMARY.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/AI_JUDGE_REWARD.md",
+    "sha256": "a73d42b5cb02043d383814cbd475032d6c79fc2461eda92e95e3a74b5049175d",
+    "retained_at": "training/historical/early-main/documentation/AI_JUDGE_REWARD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/codequal-pilot/documentation/PAPER_COMPARISON_NOTES.md",
+    "sha256": "037528467bf9bea7c6b5b0a39e3afa8321aec82a97804ea79d787381b0ccdacd",
+    "retained_at": "training/historical/early-main/documentation/PAPER_COMPARISON_NOTES.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/sonarqube-pilot/documentation/PAPER_COMPARISON_NOTES.md",
+    "sha256": "037528467bf9bea7c6b5b0a39e3afa8321aec82a97804ea79d787381b0ccdacd",
+    "retained_at": "training/historical/early-main/documentation/PAPER_COMPARISON_NOTES.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/calibration-prep/documentation/PAPER_COMPARISON_NOTES.md",
+    "sha256": "037528467bf9bea7c6b5b0a39e3afa8321aec82a97804ea79d787381b0ccdacd",
+    "retained_at": "training/historical/early-main/documentation/PAPER_COMPARISON_NOTES.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/PAPER_COMPARISON_NOTES.md",
+    "sha256": "037528467bf9bea7c6b5b0a39e3afa8321aec82a97804ea79d787381b0ccdacd",
+    "retained_at": "training/historical/early-main/documentation/PAPER_COMPARISON_NOTES.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/QWEN36_GRPO_NOTES.md",
+    "sha256": "c2e78d665feba391b3e1a55d01119a639e487f6a07eee4538280fd1e6745cd91",
+    "retained_at": "training/historical/early-main/documentation/QWEN36_GRPO_NOTES.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/codequal-pilot/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "sha256": "41e9d31402149c3cf52c38410b18a633ffc69b631cbf91cc3d38f340287b8edc",
+    "retained_at": "training/historical/early-main/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/sonarqube-pilot/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "sha256": "41e9d31402149c3cf52c38410b18a633ffc69b631cbf91cc3d38f340287b8edc",
+    "retained_at": "training/historical/early-main/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/calibration-prep/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "sha256": "41e9d31402149c3cf52c38410b18a633ffc69b631cbf91cc3d38f340287b8edc",
+    "retained_at": "training/historical/early-main/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "sha256": "41e9d31402149c3cf52c38410b18a633ffc69b631cbf91cc3d38f340287b8edc",
+    "retained_at": "training/historical/early-main/documentation/REMOTE_TRAIN_INSTRUCTIONS.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/shell_command.md",
+    "sha256": "60796f8d585e777cdc0402c6433252feb820d8bf835c5d011dfa9cca3388fb78",
+    "retained_at": "training/historical/early-main/documentation/shell_command.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/codequal-pilot/documentation/TESTS_TRAIN_CONRAD.md",
+    "sha256": "4483245f4ee75ace371c68b5ae377920f3b78f81fc14901d9add30f0069a9b28",
+    "retained_at": "training/historical/early-main/documentation/TESTS_TRAIN_CONRAD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/sonarqube-pilot/documentation/TESTS_TRAIN_CONRAD.md",
+    "sha256": "4483245f4ee75ace371c68b5ae377920f3b78f81fc14901d9add30f0069a9b28",
+    "retained_at": "training/historical/early-main/documentation/TESTS_TRAIN_CONRAD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/calibration-prep/documentation/TESTS_TRAIN_CONRAD.md",
+    "sha256": "4483245f4ee75ace371c68b5ae377920f3b78f81fc14901d9add30f0069a9b28",
+    "retained_at": "training/historical/early-main/documentation/TESTS_TRAIN_CONRAD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/analyzer-screening/documentation/TESTS_TRAIN_CONRAD.md",
+    "sha256": "4483245f4ee75ace371c68b5ae377920f3b78f81fc14901d9add30f0069a9b28",
+    "retained_at": "training/historical/early-main/documentation/TESTS_TRAIN_CONRAD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/sonarqube-pilot/documentation/AI_JUDGE_REWARD.md",
+    "sha256": "e7fc2b295823e10f8b3e653de16ada942001e8fd01217e4536adfbe07663d84c",
+    "retained_at": "training/historical/codequal-pilot/documentation/AI_JUDGE_REWARD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  },
+  {
+    "source": "training/historical/calibration-prep/documentation/AI_JUDGE_REWARD.md",
+    "sha256": "e7fc2b295823e10f8b3e653de16ada942001e8fd01217e4536adfbe07663d84c",
+    "retained_at": "training/historical/codequal-pilot/documentation/AI_JUDGE_REWARD.md",
+    "reason": "Checked exact-byte duplicate original Markdown; unique research content retained once"
+  }
+]

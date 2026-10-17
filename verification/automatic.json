@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "heldout_rows": 2400,
+  "training_rows": 24000,
+  "base_rows": 600,
+  "runs": [
+    {
+      "run": 30,
+      "condition": "C",
+      "seed": 3407,
+      "n": 200,
+      "correct": 181,
+      "clean": 153,
+      "both": 138,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 31,
+      "condition": "C",
+      "seed": 3408,
+      "n": 200,
+      "correct": 181,
+      "clean": 147,
+      "both": 133,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 32,
+      "condition": "C",
+      "seed": 3409,
+      "n": 200,
+      "correct": 183,
+      "clean": 94,
+      "both": 87,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 33,
+      "condition": "S",
+      "seed": 3407,
+      "n": 200,
+      "correct": 176,
+      "clean": 188,
+      "both": 165,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 34,
+      "condition": "S",
+      "seed": 3408,
+      "n": 200,
+      "correct": 177,
+      "clean": 187,
+      "both": 165,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 35,
+      "condition": "S",
+      "seed": 3409,
+      "n": 200,
+      "correct": 173,
+      "clean": 190,
+      "both": 165,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 36,
+      "condition": "J",
+      "seed": 3407,
+      "n": 200,
+      "correct": 182,
+      "clean": 142,
+      "both": 128,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 37,
+      "condition": "J",
+      "seed": 3408,
+      "n": 200,
+      "correct": 180,
+      "clean": 166,
+      "both": 149,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 38,
+      "condition": "J",
+      "seed": 3409,
+      "n": 200,
+      "correct": 180,
+      "clean": 146,
+      "both": 133,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 39,
+      "condition": "SJ",
+      "seed": 3407,
+      "n": 200,
+      "correct": 175,
+      "clean": 189,
+      "both": 164,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 40,
+      "condition": "SJ",
+      "seed": 3408,
+      "n": 200,
+      "correct": 176,
+      "clean": 188,
+      "both": 164,
+      "training_rows": 2000,
+      "groups": 500
+    },
+    {
+      "run": 41,
+      "condition": "SJ",
+      "seed": 3409,
+      "n": 200,
+      "correct": 176,
+      "clean": 191,
+      "both": 167,
+      "training_rows": 2000,
+      "groups": 500
+    }
+  ],
+  "aggregates": {
+    "C": {
+      "n": 600,
+      "correct": 545,
+      "clean": 394,
+      "both": 358
+    },
+    "S": {
+      "n": 600,
+      "correct": 526,
+      "clean": 565,
+      "both": 495
+    },
+    "J": {
+      "n": 600,
+      "correct": 542,
+      "clean": 454,
+      "both": 410
+    },
+    "SJ": {
+      "n": 600,
+      "correct": 527,
+      "clean": 568,
+      "both": 495
+    }
+  },
+  "interpretation": "Descriptive output rates. Four outputs per task, three seeds; not independent task trials or pass@k. Saved statuses are not re-executed tests."
+}

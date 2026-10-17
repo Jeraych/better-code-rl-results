@@ -1,0 +1,162 @@
+{
+  "experiment": "codequal_analyzer_pilot",
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "analyzer_python": "tmp/research_codequal_analyzer/python",
+  "analyzer_commit": "518360297f59ad7b6569233eb4b934e6b00c083b",
+  "quick_analyzer_availability": {
+    "PylintAnalyzer": true,
+    "BanditAnalyzer": true,
+    "RadonAnalyzer": true,
+    "VultureAnalyzer": true,
+    "ExceptionHandlingAnalyzer": true,
+    "DataStructureComplexityAnalyzer": true,
+    "ResourceConsumptionAnalyzer": true,
+    "StringConcatenationAnalyzer": true
+  },
+  "configuration": {
+    "quick_analyzers": true,
+    "max_jobs": 4,
+    "complexity_threshold": "C",
+    "ignore_solution_unused": true,
+    "synthetic_repetitions": 3
+  },
+  "synthetic": {
+    "pair_count": 8,
+    "directional_wins": 8,
+    "ties": 0,
+    "reversals": 0,
+    "directional_accuracy": 1.0,
+    "mean_clean_minus_degraded_overall": 5.603,
+    "pair_deltas": {
+      "string_concatenation": 7.13,
+      "file_open_in_loop": 4.15,
+      "broad_silent_exception": 12.53,
+      "branch_complexity": 2.26,
+      "shell_injection": 4.16,
+      "unused_dead_code": 4.99,
+      "nested_allocation": 5.45,
+      "blocking_call_in_loop": 4.15
+    },
+    "all_scores_deterministic": true
+  },
+  "padding_probe": {
+    "base": {
+      "scores": {
+        "maintainability": 99.95,
+        "security": 99.9,
+        "performance": 71.43,
+        "reliability": 99.93,
+        "overall": 92.8,
+        "maintainability_per_kchar": 96.95,
+        "security_per_kchar": 94.08,
+        "performance_per_kchar": 3.82,
+        "reliability_per_kchar": 95.78,
+        "overall_per_kchar": 72.66
+      },
+      "entrypoint_filtered_scores": {
+        "maintainability": 99.95,
+        "security": 99.9,
+        "performance": 71.43,
+        "reliability": 99.93,
+        "overall": 92.8,
+        "maintainability_per_kchar": 96.95,
+        "security_per_kchar": 94.08,
+        "performance_per_kchar": 3.82,
+        "reliability_per_kchar": 95.78,
+        "overall_per_kchar": 72.66
+      },
+      "elapsed_ms": 725.3513999999086,
+      "finding_count": 2,
+      "entrypoint_filtered_finding_count": 2,
+      "findings_by_characteristic": {
+        "maintainability": 0,
+        "security": 0,
+        "performance": 2,
+        "reliability": 0
+      },
+      "findings_by_analyzer": {
+        "resource_consumption": 1,
+        "string_concatenation": 1
+      },
+      "rule_ids": [
+        "excessive-resource-consumption",
+        "inefficient-string-concatenation"
+      ]
+    },
+    "padded": {
+      "scores": {
+        "maintainability": 99.95,
+        "security": 99.9,
+        "performance": 71.43,
+        "reliability": 99.93,
+        "overall": 92.8,
+        "maintainability_per_kchar": 99.74,
+        "security_per_kchar": 99.48,
+        "performance_per_kchar": 32.43,
+        "reliability_per_kchar": 99.64,
+        "overall_per_kchar": 82.82
+      },
+      "entrypoint_filtered_scores": {
+        "maintainability": 99.95,
+        "security": 99.9,
+        "performance": 71.43,
+        "reliability": 99.93,
+        "overall": 92.8,
+        "maintainability_per_kchar": 99.74,
+        "security_per_kchar": 99.48,
+        "performance_per_kchar": 32.43,
+        "reliability_per_kchar": 99.64,
+        "overall_per_kchar": 82.82
+      },
+      "elapsed_ms": 742.7009000002727,
+      "finding_count": 2,
+      "entrypoint_filtered_finding_count": 2,
+      "findings_by_characteristic": {
+        "maintainability": 0,
+        "security": 0,
+        "performance": 2,
+        "reliability": 0
+      },
+      "findings_by_analyzer": {
+        "resource_consumption": 1,
+        "string_concatenation": 1
+      },
+      "rule_ids": [
+        "excessive-resource-consumption",
+        "inefficient-string-concatenation"
+      ]
+    },
+    "raw_overall_delta": 0.0,
+    "per_kchar_overall_delta": 10.16
+  },
+  "run13": {
+    "eligible_population": 934,
+    "sample_size": 50,
+    "seed": 42,
+    "overall_mean": 94.018,
+    "overall_sd": 1.738,
+    "overall_min": 90.32,
+    "overall_max": 94.94,
+    "overall_per_kchar_mean": 69.115,
+    "entrypoint_filtered_overall_mean": 98.964,
+    "entrypoint_filtered_overall_sd": 1.854,
+    "entrypoint_filtered_overall_min": 93.12,
+    "entrypoint_filtered_overall_max": 99.93,
+    "mean_findings": 1.24,
+    "mean_entrypoint_filtered_findings": 0.24,
+    "mean_elapsed_ms": 922.2,
+    "spearman_with_ai_judge": 0.2989,
+    "spearman_normalized_with_ai_judge": -0.1596,
+    "spearman_entrypoint_filtered_with_ai_judge": 0.2989,
+    "spearman_entrypoint_filtered_normalized_with_ai_judge": -0.1119,
+    "spearman_with_style": -0.0127,
+    "pearson_with_ai_judge": 0.261
+  },
+  "limitations": [
+    "Synthetic pairs test sensitivity to deliberately seeded rules, not real-world validity.",
+    "Run 13 comparison has no human ground truth; correlations show agreement, not correctness.",
+    "The entrypoint-filtered result is a harness adaptation reported alongside the unchanged library score.",
+    "Only the quick analyser subset is evaluated in this pilot.",
+    "The local compatibility patch changes execution portability, not scoring rules."
+  ]
+}

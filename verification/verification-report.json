@@ -1,0 +1,648 @@
+{
+  "automatic": {
+    "status": "PASS",
+    "heldout_rows": 2400,
+    "training_rows": 24000,
+    "base_rows": 600,
+    "runs": [
+      {
+        "run": 30,
+        "condition": "C",
+        "seed": 3407,
+        "n": 200,
+        "correct": 181,
+        "clean": 153,
+        "both": 138,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 31,
+        "condition": "C",
+        "seed": 3408,
+        "n": 200,
+        "correct": 181,
+        "clean": 147,
+        "both": 133,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 32,
+        "condition": "C",
+        "seed": 3409,
+        "n": 200,
+        "correct": 183,
+        "clean": 94,
+        "both": 87,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 33,
+        "condition": "S",
+        "seed": 3407,
+        "n": 200,
+        "correct": 176,
+        "clean": 188,
+        "both": 165,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 34,
+        "condition": "S",
+        "seed": 3408,
+        "n": 200,
+        "correct": 177,
+        "clean": 187,
+        "both": 165,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 35,
+        "condition": "S",
+        "seed": 3409,
+        "n": 200,
+        "correct": 173,
+        "clean": 190,
+        "both": 165,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 36,
+        "condition": "J",
+        "seed": 3407,
+        "n": 200,
+        "correct": 182,
+        "clean": 142,
+        "both": 128,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 37,
+        "condition": "J",
+        "seed": 3408,
+        "n": 200,
+        "correct": 180,
+        "clean": 166,
+        "both": 149,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 38,
+        "condition": "J",
+        "seed": 3409,
+        "n": 200,
+        "correct": 180,
+        "clean": 146,
+        "both": 133,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 39,
+        "condition": "SJ",
+        "seed": 3407,
+        "n": 200,
+        "correct": 175,
+        "clean": 189,
+        "both": 164,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 40,
+        "condition": "SJ",
+        "seed": 3408,
+        "n": 200,
+        "correct": 176,
+        "clean": 188,
+        "both": 164,
+        "training_rows": 2000,
+        "groups": 500
+      },
+      {
+        "run": 41,
+        "condition": "SJ",
+        "seed": 3409,
+        "n": 200,
+        "correct": 176,
+        "clean": 191,
+        "both": 167,
+        "training_rows": 2000,
+        "groups": 500
+      }
+    ],
+    "aggregates": {
+      "C": {
+        "n": 600,
+        "correct": 545,
+        "clean": 394,
+        "both": 358
+      },
+      "S": {
+        "n": 600,
+        "correct": 526,
+        "clean": 565,
+        "both": 495
+      },
+      "J": {
+        "n": 600,
+        "correct": 542,
+        "clean": 454,
+        "both": 410
+      },
+      "SJ": {
+        "n": 600,
+        "correct": 527,
+        "clean": 568,
+        "both": 495
+      }
+    },
+    "interpretation": "Descriptive output rates. Four outputs per task, three seeds; not independent task trials or pass@k. Saved statuses are not re-executed tests."
+  },
+  "human": {
+    "status": "PASS",
+    "responses": 150,
+    "unique_pairs": 140,
+    "task_identities": 47,
+    "missing_task_identities": [
+      "HumanEval/76",
+      "HumanEval/91",
+      "HumanEval/93"
+    ],
+    "contrasts": {
+      "B-C": {
+        "categories": [
+          "B",
+          "Equal",
+          "C"
+        ],
+        "counts": [
+          14,
+          10,
+          14
+        ],
+        "phases": {
+          "joint": [
+            3,
+            3,
+            6
+          ],
+          "reviewer_1": [
+            7,
+            4,
+            2
+          ],
+          "reviewer_2": [
+            4,
+            3,
+            6
+          ]
+        }
+      },
+      "C-S": {
+        "categories": [
+          "C",
+          "Equal",
+          "S"
+        ],
+        "counts": [
+          16,
+          5,
+          17
+        ],
+        "phases": {
+          "joint": [
+            5,
+            2,
+            5
+          ],
+          "reviewer_1": [
+            6,
+            1,
+            6
+          ],
+          "reviewer_2": [
+            5,
+            2,
+            6
+          ]
+        }
+      },
+      "C-J": {
+        "categories": [
+          "C",
+          "Equal",
+          "J"
+        ],
+        "counts": [
+          20,
+          3,
+          14
+        ],
+        "phases": {
+          "joint": [
+            6,
+            2,
+            5
+          ],
+          "reviewer_2": [
+            7,
+            1,
+            4
+          ],
+          "reviewer_1": [
+            7,
+            0,
+            5
+          ]
+        }
+      },
+      "S-SJ": {
+        "categories": [
+          "S",
+          "Equal",
+          "SJ"
+        ],
+        "counts": [
+          9,
+          16,
+          12
+        ],
+        "phases": {
+          "joint": [
+            4,
+            3,
+            6
+          ],
+          "reviewer_1": [
+            3,
+            6,
+            3
+          ],
+          "reviewer_2": [
+            2,
+            7,
+            3
+          ]
+        }
+      }
+    },
+    "distinct_pairs_per_contrast": {
+      "B-C": 35,
+      "C-S": 35,
+      "C-J": 35,
+      "S-SJ": 35
+    },
+    "equal_pair_weight_sensitivity": {
+      "B-C": {
+        "categories": [
+          "B",
+          "Equal",
+          "C"
+        ],
+        "counts": [
+          13.5,
+          9.5,
+          12.0
+        ]
+      },
+      "C-S": {
+        "categories": [
+          "C",
+          "Equal",
+          "S"
+        ],
+        "counts": [
+          15.5,
+          4.0,
+          15.5
+        ]
+      },
+      "C-J": {
+        "categories": [
+          "C",
+          "Equal",
+          "J"
+        ],
+        "counts": [
+          19.0,
+          3.0,
+          13.0
+        ]
+      },
+      "S-SJ": {
+        "categories": [
+          "S",
+          "Equal",
+          "SJ"
+        ],
+        "counts": [
+          9.0,
+          14.0,
+          12.0
+        ]
+      }
+    },
+    "overlap": {
+      "n": 10,
+      "agreement": 0.5,
+      "matrix": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "kappa": 0.2537313432835821,
+      "per_contrast": {
+        "B-C": {
+          "n": 3,
+          "agree": 1
+        },
+        "C-J": {
+          "n": 2,
+          "agree": 0
+        },
+        "S-SJ": {
+          "n": 2,
+          "agree": 2
+        },
+        "C-S": {
+          "n": 3,
+          "agree": 2
+        }
+      }
+    },
+    "ruff_score_ties": 108,
+    "directional_preferences_with_tied_ruff": 77,
+    "limits": "Two project authors, 50 joint responses and 100 independent responses. Conditional on both-correct, non-identical outputs. Pseudonymous records remain linkable; the user confirmed both authors agree to this private results snapshot on 17 October 2026."
+  },
+  "judge": {
+    "status": "PASS",
+    "runs": [
+      {
+        "run": 30,
+        "timeout_rows": 5,
+        "unique_timeout_task_raw_completion_pairs": 5,
+        "timeout_tasks": {
+          "HumanEval/25": 3,
+          "HumanEval/39": 2
+        },
+        "timeout_groups": 4,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 26
+      },
+      {
+        "run": 31,
+        "timeout_rows": 4,
+        "unique_timeout_task_raw_completion_pairs": 4,
+        "timeout_tasks": {
+          "HumanEval/25": 3,
+          "HumanEval/39": 1
+        },
+        "timeout_groups": 4,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 24
+      },
+      {
+        "run": 32,
+        "timeout_rows": 3,
+        "unique_timeout_task_raw_completion_pairs": 3,
+        "timeout_tasks": {
+          "HumanEval/39": 2,
+          "HumanEval/25": 1
+        },
+        "timeout_groups": 3,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 20
+      },
+      {
+        "run": 33,
+        "timeout_rows": 2,
+        "unique_timeout_task_raw_completion_pairs": 2,
+        "timeout_tasks": {
+          "HumanEval/39": 1,
+          "HumanEval/25": 1
+        },
+        "timeout_groups": 2,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 49
+      },
+      {
+        "run": 34,
+        "timeout_rows": 2,
+        "unique_timeout_task_raw_completion_pairs": 2,
+        "timeout_tasks": {
+          "HumanEval/25": 1,
+          "HumanEval/39": 1
+        },
+        "timeout_groups": 2,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 59
+      },
+      {
+        "run": 35,
+        "timeout_rows": 70,
+        "unique_timeout_task_raw_completion_pairs": 27,
+        "timeout_tasks": {
+          "HumanEval/39": 29,
+          "HumanEval/15": 40,
+          "HumanEval/25": 1
+        },
+        "timeout_groups": 21,
+        "measured_eligible_varying_groups": 0,
+        "effective_judge_varying_groups": 0,
+        "total_reward_varying_groups": 67
+      },
+      {
+        "run": 36,
+        "timeout_rows": 8,
+        "unique_timeout_task_raw_completion_pairs": 4,
+        "timeout_tasks": {
+          "HumanEval/25": 5,
+          "HumanEval/39": 3
+        },
+        "timeout_groups": 7,
+        "measured_eligible_varying_groups": 143,
+        "effective_judge_varying_groups": 145,
+        "total_reward_varying_groups": 154,
+        "service_statuses": {
+          "attempt": 888,
+          "ok": 888,
+          "evaluation": 885
+        }
+      },
+      {
+        "run": 37,
+        "timeout_rows": 5,
+        "unique_timeout_task_raw_completion_pairs": 2,
+        "timeout_tasks": {
+          "HumanEval/39": 1,
+          "HumanEval/25": 4
+        },
+        "timeout_groups": 4,
+        "measured_eligible_varying_groups": 114,
+        "effective_judge_varying_groups": 121,
+        "total_reward_varying_groups": 129,
+        "service_statuses": {
+          "attempt": 904,
+          "ok": 904,
+          "evaluation": 901
+        }
+      },
+      {
+        "run": 38,
+        "timeout_rows": 2,
+        "unique_timeout_task_raw_completion_pairs": 1,
+        "timeout_tasks": {
+          "HumanEval/25": 2
+        },
+        "timeout_groups": 2,
+        "measured_eligible_varying_groups": 133,
+        "effective_judge_varying_groups": 136,
+        "total_reward_varying_groups": 143,
+        "service_statuses": {
+          "attempt": 903,
+          "ok": 903,
+          "evaluation": 900
+        }
+      },
+      {
+        "run": 39,
+        "timeout_rows": 1,
+        "unique_timeout_task_raw_completion_pairs": 1,
+        "timeout_tasks": {
+          "HumanEval/39": 1
+        },
+        "timeout_groups": 1,
+        "measured_eligible_varying_groups": 88,
+        "effective_judge_varying_groups": 90,
+        "total_reward_varying_groups": 111,
+        "service_statuses": {
+          "attempt": 772,
+          "ok": 772,
+          "evaluation": 769
+        }
+      },
+      {
+        "run": 40,
+        "timeout_rows": 2,
+        "unique_timeout_task_raw_completion_pairs": 2,
+        "timeout_tasks": {
+          "HumanEval/25": 2
+        },
+        "timeout_groups": 2,
+        "measured_eligible_varying_groups": 121,
+        "effective_judge_varying_groups": 126,
+        "total_reward_varying_groups": 149,
+        "service_statuses": {
+          "attempt": 874,
+          "ok": 874,
+          "evaluation": 871
+        }
+      },
+      {
+        "run": 41,
+        "timeout_rows": 2,
+        "unique_timeout_task_raw_completion_pairs": 2,
+        "timeout_tasks": {
+          "HumanEval/25": 2
+        },
+        "timeout_groups": 2,
+        "measured_eligible_varying_groups": 86,
+        "effective_judge_varying_groups": 88,
+        "total_reward_varying_groups": 110,
+        "service_statuses": {
+          "attempt": 779,
+          "ok": 779,
+          "evaluation": 776
+        }
+      }
+    ],
+    "services": {
+      "J": {
+        "attempt": 2695,
+        "ok": 2695,
+        "evaluation": 2686
+      },
+      "SJ": {
+        "attempt": 2425,
+        "ok": 2425,
+        "evaluation": 2416
+      }
+    },
+    "limits": [
+      "Cached timeout reuse follows the preserved DIAGNOSTIC_CACHE implementation; the original host/deadline cause is unresolved.",
+      "27 distinct task/completion keys are 70 recorded reward-affecting rows, not 70 independent failures.",
+      "Service success and schema validity do not validate Judge findings.",
+      "Complete transport JSONL is not available for all runs; summaries remain source records."
+    ]
+  },
+  "exploratory": {
+    "status": "PASS",
+    "run12": {
+      "rows": 1000,
+      "eligible": 960,
+      "mean_eligible_score": 0.9754375106617365,
+      "eligible_at_max": 779,
+      "groups": 500,
+      "zero_total_reward_variation_groups": 408
+    },
+    "prompt_calibration": {
+      "STANDALONE_PROMPT": {
+        "reviews": 80,
+        "groups": 20,
+        "equal_score_groups": 18,
+        "mean_within_group_population_sd": 0.012990381056766582,
+        "mean_score": 0.8125
+      },
+      "HISTORICAL_PROMPT": {
+        "reviews": 80,
+        "groups": 20,
+        "equal_score_groups": 11,
+        "mean_within_group_population_sd": 0.039264466949589,
+        "mean_score": 0.818125
+      }
+    },
+    "limits": "Saved exploratory records only; prepared 144-call plan is not classified as completed. No API calls, candidate execution or training."
+  },
+  "manifest": {
+    "status": "PASS",
+    "files": 560
+  },
+  "derived_comparison": {
+    "status": "PASS",
+    "files": 4,
+    "method": "Parsed JSON equality"
+  },
+  "syntax": {
+    "status": "PASS"
+  },
+  "not_verified": [
+    "Fresh GPU training and generated outputs",
+    "Original adapter weights and immutable model/dataset/Judge revisions",
+    "External-developer preference generalisation and per-finding Judge accuracy"
+  ]
+}

@@ -1,0 +1,1278 @@
+[
+  {
+    "run": 1,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/1/samples.csv",
+        "sha256": "ae0d35e8542a35a5bcf4ded25f4055f448c821bd28935134c9474963be112029",
+        "rows": 20,
+        "test_status": {
+          "not recorded": 20
+        },
+        "style_status": {
+          "not recorded": 20
+        }
+      }
+    ]
+  },
+  {
+    "run": 2,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/2/samples.csv",
+        "sha256": "ae0d35e8542a35a5bcf4ded25f4055f448c821bd28935134c9474963be112029",
+        "rows": 20,
+        "test_status": {
+          "not recorded": 20
+        },
+        "style_status": {
+          "not recorded": 20
+        }
+      }
+    ]
+  },
+  {
+    "run": 3,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/3/samples.csv",
+        "sha256": "c9a1d6f4ab08972a8642270558e82bb531b7b15d4353732b464b956dcf06d919",
+        "rows": 20,
+        "test_status": {
+          "failed": 7,
+          "not_run": 8,
+          "timeout": 1,
+          "passed": 4
+        },
+        "style_status": {
+          "not recorded": 20
+        }
+      }
+    ]
+  },
+  {
+    "run": 4,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/4/samples.csv",
+        "sha256": "e1a719da0ad1623621e2ee08edd67c422bc143940a20fd13b3a94841709ab0fb",
+        "rows": 600,
+        "test_status": {
+          "failed": 249,
+          "not_run": 261,
+          "timeout": 4,
+          "passed": 86
+        },
+        "style_status": {
+          "not recorded": 600
+        }
+      }
+    ]
+  },
+  {
+    "run": 5,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/5/samples.csv",
+        "sha256": "bc6e831e44ffed770215e10d757cf1324e118de1e257c3a8f226b52f9253b4a4",
+        "rows": 1000,
+        "test_status": {
+          "not_run": 283,
+          "failed": 473,
+          "passed": 239,
+          "timeout": 5
+        },
+        "style_status": {
+          "not recorded": 1000
+        }
+      }
+    ]
+  },
+  {
+    "run": 6,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/6/samples.csv",
+        "sha256": "780101fd3fb8845e11b4e4b267c8f4791fbb5f82b828467ff3213a78a46a90f3",
+        "rows": 2000,
+        "test_status": {
+          "not_run": 504,
+          "failed": 994,
+          "passed": 496,
+          "timeout": 6
+        },
+        "style_status": {
+          "not recorded": 2000
+        }
+      }
+    ]
+  },
+  {
+    "run": 7,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/7/samples.csv",
+        "sha256": "e3547c05cfe8baf089bb390326ec9d6b87e477bb7e35d42268bd3611cf143354",
+        "rows": 2000,
+        "test_status": {
+          "not_run": 612,
+          "failed": 1102,
+          "passed": 270,
+          "timeout": 16
+        },
+        "style_status": {
+          "not recorded": 2000
+        }
+      }
+    ]
+  },
+  {
+    "run": 8,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E0_reward_sanity_check/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/eval_base_train_tasks.csv",
+        "sha256": "ed81c9b5662b1045b7febb8d28aab3d99d157900f5efd2be83232b5cdc150163",
+        "rows": 5,
+        "test_status": {
+          "passed": 3,
+          "not_run": 1,
+          "failed": 1
+        },
+        "style_status": {
+          "not recorded": 5
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1A_codelama_base_tiny_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/eval_base_train_tasks.csv",
+        "sha256": "d5b0ebca8c27dbf0b03c235d909608f9702b0c10ed2c4088646794744f2cf32f",
+        "rows": 131,
+        "test_status": {
+          "passed": 41,
+          "not_run": 21,
+          "failed": 69
+        },
+        "style_status": {
+          "not recorded": 131
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1B_codelama_base_train_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/eval_base_holdout_tasks.csv",
+        "sha256": "e2115dc90e2f8a1b84121e585c82d1ccf06b06f8cc3ce3b8d2ae136fc3778ae6",
+        "rows": 33,
+        "test_status": {
+          "failed": 19,
+          "not_run": 11,
+          "passed": 3
+        },
+        "style_status": {
+          "not recorded": 33
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E1C_codelama_base_holdout_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/eval_lora_tiny_tasks.csv",
+        "sha256": "a32b8fadeb140bdece6d1bc3025fe1ae0ed98f55a1dffc25a9a996072ebf954c",
+        "rows": 5,
+        "test_status": {
+          "passed": 3,
+          "not_run": 1,
+          "failed": 1
+        },
+        "style_status": {
+          "not recorded": 5
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2A_existing_codelama_lora_tiny_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/eval_lora_train_tasks.csv",
+        "sha256": "0bed226956e52237f71a8161c312624500834da801a6b1344f13b84da834bac0",
+        "rows": 131,
+        "test_status": {
+          "passed": 41,
+          "not_run": 21,
+          "failed": 69
+        },
+        "style_status": {
+          "not recorded": 131
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2B_existing_codelama_lora_train_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/eval_lora_holdout_tasks.csv",
+        "sha256": "4a69b4f34eb23133fb29e96958710b331bc40ef9f3b243f4664dff28c9958815",
+        "rows": 33,
+        "test_status": {
+          "failed": 19,
+          "not_run": 11,
+          "passed": 3
+        },
+        "style_status": {
+          "not recorded": 33
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E2C_existing_codelama_lora_holdout_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E3_codelama_dual3090_100_steps_seed42/logs/samples.csv",
+        "sha256": "1be327addafa2a5dd118ea1201674643d8b0a401f57c808df10f16b4eaba94be",
+        "rows": 2,
+        "test_status": {
+          "not_run": 1,
+          "failed": 1
+        },
+        "style_status": {
+          "not recorded": 2
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4A_codelama_trained_lora_tiny_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4B_codelama_trained_lora_train_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E4C_codelama_trained_lora_holdout_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5A_qwen36_35b_base_tiny_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5B_qwen36_35b_base_train_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/8/grpo_experiment_queue_20260514_144234/E5C_qwen36_35b_base_holdout_eval/logs/samples.csv",
+        "sha256": "7a3477f855a974c26e25ca75cd3c24a2f01ce0686ebc3036a2347dcad342ca00",
+        "rows": 0,
+        "test_status": {},
+        "style_status": {}
+      }
+    ]
+  },
+  {
+    "run": 9,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/9/samples.csv",
+        "sha256": "3eef95076df2ffd28d59b8295b0976f036aa809a88de7927d201830e50de7ec2",
+        "rows": 1000,
+        "test_status": {
+          "passed": 929,
+          "failed": 8,
+          "not_run": 63
+        },
+        "style_status": {
+          "not recorded": 1000
+        }
+      }
+    ]
+  },
+  {
+    "run": 10,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/10/eval_base_holdout_tasks.csv",
+        "sha256": "9e48ae39853e7bab30548ddd9cdb915e660fc4d47e39ddb33960cd5e5d9bdc87",
+        "rows": 100,
+        "test_status": {
+          "not_run": 100
+        },
+        "style_status": {
+          "ok": 69,
+          "violations": 26,
+          "not_checked": 5
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/10/eval_base_train_tasks.csv",
+        "sha256": "ed843d13380e3710afcbdc605fd4bd07d428a2e8e78baa42355ef135ac400d9b",
+        "rows": 100,
+        "test_status": {
+          "not_run": 100
+        },
+        "style_status": {
+          "ok": 47,
+          "violations": 42,
+          "not_checked": 11
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/10/eval_lora_holdout_tasks.csv",
+        "sha256": "7b85619d5d6beec6412a667a7929db482fdd0c01fb3a7da312f087aa0dd4c303",
+        "rows": 100,
+        "test_status": {
+          "not_run": 100
+        },
+        "style_status": {
+          "ok": 91,
+          "violations": 6,
+          "not_checked": 3
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/10/eval_lora_train_tasks.csv",
+        "sha256": "2276715d8ef9d9bdbf6bb1c79a78261a76211ef0a358055d0a3c5a2f2e79d8d6",
+        "rows": 100,
+        "test_status": {
+          "not_run": 100
+        },
+        "style_status": {
+          "ok": 73,
+          "violations": 23,
+          "not_checked": 4
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/10/samples.csv",
+        "sha256": "298afbe218ce230b41cae56617465365669af104fb26591d04933bc3bda93aae",
+        "rows": 600,
+        "test_status": {
+          "not_run": 600
+        },
+        "style_status": {
+          "violations": 157,
+          "not_checked": 23,
+          "ok": 420
+        }
+      }
+    ]
+  },
+  {
+    "run": 11,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/11/eval_lora_holdout_tasks.csv",
+        "sha256": "0ccf248f9e6af7319d828c62b2f3024625203cc306c7233901814dfd5bc8f9f5",
+        "rows": 100,
+        "test_status": {
+          "failed": 10,
+          "passed": 90
+        },
+        "style_status": {
+          "ok": 96,
+          "violations": 4
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/11/eval_lora_train_tasks.csv",
+        "sha256": "59401e86c7eae43215e05b223717314cffccc1b16ae431d44d5a82414f1d8a9d",
+        "rows": 100,
+        "test_status": {
+          "passed": 92,
+          "failed": 3,
+          "not_run": 5
+        },
+        "style_status": {
+          "ok": 75,
+          "not_checked": 5,
+          "violations": 20
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/11/samples.csv",
+        "sha256": "4b25b1a99d10e030545d6128c96564183ab087ce2faab15cdd338fb32d12f8bd",
+        "rows": 1000,
+        "test_status": {
+          "passed": 854,
+          "not_run": 108,
+          "failed": 38
+        },
+        "style_status": {
+          "violations": 211,
+          "not_checked": 108,
+          "ok": 681
+        }
+      }
+    ]
+  },
+  {
+    "run": 12,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/12/samples.csv",
+        "sha256": "acfaf87dc67b1e7e38ce29b9b7d8880427477ad1d61fe4558632d11f5f64521a",
+        "rows": 1000,
+        "test_status": {
+          "passed": 960,
+          "failed": 33,
+          "not_run": 7
+        },
+        "style_status": {
+          "violations": 282,
+          "ok": 712,
+          "not_checked": 6
+        }
+      }
+    ]
+  },
+  {
+    "run": 13,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/13/samples.csv",
+        "sha256": "f3a53e6505897e598571493fd71db19ab44c3791e85d99e7d3280acaf63f42a0",
+        "rows": 1000,
+        "test_status": {
+          "passed": 958,
+          "failed": 34,
+          "not_run": 8
+        },
+        "style_status": {
+          "violations": 299,
+          "ok": 694,
+          "not_checked": 7
+        }
+      }
+    ]
+  },
+  {
+    "run": 14,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/14/baseline/samples.csv",
+        "sha256": "5777b79bbf1a7d1997de3e3db62083e782f7355d4db43df94922b814f0627d8c",
+        "rows": 20000,
+        "test_status": {
+          "passed": 19893,
+          "failed": 76,
+          "not_run": 28,
+          "timeout": 3
+        },
+        "style_status": {
+          "violations": 3923,
+          "ok": 16052,
+          "not_checked": 25
+        }
+      }
+    ]
+  },
+  {
+    "run": 15,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_base_holdout_tasks.csv",
+        "sha256": "0a75784c93dc51161901f0b9959ebb03aa3454352b2d36decc60cc35ab7c01e3",
+        "rows": 100,
+        "test_status": {
+          "passed": 96,
+          "failed": 3,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 69,
+          "violations": 30,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_base_train_tasks.csv",
+        "sha256": "034af2afd5bcb0308957fcaa5d290207e812409442ed908cdfddf6fa9a720d88",
+        "rows": 100,
+        "test_status": {
+          "passed": 97,
+          "failed": 2,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 47,
+          "violations": 52,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_lora_holdout_tasks.csv",
+        "sha256": "482e2258dc506196d3f5f95adbec181465b33abfbc758f6ac976706d25c2fdb5",
+        "rows": 100,
+        "test_status": {
+          "passed": 94,
+          "failed": 6
+        },
+        "style_status": {
+          "ok": 90,
+          "violations": 10
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/eval_lora_train_tasks.csv",
+        "sha256": "53244dff7b3f709998dbdf64d0b1774748fd0de7072a7752e02e122f23e19ddf",
+        "rows": 100,
+        "test_status": {
+          "passed": 96,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 71,
+          "violations": 29
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/15/all-metrics/samples.csv",
+        "sha256": "d111b74189b3bad0005c56ca35b089308cebb6f8ffcb7fa99fb37cf83f02f468",
+        "rows": 1000,
+        "test_status": {
+          "passed": 960,
+          "not_run": 7,
+          "failed": 33
+        },
+        "style_status": {
+          "violations": 325,
+          "ok": 669,
+          "not_checked": 6
+        }
+      }
+    ]
+  },
+  {
+    "run": 16,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/eval_base_holdout_tasks.csv",
+        "sha256": "1f4fe821867dbecdd4c9bfebc1223108e302fd2ed0519ac27c159492d14756cf",
+        "rows": 200,
+        "test_status": {
+          "passed": 188,
+          "failed": 8,
+          "not_run": 4
+        },
+        "style_status": {
+          "ok": 141,
+          "violations": 55,
+          "not_checked": 4
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/eval_base_train_tasks.csv",
+        "sha256": "924415e1e28863b8b106853c97ef55fe508ee80561f3dedb9d917b954ca47f7a",
+        "rows": 200,
+        "test_status": {
+          "passed": 192,
+          "failed": 8
+        },
+        "style_status": {
+          "ok": 96,
+          "violations": 104
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/eval_lora_holdout_tasks.csv",
+        "sha256": "118d9c3321262fd06eefcbb38ffaed985365a541bb8a06eec9a5c72b32ebd068",
+        "rows": 200,
+        "test_status": {
+          "passed": 188,
+          "failed": 12
+        },
+        "style_status": {
+          "ok": 187,
+          "violations": 13
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/eval_lora_train_tasks.csv",
+        "sha256": "57eea73a14ef07dc64bcd6ab06f236645f8ab14597adfbaa9642f2305ca22369",
+        "rows": 200,
+        "test_status": {
+          "passed": 197,
+          "failed": 3
+        },
+        "style_status": {
+          "ok": 150,
+          "violations": 50
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/16/all-metrics/samples.csv",
+        "sha256": "e34835e99e1d6c81d49e5b4a2bd8c5ec23b3976d03bb81d9507f337eb59998c5",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1924,
+          "failed": 58,
+          "not_run": 18
+        },
+        "style_status": {
+          "violations": 624,
+          "ok": 1361,
+          "not_checked": 15
+        }
+      }
+    ]
+  },
+  {
+    "run": 17,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/eval_base_holdout_tasks.csv",
+        "sha256": "2774344e7e67ff907d4f7adec5d6348ffb77fbf3610a583523517d0a9f47261d",
+        "rows": 200,
+        "test_status": {
+          "passed": 190,
+          "failed": 9,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 139,
+          "violations": 60,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/eval_base_train_tasks.csv",
+        "sha256": "0d3ff94ebee99e04f7e15f6a8b5a754f91c0d037ed3aa07745109e833e7cbc74",
+        "rows": 200,
+        "test_status": {
+          "passed": 193,
+          "failed": 6,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 89,
+          "violations": 110,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/eval_lora_holdout_tasks.csv",
+        "sha256": "c52ba3cd2dbdb7f1a09dc0e5d5faa4bd39a2502ecafe59895e6b378aaf1e5ffe",
+        "rows": 200,
+        "test_status": {
+          "failed": 22,
+          "passed": 178
+        },
+        "style_status": {
+          "ok": 188,
+          "violations": 12
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/eval_lora_train_tasks.csv",
+        "sha256": "1eba69cb2b7d83ce11ccbd4e8a769d06015c8036c5d467ee71289addaea04c6b",
+        "rows": 200,
+        "test_status": {
+          "passed": 193,
+          "not_run": 3,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 153,
+          "violations": 44,
+          "not_checked": 3
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/17/double-correctness/samples.csv",
+        "sha256": "c72f4239d3913c0e8da8ba3611f6cf27759b17942e3d154014c77a3bc860fec9",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1909,
+          "failed": 71,
+          "not_run": 20
+        },
+        "style_status": {
+          "violations": 602,
+          "ok": 1380,
+          "not_checked": 18
+        }
+      }
+    ]
+  },
+  {
+    "run": 18,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/18/double-style/eval_base_holdout_tasks.csv",
+        "sha256": "49c8fa81e66359e7430d0076b32e79d85f16b52a8e1fc5e3f904e182399c332d",
+        "rows": 200,
+        "test_status": {
+          "passed": 192,
+          "not_run": 2,
+          "failed": 6
+        },
+        "style_status": {
+          "ok": 135,
+          "violations": 63,
+          "not_checked": 2
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/18/double-style/eval_base_train_tasks.csv",
+        "sha256": "caa1b719f452cd1bc0bd6b8df209904db0341378b677c30af5903be9d08545e7",
+        "rows": 200,
+        "test_status": {
+          "passed": 192,
+          "failed": 8
+        },
+        "style_status": {
+          "ok": 93,
+          "violations": 107
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/18/double-style/eval_lora_holdout_tasks.csv",
+        "sha256": "50e5c60ad8dc75dcddf7769c0e05d781ec7bb84afb913459d526ad87b9aafb3e",
+        "rows": 200,
+        "test_status": {
+          "passed": 186,
+          "failed": 14
+        },
+        "style_status": {
+          "ok": 188,
+          "violations": 12
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/18/double-style/eval_lora_train_tasks.csv",
+        "sha256": "1a6a5aabfe5ff77372aee1f4c1faf24551580bc9bb845faa8a93109a5a2ca4bf",
+        "rows": 200,
+        "test_status": {
+          "passed": 194,
+          "failed": 6
+        },
+        "style_status": {
+          "ok": 152,
+          "violations": 48
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/18/double-style/samples.csv",
+        "sha256": "864e12b1e70f2a5f83271ab74e2c6bece18cc6d35b8a07743fdbff2132f0b57a",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1918,
+          "failed": 70,
+          "not_run": 11,
+          "timeout": 1
+        },
+        "style_status": {
+          "violations": 589,
+          "ok": 1402,
+          "not_checked": 9
+        }
+      }
+    ]
+  },
+  {
+    "run": 19,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/eval_base_holdout_tasks.csv",
+        "sha256": "0ebe6eb63eea50c3220484ffa30d8d3a55d11f4a4cd264dcc65d22f543180800",
+        "rows": 200,
+        "test_status": {
+          "failed": 8,
+          "passed": 190,
+          "not_run": 2
+        },
+        "style_status": {
+          "ok": 135,
+          "violations": 63,
+          "not_checked": 2
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/eval_base_train_tasks.csv",
+        "sha256": "d4e26ade97c3d26f3adbbc5e1da9dbe40c0013df5e3594311fabd781b6f0cb69",
+        "rows": 200,
+        "test_status": {
+          "passed": 195,
+          "not_run": 2,
+          "failed": 3
+        },
+        "style_status": {
+          "ok": 91,
+          "violations": 108,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/eval_lora_holdout_tasks.csv",
+        "sha256": "4199976f7592c98021f28614144bc29d1ef430ab6f5417614eff55ef6bb5cb01",
+        "rows": 200,
+        "test_status": {
+          "passed": 182,
+          "failed": 18
+        },
+        "style_status": {
+          "ok": 184,
+          "violations": 16
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/eval_lora_train_tasks.csv",
+        "sha256": "bc78a0870d9326703988ae2aa128a1f0659cbe12692a30a31ae5805500931078",
+        "rows": 200,
+        "test_status": {
+          "passed": 193,
+          "failed": 4,
+          "not_run": 3
+        },
+        "style_status": {
+          "ok": 147,
+          "violations": 50,
+          "not_checked": 3
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/19/double-best-performance/samples.csv",
+        "sha256": "6622f81e340751631e5511e1f2e755be0846992dae6bd57947bba2efcca4451d",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1918,
+          "failed": 67,
+          "not_run": 15
+        },
+        "style_status": {
+          "violations": 638,
+          "ok": 1347,
+          "not_checked": 15
+        }
+      }
+    ]
+  },
+  {
+    "run": 20,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [],
+    "status": "NO LOCAL RUN DIRECTORY; numbering does not establish a completed experiment"
+  },
+  {
+    "run": 21,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [],
+    "status": "NO LOCAL RUN DIRECTORY; numbering does not establish a completed experiment"
+  },
+  {
+    "run": 22,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/22/style/eval_base_holdout_tasks.csv",
+        "sha256": "26fa605d9fe6fdee36fb66e1c2f72dee7f61618bfab4f6b004badf12bd04acba",
+        "rows": 200,
+        "test_status": {
+          "passed": 146,
+          "failed": 15,
+          "exception": 36,
+          "not_run": 3
+        },
+        "style_status": {
+          "ok": 142,
+          "violations": 55,
+          "not_checked": 3
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/22/style/eval_base_train_tasks.csv",
+        "sha256": "fee962ad7dc7d10be9665f9c7e0e7af51f24c120ea8dd3a51d36d8922744f0e1",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 23,
+          "not_run": 4,
+          "failed": 1
+        },
+        "style_status": {
+          "ok": 95,
+          "violations": 101,
+          "not_checked": 4
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/22/style/eval_lora_holdout_tasks.csv",
+        "sha256": "a7c796279ab4d278a7215061d738514fe60368f2e1c76c43ac92570c415ffadf",
+        "rows": 200,
+        "test_status": {
+          "passed": 143,
+          "failed": 20,
+          "exception": 36,
+          "timeout": 1
+        },
+        "style_status": {
+          "ok": 188,
+          "violations": 12
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/22/style/eval_lora_train_tasks.csv",
+        "sha256": "06f4abf2060db24306373010db13c5802c614f1cd15442c90131b86e08944502",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 24,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 155,
+          "violations": 45
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/22/style/samples.csv",
+        "sha256": "bf1be6c6b0a68be9ab37d2f420fc863754a36befd9a60690d92ba89ae3c91de3",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1713,
+          "exception": 240,
+          "failed": 34,
+          "timeout": 3,
+          "not_run": 10
+        },
+        "style_status": {
+          "ok": 1465,
+          "violations": 525,
+          "not_checked": 10
+        }
+      }
+    ]
+  },
+  {
+    "run": 23,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": []
+  },
+  {
+    "run": 24,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [],
+    "status": "NO LOCAL RUN DIRECTORY; numbering does not establish a completed experiment"
+  },
+  {
+    "run": 25,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [],
+    "status": "NO LOCAL RUN DIRECTORY; numbering does not establish a completed experiment"
+  },
+  {
+    "run": 26,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [],
+    "status": "NO LOCAL RUN DIRECTORY; numbering does not establish a completed experiment"
+  },
+  {
+    "run": 27,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/27/eval_base_holdout_tasks.csv",
+        "sha256": "382d9f59b46c520d70b8e7b10492c3cf1f6fd4e7603374edf3d0fd80b34633e1",
+        "rows": 200,
+        "test_status": {
+          "passed": 148,
+          "failed": 15,
+          "exception": 36,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 139,
+          "violations": 60,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/27/eval_base_train_tasks.csv",
+        "sha256": "ba6ac77b6a91096aed0f52b12d1d2e750f22133b58ef01e55f9893606d0f8bc7",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 24,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 90,
+          "violations": 110
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/27/eval_lora_holdout_tasks.csv",
+        "sha256": "af76c2c51b2acc720de01aa248bd2615348b8ed3696e306a8b8a541dcd330c17",
+        "rows": 200,
+        "test_status": {
+          "passed": 150,
+          "failed": 13,
+          "exception": 36,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 153,
+          "violations": 46,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/27/eval_lora_train_tasks.csv",
+        "sha256": "8edce5476a86c18b1191edf9669f51d61d52d807ee6a4a2a9ed73126c2fa033c",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 24,
+          "failed": 3,
+          "not_run": 1
+        },
+        "style_status": {
+          "ok": 108,
+          "violations": 91,
+          "not_checked": 1
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/27/samples.csv",
+        "sha256": "569cfc46543be593150dee153d18e7e43697cce08c4727390bd37703b8ccc7fc",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1711,
+          "exception": 236,
+          "not_run": 17,
+          "failed": 30,
+          "timeout": 6
+        },
+        "style_status": {
+          "violations": 971,
+          "ok": 1016,
+          "not_checked": 13
+        }
+      }
+    ]
+  },
+  {
+    "run": 28,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/28/eval_base_holdout_tasks_1.csv",
+        "sha256": "445b4bdbc7372f2e01e75ce779893cf2e5446118cca606359bd935281a835e1a",
+        "rows": 200,
+        "test_status": {
+          "passed": 150,
+          "failed": 14,
+          "exception": 36
+        },
+        "style_status": {
+          "ok": 145,
+          "violations": 55
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/28/eval_base_train_tasks_1.csv",
+        "sha256": "6f0940674a4593415829f2b69088ed5815dc9df31aa14d42d5b677d628461f76",
+        "rows": 200,
+        "test_status": {
+          "passed": 170,
+          "exception": 24,
+          "failed": 6
+        },
+        "style_status": {
+          "ok": 91,
+          "violations": 109
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/28/eval_lora_holdout_tasks_1.csv",
+        "sha256": "4708e8cb84a3fd029443789f0b75642440576fe3f039339281cf68ee5659e160",
+        "rows": 200,
+        "test_status": {
+          "passed": 143,
+          "failed": 21,
+          "exception": 36
+        },
+        "style_status": {
+          "ok": 187,
+          "violations": 13
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/28/eval_lora_train_tasks_1.csv",
+        "sha256": "aa51081cefe94f2a79d7ee7fb8d0c1521520caaa3f60230b196fa36ba0bc59ff",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 24,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 158,
+          "violations": 42
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/28/samples_1.csv",
+        "sha256": "1fb21e4d3ab1f70fd8441d2bce2f5c2988e48753db685959fd925f54c7a94f21",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1707,
+          "exception": 240,
+          "failed": 42,
+          "timeout": 5,
+          "not_run": 6
+        },
+        "style_status": {
+          "violations": 500,
+          "ok": 1494,
+          "not_checked": 6
+        }
+      }
+    ]
+  },
+  {
+    "run": 29,
+    "classification": "exploratory; not pooled with formal runs",
+    "evidence": [
+      {
+        "source": "UnSloth-RL-heplus-fix/results/29/eval_base_holdout_tasks.csv",
+        "sha256": "9b432bb414600681105dc5f2b1813bc1366198d8efd14ce50e314560958b1855",
+        "rows": 200,
+        "test_status": {
+          "passed": 150,
+          "failed": 12,
+          "exception": 36,
+          "not_run": 2
+        },
+        "style_status": {
+          "ok": 135,
+          "violations": 63,
+          "not_checked": 2
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/29/eval_base_train_tasks.csv",
+        "sha256": "4102bd79d3e0b68057081148ab389d34db8393f8358b3a9dff4d7decf6dfb440",
+        "rows": 200,
+        "test_status": {
+          "passed": 171,
+          "exception": 24,
+          "failed": 5
+        },
+        "style_status": {
+          "ok": 92,
+          "violations": 108
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/29/eval_lora_holdout_tasks.csv",
+        "sha256": "8b34ef944ea4d7703525c668dfa66f831deca309784e4e8ebc098e6b8a90d661",
+        "rows": 200,
+        "test_status": {
+          "passed": 150,
+          "failed": 13,
+          "exception": 35,
+          "not_run": 2
+        },
+        "style_status": {
+          "ok": 120,
+          "violations": 78,
+          "not_checked": 2
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/29/eval_lora_train_tasks.csv",
+        "sha256": "8c95a64f4d29973ee8f0395edc0efa8ba9e6cb1b0fa26ef8752827f9c0c762b7",
+        "rows": 200,
+        "test_status": {
+          "passed": 172,
+          "exception": 24,
+          "failed": 4
+        },
+        "style_status": {
+          "ok": 71,
+          "violations": 129
+        }
+      },
+      {
+        "source": "UnSloth-RL-heplus-fix/results/29/samples.csv",
+        "sha256": "270781ad24bf9e66e23fe2ab9085eae3b0220150379867440d2102d6ed7f4c7f",
+        "rows": 2000,
+        "test_status": {
+          "passed": 1707,
+          "failed": 34,
+          "exception": 238,
+          "not_run": 15,
+          "timeout": 6
+        },
+        "style_status": {
+          "violations": 1148,
+          "ok": 839,
+          "not_checked": 13
+        }
+      }
+    ]
+  }
+]

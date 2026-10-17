@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "checks": {
+    "run_completed": true,
+    "stage_outcomes_complete": true,
+    "judge_requests_succeeded": true,
+    "no_fatal_or_schema_parse_errors": true,
+    "no_failure_quality_rewards": true,
+    "valid_logged_findings": true,
+    "historical_instrument_logged": true,
+    "useful_within_group_judge_variation": true,
+    "total_reward_variation": true,
+    "complete_steps_and_groups": true,
+    "fresh_adapter_saved": true,
+    "provenance_complete": true,
+    "metadata_complete": true,
+    "paths_and_resume": true,
+    "mode_directory": true
+  },
+  "judge_status_counts": {
+    "attempt": 888,
+    "ok": 888,
+    "evaluation": 885
+  },
+  "judge_varied_groups": 143,
+  "total_varied_groups": 154,
+  "groups": 500,
+  "note": "Smoke is operational evidence, not final model quality."
+}

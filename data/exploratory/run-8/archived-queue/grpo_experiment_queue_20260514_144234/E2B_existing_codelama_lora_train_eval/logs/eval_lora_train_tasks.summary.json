@@ -1,0 +1,12 @@
+{
+  "label": "lora_train_tasks_0_130",
+  "rows": 131,
+  "tasks": 131,
+  "avg_reward": 2.2366412213740516,
+  "test_pass_rate_generation_level": 0.31297709923664124,
+  "pass_at_any_generation_task_level": 0.31297709923664124,
+  "format_ok_rate": 0.0,
+  "compile_ok_rate": 0.8396946564885496,
+  "avg_completion_length": 256.0,
+  "output_csv": "<PRIVATE_PATH>"
+}

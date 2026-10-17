@@ -1,0 +1,50 @@
+[
+  {
+    "key": "python:S1144",
+    "name": "Unused class-private methods should be removed",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S3358",
+    "name": "Conditional expressions should not be nested",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S3776",
+    "name": "Cognitive Complexity of functions should not be too high",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S5603",
+    "name": "Unused scope-limited definitions should be removed",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S5713",
+    "name": "A subclass should not be in the same \"except\" statement as a parent class",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S5754",
+    "name": "\"SystemExit\" should be re-raised",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S1192",
+    "name": "String literals should not be duplicated",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  },
+  {
+    "key": "python:S6353",
+    "name": "Regular expression quantifiers and character classes should be used concisely",
+    "type": "CODE_SMELL",
+    "status": "READY"
+  }
+]

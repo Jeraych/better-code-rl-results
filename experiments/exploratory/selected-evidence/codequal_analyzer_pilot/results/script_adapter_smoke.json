@@ -1,0 +1,15 @@
+{
+  "population": 958,
+  "sample_size": 50,
+  "seed": 42,
+  "mode": "ast_only",
+  "successful": 50,
+  "entrypoints_extracted": 50,
+  "samples_with_findings": 8,
+  "mean_elapsed_ms": 10.869,
+  "max_elapsed_ms": 69.408,
+  "rule_presence_by_sample": {
+    "excessive-resource-consumption": 8
+  },
+  "candidate_code_executed": false
+}

@@ -1,0 +1,31 @@
+{
+  "experiment": "ai_judge_prompt_calibration",
+  "preparation_status": "READY_NOT_RUN",
+  "production_prompt_source_commit": "efcfea624b59134bfe1c8f6c91c11d06cfc287bd",
+  "dataset_sha256": "6995ed389ac05e0d4ee58c74bc3514782422b3b9c4ad84f8d233c0de71739cb4",
+  "prompt_hashes": {
+    "baseline_v3": "50d083c5e7100d2e",
+    "calibrated_v4": "d00747192b661ec3"
+  },
+  "pair_count": 18,
+  "case_count": 36,
+  "repetitions": 2,
+  "planned_calls": 144,
+  "candidate_code_executed": false,
+  "assets": {
+    ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "calibration_core.py": "99914d1cbca0bd56d87eb3108f49f33c327e305cf48652ec55e64d5595268cc3",
+    "cases.py": "6401c76bfc4e65adfdb19ea426b9447910063d154bdae49c4ec35616a8cca328",
+    "dataset/cases.jsonl": "d26e78c00495d56e03e620029deb833dbe7d5d6509ba3f06bc55c2ad460b7d46",
+    "dataset/manifest.json": "254f21958b77904be4ca1bf80faa0c1f0743b0ffc826c2311c476c823b44be5d",
+    "export_dataset.py": "f3513e2741382b664520cccea4089d2f9f1f5a3938015b17da3262ceb8eca8d8",
+    "prompt_profiles.py": "88b14109ff5d27b8e4d204309962a80da2cda3637357f91add5dab2ffa536461",
+    "PROTOCOL.md": "f37ffd0fa3fd9583653247803646e9a5501bfa201e57f4a51c52a9a7d29f9ef8",
+    "README.md": "296320baf2eae19fd6bfb8b6cc0723492e3912a1d1b7a5d36b3f18e6a36f2e62",
+    "run_calibration.py": "1ccd82b61520b8a0676071a7228467bb7fd74d6153cba88b184d407412d1d770",
+    "summarize_results.py": "4f5b11718af7667248094aab5059aed9d2e9e66c8e9586775ee22350123058ad",
+    "tests/test_preparation.py": "e442d7939a3973487827101adb704546b486d6449000114126bd14852bd4e87a",
+    "tests/test_runner_roundtrip.py": "f9c3311d2546ba8d3efcdd4f5b8baae70b62ba9724256dab97d145a7007a26de",
+    "validate_preparation.py": "97ec141cdd45143785f4f2ba94e19c35aceb773a386925eebeebc1b2d3fb039f"
+  }
+}

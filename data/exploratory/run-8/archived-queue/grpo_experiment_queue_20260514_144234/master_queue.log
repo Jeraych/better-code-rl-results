@@ -1,0 +1,183 @@
+[2026-05-14 14:42:34] Waiting until START_AT=2026-05-15 00:30. Sleeping for 35246 seconds.
+[2026-05-15 00:30:00] Changing to project directory: <PRIVATE_PATH>
+[2026-05-15 00:30:00] Activating conda environment: unsloth_rl
+[2026-05-15 00:30:01] Python: <PRIVATE_PATH>
+[2026-05-15 00:30:01] Python version: Python 3.11.15
+[2026-05-15 00:30:01] GPU info:
+Fri May 15 00:30:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   51C    P8             15W /  200W |      38MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3090        Off |   00000000:21:00.0 Off |                  N/A |
+|  0%   57C    P8             26W /  200W |      15MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2800      G   /usr/lib/xorg/Xorg                        9MiB |
+|    0   N/A  N/A            3173      G   /usr/bin/gnome-shell                      8MiB |
+|    1   N/A  N/A            2800      G   /usr/lib/xorg/Xorg                        4MiB |
++-----------------------------------------------------------------------------------------+
+[2026-05-15 00:30:01] Experiment root: <PRIVATE_PATH>
+[2026-05-15 00:30:01] CodeLlama model: codellama/CodeLlama-7b-Python-hf
+[2026-05-15 00:30:01] Qwen model: Qwen/Qwen3.6-35B-A3B
+[2026-05-15 00:30:01] RUN_QWEN_TRAINING=0
+[2026-05-15 00:30:01] ==================================================================
+[2026-05-15 00:30:01] STARTING: E0_reward_sanity_check
+[2026-05-15 00:30:01] Output folder: <PRIVATE_PATH>
+[2026-05-15 00:30:01] Command: env TEST_MODE=sanity_reward MODEL_NAME=codellama/CodeLlama-7b-Python-hf RUN_NAME=E0_reward_sanity_check RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 00:30:01] ==================================================================
+[2026-05-15 00:32:40] COMPLETED: E0_reward_sanity_check
+[2026-05-15 00:32:40] stdout: <PRIVATE_PATH>
+[2026-05-15 00:32:40] stderr: <PRIVATE_PATH>
+[2026-05-15 00:32:40] ==================================================================
+[2026-05-15 00:32:40] STARTING: E1A_codelama_base_tiny_eval
+[2026-05-15 00:32:40] Output folder: <PRIVATE_PATH>
+[2026-05-15 00:32:40] Command: env TEST_MODE=eval_base MODEL_NAME=codellama/CodeLlama-7b-Python-hf RUN_NAME=E1A_codelama_base_tiny_eval RUN_ROOT=<PRIVATE_PATH> TRAIN_TASK_START=0 TRAIN_TASK_END=5 python train_conrad.py
+[2026-05-15 00:32:40] ==================================================================
+[2026-05-15 00:34:02] COMPLETED: E1A_codelama_base_tiny_eval
+[2026-05-15 00:34:02] stdout: <PRIVATE_PATH>
+[2026-05-15 00:34:02] stderr: <PRIVATE_PATH>
+[2026-05-15 00:34:02] ==================================================================
+[2026-05-15 00:34:02] STARTING: E1B_codelama_base_train_eval
+[2026-05-15 00:34:02] Output folder: <PRIVATE_PATH>
+[2026-05-15 00:34:02] Command: env TEST_MODE=eval_base MODEL_NAME=codellama/CodeLlama-7b-Python-hf RUN_NAME=E1B_codelama_base_train_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 00:34:02] ==================================================================
+[2026-05-15 00:55:00] COMPLETED: E1B_codelama_base_train_eval
+[2026-05-15 00:55:00] stdout: <PRIVATE_PATH>
+[2026-05-15 00:55:00] stderr: <PRIVATE_PATH>
+[2026-05-15 00:55:00] ==================================================================
+[2026-05-15 00:55:00] STARTING: E1C_codelama_base_holdout_eval
+[2026-05-15 00:55:00] Output folder: <PRIVATE_PATH>
+[2026-05-15 00:55:00] Command: env TEST_MODE=eval_base_holdout MODEL_NAME=codellama/CodeLlama-7b-Python-hf RUN_NAME=E1C_codelama_base_holdout_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 00:55:00] ==================================================================
+[2026-05-15 01:00:50] COMPLETED: E1C_codelama_base_holdout_eval
+[2026-05-15 01:00:50] stdout: <PRIVATE_PATH>
+[2026-05-15 01:00:50] stderr: <PRIVATE_PATH>
+[2026-05-15 01:00:50] ==================================================================
+[2026-05-15 01:00:50] STARTING: E2A_existing_codelama_lora_tiny_eval
+[2026-05-15 01:00:50] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:00:50] Command: env TEST_MODE=eval_lora_tiny MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E2A_existing_codelama_lora_tiny_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:00:50] ==================================================================
+[2026-05-15 01:02:14] COMPLETED: E2A_existing_codelama_lora_tiny_eval
+[2026-05-15 01:02:14] stdout: <PRIVATE_PATH>
+[2026-05-15 01:02:14] stderr: <PRIVATE_PATH>
+[2026-05-15 01:02:14] ==================================================================
+[2026-05-15 01:02:14] STARTING: E2B_existing_codelama_lora_train_eval
+[2026-05-15 01:02:14] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:02:14] Command: env TEST_MODE=eval_lora MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E2B_existing_codelama_lora_train_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:02:14] ==================================================================
+[2026-05-15 01:23:13] COMPLETED: E2B_existing_codelama_lora_train_eval
+[2026-05-15 01:23:13] stdout: <PRIVATE_PATH>
+[2026-05-15 01:23:13] stderr: <PRIVATE_PATH>
+[2026-05-15 01:23:13] ==================================================================
+[2026-05-15 01:23:13] STARTING: E2C_existing_codelama_lora_holdout_eval
+[2026-05-15 01:23:13] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:23:13] Command: env TEST_MODE=eval_lora_holdout MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E2C_existing_codelama_lora_holdout_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:23:13] ==================================================================
+[2026-05-15 01:29:02] COMPLETED: E2C_existing_codelama_lora_holdout_eval
+[2026-05-15 01:29:02] stdout: <PRIVATE_PATH>
+[2026-05-15 01:29:02] stderr: <PRIVATE_PATH>
+[2026-05-15 01:29:02] ==================================================================
+[2026-05-15 01:29:02] STARTING: E3_codelama_dual3090_100_steps_seed42
+[2026-05-15 01:29:02] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:29:02] Command: env CUDA_VISIBLE_DEVICES=0,1 TEST_MODE=train MODEL_NAME=codellama/CodeLlama-7b-Python-hf RUN_NAME=E3_codelama_dual3090_100_steps_seed42 RUN_ROOT=<PRIVATE_PATH> OUTPUT_DIR=<PRIVATE_PATH> LORA_OUTPUT_DIR=<PRIVATE_PATH> MAX_STEPS=100 accelerate launch --num_processes 2 train_conrad.py
+[2026-05-15 01:29:02] ==================================================================
+[2026-05-15 01:30:32] FAILED: E3_codelama_dual3090_100_steps_seed42 with exit code 1
+[2026-05-15 01:30:32] Continuing to next experiment.
+[2026-05-15 01:30:32] stdout: <PRIVATE_PATH>
+[2026-05-15 01:30:32] stderr: <PRIVATE_PATH>
+[2026-05-15 01:30:32] ==================================================================
+[2026-05-15 01:30:32] STARTING: E4A_codelama_trained_lora_tiny_eval
+[2026-05-15 01:30:32] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:30:32] Command: env TEST_MODE=eval_lora_tiny MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E4A_codelama_trained_lora_tiny_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:30:32] ==================================================================
+[2026-05-15 01:31:08] FAILED: E4A_codelama_trained_lora_tiny_eval with exit code 1
+[2026-05-15 01:31:08] Continuing to next experiment.
+[2026-05-15 01:31:08] stdout: <PRIVATE_PATH>
+[2026-05-15 01:31:08] stderr: <PRIVATE_PATH>
+[2026-05-15 01:31:08] ==================================================================
+[2026-05-15 01:31:08] STARTING: E4B_codelama_trained_lora_train_eval
+[2026-05-15 01:31:08] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:31:08] Command: env TEST_MODE=eval_lora MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E4B_codelama_trained_lora_train_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:31:08] ==================================================================
+[2026-05-15 01:31:43] FAILED: E4B_codelama_trained_lora_train_eval with exit code 1
+[2026-05-15 01:31:43] Continuing to next experiment.
+[2026-05-15 01:31:43] stdout: <PRIVATE_PATH>
+[2026-05-15 01:31:43] stderr: <PRIVATE_PATH>
+[2026-05-15 01:31:43] ==================================================================
+[2026-05-15 01:31:43] STARTING: E4C_codelama_trained_lora_holdout_eval
+[2026-05-15 01:31:43] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:31:43] Command: env TEST_MODE=eval_lora_holdout MODEL_NAME=codellama/CodeLlama-7b-Python-hf LORA_PATH=<PRIVATE_PATH> RUN_NAME=E4C_codelama_trained_lora_holdout_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:31:43] ==================================================================
+[2026-05-15 01:32:18] FAILED: E4C_codelama_trained_lora_holdout_eval with exit code 1
+[2026-05-15 01:32:18] Continuing to next experiment.
+[2026-05-15 01:32:18] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:18] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:18] ==================================================================
+[2026-05-15 01:32:18] STARTING: E5A_qwen36_35b_base_tiny_eval
+[2026-05-15 01:32:18] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:32:18] Command: env TEST_MODE=eval_base MODEL_NAME=Qwen/Qwen3.6-35B-A3B RUN_NAME=E5A_qwen36_35b_base_tiny_eval RUN_ROOT=<PRIVATE_PATH> TRAIN_TASK_START=0 TRAIN_TASK_END=5 python train_conrad.py
+[2026-05-15 01:32:18] ==================================================================
+[2026-05-15 01:32:29] FAILED: E5A_qwen36_35b_base_tiny_eval with exit code 1
+[2026-05-15 01:32:29] Continuing to next experiment.
+[2026-05-15 01:32:29] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:29] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:29] ==================================================================
+[2026-05-15 01:32:29] STARTING: E5B_qwen36_35b_base_train_eval
+[2026-05-15 01:32:29] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:32:29] Command: env TEST_MODE=eval_base MODEL_NAME=Qwen/Qwen3.6-35B-A3B RUN_NAME=E5B_qwen36_35b_base_train_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:32:29] ==================================================================
+[2026-05-15 01:32:40] FAILED: E5B_qwen36_35b_base_train_eval with exit code 1
+[2026-05-15 01:32:40] Continuing to next experiment.
+[2026-05-15 01:32:40] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:40] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:40] ==================================================================
+[2026-05-15 01:32:40] STARTING: E5C_qwen36_35b_base_holdout_eval
+[2026-05-15 01:32:40] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:32:40] Command: env TEST_MODE=eval_base_holdout MODEL_NAME=Qwen/Qwen3.6-35B-A3B RUN_NAME=E5C_qwen36_35b_base_holdout_eval RUN_ROOT=<PRIVATE_PATH> python train_conrad.py
+[2026-05-15 01:32:40] ==================================================================
+[2026-05-15 01:32:50] FAILED: E5C_qwen36_35b_base_holdout_eval with exit code 1
+[2026-05-15 01:32:50] Continuing to next experiment.
+[2026-05-15 01:32:50] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:50] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Skipping Qwen3.6-35B-A3B LoRA training because RUN_QWEN_TRAINING=0.
+[2026-05-15 01:32:50] ==================================================================
+[2026-05-15 01:32:50] STARTING: D1_codelama_training_dashboard
+[2026-05-15 01:32:50] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Command: python plot_training_conrad_toggle.py --run-dir <PRIVATE_PATH> --output <PRIVATE_PATH>
+[2026-05-15 01:32:50] ==================================================================
+[2026-05-15 01:32:50] FAILED: D1_codelama_training_dashboard with exit code 2
+[2026-05-15 01:32:50] Continuing to next experiment.
+[2026-05-15 01:32:50] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:50] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Skipping Qwen training dashboard because Qwen training was not run.
+[2026-05-15 01:32:50] ==================================================================
+[2026-05-15 01:32:50] STARTING: D3_all_eval_dashboard_latest
+[2026-05-15 01:32:50] Output folder: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Command: python plot_training_conrad_toggle.py --runs-root <PRIVATE_PATH> --output <PRIVATE_PATH>
+[2026-05-15 01:32:50] ==================================================================
+[2026-05-15 01:32:50] FAILED: D3_all_eval_dashboard_latest with exit code 2
+[2026-05-15 01:32:50] Continuing to next experiment.
+[2026-05-15 01:32:50] stdout: <PRIVATE_PATH>
+[2026-05-15 01:32:50] stderr: <PRIVATE_PATH>
+[2026-05-15 01:32:50] ==================================================================
+[2026-05-15 01:32:50] ALL EXPERIMENTS FINISHED
+[2026-05-15 01:32:50] Experiment root: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Status file: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Master log: <PRIVATE_PATH>
+[2026-05-15 01:32:50] CodeLlama dashboard: <PRIVATE_PATH>
+[2026-05-15 01:32:50] Latest/eval dashboard: <PRIVATE_PATH>
+[2026-05-15 01:32:50] ==================================================================

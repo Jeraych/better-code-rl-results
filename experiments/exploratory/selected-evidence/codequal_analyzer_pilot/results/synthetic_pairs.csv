@@ -1,0 +1,17 @@
+pair_id,target,condition,finding_count,mean_elapsed_ms,score_deterministic,rule_ids,findings_by_analyzer,maintainability,security,performance,reliability,overall,maintainability_per_kchar,security_per_kchar,performance_per_kchar,reliability_per_kchar,overall_per_kchar
+string_concatenation,performance,clean,0,816.652,True,,{},99.95,99.9,99.92,99.93,99.93,96.06,92.42,93.85,94.57,94.22
+string_concatenation,performance,degraded,2,810.627,True,excessive-resource-consumption|inefficient-string-concatenation,"{""resource_consumption"": 1, ""string_concatenation"": 1}",99.95,99.9,71.43,99.93,92.8,96.95,94.08,3.82,95.78,72.66
+file_open_in_loop,performance,clean,0,840.156,True,,{},99.95,99.9,99.92,99.93,99.93,97.35,94.85,95.83,96.34,96.09
+file_open_in_loop,performance,degraded,1,833.278,True,excessive-resource-consumption,"{""resource_consumption"": 1}",99.95,99.9,83.33,99.93,95.78,97.35,94.85,8.42,96.34,74.24
+broad_silent_exception,reliability,clean,0,774.51,True,,{},99.95,99.9,99.92,99.93,99.93,97.09,94.35,95.43,95.98,95.71
+broad_silent_exception,reliability,degraded,3,764.435,True,B110|improper-exception-handling,"{""bandit"": 1, ""exception_handling"": 2}",99.95,90.91,99.92,58.82,87.4,96.82,13.19,95.0,2.13,51.78
+branch_complexity,maintainability,clean,0,763.886,True,,{},99.95,99.9,99.92,99.93,99.93,97.98,96.03,96.8,97.19,97.0
+branch_complexity,maintainability,degraded,2,754.846,True,complexity-C|too-many-return-statements,"{""pylint"": 1, ""radon"": 1}",90.91,99.9,99.92,99.93,97.67,33.73,98.07,98.45,98.64,82.22
+shell_injection,security,clean,2,900.893,True,B603|B607,"{""bandit"": 2}",99.95,83.33,99.92,99.93,95.78,97.16,7.88,95.53,96.07,74.16
+shell_injection,security,degraded,1,878.756,True,B602,"{""bandit"": 1}",99.95,66.67,99.92,99.93,91.62,97.61,3.92,96.23,96.68,73.61
+unused_dead_code,maintainability,clean,0,747.788,True,,{},99.95,99.9,99.92,99.93,99.93,95.15,90.74,92.45,93.33,92.92
+unused_dead_code,maintainability,degraded,1,743.98,True,unused-function,"{""vulture"": 1}",80.0,99.9,99.92,99.93,94.94,7.68,95.41,96.3,96.74,74.03
+nested_allocation,performance,clean,0,740.927,True,,{},99.95,99.9,99.92,99.93,99.93,96.71,93.63,94.84,95.45,95.16
+nested_allocation,performance,degraded,2,801.405,True,excessive-resource-consumption,"{""resource_consumption"": 2}",99.95,99.9,78.12,99.93,94.48,97.69,95.48,7.01,96.79,74.24
+blocking_call_in_loop,performance,clean,0,780.199,True,,{},99.95,99.9,99.92,99.93,99.93,97.18,94.51,95.56,96.09,95.84
+blocking_call_in_loop,performance,degraded,1,759.192,True,excessive-resource-consumption,"{""resource_consumption"": 1}",99.95,99.9,83.33,99.93,95.78,97.63,95.37,9.34,96.71,74.76

@@ -1,0 +1,1502 @@
+label,task_id,item_idx,generation_idx,raw_completion,extracted_code,format_status,compile_status,runtime_status,failure_reason,error_message,stderr_preview,test_status,test_error_message,test_stderr_preview,syntax_status,style_status,style_score,style_penalty,style_violation_count,style_codes,style_messages,performance_status,performance_score,performance_runtime_score,performance_memory_score,performance_elapsed_ms,performance_reference_ms,performance_peak_kb,performance_reference_peak_kb,performance_error,ai_judge_status,ai_judge_score,ai_judge_findings_count,ai_judge_findings_json,ai_judge_error,ai_judge_model,ai_judge_prompt_version,ai_judge_prompt_hash,reward_format,reward_syntax,reward_style,reward_compile,reward_tests,reward_performance,reward_ai_judge,reward_total,completion_token_length
+lora_train_tasks_0_49,HumanEval/0,0,0,"from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False
+</code>","from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    sorted_numbers = sorted(numbers)
+    for i in range(len(sorted_numbers) - 1):
+        if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01958,0.03408,0.21875,0.359375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 8, ""evidence"": ""for i in range(len(sorted_numbers) - 1): ... if abs(sorted_numbers[i] - sorted_numbers[i + 1]) < threshold:"", ""reason"": ""The use of `range(len(sorted_numbers) - 1)` and indexing into `sorted_numbers` multiple times makes the code less readable. A simpler approach using `zip` could make the intent clearer.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,74
+lora_train_tasks_0_49,HumanEval/0,0,1,"def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+</code>","def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.03207,0.03408,0.21875,0.359375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 5, ""evidence"": ""for i in range(len(numbers)): ... for j in range(i + 1, len(numbers)): ... if abs(numbers[i] - numbers[j]) < threshold: ... return True"", ""reason"": ""The use of range(len(numbers)) and indexing into the list can be less readable compared to using enumerate which provides both index and value directly.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,65
+lora_train_tasks_0_49,HumanEval/1,1,0,"def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result
+</code>","def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9650426803446079,0.9689675155339494,0.9493433395872422,0.031061,0.027361,0.5205078125,0.44921875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 15, ""evidence"": ""if balance == 0:\n    result.append(\""\"".join(current_group))\n    current_group = []"", ""reason"": ""The use of reassigning `current_group` to an empty list can be less readable than using `clear()`. The `clear()` method is more explicit about the intention to reset the list.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9650426803446079,0.85,7.815042680344607,122
+lora_train_tasks_0_49,HumanEval/1,1,1,"def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result
+</code>","def separate_paren_groups(paren_string: str) -> List[str]:
+    paren_string = paren_string.replace("" "", """")
+    result = []
+    current_group = []
+    balance = 0
+    for char in paren_string:
+        if char == '(':
+            balance += 1
+            current_group.append(char)
+        elif char == ')':
+            balance -= 1
+            current_group.append(char)
+            if balance == 0:
+                result.append("""".join(current_group))
+                current_group = []
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9795597141621188,0.987113807805838,0.9493433395872422,0.03049,0.027361,0.5205078125,0.44921875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 13, ""line_end"": 15, ""evidence"": ""if balance == 0:\n    result.append(\""\"".join(current_group))\n    current_group = []"", ""reason"": ""The use of reassigning `current_group` to an empty list can be less readable than using `clear()`. The `clear()` method is more explicit about the intention to reset the list.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9795597141621188,0.85,7.8295597141621185,122
+lora_train_tasks_0_49,HumanEval/2,2,0,"def truncate_number(number: float) -> float:
+    return number - int(number)
+</code>","def truncate_number(number: float) -> float:
+    return number - int(number)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00424,0.00657,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,22
+lora_train_tasks_0_49,HumanEval/2,2,1,"def truncate_number(number: float) -> float:
+    return number - int(number)
+</code>","def truncate_number(number: float) -> float:
+    return number - int(number)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00408,0.00657,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,22
+lora_train_tasks_0_49,HumanEval/3,3,0,"def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False
+</code>","def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00843,0.00856,0.140625,0.140625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,50
+lora_train_tasks_0_49,HumanEval/3,3,1,"def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False
+</code>","def below_zero(operations: List[int]) -> bool:
+    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00839,0.00856,0.140625,0.140625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,50
+lora_train_tasks_0_49,HumanEval/4,4,0,"from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+</code>","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.0156,0.01558,0.5390625,0.5390625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,69
+lora_train_tasks_0_49,HumanEval/4,4,1,"from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad
+</code>","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    if not numbers:
+        return 0.0
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    return mad",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01606,0.01558,0.5390625,0.5390625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,69
+lora_train_tasks_0_49,HumanEval/5,5,0,"def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i in range(len(numbers)):
+        result.append(numbers[i])
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result
+</code>","def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i in range(len(numbers)):
+        result.append(numbers[i])
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9574872665534806,0.9468590831918506,1.0,0.01178,0.01014,0.171875,0.1953125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""if i < len(numbers) - 1:\n    result.append(delimeter)"", ""reason"": ""The check `if i < len(numbers) - 1` and subsequent append operation can be simplified by avoiding the last iteration of the loop.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9574872665534806,0.85,7.80748726655348,75
+lora_train_tasks_0_49,HumanEval/5,5,1,"def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i, num in enumerate(numbers):
+        result.append(num)
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result
+</code>","def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers:
+        return []
+    result = []
+    for i, num in enumerate(numbers):
+        result.append(num)
+        if i < len(numbers) - 1:
+            result.append(delimeter)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8723469454856317,0.9046228710462287,0.7432432432432433,0.01233,0.01014,0.2890625,0.1953125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 8, ""evidence"": ""if i < len(numbers) - 1:\n    result.append(delimeter)"", ""reason"": ""The check `if i < len(numbers) - 1:` is unnecessary and makes the code harder to read. The reference solution avoids this by handling the last element separately.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8723469454856317,0.85,7.722346945485631,75
+lora_train_tasks_0_49,HumanEval/6,6,0,"def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result
+</code>","def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01893,0.03292,0.46484375,0.84765625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 11, ""evidence"": ""if current_depth > max_depth:\n    max_depth = current_depth"", ""reason"": ""The use of an if statement to update max_depth can be simplified using the built-in max function, which would improve readability.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 14, ""evidence"": ""max_depth = 0\n...\nresult.append(max_depth)"", ""reason"": ""The logic for calculating the maximum depth of parentheses is duplicated within the loop over each group. This could be refactored into a separate function to avoid duplication.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,115
+lora_train_tasks_0_49,HumanEval/6,6,1,"def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result
+</code>","def parse_nested_parens(paren_string: str) -> List[int]:
+    groups = paren_string.split()
+    result = []
+    for group in groups:
+        max_depth = 0
+        current_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1
+                if current_depth > max_depth:
+                    max_depth = current_depth
+            elif char == ')':
+                current_depth -= 1
+        result.append(max_depth)
+    return result",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.0189,0.03292,0.46484375,0.84765625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 11, ""evidence"": ""if current_depth > max_depth:\n    max_depth = current_depth"", ""reason"": ""The use of an if statement to update max_depth can be simplified using the built-in max function, which would improve readability.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 14, ""evidence"": ""max_depth = 0\n...\nresult.append(max_depth)"", ""reason"": ""The logic for calculating the maximum depth of parentheses is duplicated within the loop over each group. This could be refactored into a separate function to avoid duplication.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,115
+lora_train_tasks_0_49,HumanEval/7,7,0,"def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]
+</code>","def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01234,0.01218,0.34375,0.34375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,36
+lora_train_tasks_0_49,HumanEval/7,7,1,"def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]
+</code>","def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [s for s in strings if substring in s]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01238,0.01218,0.34375,0.34375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,36
+lora_train_tasks_0_49,HumanEval/8,8,0,"from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)
+</code>","from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00886,0.00853,0.109375,0.109375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 10, ""evidence"": ""return (total_sum, total_product)"", ""reason"": ""The use of parentheses around the tuple is unnecessary and reduces readability. A simpler form like 'return total_sum, total_product' is preferred.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,68
+lora_train_tasks_0_49,HumanEval/8,8,1,"from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)
+</code>","from typing import List, Tuple
+
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    total_sum = 0
+    total_product = 1
+    for n in numbers:
+        total_sum += n
+        total_product *= n
+    return (total_sum, total_product)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00822,0.00853,0.109375,0.109375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 10, ""line_end"": 10, ""evidence"": ""return (total_sum, total_product)"", ""reason"": ""The use of parentheses around the tuple is unnecessary and reduces readability. A simpler form like 'return total_sum, total_product' is preferred.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,68
+lora_train_tasks_0_49,HumanEval/9,9,0,"def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result
+</code>","def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.0108,0.01443,0.1875,0.203125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,1.0,7.9,74
+lora_train_tasks_0_49,HumanEval/9,9,1,"def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result
+</code>","def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(current_max)
+    
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.01074,0.01443,0.1875,0.203125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,1.0,7.9,74
+lora_train_tasks_0_49,HumanEval/10,10,0,"def make_palindrome(string: str) -> str:
+    for i in range(len(string)):
+        if is_palindrome(string[i:]):
+            return string + string[:i][::-1]
+    return string
+</code>","def make_palindrome(string: str) -> str:
+    for i in range(len(string)):
+        if is_palindrome(string[i:]):
+            return string + string[:i][::-1]
+    return string",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 31, in <module>
+  File ""<string>"", line 25, in check
+  File ""<string>"", line 11, in make_palindrome
+NameError: name 'is_palindrome' is not defined. Did you mean: 'make_palindrome'?
+",ok,ok,1.0,0.0,0,,,not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.5,50
+lora_train_tasks_0_49,HumanEval/10,10,1,"def is_palindrome(string: str) -> bool:
+    """""" Test if given string is a palindrome """"""
+    return string == string[::-1]
+
+
+def make_palindrome(string: str) -> str:
+    """""" Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """"""
+    for i in range(len(string)):
+        if is_palindrome(string[i:]):
+            return string + string[:i][::-1]
+    return string
+</code>","def is_palindrome(string: str) -> bool:
+    """""" Test if given string is a palindrome """"""
+    return string == string[::-1]
+
+
+def make_palindrome(string: str) -> str:
+    """""" Find the shortest palindrome that begins with a supplied string.
+    Algorithm idea is simple:
+    - Find the longest postfix of supplied string that is a palindrome.
+    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.
+    >>> make_palindrome('')
+    ''
+    >>> make_palindrome('cat')
+    'catac'
+    >>> make_palindrome('cata')
+    'catac'
+    """"""
+    for i in range(len(string)):
+        if is_palindrome(string[i:]):
+            return string + string[:i][::-1]
+    return string",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,E501,E501: Line too long (106 > 88),ok,0.9086745933483553,0.9299531893294231,0.8235602094240838,0.017731,0.01499,0.1865234375,0.1396484375,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 18, ""line_end"": 20, ""evidence"": ""for i in range(len(string)): if is_palindrome(string[i:]): return string + string[:i][::-1]"", ""reason"": ""The use of a for loop combined with slicing operations makes the code harder to follow compared to a more straightforward approach using a while loop.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.9086745933483553,0.65,7.508674593348356,187
+lora_train_tasks_0_49,HumanEval/11,11,0,"def string_xor(a: str, b: str) -> str:
+    return ''.join('1' if x != y else '0' for x, y in zip(a, b))
+</code>","def string_xor(a: str, b: str) -> str:
+    return ''.join('1' if x != y else '0' for x, y in zip(a, b))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01352,0.01908,0.65625,0.8671875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""'1' if x != y else '0' for x, y in zip(a, b)"", ""reason"": ""The inline conditional within the generator expression makes the code less readable. A separate function for the XOR operation, as shown in the reference solution, would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,44
+lora_train_tasks_0_49,HumanEval/11,11,1,"def string_xor(a: str, b: str) -> str:
+    return ''.join('1' if x != y else '0' for x, y in zip(a, b))
+</code>","def string_xor(a: str, b: str) -> str:
+    return ''.join('1' if x != y else '0' for x, y in zip(a, b))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01372,0.01908,0.65625,0.8671875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""'1' if x != y else '0' for x, y in zip(a, b)"", ""reason"": ""The inline conditional within the generator expression makes the code less readable. A separate function for the XOR operation, as shown in the reference solution, would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,44
+lora_train_tasks_0_49,HumanEval/12,12,0,"def longest(strings: List[str]) -> Optional[str]:
+    if not strings:
+        return None
+    return max(strings, key=len)
+</code>","def longest(strings: List[str]) -> Optional[str]:
+    if not strings:
+        return None
+    return max(strings, key=len)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00751,0.01105,0.12890625,0.484375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 4, ""evidence"": ""return max(strings, key=len)"", ""reason"": ""The use of `max` with a key function is less readable than a more explicit loop, especially for those unfamiliar with this idiom.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,34
+lora_train_tasks_0_49,HumanEval/12,12,1,"def longest(strings: List[str]) -> Optional[str]:
+    if not strings:
+        return None
+    return max(strings, key=len)
+</code>","def longest(strings: List[str]) -> Optional[str]:
+    if not strings:
+        return None
+    return max(strings, key=len)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00711,0.01105,0.12890625,0.484375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 4, ""evidence"": ""return max(strings, key=len)"", ""reason"": ""The use of `max` with a key function is less readable than a more explicit loop, especially for those unfamiliar with this idiom.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,34
+lora_train_tasks_0_49,HumanEval/13,13,0,"def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return a
+</code>","def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return a",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00337,0.00365,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,40
+lora_train_tasks_0_49,HumanEval/13,13,1,"def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return a
+</code>","def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return a",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00386,0.00365,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,40
+lora_train_tasks_0_49,HumanEval/14,14,0,"def all_prefixes(string: str) -> List[str]:
+    return [string[:i] for i in range(1, len(string) + 1)]
+</code>","def all_prefixes(string: str) -> List[str]:
+    return [string[:i] for i in range(1, len(string) + 1)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9260293401180102,0.9792399718508092,0.7131868131868132,0.01421,0.01265,0.533203125,0.345703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [string[:i] for i in range(1, len(string) + 1)]"", ""reason"": ""The list comprehension is less readable due to the use of a dense lambda-like expression. A simple loop as in the reference solution would be clearer.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9260293401180102,0.85,7.77602934011801,38
+lora_train_tasks_0_49,HumanEval/14,14,1,"def all_prefixes(string: str) -> List[str]:
+    return [string[:i] for i in range(1, len(string) + 1)]
+</code>","def all_prefixes(string: str) -> List[str]:
+    return [string[:i] for i in range(1, len(string) + 1)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9426373626373628,1.0,0.7131868131868132,0.01384,0.01265,0.533203125,0.345703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [string[:i] for i in range(1, len(string) + 1)]"", ""reason"": ""The list comprehension is less readable due to the use of a dense lambda-like expression. A simple loop as in the reference solution would be clearer.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9426373626373628,0.85,7.792637362637363,38
+lora_train_tasks_0_49,HumanEval/15,15,0,"def string_sequence(n: int) -> str:
+    return ' '.join(str(i) for i in range(n + 1))
+</code>","def string_sequence(n: int) -> str:
+    return ' '.join(str(i) for i in range(n + 1))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9789991371872304,1.0,0.894995685936152,0.02061,0.018841,1.1318359375,0.9208984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9789991371872304,1.0,7.97899913718723,32
+lora_train_tasks_0_49,HumanEval/15,15,1,"def string_sequence(n: int) -> str:
+    return ' '.join(str(i) for i in range(n + 1))
+</code>","def string_sequence(n: int) -> str:
+    return ' '.join(str(i) for i in range(n + 1))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9789991371872304,1.0,0.894995685936152,0.02028,0.018841,1.1318359375,0.9208984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9789991371872304,1.0,7.97899913718723,32
+lora_train_tasks_0_49,HumanEval/16,16,0,"def count_distinct_characters(string: str) -> int:
+    return len(set(string.lower()))
+</code>","def count_distinct_characters(string: str) -> int:
+    return len(set(string.lower()))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.0096,0.00934,0.8544921875,0.8544921875,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,24
+lora_train_tasks_0_49,HumanEval/16,16,1,"def count_distinct_characters(string: str) -> int:
+    return len(set(string.lower()))
+</code>","def count_distinct_characters(string: str) -> int:
+    return len(set(string.lower()))",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00883,0.00934,0.8544921875,0.8544921875,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,24
+lora_train_tasks_0_49,HumanEval/17,17,0,"def parse_music(music_string: str) -> List[int]:
+    mapping = {
+        'o': 4,
+        'o|': 2,
+        '.|': 1
+    }
+    notes = music_string.split()
+    return [mapping[note] for note in notes]
+</code>","def parse_music(music_string: str) -> List[int]:
+    mapping = {
+        'o': 4,
+        'o|': 2,
+        '.|': 1
+    }
+    notes = music_string.split()
+    return [mapping[note] for note in notes]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02315,0.02335,0.720703125,0.720703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 8, ""evidence"": ""[mapping[note] for note in notes]"", ""reason"": ""The list comprehension can be made slightly more readable by using a more conventional variable name like 'x' instead of 'note'.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,70
+lora_train_tasks_0_49,HumanEval/17,17,1,"def parse_music(music_string: str) -> List[int]:
+    mapping = {
+        'o': 4,
+        'o|': 2,
+        '.|': 1
+    }
+    notes = music_string.split()
+    return [mapping[note] for note in notes]
+</code>","def parse_music(music_string: str) -> List[int]:
+    mapping = {
+        'o': 4,
+        'o|': 2,
+        '.|': 1
+    }
+    notes = music_string.split()
+    return [mapping[note] for note in notes]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02204,0.02335,0.720703125,0.720703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 8, ""line_end"": 8, ""evidence"": ""[mapping[note] for note in notes]"", ""reason"": ""The list comprehension can be made slightly more readable by using a more conventional variable name like 'x' instead of 'note'.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,70
+lora_train_tasks_0_49,HumanEval/18,18,0,"def how_many_times(string: str, substring: str) -> int:
+    if not substring:
+        return 0
+    count = 0
+    start = 0
+    while True:
+        index = string.find(substring, start)
+        if index == -1:
+            break
+        count += 1
+        start = index + 1
+    return count
+</code>","def how_many_times(string: str, substring: str) -> int:
+    if not substring:
+        return 0
+    count = 0
+    start = 0
+    while True:
+        index = string.find(substring, start)
+        if index == -1:
+            break
+        count += 1
+        start = index + 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00626,0.01453,0.08984375,0.1298828125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 12, ""evidence"": ""while True: ... if index == -1: break ..."", ""reason"": ""The use of an infinite loop with a break statement can be considered sub-readable. A more readable approach might be to use a for loop or a condition that naturally terminates the loop.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,87
+lora_train_tasks_0_49,HumanEval/18,18,1,"def how_many_times(string: str, substring: str) -> int:
+    if not substring:
+        return 0
+    count = 0
+    start = 0
+    while True:
+        index = string.find(substring, start)
+        if index == -1:
+            break
+        count += 1
+        start = index + 1
+    return count
+</code>","def how_many_times(string: str, substring: str) -> int:
+    if not substring:
+        return 0
+    count = 0
+    start = 0
+    while True:
+        index = string.find(substring, start)
+        if index == -1:
+            break
+        count += 1
+        start = index + 1
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00616,0.01453,0.08984375,0.1298828125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 12, ""evidence"": ""while True: ... if index == -1: break ..."", ""reason"": ""The use of an infinite loop with a break statement can be considered sub-readable. A more readable approach might be to use a for loop or a condition that naturally terminates the loop.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,87
+lora_train_tasks_0_49,HumanEval/19,19,0,"def sort_numbers(numbers: str) -> str:
+    word_to_num = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    
+    if not numbers.strip():
+        return ''
+    
+    words = numbers.split()
+    sorted_words = sorted(words, key=lambda w: word_to_num[w])
+    return ' '.join(sorted_words)
+</code>","def sort_numbers(numbers: str) -> str:
+    word_to_num = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    
+    if not numbers.strip():
+        return ''
+    
+    words = numbers.split()
+    sorted_words = sorted(words, key=lambda w: word_to_num[w])
+    return ' '.join(sorted_words)",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.02875,0.03509,1.0087890625,0.9853515625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 19, ""line_end"": 19, ""evidence"": ""sorted(words, key=lambda w: word_to_num[w])"", ""reason"": ""The use of a lambda function for the key argument in the sorted method can be simplified for better readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,149
+lora_train_tasks_0_49,HumanEval/19,19,1,"def sort_numbers(numbers: str) -> str:
+    word_to_num = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    
+    if not numbers.strip():
+        return ''
+    
+    words = numbers.split()
+    sorted_words = sorted(words, key=lambda w: word_to_num[w])
+    
+    return ' '.join(sorted_words)
+</code>","def sort_numbers(numbers: str) -> str:
+    word_to_num = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    
+    if not numbers.strip():
+        return ''
+    
+    words = numbers.split()
+    sorted_words = sorted(words, key=lambda w: word_to_num[w])
+    
+    return ' '.join(sorted_words)",ok,ok,ok,,,,passed,,,ok,violations,0.85,1.5,3,"W293,W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.02773,0.03509,1.0087890625,0.9853515625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 19, ""line_end"": 19, ""evidence"": ""sorted_words = sorted(words, key=lambda w: word_to_num[w])"", ""reason"": ""The use of a lambda function here can be simplified to improve readability.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 13, ""evidence"": ""word_to_num dictionary definition"", ""reason"": ""The dictionary definition is nearly identical to the reference solution's value_map, but using a different name. This duplication can be avoided by reusing the same name or structure.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.85,1.0,1.0,1.0,0.7,7.55,150
+lora_train_tasks_0_49,HumanEval/20,20,0,"from typing import List, Tuple
+
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    sorted_numbers = sorted(numbers)
+    min_diff = float('inf')
+    closest_pair = (sorted_numbers[0], sorted_numbers[1])
+    
+    for i in range(len(sorted_numbers) - 1):
+        diff = sorted_numbers[i + 1] - sorted_numbers[i]
+        if diff < min_diff:
+            min_diff = diff
+            closest_pair = (sorted_numbers[i], sorted_numbers[i + 1])
+            
+    return closest_pair
+</code>","from typing import List, Tuple
+
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    sorted_numbers = sorted(numbers)
+    min_diff = float('inf')
+    closest_pair = (sorted_numbers[0], sorted_numbers[1])
+    
+    for i in range(len(sorted_numbers) - 1):
+        diff = sorted_numbers[i + 1] - sorted_numbers[i]
+        if diff < min_diff:
+            min_diff = diff
+            closest_pair = (sorted_numbers[i], sorted_numbers[i + 1])
+            
+    return closest_pair",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.01945,0.055421,0.21875,0.4140625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 9, ""line_end"": 13, ""evidence"": ""for i in range(len(sorted_numbers) - 1): ..."", ""reason"": ""The use of `range(len(sorted_numbers) - 1)` and indexing into `sorted_numbers` multiple times makes the code less readable. It could be simplified using a zip or pairwise comparison.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,128
+lora_train_tasks_0_49,HumanEval/20,20,1,"def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    sorted_numbers = sorted(numbers)
+    min_diff = float('inf')
+    closest_pair = (sorted_numbers[0], sorted_numbers[1])
+    
+    for i in range(len(sorted_numbers) - 1):
+        diff = sorted_numbers[i + 1] - sorted_numbers[i]
+        if diff < min_diff:
+            min_diff = diff
+            closest_pair = (sorted_numbers[i], sorted_numbers[i + 1])
+            
+    return closest_pair
+</code>","def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    sorted_numbers = sorted(numbers)
+    min_diff = float('inf')
+    closest_pair = (sorted_numbers[0], sorted_numbers[1])
+    
+    for i in range(len(sorted_numbers) - 1):
+        diff = sorted_numbers[i + 1] - sorted_numbers[i]
+        if diff < min_diff:
+            min_diff = diff
+            closest_pair = (sorted_numbers[i], sorted_numbers[i + 1])
+            
+    return closest_pair",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,2,"W293,W293",W293: Blank line contains whitespace | W293: Blank line contains whitespace,ok,1.0,1.0,1.0,0.0195,0.055421,0.21875,0.4140625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 10, ""evidence"": ""for i in range(len(sorted_numbers) - 1): ... if diff < min_diff: ..."", ""reason"": ""The use of `range(len(sorted_numbers) - 1)` and indexing into `sorted_numbers` multiple times makes the code less readable. It could be simplified using a zip or pairwise iterator.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,121
+lora_train_tasks_0_49,HumanEval/21,21,0,"def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_val = min(numbers)
+    max_val = max(numbers)
+    if min_val == max_val:
+        return [0.0] * len(numbers)
+    return [(x - min_val) / (max_val - min_val) for x in numbers]
+</code>","def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_val = min(numbers)
+    max_val = max(numbers)
+    if min_val == max_val:
+        return [0.0] * len(numbers)
+    return [(x - min_val) / (max_val - min_val) for x in numbers]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.026581,0.02594,0.484375,0.484375,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""medium"", ""line_start"": 4, ""line_end"": 5, ""evidence"": ""if min_val == max_val:\n        return [0.0] * len(numbers)"", ""reason"": ""The conditional block can be simplified without changing behavior. The reference solution does not include this conditional check and handles the case implicitly.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,77
+lora_train_tasks_0_49,HumanEval/21,21,1,"def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_val = min(numbers)
+    max_val = max(numbers)
+    range_val = max_val - min_val
+    if range_val == 0:
+        return [0.0 for _ in numbers]
+    return [(x - min_val) / range_val for x in numbers]
+</code>","def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_val = min(numbers)
+    max_val = max(numbers)
+    range_val = max_val - min_val
+    if range_val == 0:
+        return [0.0 for _ in numbers]
+    return [(x - min_val) / range_val for x in numbers]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.026251,0.02594,0.484375,0.484375,,ok,0.65,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 7, ""evidence"": ""if range_val == 0:\n    return [0.0 for _ in numbers]"", ""reason"": ""The conditional block can be simplified. The division by zero case can be handled directly within the list comprehension.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,82
+lora_train_tasks_0_49,HumanEval/22,22,0,"def filter_integers(values: List[Any]) -> List[int]:
+    return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]
+</code>","def filter_integers(values: List[Any]) -> List[int]:
+    return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01084,0.01028,0.3046875,0.3046875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]"", ""reason"": ""The use of `and not isinstance(v, bool)` is unnecessary and makes the code less readable since Python's `int` type does not include `bool`. Simplifying this condition would improve clarity.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,39
+lora_train_tasks_0_49,HumanEval/22,22,1,"def filter_integers(values: List[Any]) -> List[int]:
+    return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]
+</code>","def filter_integers(values: List[Any]) -> List[int]:
+    return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01101,0.01028,0.3046875,0.3046875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]"", ""reason"": ""The use of `and not isinstance(v, bool)` is unnecessary and makes the code less readable since Python's `int` type does not include `bool`. Simplifying this condition would improve clarity.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,39
+lora_train_tasks_0_49,HumanEval/23,23,0,"def strlen(string: str) -> int:
+    return len(string)
+</code>","def strlen(string: str) -> int:
+    return len(string)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00291,0.00287,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,19
+lora_train_tasks_0_49,HumanEval/23,23,1,"def strlen(string: str) -> int:
+    return len(string)
+</code>","def strlen(string: str) -> int:
+    return len(string)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00297,0.00287,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,19
+lora_train_tasks_0_49,HumanEval/24,24,0,"def largest_divisor(n: int) -> int:
+    for i in range(n // 2, 0, -1):
+        if n % i == 0:
+            return i
+    return 1
+</code>","def largest_divisor(n: int) -> int:
+    for i in range(n // 2, 0, -1):
+        if n % i == 0:
+            return i
+    return 1",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00758,0.01407,0.125,0.1953125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,51
+lora_train_tasks_0_49,HumanEval/24,24,1,"def largest_divisor(n: int) -> int:
+    for i in range(n // 2, 0, -1):
+        if n % i == 0:
+            return i
+    return 1
+</code>","def largest_divisor(n: int) -> int:
+    for i in range(n // 2, 0, -1):
+        if n % i == 0:
+            return i
+    return 1",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.0078,0.01407,0.125,0.1953125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,51
+lora_train_tasks_0_49,HumanEval/25,25,0,"from typing import List
+
+
+def factorize(n: int) -> List[int]:
+    factors = []
+    d = 2
+    while d * d <= n:
+        while (n % d) == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+    if n > 1:
+        factors.append(n)
+    return factors
+</code>","from typing import List
+
+
+def factorize(n: int) -> List[int]:
+    factors = []
+    d = 2
+    while d * d <= n:
+        while (n % d) == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+    if n > 1:
+        factors.append(n)
+    return factors",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02554,0.0398,0.140625,0.140625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 7, ""line_end"": 11, ""evidence"": ""while d * d <= n: ... d += 1"", ""reason"": ""The use of `d * d <= n` instead of `d <= sqrt(n)` makes the code slightly harder to read.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 12, ""line_end"": 13, ""evidence"": ""if n > 1: ... factors.append(n)"", ""reason"": ""This conditional block can be simplified by directly appending `n` if it is greater than 1, without the need for an explicit if statement.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,87
+lora_train_tasks_0_49,HumanEval/25,25,1,"def factorize(n: int) -> List[int]:
+    factors = []
+    d = 2
+    while d * d <= n:
+        while (n % d) == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+    if n > 1:
+        factors.append(n)
+    return factors
+</code>","def factorize(n: int) -> List[int]:
+    factors = []
+    d = 2
+    while d * d <= n:
+        while (n % d) == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+    if n > 1:
+        factors.append(n)
+    return factors",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.02737,0.0398,0.140625,0.140625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 8, ""evidence"": ""while d * d <= n: ... d += 1"", ""reason"": ""The use of `d * d <= n` instead of `d <= sqrt(n)` makes the code slightly harder to read, especially since the reference solution uses the square root function.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 9, ""line_end"": 10, ""evidence"": ""if n > 1: ... factors.append(n)"", ""reason"": ""The conditional block can be simplified by directly appending `n` to `factors` if `n > 1`, which is already done in the reference solution without an explicit conditional check.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,82
+lora_train_tasks_0_49,HumanEval/26,26,0,"def remove_duplicates(numbers: List[int]) -> List[int]:
+    counts = {}
+    for n in numbers:
+        counts[n] = counts.get(n, 0) + 1
+    return [n for n in numbers if counts[n] == 1]
+</code>","def remove_duplicates(numbers: List[int]) -> List[int]:
+    counts = {}
+    for n in numbers:
+        counts[n] = counts.get(n, 0) + 1
+    return [n for n in numbers if counts[n] == 1]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.015,0.046871,0.515625,2.6748046875,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 4, ""evidence"": ""counts[n] = counts.get(n, 0) + 1"", ""reason"": ""The use of counts.get(n, 0) + 1 is less readable than using a try-except block or checking if the key exists first.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 5, ""evidence"": ""counts[n] = counts.get(n, 0) + 1\n    return [n for n in numbers if counts[n] == 1]"", ""reason"": ""The candidate code manually counts occurrences of each number, which can be simplified using collections.Counter from the standard library, reducing duplication and improving maintainability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,61
+lora_train_tasks_0_49,HumanEval/26,26,1,"from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    seen = set()
+    duplicates = set()
+    for n in numbers:
+        if n in seen:
+            duplicates.add(n)
+        else:
+            seen.add(n)
+    return [n for n in numbers if n not in duplicates]
+</code>","from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    seen = set()
+    duplicates = set()
+    for n in numbers:
+        if n in seen:
+            duplicates.add(n)
+        else:
+            seen.add(n)
+    return [n for n in numbers if n not in duplicates]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01656,0.046871,1.28125,2.6748046875,,ok,0.65,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 6, ""line_end"": 11, ""evidence"": ""for n in numbers: if n in seen: duplicates.add(n) else: seen.add(n)"", ""reason"": ""The use of two separate sets (seen and duplicates) and the subsequent list comprehension to filter out duplicates makes the code harder to follow compared to using a single pass approach.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.65,7.65,78
+lora_train_tasks_0_49,HumanEval/27,27,0,"def flip_case(string: str) -> str:
+    return string.swapcase()
+</code>","def flip_case(string: str) -> str:
+    return string.swapcase()",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.8564623382904124,0.8205779228630153,1.0,0.008271,0.00617,0.5869140625,0.5869140625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.8564623382904124,1.0,7.856462338290412,21
+lora_train_tasks_0_49,HumanEval/27,27,1,"def flip_case(string: str) -> str:
+    return string.swapcase()
+</code>","def flip_case(string: str) -> str:
+    return string.swapcase()",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00619,0.00617,0.5869140625,0.5869140625,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,21
+lora_train_tasks_0_49,HumanEval/28,28,0,"def concatenate(strings: List[str]) -> str:
+    return ''.join(strings)
+</code>","def concatenate(strings: List[str]) -> str:
+    return ''.join(strings)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00519,0.00531,0.130859375,0.130859375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,21
+lora_train_tasks_0_49,HumanEval/28,28,1,"def concatenate(strings: List[str]) -> str:
+    return ''.join(strings)
+</code>","def concatenate(strings: List[str]) -> str:
+    return ''.join(strings)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00534,0.00531,0.130859375,0.130859375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,21
+lora_train_tasks_0_49,HumanEval/29,29,0,"def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [s for s in strings if s.startswith(prefix)]
+</code>","def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [s for s in strings if s.startswith(prefix)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00875,0.008351,0.34375,0.34375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,35
+lora_train_tasks_0_49,HumanEval/29,29,1,"def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [s for s in strings if s.startswith(prefix)]
+</code>","def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [s for s in strings if s.startswith(prefix)]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.9893533834586468,0.9866917293233083,1.0,0.00931,0.008351,0.34375,0.34375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.9893533834586468,1.0,7.9893533834586465,35
+lora_train_tasks_0_49,HumanEval/30,30,0,"def get_positive(l: list):
+    return [x for x in l if x > 0]
+</code>","def get_positive(l: list):
+    return [x for x in l if x > 0]",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00991,0.00971,0.3828125,0.3828125,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def get_positive(l: list):"", ""reason"": ""The variable 'l' shadows the built-in function 'list' and is not descriptive.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [x for x in l if x > 0]"", ""reason"": ""The use of 'x' as a variable name in the list comprehension is less descriptive than using a more meaningful name like 'elem'.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.7,7.6000000000000005,26
+lora_train_tasks_0_49,HumanEval/30,30,1,"def get_positive(l: list):
+    return [x for x in l if x > 0]
+</code>","def get_positive(l: list):
+    return [x for x in l if x > 0]",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00993,0.00971,0.3828125,0.3828125,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def get_positive(l: list):"", ""reason"": ""The variable 'l' shadows the built-in function 'list' and is not descriptive.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return [x for x in l if x > 0]"", ""reason"": ""The use of 'x' as a variable name in the list comprehension is less descriptive than using a more meaningful name like 'elem'.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.7,7.6000000000000005,26
+lora_train_tasks_0_49,HumanEval/31,31,0,"def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+</code>","def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01677,5.326929,0.08984375,0.1875,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.0,7.0,107
+lora_train_tasks_0_49,HumanEval/31,31,1,"def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+</code>","def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.028671,5.326929,0.08984375,0.1875,,ok,0.7,2,"[{""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""if n < 2:\n    return False\nif n == 2:\n    return True\nif n % 2 == 0:\n    return False"", ""reason"": ""The checks for n < 2, n == 2, and n % 2 == 0 can be combined into fewer lines to reduce redundancy.""}, {""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 9, ""line_end"": 12, ""evidence"": ""while i * i <= n:\n    if n % i == 0:\n        return False\n    i += 2"", ""reason"": ""The use of `i * i <= n` in the while loop condition can be replaced with `i <= sqrt(n)` for better readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,87
+lora_train_tasks_0_49,HumanEval/32,32,0,"import math
+
+
+def poly(xs: list, x: float):
+    """"""
+    Evaluates polynomial with coefficients xs at point x.
+    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n
+    """"""
+    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
+
+
+def find_zero(xs: list):
+    """""" xs are coefficients of a polynomial.
+    find_zero find x such that poly(x) = 0.
+    find_zero returns only only zero point, even if there are many.
+    Moreover, find_zero only takes list xs having even number of coefficients
+    and largest non zero coefficient as it guarantees
+    a solution.
+    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x
+    -0.5
+    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
+    1.0
+    """"""
+    # Use numpy to find roots
+    import numpy as np
+    # Get all roots
+    roots = np.roots(xs[::-1])
+    # Filter real roots
+    real_roots = [r.real for r in roots if abs(r.imag) < 1e-5]
+    # Return the smallest real root
+    return min(real_roots)
+</code>","import math
+
+
+def poly(xs: list, x: float):
+    """"""
+    Evaluates polynomial with coefficients xs at point x.
+    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n
+    """"""
+    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
+
+
+def find_zero(xs: list):
+    """""" xs are coefficients of a polynomial.
+    find_zero find x such that poly(x) = 0.
+    find_zero returns only only zero point, even if there are many.
+    Moreover, find_zero only takes list xs having even number of coefficients
+    and largest non zero coefficient as it guarantees
+    a solution.
+    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x
+    -0.5
+    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
+    1.0
+    """"""
+    # Use numpy to find roots
+    import numpy as np
+    # Get all roots
+    roots = np.roots(xs[::-1])
+    # Filter real roots
+    real_roots = [r.real for r in roots if abs(r.imag) < 1e-5]
+    # Return the smallest real root
+    return min(real_roots)",ok,ok,ok,,,,passed,,,ok,violations,0.95,0.5,1,E501,E501: Line too long (98 > 88),ok,0.14716481976785323,0.16685704725823078,0.06839590980634301,205.519374,31.174869,7014.2041015625,436.1298828125,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,1.0,0.14716481976785323,0.0,6.097164819767853,346
+lora_train_tasks_0_49,HumanEval/32,32,1,"import math
+
+
+def poly(xs: list, x: float):
+    """"""
+    Evaluates polynomial with coefficients xs at point x.
+    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n
+    """"""
+    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
+
+
+def find_zero(xs: list):
+    """""" xs are coefficients of a polynomial.
+    find_zero find x such that poly(x) = 0.
+    find_zero returns only only zero point, even if there are many.
+    Moreover, find_zero only takes list xs having even number of coefficients
+    and largest non zero coefficient as it guarantees
+    a solution.
+    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x
+    -0.5
+    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
+    1.0
+    """"""
+    # Use bisection method to find a root
+    # We need to find an interval [a, b] where poly(a) and poly(b) have opposite signs
+    
+    # Find a range to search
+    # Start with a small range and expand until we find a sign change or reach a limit
+    a, b = -1000, 1000
+    
+    # If poly(a) and poly(b) have the same sign, expand the range
+    fa = poly(xs, a)
+    fb = poly(xs, b)
+","import math
+
+
+def poly(xs: list, x: float):
+    """"""
+    Evaluates polynomial with coefficients xs at point x.
+    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n
+    """"""
+    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
+
+
+def find_zero(xs: list):
+    """""" xs are coefficients of a polynomial.
+    find_zero find x such that poly(x) = 0.
+    find_zero returns only only zero point, even if there are many.
+    Moreover, find_zero only takes list xs having even number of coefficients
+    and largest non zero coefficient as it guarantees
+    a solution.
+    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x
+    -0.5
+    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
+    1.0
+    """"""
+    # Use bisection method to find a root
+    # We need to find an interval [a, b] where poly(a) and poly(b) have opposite signs
+    
+    # Find a range to search
+    # Start with a small range and expand until we find a sign change or reach a limit
+    a, b = -1000, 1000
+    
+    # If poly(a) and poly(b) have the same sign, expand the range
+    fa = poly(xs, a)
+    fb = poly(xs, b)",missing_closing_tag,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 66, in <module>
+  File ""<string>"", line 62, in check
+  File ""<string>"", line 17, in poly
+  File ""<string>"", line 17, in <listcomp>
+TypeError: must be real number, not NoneType
+",ok,violations,0.85,1.5,3,"E501,W293,W293",E501: Line too long (98 > 88) | W293: Blank line contains whitespace | W293: Blank line contains whitespace,not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,0.0,1.0,0.85,1.0,0.0,0.0,0.0,1.25,384
+lora_train_tasks_0_49,HumanEval/33,33,0,"def sort_third(l: list):
+    indices_div_by_3 = [i for i in range(len(l)) if i % 3 == 0]
+    values_at_indices = [l[i] for i in indices_div_by_3]
+    values_at_indices.sort()
+    l_prime = l.copy()
+    for idx, i in enumerate(indices_div_by_3):
+        l_prime[i] = values_at_indices[idx]
+    return l_prime
+</code>","def sort_third(l: list):
+    indices_div_by_3 = [i for i in range(len(l)) if i % 3 == 0]
+    values_at_indices = [l[i] for i in indices_div_by_3]
+    values_at_indices.sort()
+    l_prime = l.copy()
+    for idx, i in enumerate(indices_div_by_3):
+        l_prime[i] = values_at_indices[idx]
+    return l_prime",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.6737846751963801,0.592230843995475,1.0,0.062761,0.03379,0.578125,0.953125,,ok,0.5,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""[i for i in range(len(l)) if i % 3 == 0]"", ""reason"": ""The use of list comprehensions and separate sorting steps makes the code less readable compared to a simpler approach like slicing and sorting.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""indices_div_by_3 = [i for i in range(len(l)) if i % 3 == 0]"", ""reason"": ""The logic to find indices divisible by 3 and then sort them is more complex than necessary and duplicates effort compared to a simpler slicing and sorting approach.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.6737846751963801,0.5,7.07378467519638,102
+lora_train_tasks_0_49,HumanEval/33,33,1,"def sort_third(l: list):
+    third_indices = [v for i, v in enumerate(l) if i % 3 == 0]
+    third_indices.sort()
+    result = l[:]
+    for i, v in enumerate(l):
+        if i % 3 == 0:
+            result[i] = third_indices.pop(0)
+    return result
+</code>","def sort_third(l: list):
+    third_indices = [v for i, v in enumerate(l) if i % 3 == 0]
+    third_indices.sort()
+    result = l[:]
+    for i, v in enumerate(l):
+        if i % 3 == 0:
+            result[i] = third_indices.pop(0)
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.7509477311889718,0.6886846639862149,1.0,0.053971,0.03379,0.578125,0.953125,,ok,0.5,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""[v for i, v in enumerate(l) if i % 3 == 0]"", ""reason"": ""The use of a list comprehension followed by sorting and then popping elements from the list is unnecessarily complex and harder to follow than simpler alternatives.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 7, ""evidence"": ""i % 3 == 0"", ""reason"": ""The condition 'i % 3 == 0' is used twice, once in the list comprehension and once in the for loop. This duplication can be avoided by using a single loop to both collect and replace the values.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.7509477311889718,0.5,7.150947731188972,84
+lora_train_tasks_0_49,HumanEval/34,34,0,"def unique(l: list):
+    return sorted(set(l))
+</code>","def unique(l: list):
+    return sorted(set(l))",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.006601,0.00714,0.9375,0.984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sorted(set(l))"", ""reason"": ""The use of set(l) directly within sorted() is concise but less readable than converting it to a list first, especially for those unfamiliar with how sorted handles sets.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,17
+lora_train_tasks_0_49,HumanEval/34,34,1,"def unique(l: list):
+    return sorted(set(l))
+</code>","def unique(l: list):
+    return sorted(set(l))",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00646,0.00714,0.9375,0.984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return sorted(set(l))"", ""reason"": ""The use of set(l) directly within sorted() is concise but less readable than converting it to a list first, especially for those unfamiliar with how sorted handles sets.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,17
+lora_train_tasks_0_49,HumanEval/35,35,0,"def max_element(l: list):
+    return max(l)
+</code>","def max_element(l: list):
+    return max(l)",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00487,0.00527,0.171875,0.171875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def max_element(l: list):"", ""reason"": ""The variable 'l' shadows the common built-in name 'list' and is not descriptive.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,17
+lora_train_tasks_0_49,HumanEval/35,35,1,"def max_element(l: list):
+    return max(l)
+</code>","def max_element(l: list):
+    return max(l)",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00504,0.00527,0.171875,0.171875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def max_element(l: list):"", ""reason"": ""The variable 'l' shadows the common built-in name 'list' and is not descriptive.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,17
+lora_train_tasks_0_49,HumanEval/36,36,0,"def fizz_buzz(n: int):
+    count = 0
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            count += str(i).count('7')
+    return count
+</code>","def fizz_buzz(n: int):
+    count = 0
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            count += str(i).count('7')
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,38.757371,72.486776,0.224609375,1691.8310546875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 5, ""evidence"": ""count += str(i).count('7')"", ""reason"": ""The expression chain is somewhat dense and could be split into more readable steps.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,62
+lora_train_tasks_0_49,HumanEval/36,36,1,"def fizz_buzz(n: int):
+    count = 0
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            count += str(i).count('7')
+    return count
+</code>","def fizz_buzz(n: int):
+    count = 0
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            count += str(i).count('7')
+    return count",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,38.108281,72.486776,0.224609375,1691.8310546875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 5, ""evidence"": ""count += str(i).count('7')"", ""reason"": ""The expression chain is somewhat dense and could be split into more readable steps.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,62
+lora_train_tasks_0_49,HumanEval/37,37,0,"def sort_even(l: list):
+    evens = sorted(l[::2])
+    result = l[:]
+    for i in range(0, len(result), 2):
+        result[i] = evens.pop(0)
+    return result
+</code>","def sort_even(l: list):
+    evens = sorted(l[::2])
+    result = l[:]
+    for i in range(0, len(result), 2):
+        result[i] = evens.pop(0)
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.01896,0.02585,0.3515625,0.5078125,,ok,0.5,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""medium"", ""line_start"": 5, ""line_end"": 5, ""evidence"": ""result[i] = evens.pop(0)"", ""reason"": ""The use of pop(0) on a list is inefficient and less readable than using a more straightforward approach like indexing.""}, {""category"": ""Maintainability"", ""subcategory"": ""Code Duplication"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 5, ""evidence"": ""evens = sorted(l[::2])\nresult = l[:]\nfor i in range(0, len(result), 2):\n    result[i] = evens.pop(0)"", ""reason"": ""The candidate code uses a different approach to achieve the same functionality as the reference solution, which introduces unnecessary duplication in terms of logic and structure.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.5,7.4,59
+lora_train_tasks_0_49,HumanEval/37,37,1,"def sort_even(l: list):
+    evens = sorted(l[::2])
+    result = l[:]
+    for i, v in enumerate(evens):
+        result[2 * i] = v
+    return result
+</code>","def sort_even(l: list):
+    evens = sorted(l[::2])
+    result = l[:]
+    for i, v in enumerate(evens):
+        result[2 * i] = v
+    return result",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.01698,0.02585,0.421875,0.5078125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 4, ""line_end"": 5, ""evidence"": ""for i, v in enumerate(evens): result[2 * i] = v"", ""reason"": ""The use of `enumerate` followed by indexing with `2 * i` is less readable than using a simpler loop structure.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,53
+lora_train_tasks_0_49,HumanEval/38,38,0,"def decode_cyclic(s: str):
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]
+    return """".join(groups)
+</code>","def decode_cyclic(s: str):
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]
+    return """".join(groups)",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 31, in <module>
+  File ""<string>"", line 26, in check
+NameError: name 'encode_cyclic' is not defined. Did you mean: 'decode_cyclic'?
+",ok,violations,0.95,0.5,1,E501,E501: Line too long (89 > 88),not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,0.0,0.0,0.0,1.45,86
+lora_train_tasks_0_49,HumanEval/38,38,1,"def decode_cyclic(s: str):
+    """"""
+    takes as input string encoded with encode_cyclic function. Returns decoded string.
+    """"""
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]
+    return """".join(groups)
+</code>","def decode_cyclic(s: str):
+    """"""
+    takes as input string encoded with encode_cyclic function. Returns decoded string.
+    """"""
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]
+    return """".join(groups)",ok,ok,ok,,,,failed,returncode=1,"Traceback (most recent call last):
+  File ""<string>"", line 34, in <module>
+  File ""<string>"", line 29, in check
+NameError: name 'encode_cyclic' is not defined. Did you mean: 'decode_cyclic'?
+",ok,violations,0.95,0.5,1,E501,E501: Line too long (89 > 88),not_eligible,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,not_eligible,0.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.95,1.0,0.0,0.0,0.0,1.45,109
+lora_train_tasks_0_49,HumanEval/39,39,0,"def prime_fib(n: int):
+    def is_prime(num: int) -> bool:
+        if num < 2:
+            return False
+        if num == 2:
+            return True
+        if num % 2 == 0:
+            return False
+        for i in range(3, int(num**0.5) + 1, 2):
+            if num % i == 0:
+                return False
+        return True
+
+    def fibonacci():
+        a, b = 0, 1
+        while True:
+            yield a
+            a, b = b, a + b
+
+    count = 0
+    for fib_num in fibonacci():
+        if is_prime(fib_num):
+            count += 1
+            if count == n:
+                return fib_num
+</code>","def prime_fib(n: int):
+    def is_prime(num: int) -> bool:
+        if num < 2:
+            return False
+        if num == 2:
+            return True
+        if num % 2 == 0:
+            return False
+        for i in range(3, int(num**0.5) + 1, 2):
+            if num % i == 0:
+                return False
+        return True
+
+    def fibonacci():
+        a, b = 0, 1
+        while True:
+            yield a
+            a, b = b, a + b
+
+    count = 0
+    for fib_num in fibonacci():
+        if is_prime(fib_num):
+            count += 1
+            if count == n:
+                return fib_num",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,7.558571,14.029357,0.8203125,1.71875,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 21, ""line_end"": 25, ""evidence"": ""for fib_num in fibonacci(): ... if count == n: return fib_num"", ""reason"": ""The code can be made slightly more readable by combining the increment and check into a single line.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,181
+lora_train_tasks_0_49,HumanEval/39,39,1,"def prime_fib(n: int):
+    def is_prime(k: int) -> bool:
+        if k < 2:
+            return False
+        if k == 2:
+            return True
+        if k % 2 == 0:
+            return False
+        for i in range(3, int(k**0.5) + 1, 2):
+            if k % i == 0:
+                return False
+        return True
+
+    count = 0
+    a, b = 0, 1
+    while True:
+        a, b = b, a + b
+        if is_prime(a):
+            count += 1
+            if count == n:
+                return a
+</code>","def prime_fib(n: int):
+    def is_prime(k: int) -> bool:
+        if k < 2:
+            return False
+        if k == 2:
+            return True
+        if k % 2 == 0:
+            return False
+        for i in range(3, int(k**0.5) + 1, 2):
+            if k % i == 0:
+                return False
+        return True
+
+    count = 0
+    a, b = 0, 1
+    while True:
+        a, b = b, a + b
+        if is_prime(a):
+            count += 1
+            if count == n:
+                return a",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,7.734987,14.029357,0.3984375,1.71875,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 16, ""line_end"": 21, ""evidence"": ""while True:\n    a, b = b, a + b\n    if is_prime(a):\n        count += 1\n        if count == n:\n            return a"", ""reason"": ""The use of `while True` with a manual break condition (via return) can be considered sub-readable. A more explicit termination condition could improve clarity.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Conditional Block"", ""severity"": ""low"", ""line_start"": 18, ""line_end"": 21, ""evidence"": ""if is_prime(a):\n    count += 1\n    if count == n:\n        return a"", ""reason"": ""The conditional block can be simplified. The check `if count == n:` can be moved outside the `is_prime` check, reducing redundancy.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.7,7.7,161
+lora_train_tasks_0_49,HumanEval/40,40,0,"def triples_sum_to_zero(l: list):
+    l.sort()
+    n = len(l)
+    for i in range(n - 2):
+        left = i + 1
+        right = n - 1
+        while left < right:
+            total = l[i] + l[left] + l[right]
+            if total == 0:
+                return True
+            elif total < 0:
+                left += 1
+            else:
+                right -= 1
+    return False
+</code>","def triples_sum_to_zero(l: list):
+    l.sort()
+    n = len(l)
+    for i in range(n - 2):
+        left = i + 1
+        right = n - 1
+        while left < right:
+            total = l[i] + l[left] + l[right]
+            if total == 0:
+                return True
+            elif total < 0:
+                left += 1
+            else:
+                right -= 1
+    return False",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.02381,0.059471,0.203125,0.265625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""l.sort()"", ""reason"": ""Sorting the list in-place can be confusing since it modifies the original list, which might not be expected behavior.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 11, ""line_end"": 14, ""evidence"": ""elif total < 0:\n    left += 1\nelse:\n    right -= 1"", ""reason"": ""The 'else' block after the 'elif' can be removed since it is the last condition and will always execute if the previous conditions fail.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.7,7.6000000000000005,114
+lora_train_tasks_0_49,HumanEval/40,40,1,"def triples_sum_to_zero(l: list):
+    l.sort()
+    n = len(l)
+    for i in range(n - 2):
+        left = i + 1
+        right = n - 1
+        while left < right:
+            total = l[i] + l[left] + l[right]
+            if total == 0:
+                return True
+            elif total < 0:
+                left += 1
+            else:
+                right -= 1
+    return False
+</code>","def triples_sum_to_zero(l: list):
+    l.sort()
+    n = len(l)
+    for i in range(n - 2):
+        left = i + 1
+        right = n - 1
+        while left < right:
+            total = l[i] + l[left] + l[right]
+            if total == 0:
+                return True
+            elif total < 0:
+                left += 1
+            else:
+                right -= 1
+    return False",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.02376,0.059471,0.203125,0.265625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""l.sort()"", ""reason"": ""Sorting the list in-place can be confusing since it modifies the original list, which might not be expected behavior.""}, {""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 11, ""line_end"": 14, ""evidence"": ""elif total < 0:\n    left += 1\nelse:\n    right -= 1"", ""reason"": ""The 'else' block after the 'elif' can be removed since it is the last condition and will always execute if the previous conditions fail.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.7,7.6000000000000005,114
+lora_train_tasks_0_49,HumanEval/41,41,0,"def car_race_collision(n: int):
+    return n * n
+</code>","def car_race_collision(n: int):
+    return n * n",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.0027,0.0028,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return n * n"", ""reason"": ""The use of multiplication (n * n) instead of exponentiation (n ** 2) makes the code less readable given the mathematical context of the problem.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,18
+lora_train_tasks_0_49,HumanEval/41,41,1,"def car_race_collision(n: int):
+    return n * n
+</code>","def car_race_collision(n: int):
+    return n * n",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00276,0.0028,0.08984375,0.08984375,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return n * n"", ""reason"": ""The use of multiplication (n * n) instead of exponentiation (n ** 2) makes the code less readable given the mathematical context of the problem.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,18
+lora_train_tasks_0_49,HumanEval/42,42,0,"def incr_list(l: list):
+    return [x + 1 for x in l]
+</code>","def incr_list(l: list):
+    return [x + 1 for x in l]",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.008811,0.00899,0.4296875,0.4296875,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,1.0,7.9,24
+lora_train_tasks_0_49,HumanEval/42,42,1,"def incr_list(l: list):
+    return [x + 1 for x in l]
+</code>","def incr_list(l: list):
+    return [x + 1 for x in l]",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.00882,0.00899,0.4296875,0.4296875,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,1.0,7.9,24
+lora_train_tasks_0_49,HumanEval/43,43,0,"def pairs_sum_to_zero(l):
+    seen = set()
+    for num in l:
+        if -num in seen:
+            return True
+        seen.add(num)
+    return False
+</code>","def pairs_sum_to_zero(l):
+    seen = set()
+    for num in l:
+        if -num in seen:
+            return True
+        seen.add(num)
+    return False",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.8733333333333334,1.0,0.3666666666666667,0.017891,0.03337,0.8671875,0.2890625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def pairs_sum_to_zero(l):"", ""reason"": ""The parameter 'l' is a single letter and does not provide any meaningful information about its purpose or content.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""seen = set()"", ""reason"": ""The variable 'seen' is not descriptive enough to convey its purpose clearly. A more descriptive name like 'seen_numbers' would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.8733333333333334,0.7,7.473333333333334,46
+lora_train_tasks_0_49,HumanEval/43,43,1,"def pairs_sum_to_zero(l):
+    seen = set()
+    for num in l:
+        if -num in seen:
+            return True
+        seen.add(num)
+    return False
+</code>","def pairs_sum_to_zero(l):
+    seen = set()
+    for num in l:
+        if -num in seen:
+            return True
+        seen.add(num)
+    return False",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,0.8733333333333334,1.0,0.3666666666666667,0.017901,0.03337,0.8671875,0.2890625,,ok,0.7,2,"[{""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 1, ""line_end"": 1, ""evidence"": ""def pairs_sum_to_zero(l):"", ""reason"": ""The parameter 'l' is a single letter and does not provide any meaningful information about its purpose or content.""}, {""category"": ""Readability"", ""subcategory"": ""Confusing Variable Naming"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""seen = set()"", ""reason"": ""The variable 'seen' is not descriptive enough to convey its purpose clearly. A more descriptive name like 'seen_numbers' would improve readability.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,0.8733333333333334,0.7,7.473333333333334,46
+lora_train_tasks_0_49,HumanEval/44,44,0,"def change_base(x: int, base: int):
+    if x == 0:
+        return ""0""
+    digits = []
+    while x:
+        digits.append(str(x % base))
+        x //= base
+    return """".join(digits[::-1])
+</code>","def change_base(x: int, base: int):
+    if x == 0:
+        return ""0""
+    digits = []
+    while x:
+        digits.append(str(x % base))
+        x //= base
+    return """".join(digits[::-1])",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.7916479101513457,0.8950704225352113,0.3779578606158833,0.04686,0.03813,0.6025390625,0.20703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 8, ""evidence"": ""while x:\n    digits.append(str(x % base))\n    x //= base\nreturn ''.join(digits[::-1])"", ""reason"": ""The use of a list to collect digits and then reversing it before joining can be simplified. Directly constructing the string in reverse order would be more straightforward.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.7916479101513457,0.85,7.641647910151345,62
+lora_train_tasks_0_49,HumanEval/44,44,1,"def change_base(x: int, base: int):
+    if x == 0:
+        return '0'
+    digits = []
+    while x:
+        digits.append(str(x % base))
+        x //= base
+    return ''.join(digits[::-1])
+</code>","def change_base(x: int, base: int):
+    if x == 0:
+        return '0'
+    digits = []
+    while x:
+        digits.append(str(x % base))
+        x //= base
+    return ''.join(digits[::-1])",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,0.769710436027523,0.8676485798804328,0.3779578606158833,0.048341,0.03813,0.6025390625,0.20703125,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 5, ""line_end"": 8, ""evidence"": ""while x:\n    digits.append(str(x % base))\n    x //= base\nreturn ''.join(digits[::-1])"", ""reason"": ""The use of a list to collect digits and then reversing it before joining can be simplified. Directly constructing the string in reverse order would be more readable.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,0.769710436027523,0.85,7.619710436027523,62
+lora_train_tasks_0_49,HumanEval/45,45,0,"def triangle_area(a, h):
+    return a * h / 2
+</code>","def triangle_area(a, h):
+    return a * h / 2",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00313,0.00338,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,20
+lora_train_tasks_0_49,HumanEval/45,45,1,"def triangle_area(a, h):
+    return a * h / 2
+</code>","def triangle_area(a, h):
+    return a * h / 2",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00338,0.00338,0.08984375,0.08984375,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,20
+lora_train_tasks_0_49,HumanEval/46,46,0,"def fib4(n: int):
+    if n == 0 or n == 1 or n == 3:
+        return 0
+    if n == 2:
+        return 2
+    a, b, c, d = 0, 0, 2, 0
+    for _ in range(4, n + 1):
+        a, b, c, d = b, c, d, a + b + c + d
+    return d
+</code>","def fib4(n: int):
+    if n == 0 or n == 1 or n == 3:
+        return 0
+    if n == 2:
+        return 2
+    a, b, c, d = 0, 0, 2, 0
+    for _ in range(4, n + 1):
+        a, b, c, d = b, c, d, a + b + c + d
+    return d",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01425,0.01506,0.125,0.203125,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.0,7.0,109
+lora_train_tasks_0_49,HumanEval/46,46,1,"def fib4(n: int):
+    if n == 0 or n == 1 or n == 3:
+        return 0
+    if n == 2:
+        return 2
+
+    a, b, c, d = 0, 0, 2, 0
+    for _ in range(4, n + 1):
+        a, b, c, d = b, c, d, a + b + c + d
+    return d
+</code>","def fib4(n: int):
+    if n == 0 or n == 1 or n == 3:
+        return 0
+    if n == 2:
+        return 2
+
+    a, b, c, d = 0, 0, 2, 0
+    for _ in range(4, n + 1):
+        a, b, c, d = b, c, d, a + b + c + d
+    return d",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.01458,0.01506,0.125,0.203125,,error,0.0,0,[],timed out,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.0,7.0,109
+lora_train_tasks_0_49,HumanEval/47,47,0,"def median(l: list):
+    s = sorted(l)
+    n = len(s)
+    if n % 2 == 1:
+        return s[n // 2]
+    else:
+        return (s[n // 2 - 1] + s[n // 2]) / 2
+</code>","def median(l: list):
+    s = sorted(l)
+    n = len(s)
+    if n % 2 == 1:
+        return s[n // 2]
+    else:
+        return (s[n // 2 - 1] + s[n // 2]) / 2",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.010811,0.011681,0.2265625,0.2265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 7, ""evidence"": ""return (s[n // 2 - 1] + s[n // 2]) / 2"", ""reason"": ""The 'else' block after a 'return' statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,71
+lora_train_tasks_0_49,HumanEval/47,47,1,"def median(l: list):
+    sorted_l = sorted(l)
+    n = len(sorted_l)
+    if n % 2 == 1:
+        return sorted_l[n // 2]
+    else:
+        return (sorted_l[n // 2 - 1] + sorted_l[n // 2]) / 2
+</code>","def median(l: list):
+    sorted_l = sorted(l)
+    n = len(sorted_l)
+    if n % 2 == 1:
+        return sorted_l[n // 2]
+    else:
+        return (sorted_l[n // 2 - 1] + sorted_l[n // 2]) / 2",ok,ok,ok,,,,passed,,,ok,violations,0.9,1.0,1,E741,E741: Ambiguous variable name: `l`,ok,1.0,1.0,1.0,0.011,0.011681,0.2265625,0.2265625,,ok,0.85,1,"[{""category"": ""Maintainability"", ""subcategory"": ""Unnecessary Else"", ""severity"": ""low"", ""line_start"": 6, ""line_end"": 7, ""evidence"": ""return (sorted_l[n // 2 - 1] + sorted_l[n // 2]) / 2"", ""reason"": ""The 'else' block after a 'return' statement is unnecessary and can be removed without changing the behavior.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,0.9,1.0,1.0,1.0,0.85,7.75,76
+lora_train_tasks_0_49,HumanEval/48,48,0,"def is_palindrome(text: str):
+    return text == text[::-1]
+</code>","def is_palindrome(text: str):
+    return text == text[::-1]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00548,0.01079,0.08984375,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,21
+lora_train_tasks_0_49,HumanEval/48,48,1,"def is_palindrome(text: str):
+    return text == text[::-1]
+</code>","def is_palindrome(text: str):
+    return text == text[::-1]",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.005971,0.01079,0.08984375,0.125,,ok,1.0,0,[],,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,1.0,8.0,21
+lora_train_tasks_0_49,HumanEval/49,49,0,"def modp(n: int, p: int):
+    return pow(2, n, p)
+</code>","def modp(n: int, p: int):
+    return pow(2, n, p)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00665,0.170822,0.08984375,0.15625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return pow(2, n, p)"", ""reason"": ""The use of the built-in pow function with three arguments, while correct, may be less readable to someone unfamiliar with this specific usage of the function.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,26
+lora_train_tasks_0_49,HumanEval/49,49,1,"def modp(n: int, p: int):
+    return pow(2, n, p)
+</code>","def modp(n: int, p: int):
+    return pow(2, n, p)",ok,ok,ok,,,,passed,,,ok,ok,1.0,0.0,0,,,ok,1.0,1.0,1.0,0.00677,0.170822,0.08984375,0.15625,,ok,0.85,1,"[{""category"": ""Readability"", ""subcategory"": ""Sub-readable Code Exists"", ""severity"": ""low"", ""line_start"": 2, ""line_end"": 2, ""evidence"": ""return pow(2, n, p)"", ""reason"": ""The use of the built-in pow function with three arguments, while correct, may be less readable to someone unfamiliar with this specific usage of the function.""}]",,qwen-32b,taxonomy_readability_maintainability_v3,50d083c5e7100d2e,1.0,1.0,1.0,1.0,1.0,1.0,0.85,7.85,26

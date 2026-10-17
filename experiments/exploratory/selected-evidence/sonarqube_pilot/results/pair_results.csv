@@ -1,0 +1,9 @@
+pair_id,target,clean_issues,clean_rules,degraded_issues,degraded_rules,direction
+string_concatenation,performance,0,,0,,tie
+file_open_in_loop,performance,0,,0,,tie
+broad_silent_exception,reliability,0,,1,python:S5754,correct
+branch_complexity,maintainability,0,,0,,tie
+shell_injection,security,0,,0,,tie
+unused_dead_code,maintainability,0,,0,,tie
+nested_allocation,performance,0,,0,,tie
+blocking_call_in_loop,performance,0,,0,,tie

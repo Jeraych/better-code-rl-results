@@ -1,0 +1,13 @@
+rule,line,message,clean_code_attribute,impact_severity
+python:S3776,430,Refactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.,FOCUSED,
+python:S1192,589,"Define a constant instead of duplicating this literal ""</code>"" 3 times.",DISTINCT,
+python:S5713,730,Remove this redundant Exception class; it derives from another which is already caught.,LOGICAL,
+python:S1192,892,"Define a constant instead of duplicating this literal ""Confusing Variable Naming"" 3 times.",DISTINCT,
+python:S1192,898,"Define a constant instead of duplicating this literal ""Unnecessary Else"" 3 times.",DISTINCT,
+python:S3776,1023,Refactor this function to reduce its Cognitive Complexity from 25 to the 15 allowed.,FOCUSED,
+python:S6353,1102,Use concise character class syntax '\w' instead of '[A-Za-z0-9_]'.,CLEAR,
+python:S3776,1128,Refactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.,FOCUSED,
+python:S5713,1241,Remove this redundant Exception class; it derives from another which is already caught.,LOGICAL,
+python:S3776,1249,Refactor this function to reduce its Cognitive Complexity from 43 to the 15 allowed.,FOCUSED,
+python:S3358,1335,Extract this nested conditional expression into an independent statement.,CLEAR,
+python:S1192,2008,"Define a constant instead of duplicating this literal ""def add_one(x):\n    return x + 1"" 3 times.",DISTINCT,

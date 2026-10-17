@@ -1,0 +1,178 @@
+<PRIVATE_PATH> UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+TEST_MODE=eval_lora_holdout
+MODEL_NAME=unsloth/Qwen3.6-27B
+Create fresh LoRA adapter for training: False
+Model loading: max_seq_length=1024, load_in_4bit=True, load_in_8bit=False, load_in_16bit=False, full_finetuning=False, fast_inference=False
+LoRA: rank=16, alpha=16, target_modules=all-linear
+Prompting: use_chat_template=True, qwen_enable_thinking=False
+Run sizing: num_generations=2, eval_num_generations=2, per_device_train_batch_size=2, gradient_accumulation_steps=1, max_prompt_length=512, max_completion_length=192, max_steps=300, tiny_max_steps=1
+Logging completions to grpo_mvp_logs/20260603_195928/samples.jsonl and grpo_mvp_logs/20260603_195928/samples.csv
+==((====))==  Unsloth 2026.5.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.559 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<05:34,  3.54it/s]Loading weights:   0%|          | 2/1184 [00:00<05:36,  3.51it/s]Loading weights:   1%|          | 13/1184 [00:00<00:42, 27.42it/s]Loading weights:   2%|▏         | 27/1184 [00:00<00:21, 53.71it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:15, 74.33it/s]Loading weights:   4%|▍         | 51/1184 [00:01<00:14, 78.58it/s]Loading weights:   6%|▌         | 67/1184 [00:01<00:11, 98.35it/s]Loading weights:   7%|▋         | 82/1184 [00:01<00:10, 106.72it/s]Loading weights:   8%|▊         | 99/1184 [00:01<00:09, 117.38it/s]Loading weights:  10%|▉         | 116/1184 [00:01<00:08, 130.83it/s]Loading weights:  11%|█         | 132/1184 [00:01<00:07, 136.25it/s]Loading weights:  12%|█▏        | 147/1184 [00:01<00:07, 129.85it/s]Loading weights:  14%|█▎        | 161/1184 [00:01<00:08, 117.76it/s]Loading weights:  15%|█▍        | 174/1184 [00:01<00:08, 119.07it/s]Loading weights:  16%|█▌        | 188/1184 [00:02<00:08, 122.67it/s]Loading weights:  17%|█▋        | 202/1184 [00:02<00:07, 125.17it/s]Loading weights:  18%|█▊        | 215/1184 [00:02<00:07, 125.37it/s]Loading weights:  19%|█▉        | 228/1184 [00:02<00:07, 123.38it/s]Loading weights:  20%|██        | 241/1184 [00:02<00:07, 122.93it/s]Loading weights:  22%|██▏       | 255/1184 [00:02<00:07, 125.44it/s]Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 125.69it/s]Loading weights:  24%|██▎       | 281/1184 [00:02<00:07, 124.67it/s]Loading weights:  25%|██▍       | 295/1184 [00:02<00:06, 129.06it/s]Loading weights:  26%|██▋       | 311/1184 [00:03<00:06, 130.38it/s]Loading weights:  28%|██▊       | 328/1184 [00:03<00:06, 140.56it/s]Loading weights:  29%|██▉       | 344/1184 [00:03<00:05, 143.51it/s]Loading weights:  30%|███       | 359/1184 [00:03<00:05, 137.97it/s]Loading weights:  32%|███▏      | 373/1184 [00:03<00:06, 123.01it/s]Loading weights:  33%|███▎      | 387/1184 [00:03<00:06, 127.44it/s]Loading weights:  34%|███▍      | 408/1184 [00:03<00:05, 145.09it/s]Loading weights:  36%|███▌      | 423/1184 [00:03<00:06, 125.71it/s]Loading weights:  37%|███▋      | 438/1184 [00:03<00:05, 131.70it/s]Loading weights:  38%|███▊      | 453/1184 [00:04<00:05, 129.88it/s]Loading weights:  40%|███▉      | 470/1184 [00:04<00:05, 133.24it/s]Loading weights:  41%|████▏     | 489/1184 [00:04<00:04, 147.19it/s]Loading weights:  43%|████▎     | 505/1184 [00:04<00:05, 135.54it/s]Loading weights:  44%|████▍     | 520/1184 [00:04<00:05, 132.00it/s]Loading weights:  46%|████▌     | 539/1184 [00:04<00:04, 143.98it/s]Loading weights:  47%|████▋     | 554/1184 [00:04<00:04, 142.31it/s]Loading weights:  48%|████▊     | 570/1184 [00:04<00:04, 144.79it/s]Loading weights:  49%|████▉     | 585/1184 [00:05<00:04, 125.82it/s]Loading weights:  51%|█████     | 606/1184 [00:05<00:04, 143.00it/s]Loading weights:  52%|█████▏    | 621/1184 [00:05<00:03, 141.88it/s]Loading weights:  54%|█████▎    | 636/1184 [00:05<00:04, 126.19it/s]Loading weights:  55%|█████▍    | 651/1184 [00:05<00:04, 127.19it/s]Loading weights:  57%|█████▋    | 673/1184 [00:05<00:03, 145.79it/s]Loading weights:  58%|█████▊    | 688/1184 [00:05<00:03, 126.76it/s]Loading weights:  59%|█████▉    | 704/1184 [00:05<00:03, 129.25it/s]Loading weights:  61%|██████    | 721/1184 [00:06<00:03, 139.43it/s]Loading weights:  62%|██████▏   | 736/1184 [00:06<00:03, 126.85it/s]Loading weights:  64%|██████▍   | 755/1184 [00:06<00:03, 141.45it/s]Loading weights:  65%|██████▌   | 770/1184 [00:06<00:03, 136.61it/s]Loading weights:  66%|██████▋   | 785/1184 [00:06<00:03, 132.78it/s]Loading weights:  68%|██████▊   | 804/1184 [00:06<00:02, 143.85it/s]Loading weights:  69%|██████▉   | 819/1184 [00:06<00:02, 142.05it/s]Loading weights:  71%|███████   | 835/1184 [00:06<00:02, 143.57it/s]Loading weights:  72%|███████▏  | 850/1184 [00:06<00:02, 124.43it/s]Loading weights:  89%|████████▉ | 1051/1184 [00:07<00:00, 597.46it/s]Loading weights: 100%|██████████| 1184/1184 [00:07<00:00, 165.03it/s]
+
+============================================================
+DEBUG - raw prompt the model will receive:
+============================================================
+<|im_start|>system
+You are a Python coding assistant.
+Return only a complete valid Python solution, then immediately close with </code>.
+Do not explain.
+Do not include markdown.
+Do not include text after </code>.
+Do not include examples after the solution.<|im_end|>
+<|im_start|>user
+### Instruction:
+
+
+def encode_shift(s: str):
+    """
+    returns encoded string by shifting every character by 5 in the alphabet.
+    """
+    return "".join([chr(((ord(ch) + 5 - ord("a")) % 26) + ord("a")) for ch in s])
+
+
+def decode_shift(s: str):
+    """
+    takes as input string encoded with encode_shift function. Returns decoded string.
+    """
+
+
+### Response:<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<code>
+
+============================================================
+
+Loading LoRA from: grpo_mvp_lora
+
+============================================================
+Starting evaluation: lora_holdout_tasks_50_99
+============================================================
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/50 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/51 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=0 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/52 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/53 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/54 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/55 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/56 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=0 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/57 gen=1 reward=5.5 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/58 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/59 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/60 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/61 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/62 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/63 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/64 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/65 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/66 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/67 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/68 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/69 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/70 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/71 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/72 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/73 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/74 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/75 gen=1 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[lora_holdout_tasks_50_99] task=HumanEval/76 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/77 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/78 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/79 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/80 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=0 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[lora_holdout_tasks_50_99] task=HumanEval/81 gen=1 reward=0.0 format=missing_closing_tag syntax=syntax_error style=not_checked violations=0 reason=syntax_error
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/82 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/83 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/84 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/85 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/86 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/87 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=0 reward=5.75 format=ok syntax=ok style=violations violations=1 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/88 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/89 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/90 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/91 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/92 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/93 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/94 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/95 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/96 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/97 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/98 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=0 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+[lora_holdout_tasks_50_99] task=HumanEval/99 gen=1 reward=6.0 format=ok syntax=ok style=ok violations=0 reason=none
+
+============================================================
+Evaluation summary: lora_holdout_tasks_50_99
+============================================================
+Rows: 100
+Avg reward: 5.795
+Avg style score: 0.965
+Format OK rate: 97.00%
+Syntax OK rate: 97.00%
+Style OK rate: 91.00%
+Avg completion length: 70.0
+Saved to: grpo_mvp_logs/20260603_195928/eval_lora_holdout_tasks.csv

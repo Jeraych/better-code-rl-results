@@ -1,0 +1,12 @@
+{
+  "label": "lora_tiny_tasks_0_4",
+  "rows": 5,
+  "tasks": 5,
+  "avg_reward": 3.6399999999999997,
+  "test_pass_rate_generation_level": 0.6,
+  "pass_at_any_generation_task_level": 0.6,
+  "format_ok_rate": 0.0,
+  "compile_ok_rate": 0.8,
+  "avg_completion_length": 256.0,
+  "output_csv": "<PRIVATE_PATH>"
+}

@@ -1,0 +1,644 @@
+{
+  "configuration": {
+    "sample_size": 50,
+    "seed": 42
+  },
+  "fixtures": [
+    {
+      "path": "dataset/fixtures/concat_str_conversion_positive.py",
+      "fixture_id": "concat_str_conversion_positive",
+      "family": "string_concat",
+      "codequal_rule": "inefficient-string-concatenation",
+      "expected": true,
+      "entrypoint": "build_text"
+    },
+    {
+      "path": "dataset/fixtures/concat_plain_string_positive.py",
+      "fixture_id": "concat_plain_string_positive",
+      "family": "string_concat",
+      "codequal_rule": "inefficient-string-concatenation",
+      "expected": true,
+      "entrypoint": "build_text"
+    },
+    {
+      "path": "dataset/fixtures/concat_fstring_positive.py",
+      "fixture_id": "concat_fstring_positive",
+      "family": "string_concat",
+      "codequal_rule": "inefficient-string-concatenation",
+      "expected": true,
+      "entrypoint": "build_text"
+    },
+    {
+      "path": "dataset/fixtures/concat_join_control.py",
+      "fixture_id": "concat_join_control",
+      "family": "string_concat",
+      "codequal_rule": "inefficient-string-concatenation",
+      "expected": false,
+      "entrypoint": "build_text"
+    },
+    {
+      "path": "dataset/fixtures/concat_numeric_sum_control.py",
+      "fixture_id": "concat_numeric_sum_control",
+      "family": "string_concat",
+      "codequal_rule": "inefficient-string-concatenation",
+      "expected": false,
+      "entrypoint": "total_values"
+    },
+    {
+      "path": "dataset/fixtures/resource_file_open_positive.py",
+      "fixture_id": "resource_file_open_positive",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": true,
+      "entrypoint": "write_lines"
+    },
+    {
+      "path": "dataset/fixtures/resource_sleep_positive.py",
+      "fixture_id": "resource_sleep_positive",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": true,
+      "entrypoint": "wait_for_items"
+    },
+    {
+      "path": "dataset/fixtures/resource_list_growth_positive.py",
+      "fixture_id": "resource_list_growth_positive",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": true,
+      "entrypoint": "copy_values"
+    },
+    {
+      "path": "dataset/fixtures/resource_numeric_accumulator_control.py",
+      "fixture_id": "resource_numeric_accumulator_control",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": false,
+      "entrypoint": "total_values"
+    },
+    {
+      "path": "dataset/fixtures/resource_append_control.py",
+      "fixture_id": "resource_append_control",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": false,
+      "entrypoint": "copy_values"
+    },
+    {
+      "path": "dataset/fixtures/resource_open_handle_control.py",
+      "fixture_id": "resource_open_handle_control",
+      "family": "resource_loop",
+      "codequal_rule": "excessive-resource-consumption",
+      "expected": false,
+      "entrypoint": "write_lines"
+    },
+    {
+      "path": "dataset/fixtures/exception_bare_positive.py",
+      "fixture_id": "exception_bare_positive",
+      "family": "exception_handling",
+      "codequal_rule": "improper-exception-handling",
+      "expected": true,
+      "entrypoint": "parse_number"
+    },
+    {
+      "path": "dataset/fixtures/exception_broad_positive.py",
+      "fixture_id": "exception_broad_positive",
+      "family": "exception_handling",
+      "codequal_rule": "improper-exception-handling",
+      "expected": true,
+      "entrypoint": "parse_number"
+    },
+    {
+      "path": "dataset/fixtures/exception_specific_control.py",
+      "fixture_id": "exception_specific_control",
+      "family": "exception_handling",
+      "codequal_rule": "improper-exception-handling",
+      "expected": false,
+      "entrypoint": "parse_number"
+    },
+    {
+      "path": "dataset/fixtures/exception_context_manager_control.py",
+      "fixture_id": "exception_context_manager_control",
+      "family": "exception_handling",
+      "codequal_rule": "improper-exception-handling",
+      "expected": false,
+      "entrypoint": "read_text"
+    },
+    {
+      "path": "dataset/fixtures/structure_many_attributes_positive.py",
+      "fixture_id": "structure_many_attributes_positive",
+      "family": "data_structure",
+      "codequal_rule": "excessive-data-structure-complexity",
+      "expected": true,
+      "entrypoint": "make_record"
+    },
+    {
+      "path": "dataset/fixtures/structure_nested_positive.py",
+      "fixture_id": "structure_nested_positive",
+      "family": "data_structure",
+      "codequal_rule": "excessive-data-structure-complexity",
+      "expected": true,
+      "entrypoint": "nested_value"
+    },
+    {
+      "path": "dataset/fixtures/structure_lookup_table_control.py",
+      "fixture_id": "structure_lookup_table_control",
+      "family": "data_structure",
+      "codequal_rule": "excessive-data-structure-complexity",
+      "expected": false,
+      "entrypoint": "label"
+    },
+    {
+      "path": "dataset/fixtures/structure_small_dict_control.py",
+      "fixture_id": "structure_small_dict_control",
+      "family": "data_structure",
+      "codequal_rule": "excessive-data-structure-complexity",
+      "expected": false,
+      "entrypoint": "coordinates"
+    },
+    {
+      "path": "dataset/fixtures/complexity_branch_positive.py",
+      "fixture_id": "complexity_branch_positive",
+      "family": "complexity",
+      "codequal_rule": "complexity-",
+      "expected": true,
+      "entrypoint": "classify"
+    },
+    {
+      "path": "dataset/fixtures/complexity_lookup_control.py",
+      "fixture_id": "complexity_lookup_control",
+      "family": "complexity",
+      "codequal_rule": "complexity-",
+      "expected": false,
+      "entrypoint": "classify"
+    },
+    {
+      "path": "dataset/fixtures/dead_helper_positive.py",
+      "fixture_id": "dead_helper_positive",
+      "family": "dead_code",
+      "codequal_rule": "unused-function",
+      "expected": true,
+      "entrypoint": "double_values"
+    },
+    {
+      "path": "dataset/fixtures/entrypoint_control.py",
+      "fixture_id": "entrypoint_control",
+      "family": "dead_code",
+      "codequal_rule": "unused-function",
+      "expected": false,
+      "entrypoint": "rolling_max"
+    }
+  ],
+  "run13": [
+    {
+      "path": "dataset/run13/00_HumanEval_22_349_1.py",
+      "run_id": "20260703_160727",
+      "step": 349,
+      "completion_index": 1,
+      "task_id": "HumanEval/22",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/01_HumanEval_30_62_1.py",
+      "run_id": "20260703_160727",
+      "step": 62,
+      "completion_index": 1,
+      "task_id": "HumanEval/30",
+      "ai_judge_score": 0.7,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/02_HumanEval_36_12_1.py",
+      "run_id": "20260703_160727",
+      "step": 12,
+      "completion_index": 1,
+      "task_id": "HumanEval/36",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/03_HumanEval_37_406_1.py",
+      "run_id": "20260703_160727",
+      "step": 406,
+      "completion_index": 1,
+      "task_id": "HumanEval/37",
+      "ai_judge_score": 0.5,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/04_HumanEval_33_149_1.py",
+      "run_id": "20260703_160727",
+      "step": 149,
+      "completion_index": 1,
+      "task_id": "HumanEval/33",
+      "ai_judge_score": 0.65,
+      "style_score": 0.85
+    },
+    {
+      "path": "dataset/run13/05_HumanEval_30_132_0.py",
+      "run_id": "20260703_160727",
+      "step": 132,
+      "completion_index": 0,
+      "task_id": "HumanEval/30",
+      "ai_judge_score": 0.7,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/06_HumanEval_49_121_0.py",
+      "run_id": "20260703_160727",
+      "step": 121,
+      "completion_index": 0,
+      "task_id": "HumanEval/49",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/07_HumanEval_17_76_1.py",
+      "run_id": "20260703_160727",
+      "step": 76,
+      "completion_index": 1,
+      "task_id": "HumanEval/17",
+      "ai_judge_score": 0.65,
+      "style_score": 0.8
+    },
+    {
+      "path": "dataset/run13/08_HumanEval_23_404_0.py",
+      "run_id": "20260703_160727",
+      "step": 404,
+      "completion_index": 0,
+      "task_id": "HumanEval/23",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/09_HumanEval_45_56_1.py",
+      "run_id": "20260703_160727",
+      "step": 56,
+      "completion_index": 1,
+      "task_id": "HumanEval/45",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/10_HumanEval_2_371_0.py",
+      "run_id": "20260703_160727",
+      "step": 371,
+      "completion_index": 0,
+      "task_id": "HumanEval/2",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/11_HumanEval_37_406_0.py",
+      "run_id": "20260703_160727",
+      "step": 406,
+      "completion_index": 0,
+      "task_id": "HumanEval/37",
+      "ai_judge_score": 0.5,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/12_HumanEval_8_489_1.py",
+      "run_id": "20260703_160727",
+      "step": 489,
+      "completion_index": 1,
+      "task_id": "HumanEval/8",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/13_HumanEval_11_299_0.py",
+      "run_id": "20260703_160727",
+      "step": 299,
+      "completion_index": 0,
+      "task_id": "HumanEval/11",
+      "ai_judge_score": 0.65,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/14_HumanEval_33_48_0.py",
+      "run_id": "20260703_160727",
+      "step": 48,
+      "completion_index": 0,
+      "task_id": "HumanEval/33",
+      "ai_judge_score": 0.65,
+      "style_score": 0.75
+    },
+    {
+      "path": "dataset/run13/15_HumanEval_16_323_1.py",
+      "run_id": "20260703_160727",
+      "step": 323,
+      "completion_index": 1,
+      "task_id": "HumanEval/16",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/16_HumanEval_21_232_0.py",
+      "run_id": "20260703_160727",
+      "step": 232,
+      "completion_index": 0,
+      "task_id": "HumanEval/21",
+      "ai_judge_score": 0.65,
+      "style_score": 0.95
+    },
+    {
+      "path": "dataset/run13/17_HumanEval_1_17_0.py",
+      "run_id": "20260703_160727",
+      "step": 17,
+      "completion_index": 0,
+      "task_id": "HumanEval/1",
+      "ai_judge_score": 0.85,
+      "style_score": 0.85
+    },
+    {
+      "path": "dataset/run13/18_HumanEval_13_15_0.py",
+      "run_id": "20260703_160727",
+      "step": 15,
+      "completion_index": 0,
+      "task_id": "HumanEval/13",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/19_HumanEval_12_51_0.py",
+      "run_id": "20260703_160727",
+      "step": 51,
+      "completion_index": 0,
+      "task_id": "HumanEval/12",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/20_HumanEval_23_118_1.py",
+      "run_id": "20260703_160727",
+      "step": 118,
+      "completion_index": 1,
+      "task_id": "HumanEval/23",
+      "ai_judge_score": 0.65,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/21_HumanEval_9_126_0.py",
+      "run_id": "20260703_160727",
+      "step": 126,
+      "completion_index": 0,
+      "task_id": "HumanEval/9",
+      "ai_judge_score": 0.85,
+      "style_score": 0.85
+    },
+    {
+      "path": "dataset/run13/22_HumanEval_1_277_0.py",
+      "run_id": "20260703_160727",
+      "step": 277,
+      "completion_index": 0,
+      "task_id": "HumanEval/1",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/23_HumanEval_44_329_1.py",
+      "run_id": "20260703_160727",
+      "step": 329,
+      "completion_index": 1,
+      "task_id": "HumanEval/44",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/24_HumanEval_12_13_1.py",
+      "run_id": "20260703_160727",
+      "step": 13,
+      "completion_index": 1,
+      "task_id": "HumanEval/12",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/25_HumanEval_48_307_0.py",
+      "run_id": "20260703_160727",
+      "step": 307,
+      "completion_index": 0,
+      "task_id": "HumanEval/48",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/26_HumanEval_13_108_1.py",
+      "run_id": "20260703_160727",
+      "step": 108,
+      "completion_index": 1,
+      "task_id": "HumanEval/13",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/27_HumanEval_1_391_1.py",
+      "run_id": "20260703_160727",
+      "step": 391,
+      "completion_index": 1,
+      "task_id": "HumanEval/1",
+      "ai_judge_score": 0.7,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/28_HumanEval_24_355_0.py",
+      "run_id": "20260703_160727",
+      "step": 355,
+      "completion_index": 0,
+      "task_id": "HumanEval/24",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/29_HumanEval_45_384_0.py",
+      "run_id": "20260703_160727",
+      "step": 384,
+      "completion_index": 0,
+      "task_id": "HumanEval/45",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/30_HumanEval_40_229_1.py",
+      "run_id": "20260703_160727",
+      "step": 229,
+      "completion_index": 1,
+      "task_id": "HumanEval/40",
+      "ai_judge_score": 0.7,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/31_HumanEval_14_119_1.py",
+      "run_id": "20260703_160727",
+      "step": 119,
+      "completion_index": 1,
+      "task_id": "HumanEval/14",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/32_HumanEval_14_245_1.py",
+      "run_id": "20260703_160727",
+      "step": 245,
+      "completion_index": 1,
+      "task_id": "HumanEval/14",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/33_HumanEval_16_323_0.py",
+      "run_id": "20260703_160727",
+      "step": 323,
+      "completion_index": 0,
+      "task_id": "HumanEval/16",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/34_HumanEval_17_151_0.py",
+      "run_id": "20260703_160727",
+      "step": 151,
+      "completion_index": 0,
+      "task_id": "HumanEval/17",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/35_HumanEval_20_444_0.py",
+      "run_id": "20260703_160727",
+      "step": 444,
+      "completion_index": 0,
+      "task_id": "HumanEval/20",
+      "ai_judge_score": 0.7,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/36_HumanEval_1_478_0.py",
+      "run_id": "20260703_160727",
+      "step": 478,
+      "completion_index": 0,
+      "task_id": "HumanEval/1",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/37_HumanEval_7_3_0.py",
+      "run_id": "20260703_160727",
+      "step": 3,
+      "completion_index": 0,
+      "task_id": "HumanEval/7",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/38_HumanEval_27_417_1.py",
+      "run_id": "20260703_160727",
+      "step": 417,
+      "completion_index": 1,
+      "task_id": "HumanEval/27",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/39_HumanEval_4_442_1.py",
+      "run_id": "20260703_160727",
+      "step": 442,
+      "completion_index": 1,
+      "task_id": "HumanEval/4",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/40_HumanEval_21_87_1.py",
+      "run_id": "20260703_160727",
+      "step": 87,
+      "completion_index": 1,
+      "task_id": "HumanEval/21",
+      "ai_judge_score": 0.7,
+      "style_score": 0.95
+    },
+    {
+      "path": "dataset/run13/41_HumanEval_22_382_0.py",
+      "run_id": "20260703_160727",
+      "step": 382,
+      "completion_index": 0,
+      "task_id": "HumanEval/22",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/42_HumanEval_27_184_0.py",
+      "run_id": "20260703_160727",
+      "step": 184,
+      "completion_index": 0,
+      "task_id": "HumanEval/27",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/43_HumanEval_26_85_1.py",
+      "run_id": "20260703_160727",
+      "step": 85,
+      "completion_index": 1,
+      "task_id": "HumanEval/26",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/44_HumanEval_17_117_0.py",
+      "run_id": "20260703_160727",
+      "step": 117,
+      "completion_index": 0,
+      "task_id": "HumanEval/17",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/45_HumanEval_35_419_1.py",
+      "run_id": "20260703_160727",
+      "step": 419,
+      "completion_index": 1,
+      "task_id": "HumanEval/35",
+      "ai_judge_score": 0.85,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/46_HumanEval_40_182_0.py",
+      "run_id": "20260703_160727",
+      "step": 182,
+      "completion_index": 0,
+      "task_id": "HumanEval/40",
+      "ai_judge_score": 0.7,
+      "style_score": 0.9
+    },
+    {
+      "path": "dataset/run13/47_HumanEval_6_50_1.py",
+      "run_id": "20260703_160727",
+      "step": 50,
+      "completion_index": 1,
+      "task_id": "HumanEval/6",
+      "ai_judge_score": 0.7,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/48_HumanEval_36_209_1.py",
+      "run_id": "20260703_160727",
+      "step": 209,
+      "completion_index": 1,
+      "task_id": "HumanEval/36",
+      "ai_judge_score": 0.85,
+      "style_score": 1.0
+    },
+    {
+      "path": "dataset/run13/49_HumanEval_4_54_0.py",
+      "run_id": "20260703_160727",
+      "step": 54,
+      "completion_index": 0,
+      "task_id": "HumanEval/4",
+      "ai_judge_score": 1.0,
+      "style_score": 1.0
+    }
+  ]
+}

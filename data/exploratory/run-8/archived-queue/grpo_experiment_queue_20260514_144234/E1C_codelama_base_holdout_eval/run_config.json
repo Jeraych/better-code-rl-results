@@ -1,0 +1,32 @@
+{
+  "TEST_MODE": "eval_base_holdout",
+  "MODEL_NAME": "codellama/CodeLlama-7b-Python-hf",
+  "RUN_NAME": "E1C_codelama_base_holdout_eval",
+  "RUN_ROOT": "<PRIVATE_PATH>",
+  "LOG_DIR": "<PRIVATE_PATH>",
+  "OUTPUT_DIR": "<PRIVATE_PATH>",
+  "LORA_OUTPUT_DIR": "<PRIVATE_PATH>",
+  "LORA_PATH": "<PRIVATE_PATH>",
+  "SEED": 42,
+  "WORLD_SIZE": 1,
+  "NUM_GENERATIONS": 4,
+  "EVAL_NUM_GENERATIONS": 1,
+  "PER_DEVICE_TRAIN_BATCH_SIZE": 1,
+  "GRADIENT_ACCUMULATION_STEPS": 2,
+  "GLOBAL_TRAIN_BATCH": 2,
+  "MAX_STEPS": 500,
+  "MAX_COMPLETION_LENGTH": 256,
+  "LEARNING_RATE": 5e-06,
+  "LORA_R": 16,
+  "LORA_ALPHA": 16,
+  "LORA_TARGET_MODULES": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "STRICT_AFTER_CODE": true
+}

@@ -1,0 +1,1701 @@
+{
+  "summary": [
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "rows": 1000,
+      "steps": 500,
+      "tasks": 50,
+      "pass_rate": 0.929,
+      "failed_rate": 0.008,
+      "not_run_rate": 0.063,
+      "format_ok_rate": 0.977,
+      "syntax_ok_rate": null,
+      "compile_ok_rate": 0.937,
+      "runtime_ok_rate": 0.937,
+      "style_clean_rate": null,
+      "style_violation_rate": null,
+      "avg_style_score": null,
+      "avg_style_score_passed": null,
+      "style_checked_rate": 0.0,
+      "style_clean_among_checked": null,
+      "avg_style_score_checked": null,
+      "avg_style_violations_checked": null,
+      "avg_reward_tests": 0.929,
+      "avg_reward_style": null,
+      "avg_reward_performance": null,
+      "avg_reward_total": 5.59,
+      "avg_reward_total_normalized": 0.9316666666666666,
+      "avg_completion_tokens": 137.89,
+      "performance_eligible_rate": 0.0,
+      "avg_performance_score_correct": null,
+      "median_performance_score_correct": null,
+      "p10_performance_score_correct": null,
+      "perfect_performance_rate_correct": null,
+      "avg_runtime_score_correct": null,
+      "avg_memory_score_correct": null,
+      "avg_elapsed_ms_correct": null,
+      "avg_reference_ms_correct": null,
+      "avg_peak_kb_correct": null,
+      "avg_reference_peak_kb_correct": null
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "rows": 600,
+      "steps": 300,
+      "tasks": 50,
+      "pass_rate": 0.0,
+      "failed_rate": 0.0,
+      "not_run_rate": 1.0,
+      "format_ok_rate": 0.94,
+      "syntax_ok_rate": 0.9616666666666667,
+      "compile_ok_rate": 0.9616666666666667,
+      "runtime_ok_rate": 0.0,
+      "style_clean_rate": 0.7,
+      "style_violation_rate": 0.26166666666666666,
+      "avg_style_score": 0.9355000000000001,
+      "avg_style_score_passed": null,
+      "style_checked_rate": 0.9616666666666667,
+      "style_clean_among_checked": 0.7279029462738301,
+      "avg_style_score_checked": 0.972790294627383,
+      "avg_style_violations_checked": 0.3587521663778163,
+      "avg_reward_tests": 0.9355000000000001,
+      "avg_reward_style": 0.9355000000000001,
+      "avg_reward_performance": null,
+      "avg_reward_total": 5.628333333333333,
+      "avg_reward_total_normalized": 0.9380555555555555,
+      "avg_completion_tokens": 76.29,
+      "performance_eligible_rate": 0.0,
+      "avg_performance_score_correct": null,
+      "median_performance_score_correct": null,
+      "p10_performance_score_correct": null,
+      "perfect_performance_rate_correct": null,
+      "avg_runtime_score_correct": null,
+      "avg_memory_score_correct": null,
+      "avg_elapsed_ms_correct": null,
+      "avg_reference_ms_correct": null,
+      "avg_peak_kb_correct": null,
+      "avg_reference_peak_kb_correct": null
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "rows": 1000,
+      "steps": 500,
+      "tasks": 50,
+      "pass_rate": 0.854,
+      "failed_rate": 0.038,
+      "not_run_rate": 0.108,
+      "format_ok_rate": 0.887,
+      "syntax_ok_rate": 0.892,
+      "compile_ok_rate": 0.892,
+      "runtime_ok_rate": 0.892,
+      "style_clean_rate": 0.681,
+      "style_violation_rate": 0.211,
+      "avg_style_score": 0.8715,
+      "avg_style_score_passed": 0.9776932084309136,
+      "style_checked_rate": 0.892,
+      "style_clean_among_checked": 0.7634529147982063,
+      "avg_style_score_checked": 0.977017937219731,
+      "avg_style_violations_checked": 0.26681614349775784,
+      "avg_reward_tests": 0.854,
+      "avg_reward_style": 0.8715,
+      "avg_reward_performance": null,
+      "avg_reward_total": 5.160000000000001,
+      "avg_reward_total_normalized": 0.8600000000000002,
+      "avg_completion_tokens": 66.143,
+      "performance_eligible_rate": 0.0,
+      "avg_performance_score_correct": null,
+      "median_performance_score_correct": null,
+      "p10_performance_score_correct": null,
+      "perfect_performance_rate_correct": null,
+      "avg_runtime_score_correct": null,
+      "avg_memory_score_correct": null,
+      "avg_elapsed_ms_correct": null,
+      "avg_reference_ms_correct": null,
+      "avg_peak_kb_correct": null,
+      "avg_reference_peak_kb_correct": null
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "rows": 1000,
+      "steps": 500,
+      "tasks": 50,
+      "pass_rate": 0.96,
+      "failed_rate": 0.033,
+      "not_run_rate": 0.007,
+      "format_ok_rate": 0.981,
+      "syntax_ok_rate": 0.994,
+      "compile_ok_rate": 0.994,
+      "runtime_ok_rate": 0.993,
+      "style_clean_rate": 0.712,
+      "style_violation_rate": 0.282,
+      "avg_style_score": 0.9631500000000001,
+      "avg_style_score_passed": 0.9709375,
+      "style_checked_rate": 0.994,
+      "style_clean_among_checked": 0.716297786720322,
+      "avg_style_score_checked": 0.9689637826961771,
+      "avg_style_violations_checked": 0.4396378269617706,
+      "avg_reward_tests": 0.96,
+      "avg_reward_style": 0.9631500000000001,
+      "avg_reward_performance": 0.936420010235267,
+      "avg_reward_total": 6.715120010235267,
+      "avg_reward_total_normalized": 0.9593028586050381,
+      "avg_completion_tokens": 80.579,
+      "performance_eligible_rate": 0.96,
+      "avg_performance_score_correct": 0.9754375106617365,
+      "median_performance_score_correct": 1.0,
+      "p10_performance_score_correct": 0.8820069815501613,
+      "perfect_performance_rate_correct": 0.8114583333333333,
+      "avg_runtime_score_correct": 0.9812690008186433,
+      "avg_memory_score_correct": 0.9521115500341092,
+      "avg_elapsed_ms_correct": 1.2828741500000003,
+      "avg_reference_ms_correct": 2.0897232406249997,
+      "avg_peak_kb_correct": 9.532778930664062,
+      "avg_reference_peak_kb_correct": 38.30518391927083
+    }
+  ],
+  "windows": {
+    "9": {
+      "first": {
+        "pass_rate": 0.92,
+        "style_score": null,
+        "style_clean_rate": null,
+        "performance_score": null,
+        "reward_total": 5.547999999999999
+      },
+      "last": {
+        "pass_rate": 0.93,
+        "style_score": null,
+        "style_clean_rate": null,
+        "performance_score": null,
+        "reward_total": 5.598
+      }
+    },
+    "10": {
+      "first": {
+        "pass_rate": 0.0,
+        "style_score": 0.8835,
+        "style_clean_rate": 0.5,
+        "performance_score": null,
+        "reward_total": 5.3075
+      },
+      "last": {
+        "pass_rate": 0.0,
+        "style_score": 0.9405000000000001,
+        "style_clean_rate": 0.75,
+        "performance_score": null,
+        "reward_total": 5.6575
+      }
+    },
+    "11": {
+      "first": {
+        "pass_rate": 0.55,
+        "style_score": 0.612,
+        "style_clean_rate": 0.44,
+        "performance_score": null,
+        "reward_total": 3.3929999999999993
+      },
+      "last": {
+        "pass_rate": 0.9,
+        "style_score": 0.911,
+        "style_clean_rate": 0.73,
+        "performance_score": null,
+        "reward_total": 5.428000000000002
+      }
+    },
+    "12": {
+      "first": {
+        "pass_rate": 0.93,
+        "style_score": 0.9135000000000002,
+        "style_clean_rate": 0.45,
+        "performance_score": 0.8997764622969051,
+        "reward_total": 6.492276462296904
+      },
+      "last": {
+        "pass_rate": 0.96,
+        "style_score": 0.9780000000000001,
+        "style_clean_rate": 0.77,
+        "performance_score": 0.9422500495178144,
+        "reward_total": 6.738250049517815
+      }
+    }
+  },
+  "trends": [
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 0,
+      "step_end": 24,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 127.46
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 25,
+      "step_end": 49,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 139.0
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 50,
+      "step_end": 74,
+      "pass_rate": 0.9,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 127.8
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 75,
+      "step_end": 99,
+      "pass_rate": 0.96,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 124.86
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 100,
+      "step_end": 124,
+      "pass_rate": 0.98,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 134.74
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 125,
+      "step_end": 149,
+      "pass_rate": 0.82,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.92,
+      "completion_tokens": 137.84
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 150,
+      "step_end": 174,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 140.02
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 175,
+      "step_end": 199,
+      "pass_rate": 0.94,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 138.18
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 200,
+      "step_end": 224,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 140.7
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 225,
+      "step_end": 249,
+      "pass_rate": 0.94,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 140.82
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 250,
+      "step_end": 274,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 141.1
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 275,
+      "step_end": 299,
+      "pass_rate": 0.96,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 146.8
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 300,
+      "step_end": 324,
+      "pass_rate": 0.9,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 152.38
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 325,
+      "step_end": 349,
+      "pass_rate": 1.0,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 135.66
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 350,
+      "step_end": 374,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 123.94
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 375,
+      "step_end": 399,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 148.6
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 400,
+      "step_end": 424,
+      "pass_rate": 0.98,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 139.88
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 425,
+      "step_end": 449,
+      "pass_rate": 0.9,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 140.56
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 450,
+      "step_end": 474,
+      "pass_rate": 0.94,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 146.84
+    },
+    {
+      "run": "9",
+      "label": "Run 9 \u2014 correctness only",
+      "step_start": 475,
+      "step_end": 499,
+      "pass_rate": 0.92,
+      "style_score": null,
+      "style_clean_rate": null,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 130.62
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 0,
+      "step_end": 24,
+      "pass_rate": 0.0,
+      "style_score": 0.8830000000000001,
+      "style_clean_rate": 0.4,
+      "performance_score": null,
+      "format_ok_rate": 0.86,
+      "completion_tokens": 104.66
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 25,
+      "step_end": 49,
+      "pass_rate": 0.0,
+      "style_score": 0.884,
+      "style_clean_rate": 0.6,
+      "performance_score": null,
+      "format_ok_rate": 0.84,
+      "completion_tokens": 108.66
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 50,
+      "step_end": 74,
+      "pass_rate": 0.0,
+      "style_score": 0.929,
+      "style_clean_rate": 0.62,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 80.12
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 75,
+      "step_end": 99,
+      "pass_rate": 0.0,
+      "style_score": 0.97,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 66.32
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 100,
+      "step_end": 124,
+      "pass_rate": 0.0,
+      "style_score": 0.9840000000000001,
+      "style_clean_rate": 0.84,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 57.34
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 125,
+      "step_end": 149,
+      "pass_rate": 0.0,
+      "style_score": 0.9169999999999999,
+      "style_clean_rate": 0.68,
+      "performance_score": null,
+      "format_ok_rate": 0.9,
+      "completion_tokens": 79.54
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 150,
+      "step_end": 174,
+      "pass_rate": 0.0,
+      "style_score": 0.981,
+      "style_clean_rate": 0.82,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 69.58
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 175,
+      "step_end": 199,
+      "pass_rate": 0.0,
+      "style_score": 0.8959999999999999,
+      "style_clean_rate": 0.66,
+      "performance_score": null,
+      "format_ok_rate": 0.9,
+      "completion_tokens": 69.98
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 200,
+      "step_end": 224,
+      "pass_rate": 0.0,
+      "style_score": 0.9230000000000002,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 71.9
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 225,
+      "step_end": 249,
+      "pass_rate": 0.0,
+      "style_score": 0.978,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 64.98
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 250,
+      "step_end": 274,
+      "pass_rate": 0.0,
+      "style_score": 0.938,
+      "style_clean_rate": 0.72,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 69.8
+    },
+    {
+      "run": "10",
+      "label": "Run 10 \u2014 style only",
+      "step_start": 275,
+      "step_end": 299,
+      "pass_rate": 0.0,
+      "style_score": 0.943,
+      "style_clean_rate": 0.78,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 72.6
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 0,
+      "step_end": 24,
+      "pass_rate": 0.58,
+      "style_score": 0.653,
+      "style_clean_rate": 0.38,
+      "performance_score": null,
+      "format_ok_rate": 0.58,
+      "completion_tokens": 96.22
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 25,
+      "step_end": 49,
+      "pass_rate": 0.52,
+      "style_score": 0.571,
+      "style_clean_rate": 0.5,
+      "performance_score": null,
+      "format_ok_rate": 0.5,
+      "completion_tokens": 96.48
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 50,
+      "step_end": 74,
+      "pass_rate": 0.78,
+      "style_score": 0.794,
+      "style_clean_rate": 0.56,
+      "performance_score": null,
+      "format_ok_rate": 0.78,
+      "completion_tokens": 70.42
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 75,
+      "step_end": 99,
+      "pass_rate": 0.88,
+      "style_score": 0.9039999999999999,
+      "style_clean_rate": 0.6,
+      "performance_score": null,
+      "format_ok_rate": 0.9,
+      "completion_tokens": 65.54
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 100,
+      "step_end": 124,
+      "pass_rate": 0.94,
+      "style_score": 0.975,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 58.16
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 125,
+      "step_end": 149,
+      "pass_rate": 0.8,
+      "style_score": 0.8169999999999998,
+      "style_clean_rate": 0.6,
+      "performance_score": null,
+      "format_ok_rate": 0.86,
+      "completion_tokens": 69.96
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 150,
+      "step_end": 174,
+      "pass_rate": 0.88,
+      "style_score": 0.904,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 66.52
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 175,
+      "step_end": 199,
+      "pass_rate": 0.92,
+      "style_score": 0.938,
+      "style_clean_rate": 0.72,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 56.72
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 200,
+      "step_end": 224,
+      "pass_rate": 0.9,
+      "style_score": 0.904,
+      "style_clean_rate": 0.76,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 63.32
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 225,
+      "step_end": 249,
+      "pass_rate": 0.9,
+      "style_score": 0.9179999999999999,
+      "style_clean_rate": 0.7,
+      "performance_score": null,
+      "format_ok_rate": 0.92,
+      "completion_tokens": 60.9
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 250,
+      "step_end": 274,
+      "pass_rate": 0.9,
+      "style_score": 0.88,
+      "style_clean_rate": 0.7,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 61.28
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 275,
+      "step_end": 299,
+      "pass_rate": 0.88,
+      "style_score": 0.883,
+      "style_clean_rate": 0.72,
+      "performance_score": null,
+      "format_ok_rate": 0.9,
+      "completion_tokens": 63.5
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 300,
+      "step_end": 324,
+      "pass_rate": 0.88,
+      "style_score": 0.88,
+      "style_clean_rate": 0.7,
+      "performance_score": null,
+      "format_ok_rate": 0.92,
+      "completion_tokens": 68.28
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 325,
+      "step_end": 349,
+      "pass_rate": 0.94,
+      "style_score": 0.9430000000000001,
+      "style_clean_rate": 0.78,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 56.06
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 350,
+      "step_end": 374,
+      "pass_rate": 0.9,
+      "style_score": 0.9460000000000001,
+      "style_clean_rate": 0.8,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 59.98
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 375,
+      "step_end": 399,
+      "pass_rate": 0.92,
+      "style_score": 0.8959999999999999,
+      "style_clean_rate": 0.68,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 65.1
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 400,
+      "step_end": 424,
+      "pass_rate": 0.88,
+      "style_score": 0.894,
+      "style_clean_rate": 0.64,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 61.2
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 425,
+      "step_end": 449,
+      "pass_rate": 0.88,
+      "style_score": 0.9079999999999999,
+      "style_clean_rate": 0.8,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 61.4
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 450,
+      "step_end": 474,
+      "pass_rate": 0.88,
+      "style_score": 0.922,
+      "style_clean_rate": 0.74,
+      "performance_score": null,
+      "format_ok_rate": 0.94,
+      "completion_tokens": 59.98
+    },
+    {
+      "run": "11",
+      "label": "Run 11 \u2014 correctness + style",
+      "step_start": 475,
+      "step_end": 499,
+      "pass_rate": 0.92,
+      "style_score": 0.9,
+      "style_clean_rate": 0.72,
+      "performance_score": null,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 61.84
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 0,
+      "step_end": 24,
+      "pass_rate": 0.92,
+      "style_score": 0.9189999999999999,
+      "style_clean_rate": 0.38,
+      "performance_score": 0.893441938874496,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 127.44
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 25,
+      "step_end": 49,
+      "pass_rate": 0.94,
+      "style_score": 0.9079999999999999,
+      "style_clean_rate": 0.52,
+      "performance_score": 0.9061109857193144,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 136.0
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 50,
+      "step_end": 74,
+      "pass_rate": 0.94,
+      "style_score": 0.938,
+      "style_clean_rate": 0.5,
+      "performance_score": 0.9193217418367885,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 123.58
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 75,
+      "step_end": 99,
+      "pass_rate": 1.0,
+      "style_score": 0.9560000000000001,
+      "style_clean_rate": 0.7,
+      "performance_score": 0.9686412586941785,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 79.8
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 100,
+      "step_end": 124,
+      "pass_rate": 1.0,
+      "style_score": 0.9730000000000001,
+      "style_clean_rate": 0.76,
+      "performance_score": 0.9866354311680398,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 59.48
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 125,
+      "step_end": 149,
+      "pass_rate": 0.92,
+      "style_score": 0.9520000000000001,
+      "style_clean_rate": 0.7,
+      "performance_score": 0.8960273484318695,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 82.74
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 150,
+      "step_end": 174,
+      "pass_rate": 0.98,
+      "style_score": 0.9840000000000001,
+      "style_clean_rate": 0.84,
+      "performance_score": 0.9520667108952392,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 69.02
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 175,
+      "step_end": 199,
+      "pass_rate": 0.9,
+      "style_score": 0.973,
+      "style_clean_rate": 0.68,
+      "performance_score": 0.8851775244371334,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 72.44
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 200,
+      "step_end": 224,
+      "pass_rate": 0.96,
+      "style_score": 0.961,
+      "style_clean_rate": 0.76,
+      "performance_score": 0.9308024802731282,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 76.0
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 225,
+      "step_end": 249,
+      "pass_rate": 0.96,
+      "style_score": 0.978,
+      "style_clean_rate": 0.76,
+      "performance_score": 0.9526388278388279,
+      "format_ok_rate": 0.98,
+      "completion_tokens": 66.32
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 250,
+      "step_end": 274,
+      "pass_rate": 0.98,
+      "style_score": 0.976,
+      "style_clean_rate": 0.72,
+      "performance_score": 0.9509241013613275,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 74.54
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 275,
+      "step_end": 299,
+      "pass_rate": 0.98,
+      "style_score": 0.9819999999999999,
+      "style_clean_rate": 0.8,
+      "performance_score": 0.9490203491248477,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 67.7
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 300,
+      "step_end": 324,
+      "pass_rate": 0.96,
+      "style_score": 0.9540000000000001,
+      "style_clean_rate": 0.72,
+      "performance_score": 0.9282870498935613,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 84.28
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 325,
+      "step_end": 349,
+      "pass_rate": 0.96,
+      "style_score": 0.982,
+      "style_clean_rate": 0.8,
+      "performance_score": 0.9438425901466144,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 56.42
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 350,
+      "step_end": 374,
+      "pass_rate": 0.96,
+      "style_score": 0.9860000000000001,
+      "style_clean_rate": 0.84,
+      "performance_score": 0.9421399730614087,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 66.84
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 375,
+      "step_end": 399,
+      "pass_rate": 0.96,
+      "style_score": 0.9690000000000001,
+      "style_clean_rate": 0.68,
+      "performance_score": 0.9285550832757085,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 78.02
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 400,
+      "step_end": 424,
+      "pass_rate": 0.96,
+      "style_score": 0.93,
+      "style_clean_rate": 0.7,
+      "performance_score": 0.9335495348511199,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 82.32
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 425,
+      "step_end": 449,
+      "pass_rate": 1.0,
+      "style_score": 0.986,
+      "style_clean_rate": 0.84,
+      "performance_score": 0.9767171757861093,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 66.44
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 450,
+      "step_end": 474,
+      "pass_rate": 0.92,
+      "style_score": 0.976,
+      "style_clean_rate": 0.74,
+      "performance_score": 0.8916216742495192,
+      "format_ok_rate": 0.96,
+      "completion_tokens": 77.06
+    },
+    {
+      "run": "12",
+      "label": "Run 12 \u2014 correctness + style + performance",
+      "step_start": 475,
+      "step_end": 499,
+      "pass_rate": 1.0,
+      "style_score": 0.98,
+      "style_clean_rate": 0.8,
+      "performance_score": 0.9928784247861097,
+      "format_ok_rate": 1.0,
+      "completion_tokens": 65.14
+    }
+  ],
+  "direct_comparison": {
+    "run11_to_run12": {
+      "pass_rate": 0.10599999999999998,
+      "format_ok_rate": 0.09399999999999997,
+      "syntax_ok_rate": 0.10199999999999998,
+      "compile_ok_rate": 0.10199999999999998,
+      "style_clean_rate": 0.030999999999999917,
+      "avg_style_score": 0.09165000000000001,
+      "avg_style_score_passed": -0.006755708430913554,
+      "style_clean_among_checked": -0.047155128077884356,
+      "avg_style_score_checked": -0.008054154523553847,
+      "avg_style_violations_checked": 0.17282168346401278,
+      "avg_completion_tokens": 14.435999999999993
+    },
+    "task_summary": {
+      "task_count": 50,
+      "pass_delta_mean": 0.10600000000000004,
+      "pass_delta_ci_low": 0.04400268541299555,
+      "pass_delta_ci_high": 0.16799731458700454,
+      "pass_tasks_improved": 29,
+      "pass_tasks_tied": 19,
+      "pass_tasks_worse": 2,
+      "style_delta_mean": 0.09165,
+      "style_delta_ci_low": 0.03061244579340929,
+      "style_delta_ci_high": 0.1526875542065907,
+      "style_tasks_improved": 25,
+      "style_tasks_tied": 21,
+      "style_tasks_worse": 4
+    }
+  },
+  "task_comparison": [
+    {
+      "task_id": "HumanEval/0",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.09999999999999998,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/1",
+      "run11_pass_rate": 0.85,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.15000000000000002,
+      "run11_style_score": 0.8875,
+      "run12_style_score": 0.9625,
+      "style_delta": 0.07500000000000007
+    },
+    {
+      "task_id": "HumanEval/10",
+      "run11_pass_rate": 0.5,
+      "run12_pass_rate": 0.9,
+      "pass_delta": 0.4,
+      "run11_style_score": 0.65,
+      "run12_style_score": 0.915,
+      "style_delta": 0.265
+    },
+    {
+      "task_id": "HumanEval/11",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 1.0,
+      "run12_style_score": 0.9925,
+      "style_delta": -0.007499999999999951
+    },
+    {
+      "task_id": "HumanEval/12",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/13",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/14",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/15",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9974999999999999,
+      "run12_style_score": 0.9974999999999999,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/16",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/17",
+      "run11_pass_rate": 0.85,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.15000000000000002,
+      "run11_style_score": 0.8400000000000001,
+      "run12_style_score": 0.97,
+      "style_delta": 0.1299999999999999
+    },
+    {
+      "task_id": "HumanEval/18",
+      "run11_pass_rate": 0.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 1.0,
+      "run11_style_score": 0.0,
+      "run12_style_score": 0.985,
+      "style_delta": 0.985
+    },
+    {
+      "task_id": "HumanEval/19",
+      "run11_pass_rate": 0.35,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.65,
+      "run11_style_score": 0.4875,
+      "run12_style_score": 0.9349999999999999,
+      "style_delta": 0.44749999999999995
+    },
+    {
+      "task_id": "HumanEval/2",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 0.95,
+      "pass_delta": -0.050000000000000044,
+      "run11_style_score": 1.0,
+      "run12_style_score": 0.95,
+      "style_delta": -0.050000000000000044
+    },
+    {
+      "task_id": "HumanEval/20",
+      "run11_pass_rate": 0.75,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.25,
+      "run11_style_score": 0.9225,
+      "run12_style_score": 0.9550000000000001,
+      "style_delta": 0.032500000000000084
+    },
+    {
+      "task_id": "HumanEval/21",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.09999999999999998,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.985,
+      "style_delta": 0.08499999999999996
+    },
+    {
+      "task_id": "HumanEval/22",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9974999999999999,
+      "run12_style_score": 0.9974999999999999,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/23",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/24",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9949999999999999,
+      "run12_style_score": 0.9949999999999999,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/25",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.9475,
+      "run12_style_score": 0.9800000000000001,
+      "style_delta": 0.032500000000000084
+    },
+    {
+      "task_id": "HumanEval/26",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 0.95,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/27",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/28",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/29",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/3",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/30",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.9,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/31",
+      "run11_pass_rate": 0.85,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.15000000000000002,
+      "run11_style_score": 0.85,
+      "run12_style_score": 1.0,
+      "style_delta": 0.15000000000000002
+    },
+    {
+      "task_id": "HumanEval/32",
+      "run11_pass_rate": 0.0,
+      "run12_pass_rate": 0.1,
+      "pass_delta": 0.1,
+      "run11_style_score": 0.15,
+      "run12_style_score": 0.7075,
+      "style_delta": 0.5575
+    },
+    {
+      "task_id": "HumanEval/33",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 0.95,
+      "pass_delta": 0.04999999999999993,
+      "run11_style_score": 0.8025,
+      "run12_style_score": 0.8,
+      "style_delta": -0.0024999999999999467
+    },
+    {
+      "task_id": "HumanEval/34",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.9,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/35",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.9,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/36",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.95,
+      "run12_style_score": 1.0,
+      "style_delta": 0.050000000000000044
+    },
+    {
+      "task_id": "HumanEval/37",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.8550000000000001,
+      "run12_style_score": 0.8925000000000001,
+      "style_delta": 0.03749999999999998
+    },
+    {
+      "task_id": "HumanEval/38",
+      "run11_pass_rate": 0.0,
+      "run12_pass_rate": 0.25,
+      "pass_delta": 0.25,
+      "run11_style_score": 0.8174999999999999,
+      "run12_style_score": 0.945,
+      "style_delta": 0.12750000000000006
+    },
+    {
+      "task_id": "HumanEval/39",
+      "run11_pass_rate": 0.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 1.0,
+      "run11_style_score": 0.0,
+      "run12_style_score": 1.0,
+      "style_delta": 1.0
+    },
+    {
+      "task_id": "HumanEval/4",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.09999999999999998,
+      "run11_style_score": 0.9400000000000001,
+      "run12_style_score": 0.9925,
+      "style_delta": 0.05249999999999999
+    },
+    {
+      "task_id": "HumanEval/40",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 0.95,
+      "pass_delta": 0.04999999999999993,
+      "run11_style_score": 0.8099999999999999,
+      "run12_style_score": 0.8875,
+      "style_delta": 0.07750000000000001
+    },
+    {
+      "task_id": "HumanEval/41",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.09999999999999998,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.9949999999999999,
+      "style_delta": 0.09499999999999986
+    },
+    {
+      "task_id": "HumanEval/42",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.8550000000000001,
+      "run12_style_score": 0.9,
+      "style_delta": 0.04499999999999993
+    },
+    {
+      "task_id": "HumanEval/43",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.8550000000000001,
+      "run12_style_score": 0.9,
+      "style_delta": 0.04499999999999993
+    },
+    {
+      "task_id": "HumanEval/44",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.95,
+      "run12_style_score": 0.99,
+      "style_delta": 0.040000000000000036
+    },
+    {
+      "task_id": "HumanEval/45",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/46",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 0.95,
+      "pass_delta": -0.050000000000000044,
+      "run11_style_score": 0.985,
+      "run12_style_score": 0.9949999999999999,
+      "style_delta": 0.009999999999999898
+    },
+    {
+      "task_id": "HumanEval/47",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.8550000000000001,
+      "run12_style_score": 0.9,
+      "style_delta": 0.04499999999999993
+    },
+    {
+      "task_id": "HumanEval/48",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/49",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/5",
+      "run11_pass_rate": 0.9,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.09999999999999998,
+      "run11_style_score": 0.9,
+      "run12_style_score": 0.9824999999999999,
+      "style_delta": 0.0824999999999999
+    },
+    {
+      "task_id": "HumanEval/6",
+      "run11_pass_rate": 0.95,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.050000000000000044,
+      "run11_style_score": 0.95,
+      "run12_style_score": 0.9974999999999999,
+      "style_delta": 0.04749999999999999
+    },
+    {
+      "task_id": "HumanEval/7",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 1.0,
+      "run12_style_score": 1.0,
+      "style_delta": 0.0
+    },
+    {
+      "task_id": "HumanEval/8",
+      "run11_pass_rate": 0.85,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.15000000000000002,
+      "run11_style_score": 0.85,
+      "run12_style_score": 0.985,
+      "style_delta": 0.135
+    },
+    {
+      "task_id": "HumanEval/9",
+      "run11_pass_rate": 1.0,
+      "run12_pass_rate": 1.0,
+      "pass_delta": 0.0,
+      "run11_style_score": 0.975,
+      "run12_style_score": 0.9675,
+      "style_delta": -0.007499999999999951
+    }
+  ],
+  "failure_modes": {
+    "9": [
+      {
+        "failure_reason": "none",
+        "count": 937,
+        "rate": 0.937
+      },
+      {
+        "failure_reason": "blocked_pattern",
+        "count": 39,
+        "rate": 0.039
+      },
+      {
+        "failure_reason": "no_code_extracted",
+        "count": 23,
+        "rate": 0.023
+      },
+      {
+        "failure_reason": "syntax_error",
+        "count": 1,
+        "rate": 0.001
+      }
+    ],
+    "10": [
+      {
+        "failure_reason": "none",
+        "count": 577,
+        "rate": 0.9616666666666667
+      },
+      {
+        "failure_reason": "syntax_error",
+        "count": 23,
+        "rate": 0.03833333333333333
+      }
+    ],
+    "11": [
+      {
+        "failure_reason": "none",
+        "count": 892,
+        "rate": 0.892
+      },
+      {
+        "failure_reason": "syntax_error",
+        "count": 67,
+        "rate": 0.067
+      },
+      {
+        "failure_reason": "blocked_pattern",
+        "count": 41,
+        "rate": 0.041
+      }
+    ],
+    "12": [
+      {
+        "failure_reason": "none",
+        "count": 993,
+        "rate": 0.993
+      },
+      {
+        "failure_reason": "syntax_error",
+        "count": 5,
+        "rate": 0.005
+      },
+      {
+        "failure_reason": "runtime_error",
+        "count": 1,
+        "rate": 0.001
+      },
+      {
+        "failure_reason": "blocked_pattern",
+        "count": 1,
+        "rate": 0.001
+      }
+    ]
+  },
+  "style_codes": {
+    "10": [
+      {
+        "code": "E741",
+        "count": 107
+      },
+      {
+        "code": "W293",
+        "count": 64
+      },
+      {
+        "code": "E501",
+        "count": 36
+      }
+    ],
+    "11": [
+      {
+        "code": "E741",
+        "count": 172
+      },
+      {
+        "code": "W293",
+        "count": 49
+      },
+      {
+        "code": "E501",
+        "count": 17
+      }
+    ],
+    "12": [
+      {
+        "code": "E741",
+        "count": 179
+      },
+      {
+        "code": "W293",
+        "count": 151
+      },
+      {
+        "code": "E501",
+        "count": 105
+      },
+      {
+        "code": "W291",
+        "count": 1
+      },
+      {
+        "code": "E731",
+        "count": 1
+      }
+    ]
+  }
+}

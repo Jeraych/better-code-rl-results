@@ -1,0 +1,27 @@
+{
+  "one_time_setup": {
+    "docker_image_pull_completed_seconds": 68.1,
+    "server_startup_seconds": 36.6,
+    "included_in_scan_latency": false
+  },
+  "frozen_scan_1": {
+    "files": 73,
+    "python_sensor_ms": 2237,
+    "scanner_engine_ms": 19502,
+    "end_to_end_ms": 24231,
+    "quality_gate": "PASSED"
+  },
+  "frozen_scan_2": {
+    "files": 73,
+    "python_sensor_ms": 2533,
+    "scanner_engine_ms": 12184,
+    "end_to_end_ms": 15895,
+    "quality_gate": "PASSED"
+  },
+  "exploratory_extension": {
+    "files": 90,
+    "python_sensor_ms": 4990,
+    "end_to_end_ms": 20254,
+    "quality_gate": "FAILED"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "fixture_count": 12,
+  "tp": 6,
+  "tn": 6,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "false_positive_rate": 0.0,
+  "mean_elapsed_ms": 0.06373333333333334,
+  "max_elapsed_ms": 0.1108,
+  "rows": [
+    {
+      "fixture_id": "plain_value",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.1057
+    },
+    {
+      "fixture_id": "str_call",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.0612
+    },
+    {
+      "fixture_id": "f_string",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.047
+    },
+    {
+      "fixture_id": "expanded_add",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.0566
+    },
+    {
+      "fixture_id": "while_loop",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.0675
+    },
+    {
+      "fixture_id": "nested_loop",
+      "expected": true,
+      "predicted": true,
+      "finding_count": 1,
+      "elapsed_ms": 0.1108
+    },
+    {
+      "fixture_id": "numeric_sum",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0837
+    },
+    {
+      "fixture_id": "float_sum",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0489
+    },
+    {
+      "fixture_id": "list_append",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0848
+    },
+    {
+      "fixture_id": "join_generator",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0417
+    },
+    {
+      "fixture_id": "outside_loop",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0257
+    },
+    {
+      "fixture_id": "bytes_growth",
+      "expected": false,
+      "predicted": false,
+      "finding_count": 0,
+      "elapsed_ms": 0.0312
+    }
+  ],
+  "online_gate_passed": true
+}

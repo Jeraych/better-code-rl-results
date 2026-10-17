@@ -1,0 +1,588 @@
+{
+  "screen_version": "2.0",
+  "evidence_status": "controlled_offline_screening",
+  "source": {
+    "path": "results/15/all-metrics/samples.csv",
+    "sha256": "d111b74189b3bad0005c56ca35b089308cebb6f8ffcb7fa99fb37cf83f02f468",
+    "row_count": 1000,
+    "eligible_count": 960
+  },
+  "tool_versions": {
+    "radon": "6.0.1",
+    "vulture": "2.16",
+    "pylint": "4.0.6",
+    "bandit": "1.9.4",
+    "mypy": "2.3.1",
+    "ruff": "0.15.15"
+  },
+  "thresholds": {
+    "fixture_precision": 0.8,
+    "fixture_recall": 0.7,
+    "fixture_false_positive_rate": 0.2,
+    "availability_rate": 0.9,
+    "minimum_activation_rate": 0.05,
+    "maximum_activation_rate": 0.95,
+    "nonzero_group_variance_rate": 0.1,
+    "online_mean_elapsed_ms": 5.0
+  },
+  "fixtures_are_independent_labels": false,
+  "fixture_summaries": {
+    "radon_complexity": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "radon_many_branches_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "CC:classify:12"
+          ],
+          "elapsed_ms": 0.4498
+        },
+        {
+          "id": "radon_boolean_paths_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "CC:eligible:11"
+          ],
+          "elapsed_ms": 0.1281
+        },
+        {
+          "id": "radon_lookup_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 0.111
+        },
+        {
+          "id": "radon_loop_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 0.0847
+        }
+      ]
+    },
+    "vulture_dead_code": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "vulture_unused_helper_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "function:legacy_helper"
+          ],
+          "elapsed_ms": 0.1123
+        },
+        {
+          "id": "vulture_unused_class_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 2,
+          "codes": [
+            "class:LegacyFormatter",
+            "method:render"
+          ],
+          "elapsed_ms": 0.6668
+        },
+        {
+          "id": "vulture_entrypoint_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 0.2028
+        },
+        {
+          "id": "vulture_used_helper_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 0.1279
+        }
+      ]
+    },
+    "pylint_exceptions": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "pylint_bare_except_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "bare-except"
+          ],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_broad_except_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "broad-exception-caught"
+          ],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_specific_except_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_context_manager_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 28.802733333333332
+        }
+      ]
+    },
+    "pylint_structure": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "pylint_many_branches_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "too-many-branches"
+          ],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_many_locals_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "too-many-locals"
+          ],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_lookup_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 28.802733333333332
+        },
+        {
+          "id": "pylint_simple_loop_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 28.802733333333332
+        }
+      ]
+    },
+    "bandit_security": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "bandit_os_system_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "B605"
+          ],
+          "elapsed_ms": 14.438966666666666
+        },
+        {
+          "id": "bandit_eval_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "B307"
+          ],
+          "elapsed_ms": 14.438966666666666
+        },
+        {
+          "id": "bandit_literal_eval_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 14.438966666666666
+        },
+        {
+          "id": "bandit_numeric_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 14.438966666666666
+        }
+      ]
+    },
+    "mypy_type_safety": {
+      "fixture_count": 4,
+      "available_count": 4,
+      "tp": 2,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "deterministic": true,
+      "rows": [
+        {
+          "id": "mypy_wrong_return_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "return-value"
+          ],
+          "elapsed_ms": 37.127629166666665
+        },
+        {
+          "id": "mypy_assignment_positive",
+          "expected": true,
+          "predicted": true,
+          "status": "ok",
+          "finding_count": 1,
+          "codes": [
+            "assignment"
+          ],
+          "elapsed_ms": 37.127629166666665
+        },
+        {
+          "id": "mypy_annotated_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 37.127629166666665
+        },
+        {
+          "id": "mypy_untyped_control",
+          "expected": false,
+          "predicted": false,
+          "status": "ok",
+          "finding_count": 0,
+          "codes": [],
+          "elapsed_ms": 37.127629166666665
+        }
+      ]
+    }
+  },
+  "saved_output_summaries": {
+    "radon_complexity": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 0,
+      "activation_rate": 0.0,
+      "mean_finding_count": 0,
+      "ceiling_rate": 1.0,
+      "mean_elapsed_ms": 0.0961625,
+      "top_codes": {},
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 0,
+      "nonzero_variance_group_rate": 0.0
+    },
+    "vulture_dead_code": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 20,
+      "activation_rate": 0.020833333333333332,
+      "mean_finding_count": 0.021875,
+      "ceiling_rate": 0.9791666666666666,
+      "mean_elapsed_ms": 0.182409375,
+      "top_codes": {
+        "import:List": 10,
+        "function:encode_cyclic": 6,
+        "function:run": 1,
+        "variable:num_to_word": 1,
+        "function:to_word": 1,
+        "function:nth_fib": 1,
+        "import:math": 1
+      },
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 7,
+      "nonzero_variance_group_rate": 0.014736842105263158
+    },
+    "pylint_exceptions": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 0,
+      "activation_rate": 0.0,
+      "mean_finding_count": 0,
+      "ceiling_rate": 1.0,
+      "mean_elapsed_ms": 2.4983952083333336,
+      "top_codes": {},
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 0,
+      "nonzero_variance_group_rate": 0.0
+    },
+    "pylint_structure": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 0,
+      "activation_rate": 0.0,
+      "mean_finding_count": 0,
+      "ceiling_rate": 1.0,
+      "mean_elapsed_ms": 2.4983952083333336,
+      "top_codes": {},
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 0,
+      "nonzero_variance_group_rate": 0.0
+    },
+    "bandit_security": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 2,
+      "activation_rate": 0.0020833333333333333,
+      "mean_finding_count": 0.0020833333333333333,
+      "ceiling_rate": 0.9979166666666667,
+      "mean_elapsed_ms": 1.853193125,
+      "top_codes": {
+        "B101": 2
+      },
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 2,
+      "nonzero_variance_group_rate": 0.004210526315789474
+    },
+    "mypy_type_safety": {
+      "eligible_count": 960,
+      "available_count": 960,
+      "availability_rate": 1.0,
+      "activation_count": 238,
+      "activation_rate": 0.24791666666666667,
+      "mean_finding_count": 0.30416666666666664,
+      "ceiling_rate": 0.7520833333333333,
+      "mean_elapsed_ms": 3.523620520833333,
+      "top_codes": {
+        "name-defined": 278,
+        "var-annotated": 11,
+        "assignment": 2,
+        "return": 1
+      },
+      "error_count": 0,
+      "comparable_group_count": 475,
+      "nonzero_variance_group_count": 28,
+      "nonzero_variance_group_rate": 0.05894736842105263
+    }
+  },
+  "decisions": {
+    "radon_complexity": {
+      "decision": "reject_current_dataset",
+      "role": "targeted_dataset_only",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": false,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": true
+      },
+      "failed_criteria": [
+        "activation",
+        "group_variation"
+      ]
+    },
+    "vulture_dead_code": {
+      "decision": "offline_evaluator_only",
+      "role": "offline_outcome_measure",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": false,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": true
+      },
+      "failed_criteria": [
+        "activation",
+        "group_variation"
+      ]
+    },
+    "pylint_exceptions": {
+      "decision": "reject_current_dataset",
+      "role": "targeted_dataset_only",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": false,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": false
+      },
+      "failed_criteria": [
+        "activation",
+        "group_variation",
+        "in_process"
+      ]
+    },
+    "pylint_structure": {
+      "decision": "reject_current_dataset",
+      "role": "targeted_dataset_only",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": false,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": false
+      },
+      "failed_criteria": [
+        "activation",
+        "group_variation",
+        "in_process"
+      ]
+    },
+    "bandit_security": {
+      "decision": "offline_evaluator_only",
+      "role": "offline_outcome_measure",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": false,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": false
+      },
+      "failed_criteria": [
+        "activation",
+        "group_variation",
+        "in_process"
+      ]
+    },
+    "mypy_type_safety": {
+      "decision": "offline_evaluator_only",
+      "role": "offline_outcome_measure",
+      "criteria": {
+        "fixture_precision": true,
+        "fixture_recall": true,
+        "fixture_false_positive_rate": true,
+        "deterministic": true,
+        "availability": true,
+        "activation": true,
+        "group_variation": false,
+        "online_latency": true,
+        "in_process": false
+      },
+      "failed_criteria": [
+        "group_variation",
+        "in_process"
+      ]
+    }
+  },
+  "limitations": [
+    "Fixtures are small, purpose-built development cases rather than independent external labels.",
+    "Saved outputs come from Run 15 and do not estimate analyzer-caused training effects.",
+    "Pylint, Bandit, and Mypy latency is amortized over a batch and is not per-call online latency.",
+    "The first top-level generated function is treated as the HumanEval entry point for Vulture filtering."
+  ]
+}

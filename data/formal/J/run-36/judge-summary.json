@@ -1,0 +1,9 @@
+{
+  "statuses": {
+    "attempt": 888,
+    "ok": 888,
+    "evaluation": 885
+  },
+  "errors_by_kind": {},
+  "infrastructure_failure_rewards": "Forbidden: failure raises before reward return"
+}
