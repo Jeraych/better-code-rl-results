@@ -392,7 +392,7 @@
     },
     "ruff_score_ties": 108,
     "directional_preferences_with_tied_ruff": 77,
-    "limits": "Two project authors, 50 joint responses and 100 independent responses. Conditional on both-correct, non-identical outputs. Pseudonymous records remain linkable; the user confirmed both authors agree to this private results snapshot on 17 October 2026."
+    "limits": "Two project authors, 50 joint responses and 100 independent responses. Conditional on both-correct, non-identical outputs. Pseudonymous records remain linkable; both author-reviewers have approved inclusion of these minimised study records; pseudonymisation is not a blanket reuse permission."
   },
   "judge": {
     "status": "PASS",
@@ -630,7 +630,7 @@
   },
   "manifest": {
     "status": "PASS",
-    "files": 560
+    "files": 561
   },
   "derived_comparison": {
     "status": "PASS",

@@ -3,11 +3,11 @@ from common import rows
 from collections import defaultdict,Counter
 import statistics
 def reproduce():
- run=rows('experiments/exploratory/selected-evidence/run-12/samples.csv');eligible=[r for r in run if r['performance_status']=='ok'];groups=defaultdict(list)
+ run=rows('exploratory/run-12/samples.csv');eligible=[r for r in run if r['performance_status']=='ok'];groups=defaultdict(list)
  for r in run:groups[r['step']].append(r)
  perf={'rows':len(run),'eligible':len(eligible),'mean_eligible_score':statistics.mean(float(r['performance_score']) for r in eligible),'eligible_at_max':sum(float(r['performance_score'])==1 for r in eligible),'groups':len(groups),'zero_total_reward_variation_groups':sum(len({float(r['reward_total']) for r in g})==1 for g in groups.values())}
  assert (perf['rows'],perf['eligible'],perf['eligible_at_max'],perf['groups'],perf['zero_total_reward_variation_groups'])==(1000,960,779,500,408)
- calibration=rows('experiments/exploratory/selected-evidence/prompt-ab/per_candidate.csv');by=defaultdict(list)
+ calibration=rows('exploratory/prompt-ab/per_candidate.csv');by=defaultdict(list)
  for r in calibration:by[r['instrument']].append(r)
  assert len(calibration)==160 and len(by)==2;summary={}
  for instrument,records in by.items():

@@ -12629,5 +12629,5 @@
       }
     }
   ],
-  "privacy": "Names, response identifiers, exact response times, access codes, calibration and Play responses are excluded. Stable research identifiers remain linkable within this two-author study. The user confirmed both authors agree to this private experiments/results snapshot and the scoped MIT project-code licence on 17 October 2026."
+  "privacy": "Names, response identifiers, exact response times, access codes, calibration and Play responses are excluded. Stable research identifiers remain linkable within this two-author study. Both author-reviewers have approved inclusion of these minimised study records. The project MIT licence covers original code and documentation, not a blanket reuse grant for study data or model outputs."
 }

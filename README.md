@@ -4,7 +4,7 @@ Experiments and saved results for **Can AI Learn to Write Better Code on Its Own
 
 Research authors: **Jacky Zhang and Conrad Ang**. Supervisors: James Tizard and Henry Williams, University of Auckland.
 
-This is a **private experiments/results repository** at [Jeraych/better-code-rl-results](https://github.com/Jeraych/better-code-rl-results). On 17 October 2026, the user confirmed both authors' agreement to this private repository scope and MIT licensing of their original project code. It starts with fresh Git history; earlier source commits remain provenance references to restricted repositories. The individual final report is separate and excluded, together with its manuscript sources, the university logo, the Canvas submission package, signatures and the raw named reviewer export.
+This experiments/results repository is at [Jeraych/better-code-rl-results](https://github.com/Jeraych/better-code-rl-results). Both authors have agreed to inclusion of their project code and saved research records, and to MIT licensing of their original project code. Repository visibility is managed separately; preparation and the initial upload were private. It starts with fresh Git history; earlier source commits remain provenance references to restricted repositories. The individual final report is separate and excluded, together with its manuscript sources, the university logo, the Canvas submission package, signatures and the raw named reviewer export.
 
 This snapshot redacts token-like, address-like and path-like strings from 23 early-pilot completion cells, minimises machine/time metadata and omits environment/settings examples. All formal/Base CSVs, recorded numerical outcomes and human-review responses/code remain intact. [Privacy transformations and exclusions](manifests/privacy-transformations.json) record the source and distributed hashes without exposing removed values.
 
@@ -15,7 +15,7 @@ From the repository root, use Python 3.10 or newer; the checks require only its 
 ```sh
 python analysis/verify_all.py
 python -m unittest discover -s tests -v
-python -m unittest discover -s experiments/exploratory/selected-evidence/remote_run_bundle/tests -v
+python -m unittest discover -s exploratory/remote_run_bundle/tests -v
 python analysis/security_scan.py
 ```
 
@@ -53,7 +53,7 @@ Use the [evidence map](EVIDENCE_MAP.md) for exact files, fields, denominators an
 | [training/scripts/](training/scripts/) | Reconstruction launcher; dry-run is the default |
 | [data/formal/](data/formal/) and [data/base/](data/base/) | All formal training/holdout records and archived Base outputs |
 | [data/human-validation/](data/human-validation/) | Pseudonymous formal responses, frozen catalog and source mappings |
-| [data/exploratory/](data/exploratory/) and [experiments/](experiments/) | Available pilots, screens, failures and clearly labelled prepared-only plans |
+| [exploratory/](exploratory/) | Available pilots, screens, failures and clearly labelled prepared-only plans |
 | [analysis/](analysis/) and [tests/](tests/) | Offline recalculation, diagnostics and CPU regressions |
 | [figures/](figures/) | Three research plots and their plotted data |
 | [manifests/](manifests/) and [verification/](verification/) | Provenance, strict input hashes and verification records |
@@ -70,6 +70,6 @@ The launcher loads no model unless `--execute` is explicit. Read the [training r
 
 ## Citation and rights
 
-[CITATION.cff](CITATION.cff) identifies this collaborative experiments/results artifact. Cite the exact commit used and describe access as restricted; it has no DOI or published release identifier.
+[CITATION.cff](CITATION.cff) identifies this collaborative experiments/results artifact. Cite the exact commit used and report the access available at that time; this artifact has no DOI or published release identifier.
 
-The [MIT license](LICENSE) covers original project code and original supporting documentation. It does not relicense third-party code, benchmark prompts/tests, model material, generated outputs or recorded study data. Saved research records are included within the jointly approved private repository scope; no blanket data or model-output license is added. Consult [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the [retained license texts](licenses/) for the relevant sources and terms. Source/privacy transformations are recorded in [the provenance manifest](manifests/files.csv); raw originals and prior source repositories remain restricted.
+The [MIT license](LICENSE) covers original project code and original supporting documentation. It does not relicense third-party code, benchmark prompts/tests, model material, generated outputs or recorded study data. The authors have approved inclusion of the minimised study records. These records are pseudonymous rather than guaranteed anonymous; no blanket data or model-output license is added. Consult [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the [retained license texts](licenses/) for the relevant sources and terms. Source/privacy transformations are recorded in [the provenance manifest](manifests/files.csv); raw originals and prior source repositories remain restricted.

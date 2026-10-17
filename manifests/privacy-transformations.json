@@ -5,7 +5,7 @@
   "author_instruction": "Both authors agree; scoped MIT project code; omit all final reports, logos, token-like strings and private environment material before new private upload.",
   "transformations": [
     {
-      "path": "data/exploratory/run-3/samples-source-179995cd.csv",
+      "path": "exploratory/run-3/samples-source-179995cd.csv",
       "source_snapshot_sha256": "932bf3cd899d78bae6fa52fb4c8d0355900e166509631e02d81d2ab9fa30710c",
       "distributed_sha256": "4be930109935e8f900d737128b47cff150f664320373ec21f8ad5610ba1efa7e",
       "changes": [
@@ -18,10 +18,11 @@
             "path_like_pilot_literal": 1
           }
         }
-      ]
+      ],
+      "source_snapshot_path": "data/exploratory/run-3/samples-source-179995cd.csv"
     },
     {
-      "path": "data/exploratory/run-3/samples.csv",
+      "path": "exploratory/run-3/samples.csv",
       "source_snapshot_sha256": "5f5de1eaf6c151469601f365b2e09661c58e5d691060eac30b7e1d86badc9bd2",
       "distributed_sha256": "4a06665596d9ec7071ae64bd98ef59c075d9fa61451c8b05d693bb04d15509f9",
       "changes": [
@@ -34,10 +35,11 @@
             "path_like_pilot_literal": 1
           }
         }
-      ]
+      ],
+      "source_snapshot_path": "data/exploratory/run-3/samples.csv"
     },
     {
-      "path": "data/exploratory/run-5/samples.csv",
+      "path": "exploratory/run-5/samples.csv",
       "source_snapshot_sha256": "2076cbbd3301dc03dcbd77abe16952f7c94a1a08117e2657522567b778309f52",
       "distributed_sha256": "d8980663c909feec3d8a4c5ec5e12cab2397381cca9954a57bc861165e0daffd",
       "changes": [
@@ -104,10 +106,11 @@
             "incidental_home_literal": 1
           }
         }
-      ]
+      ],
+      "source_snapshot_path": "data/exploratory/run-5/samples.csv"
     },
     {
-      "path": "data/exploratory/run-6/samples.csv",
+      "path": "exploratory/run-6/samples.csv",
       "source_snapshot_sha256": "52f31cba24d7a2a63ba3c65f001902e0b7239562737a99d30725b0464c247c29",
       "distributed_sha256": "627af296933e9207f29cc00d869bb1e55761ccbeb13a297468229be3681634ad",
       "changes": [
@@ -156,10 +159,11 @@
             "incidental_home_literal": 1
           }
         }
-      ]
+      ],
+      "source_snapshot_path": "data/exploratory/run-6/samples.csv"
     },
     {
-      "path": "data/exploratory/run-7/samples.csv",
+      "path": "exploratory/run-7/samples.csv",
       "source_snapshot_sha256": "815ff9e864792c7f9a90218855b23f8f91014001bc55fb94b15accd129cc9c02",
       "distributed_sha256": "6ce60219963557c95e4f956dc999473c6d9551052c52e05ee9037b75f6b61112",
       "changes": [
@@ -226,7 +230,8 @@
             "credential_hash_literal": 1
           }
         }
-      ]
+      ],
+      "source_snapshot_path": "data/exploratory/run-7/samples.csv"
     },
     {
       "path": "data/formal/J/run-36/gpu.txt",
@@ -322,7 +327,7 @@
     {
       "path": "data/human-validation/formal-anonymized.json",
       "source_snapshot_sha256": "2d0630c73186d1a8ff5f66df5a27c8ee7b9faff0076e6ca0147f2fcef4742bc7",
-      "distributed_sha256": "955283b56f8ad7b20b8de7ec40d62dc46d03bcb99343c6482c2fd2ee432c57a9",
+      "distributed_sha256": "a21ce6a846c3b9a6b2556ead06e4aa95041cb2ae9eb9c89b2a20b2fc02c95e69",
       "changes": [
         "updated privacy/author-approval annotation only; all assignments, responses and recorded code unchanged"
       ]
@@ -330,7 +335,7 @@
     {
       "path": "analysis/reproduce_human.py",
       "source_snapshot_sha256": "5d78b662413b6b8e148086e6cf1dbe7977fb941b5c93c5cc63106a457e3d3e12",
-      "distributed_sha256": "2d7afb1f443eebc1c8368a2bfa6d4f626ccd318d3bf441ad9c70a9413d04b91e",
+      "distributed_sha256": "c43b024cdf9265c241d1701e95537207ffd92e7b11f659477c0feddb8af024b7",
       "changes": [
         "updated derived-result privacy annotation only; calculations unchanged"
       ]
@@ -338,7 +343,7 @@
     {
       "path": "verification/human.json",
       "source_snapshot_sha256": "497a5a2e77d51807e5a59819d5e245e9f0d9e5a42801f529ba4dcace4ef37632",
-      "distributed_sha256": "e68de639737bce30df0dc0110ab5878c4b56669738186fb5c92b47bf87b23729",
+      "distributed_sha256": "fad380af2cf5abc817eb838eaf0ab4babd505e69c7ff0354b9581c3c2bb7ba01",
       "changes": [
         "updated permission/scope annotations only; all numeric results unchanged"
       ]
@@ -346,7 +351,7 @@
     {
       "path": "verification/verification-report.json",
       "source_snapshot_sha256": "01b27fbee84b6070589d1d87d9a29fa2f1a0783ab09b93125ef1f580f1ff6589",
-      "distributed_sha256": "ffc4c9e5024df1c372fcf37115f66f530d6cf5c969bd4921f98d37f2960a0858",
+      "distributed_sha256": "a3728659f6a0ff86bcc3c99cb678c9b5ea82898001e57e8b968e11414f0cd770",
       "changes": [
         "updated permission/scope annotations only; all numeric results unchanged",
         {
@@ -419,7 +424,7 @@
       ]
     },
     {
-      "path": "data/exploratory/run-4/samples.csv",
+      "path": "exploratory/run-4/samples.csv",
       "source_snapshot_sha256": "9dcd9e10bebce374a41225bbd807c849cd24444a444cf2b5070d076fd3649bd4",
       "changes": [
         {
@@ -441,10 +446,11 @@
           }
         }
       ],
-      "distributed_sha256": "b176fa739aae584eb2178b4acb147dad32f608439da284f764146ba228cf6ea7"
+      "distributed_sha256": "b176fa739aae584eb2178b4acb147dad32f608439da284f764146ba228cf6ea7",
+      "source_snapshot_path": "data/exploratory/run-4/samples.csv"
     },
     {
-      "path": "experiments/exploratory/selected-evidence/remote_run_bundle/tests/test_bundle.py",
+      "path": "exploratory/remote_run_bundle/tests/test_bundle.py",
       "source_snapshot_sha256": "2647e5a17c44a931242667fcbc8a7ea0c6040eaa417668b6cc5b50e20b17b559",
       "distributed_sha256": "3cd0ad1d1781e6ed33484b33a952333a743a4db8f8ca7beb5d484fdff22d9f89",
       "changes": [
@@ -452,10 +458,11 @@
           "source_line": 31,
           "transformation": "Marked one credential-detector test literal as an explicitly synthetic fixture; assertion and detector behavior unchanged."
         }
-      ]
+      ],
+      "source_snapshot_path": "experiments/exploratory/selected-evidence/remote_run_bundle/tests/test_bundle.py"
     },
     {
-      "path": "experiments/exploratory/selected-evidence/remote_run_bundle/run_sonarqube_remote.py",
+      "path": "exploratory/remote_run_bundle/run_sonarqube_remote.py",
       "source_snapshot_sha256": "1074bdbfc573e9b194b496d062433720de1784198ee35889f4f303867dc4f7b3",
       "distributed_sha256": "3fd8f8224daedd6bc478e28590ad430768a51019b71c83b1dbf4025444d47817",
       "changes": [
@@ -463,7 +470,8 @@
           "source_line": 42,
           "transformation": "Removed embedded service-password default; supply credentials explicitly when using this historical pilot utility. No recorded result or scoring calculation changed."
         }
-      ]
+      ],
+      "source_snapshot_path": "experiments/exploratory/selected-evidence/remote_run_bundle/run_sonarqube_remote.py"
     }
   ],
   "excluded": [

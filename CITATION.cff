@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite this private experiments/results artifact at the exact commit used. MIT covers original project code and supporting documentation; see THIRD_PARTY_NOTICES.md for third-party and data/model scope."
+message: "Cite this experiments/results artifact at the exact commit used. MIT covers original project code and supporting documentation; see THIRD_PARTY_NOTICES.md for third-party and data/model scope."
 type: software
 title: Better Code RL Experiments and Results
 authors:
@@ -9,4 +9,4 @@ authors:
     given-names: Conrad
 repository-code: https://github.com/Jeraych/better-code-rl-results
 license: MIT
-abstract: "Saved experimental evidence, historical training sources, configurations and offline analysis for the four-condition GRPO code-quality study. Private experiments/results repository with fresh Git history; the individual final report and university logo are excluded."
+abstract: "Saved experimental evidence, historical training sources, configurations and offline analysis for the four-condition GRPO code-quality study. Experiments/results repository with fresh Git history; the individual final report and university logo are excluded."
