@@ -8,5 +8,23 @@
     "12 frozen new launcher configurations, dry-run and output isolation"
   ],
   "command": "python -m unittest discover -s tests -v",
-  "environment_note": "This host sandbox required TEMP/TMP to point to a writable task temp folder. No source-repository or GPU changes."
+  "environment_note": "This host sandbox required TEMP/TMP to point to a writable task temp folder. No source-repository or GPU changes.",
+  "record_kind": "historical_cpu_test_execution",
+  "source_provenance": {
+    "retained_from_commit": "1e5ef66b7e5a8802bf2ae2e0faeb1f620c088280",
+    "record_path": "verification/tests.json",
+    "sha256_before_annotation": "0b3c272fd00a4aea93e1ed3f561b6ad34b2b2f6f6ee91040cbe966b919a9c469",
+    "manifest_source_identity": {
+      "source_repository": "New compendium work (2026-10-15)",
+      "source_path": "saved research rows + included analysis scripts",
+      "branch": "new local main",
+      "commit": "",
+      "source_sha256": "",
+      "source_lf_sha256": "",
+      "git_blob_sha256": ""
+    },
+    "execution_date": null,
+    "execution_date_note": "The original record does not state its execution date. The date in the manifest source attribution is not treated as an execution date."
+  },
+  "current_acceptance": "verification/tests-current.json"
 }

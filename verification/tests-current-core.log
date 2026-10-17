@@ -1,0 +1,79 @@
+test_correctness_gate_unchanged (test_historical_judge.HistoricalContractTests.test_correctness_gate_unchanged) ... ok
+test_failure_cannot_return_reward (test_historical_judge.HistoricalContractTests.test_failure_cannot_return_reward) ... ok
+test_formal_has_no_standalone_dependency (test_historical_judge.HistoricalContractTests.test_formal_has_no_standalone_dependency) ... ok
+test_historical_semantic_functions_identical (test_historical_judge.HistoricalContractTests.test_historical_semantic_functions_identical) ... ok
+test_invalid_response_raises_before_clean_reward (test_historical_judge.HistoricalContractTests.test_invalid_response_raises_before_clean_reward) ... ok
+test_prompt_and_taxonomy_constants_identical (test_historical_judge.HistoricalContractTests.test_prompt_and_taxonomy_constants_identical) ... ok
+test_valid_reward_diagnostics_match_baseline (test_historical_judge.HistoricalContractTests.test_valid_reward_diagnostics_match_baseline) ... ok
+test_valid_sanitized_scores_match_baseline (test_historical_judge.HistoricalContractTests.test_valid_sanitized_scores_match_baseline) ... ok
+test_exhaustion_aborts_and_redacts (archived_judge_tests.ReliabilityTests.test_exhaustion_aborts_and_redacts) ... ok
+test_http_429_retried (archived_judge_tests.ReliabilityTests.test_http_429_retried) ... ok
+test_http_auth_is_not_retried (archived_judge_tests.ReliabilityTests.test_http_auth_is_not_retried) ... ok
+test_invalid_json_and_envelope_abort_without_retry (archived_judge_tests.ReliabilityTests.test_invalid_json_and_envelope_abort_without_retry) ... ok
+test_malformed_schema_never_clean (archived_judge_tests.ReliabilityTests.test_malformed_schema_never_clean) ... ok
+test_safe_statistics_are_persisted (archived_judge_tests.ReliabilityTests.test_safe_statistics_are_persisted) ... ok
+test_transient_retries_have_bounded_backoff (archived_judge_tests.ReliabilityTests.test_transient_retries_have_bounded_backoff) ... ok
+test_valid_response_is_returned_unchanged (archived_judge_tests.ReliabilityTests.test_valid_response_is_returned_unchanged) ... ok
+test_all_12_configs_are_frozen_and_fresh (test_runner.RunnerTests.test_all_12_configs_are_frozen_and_fresh) ... ok
+test_dry_run_never_exposes_caller_auth (test_runner.RunnerTests.test_dry_run_never_exposes_caller_auth) ... ok
+test_dry_run_never_starts_process_or_makes_output (test_runner.RunnerTests.test_dry_run_never_starts_process_or_makes_output) ... ok
+test_existing_output_is_never_reused (test_runner.RunnerTests.test_existing_output_is_never_reused) ... ok
+test_judge_auth_reaches_child_without_entering_plans_or_output (test_runner.RunnerTests.test_judge_auth_reaches_child_without_entering_plans_or_output) ... ok
+test_judge_execution_requires_endpoint (test_runner.RunnerTests.test_judge_execution_requires_endpoint) ... usage: python.exe -m unittest [-h] --condition {C,S,J,SJ} --seed
+                              {3407,3408,3409} --stage
+                              {base-train,base-holdout,train,eval-train,eval-holdout}
+                              [--output-root OUTPUT_ROOT] [--adapter ADAPTER]
+                              [--dry-run] [--execute]
+python.exe -m unittest: error: Set AI_JUDGE_BASE_URL to an authorized OpenAI-compatible Judge service
+ok
+test_lora_evaluation_requires_adapter (test_runner.RunnerTests.test_lora_evaluation_requires_adapter) ... usage: python.exe -m unittest [-h] --condition {C,S,J,SJ} --seed
+                              {3407,3408,3409} --stage
+                              {base-train,base-holdout,train,eval-train,eval-holdout}
+                              [--output-root OUTPUT_ROOT] [--adapter ADAPTER]
+                              [--dry-run] [--execute]
+python.exe -m unittest: error: LoRA evaluation requires --adapter from a completed train stage
+ok
+test_rejects_repository_output_path (test_runner.RunnerTests.test_rejects_repository_output_path) ... ok
+test_failure_and_stderr_preserved (archived_execution_tests.ScriptExecutionTests.test_failure_and_stderr_preserved) ... ok
+test_large_humaneval_sized_script (archived_execution_tests.ScriptExecutionTests.test_large_humaneval_sized_script) ... ok
+test_resource_hook_timeout_and_cleanup_on_error (archived_execution_tests.ScriptExecutionTests.test_resource_hook_timeout_and_cleanup_on_error) ... ok
+test_syntax_error_preserved (archived_execution_tests.ScriptExecutionTests.test_syntax_error_preserved) ... ok
+test_temporary_directory_cleaned (archived_execution_tests.ScriptExecutionTests.test_temporary_directory_cleaned) ... ok
+test_timeout_override (archived_execution_tests.ScriptExecutionTests.test_timeout_override) ... ok
+test_unicode_source_and_main (archived_execution_tests.ScriptExecutionTests.test_unicode_source_and_main) ... ok
+test_all_extensions_and_binary_payload_are_scanned (test_security_scan.SecurityScanTests.test_all_extensions_and_binary_payload_are_scanned) ... ok
+test_binary_path_noise_is_filtered_but_embedded_paths_and_tokens_remain (test_security_scan.SecurityScanTests.test_binary_path_noise_is_filtered_but_embedded_paths_and_tokens_remain) ... ok
+test_code_field_expressions_and_comparisons_preserve_quoted_literals (test_security_scan.SecurityScanTests.test_code_field_expressions_and_comparisons_preserve_quoted_literals) ... ok
+test_csv_json_escaped_cells_include_record_locations (test_security_scan.SecurityScanTests.test_csv_json_escaped_cells_include_record_locations) ... ok
+test_csv_sanitizes_each_header_only_once (test_security_scan.SecurityScanTests.test_csv_sanitizes_each_header_only_once) ... ok
+test_deleted_history_alias_paths_and_commit_metadata_use_batch_protocol (test_security_scan.SecurityScanTests.test_deleted_history_alias_paths_and_commit_metadata_use_batch_protocol) ... ok
+test_env_key_database_paper_and_logo_paths_are_forbidden (test_security_scan.SecurityScanTests.test_env_key_database_paper_and_logo_paths_are_forbidden) ... ok
+test_jsonl_decodes_code_records_and_reports_row_and_field (test_security_scan.SecurityScanTests.test_jsonl_decodes_code_records_and_reports_row_and_field) ... ok
+test_large_csv_cell_is_decoded_and_field_limit_is_restored (test_security_scan.SecurityScanTests.test_large_csv_cell_is_decoded_and_field_limit_is_restored) ... ok
+test_literal_secret_assignments_and_env_names_are_distinguished (test_security_scan.SecurityScanTests.test_literal_secret_assignments_and_env_names_are_distinguished) ... ok
+test_log_labels_do_not_consume_the_next_unquoted_line (test_security_scan.SecurityScanTests.test_log_labels_do_not_consume_the_next_unquoted_line) ... ok
+test_long_dotted_identifier_does_not_hide_following_credential (test_security_scan.SecurityScanTests.test_long_dotted_identifier_does_not_hide_following_credential) ... ok
+test_named_private_paths_are_detected_and_source_newline_is_not (test_security_scan.SecurityScanTests.test_named_private_paths_are_detected_and_source_newline_is_not) ... ok
+test_network_url_paths_and_portable_cd_examples_are_not_local_paths (test_security_scan.SecurityScanTests.test_network_url_paths_and_portable_cd_examples_are_not_local_paths) ... ok
+test_networks_versions_and_actual_url_hosts (test_security_scan.SecurityScanTests.test_networks_versions_and_actual_url_hosts) ... ok
+test_non_secret_assignments_never_parse_their_values (test_security_scan.SecurityScanTests.test_non_secret_assignments_never_parse_their_values) ... ok
+test_numeric_token_measurements_are_not_credentials (test_security_scan.SecurityScanTests.test_numeric_token_measurements_are_not_credentials) ... ok
+test_placeholders_sha256_and_pair_ids_are_safe (test_security_scan.SecurityScanTests.test_placeholders_sha256_and_pair_ids_are_safe) ... ok
+test_scanner_source_regexes_do_not_flag_themselves (test_security_scan.SecurityScanTests.test_scanner_source_regexes_do_not_flag_themselves) ... ok
+test_source_and_literal_warnings_do_not_escape_the_scanner (test_security_scan.SecurityScanTests.test_source_and_literal_warnings_do_not_escape_the_scanner) ... ok
+test_strong_families_jwt_private_key_and_credential_urls (test_security_scan.SecurityScanTests.test_strong_families_jwt_private_key_and_credential_urls) ... ok
+test_test_source_uses_safe_synthetic_inputs (test_security_scan.SecurityScanTests.test_test_source_uses_safe_synthetic_inputs) ... ok
+test_tokenizer_metadata_and_shell_flags_have_bounded_exceptions (test_security_scan.SecurityScanTests.test_tokenizer_metadata_and_shell_flags_have_bounded_exceptions) ... ok
+test_unc_hosts_and_shares_are_distinct_from_escaped_text (test_security_scan.SecurityScanTests.test_unc_hosts_and_shares_are_distinct_from_escaped_text) ... ok
+test_values_never_enter_reports_stdout_stderr_or_secret_filenames (test_security_scan.SecurityScanTests.test_values_never_enter_reports_stdout_stderr_or_secret_filenames) ... ok
+test_changed_recomputed_value_is_rejected_without_modifying_archive (test_verification.VerificationTests.test_changed_recomputed_value_is_rejected_without_modifying_archive) ... ok
+test_default_keeps_archives_and_inputs_byte_identical_on_both_newlines (test_verification.VerificationTests.test_default_keeps_archives_and_inputs_byte_identical_on_both_newlines) ... ok
+test_explicit_output_uses_lf_and_does_not_overwrite_archive (test_verification.VerificationTests.test_explicit_output_uses_lf_and_does_not_overwrite_archive) ... ok
+test_output_cannot_target_frozen_repository_directory (test_verification.VerificationTests.test_output_cannot_target_frozen_repository_directory) ... ok
+test_raw_input_hash_tamper_rejected_before_recomputation_or_output (test_verification.VerificationTests.test_raw_input_hash_tamper_rejected_before_recomputation_or_output) ... ok
+test_second_manifest_mismatch_also_prevents_recomputation (test_verification.VerificationTests.test_second_manifest_mismatch_also_prevents_recomputation) ... ok
+
+----------------------------------------------------------------------
+Ran 62 tests in 1.032s
+
+OK

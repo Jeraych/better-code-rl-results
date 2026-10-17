@@ -25,7 +25,9 @@ The verifier checks archived input bytes first, recomputes into temporary output
 python analysis/verify_all.py --output-dir runs/verification-local
 ```
 
-Local acceptance on 17 October 2026 passed saved-data recomputation, all 67 CPU tests and the all-file privacy scan.
+[Current CPU acceptance](verification/tests-current.json) records the 17 October 2026 run against code commit `1e5ef66`: 62 core tests and 5 remote-bundle tests, all passing (67 total). The [core log](verification/tests-current-core.log) and [remote-bundle log](verification/tests-current-bundle.log) retain the unittest results; synthetic-fixture stdout is omitted. The [historical 29-test record](verification/tests.json) is preserved separately with its source attribution and an explicitly unrecorded execution date.
+
+The release baseline passed saved-data recomputation and the all-file privacy scan. This verification-documentation update rechecks strict manifests and saved-data agreement, and scans only changed or new bytes over that accepted baseline.
 
 These commands inspect saved records without training, model inference, generated benchmark-code execution or live Judge requests. Some unit tests run controlled synthetic subprocess fixtures. Optional [plot generation](analysis/make_figures.py) requires [Matplotlib and NumPy](analysis/requirements-figures.txt). See the [verification directory](verification/) for recorded check status and scope.
 

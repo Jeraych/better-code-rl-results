@@ -351,7 +351,7 @@
     {
       "path": "verification/verification-report.json",
       "source_snapshot_sha256": "01b27fbee84b6070589d1d87d9a29fa2f1a0783ab09b93125ef1f580f1ff6589",
-      "distributed_sha256": "a3728659f6a0ff86bcc3c99cb678c9b5ea82898001e57e8b968e11414f0cd770",
+      "distributed_sha256": "65f4c2f72fca1eea56ea42c600ba5ce32de6a9c3594450dc80b7333049a83b8b",
       "changes": [
         "updated permission/scope annotations only; all numeric results unchanged",
         {

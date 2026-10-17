@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "record_kind": "current_cpu_test_acceptance",
+  "execution_date": "2026-10-17",
+  "tested_code_commit": "1e5ef66b7e5a8802bf2ae2e0faeb1f620c088280",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.12.14",
+    "platform": "Windows"
+  },
+  "suites": [
+    {
+      "suite": "core",
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 62,
+      "exit_code": 0,
+      "status": "PASS",
+      "output_log": "verification/tests-current-core.log",
+      "retained_output": "unittest stderr; synthetic-fixture stdout omitted",
+      "output_sha256": "6550c174672bc0169383fd062b618129ea190e4c15384855bb93a01178dc1101"
+    },
+    {
+      "suite": "remote_bundle",
+      "command": "python -m unittest discover -s exploratory/remote_run_bundle/tests -v",
+      "tests": 5,
+      "exit_code": 0,
+      "status": "PASS",
+      "output_log": "verification/tests-current-bundle.log",
+      "retained_output": "unittest stderr; synthetic-fixture stdout omitted",
+      "output_sha256": "27ba499decf56bf64bb135f854d6d33721daaf44d42c6ade383c7d388b0dffe5"
+    }
+  ],
+  "total_tests": 67,
+  "environment_note": "PYTHONDONTWRITEBYTECODE=1 and PYTHONUTF8=1. TEMP/TMP/TMPDIR used a writable task scratch directory outside the repository; no private absolute paths are recorded.",
+  "scope": "CPU unit tests only, including controlled synthetic subprocess fixtures. No new training, model inference, live Judge requests, generated benchmark-code execution or research statistics.",
+  "historical_record": "verification/tests.json",
+  "relationship_to_followup_commit": "The follow-up commit changes verification records, README and strict manifests only. Tested source and test files remain identical to tested_code_commit."
+}

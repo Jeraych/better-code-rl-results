@@ -1,0 +1,10 @@
+test_repository_path_is_redacted (test_bundle.BundleTests.test_repository_path_is_redacted) ... ok
+test_required_ai_judge_evidence (test_bundle.BundleTests.test_required_ai_judge_evidence) ... ok
+test_run_directory_is_scoped (test_bundle.BundleTests.test_run_directory_is_scoped) ... ok
+test_secret_patterns_detect_credentials (test_bundle.BundleTests.test_secret_patterns_detect_credentials) ... ok
+test_sonar_sensor_timing_parser (test_bundle.BundleTests.test_sonar_sensor_timing_parser) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.009s
+
+OK
